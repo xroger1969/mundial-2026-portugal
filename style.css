@@ -130,6 +130,24 @@
     .venue,.notes{color:#c7d4e7;font-size:.9rem;margin-top:8px}
     .channels{margin-top:8px}
     .channel-list{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+    .result{
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:10px;
+      margin:8px 0 10px;
+      background:rgba(255,255,255,.045);
+    }
+    .result.finished{border-color:rgba(34,197,94,.55);background:rgba(34,197,94,.12)}
+    .result.live{border-color:rgba(251,113,133,.7);background:rgba(251,113,133,.14)}
+    .result.warning{border-color:rgba(251,191,36,.7);background:rgba(251,191,36,.12)}
+    .result.scheduled{border-color:rgba(148,163,184,.25)}
+    .result-line{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+    .score{font-size:1.55rem;font-weight:950;line-height:1;color:#fff;letter-spacing:-.04em}
+    .muted-score{font-size:1rem;color:#cbd5e1;letter-spacing:0}
+    .status-pill{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:5px 9px;font-size:.76rem;font-weight:900;background:rgba(255,255,255,.07);color:#eef6ff}
+    .result-extra{margin-top:6px;color:#b8c7da;font-size:.78rem}
+    .live .status-pill{border-color:rgba(251,113,133,.65);background:rgba(251,113,133,.2);color:#ffe4e6}
+    .finished .status-pill{border-color:rgba(34,197,94,.65);background:rgba(34,197,94,.18);color:#dcfce7}
     .empty{border:1px dashed var(--line);border-radius:20px;padding:24px 14px;text-align:center;color:var(--muted);background:rgba(255,255,255,.035)}
     .sources{margin-top:22px;color:var(--muted);font-size:.82rem;padding:0 2px 10px}
     .sources ul{padding-left:18px}
@@ -152,6 +170,7 @@
       .filters,.actions{display:none}
       .cards{display:block}
       .card{break-inside:avoid;margin:0 0 8px;border-color:#ccc}
-      .tag,.time{color:#111;border-color:#888;background:#fff}
-      .subtitle,.venue,.notes,.sources,.label{color:#333}
+      .tag,.time,.status-pill{color:#111;border-color:#888;background:#fff}
+      .subtitle,.venue,.notes,.sources,.label,.result-extra{color:#333}
+      .score{color:#111}
     }

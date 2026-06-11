@@ -164,14 +164,31 @@ input:focus,select:focus{
   color:var(--accent);
 }
 
-/* Botões compactos no iPhone */
+/* Botões e filtros compactos no iPhone */
 @media (max-width: 600px){
+  .filters{
+    padding:12px !important;
+  }
+
+  .searchline{
+    gap:7px !important;
+  }
+
+  .searchline input,
+  .searchline select{
+    min-height:46px !important;
+    padding:10px 14px !important;
+    font-size:.94rem !important;
+    border-radius:18px !important;
+  }
+
   .chips{
     display:grid !important;
     grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
-    gap:8px !important;
+    gap:6px !important;
     width:100% !important;
     overflow:visible !important;
+    margin-top:4px !important;
   }
 
   .chips .chip,
@@ -184,16 +201,19 @@ input:focus,select:focus{
     justify-content:center !important;
     text-align:center !important;
     white-space:normal !important;
-    line-height:1.18 !important;
-    padding:10px 10px !important;
-    font-size:.94rem !important;
+    line-height:1.1 !important;
+    padding:8px 8px !important;
+    font-size:.84rem !important;
+    border-radius:17px !important;
+    min-height:40px !important;
   }
 
   #resultsJump{
     grid-column:1 / -1 !important;
     order:4;
-    font-size:.98rem !important;
-    padding:11px 12px !important;
+    font-size:.88rem !important;
+    padding:9px 10px !important;
+    min-height:44px !important;
   }
 
   #clear{
@@ -204,8 +224,8 @@ input:focus,select:focus{
   .livemode-row{
     display:grid !important;
     grid-template-columns:1fr !important;
-    gap:6px !important;
-    margin-top:10px !important;
+    gap:5px !important;
+    margin-top:8px !important;
   }
 
   .livemode-quick-link{
@@ -214,11 +234,22 @@ input:focus,select:focus{
     justify-content:center !important;
     text-align:center !important;
     white-space:normal !important;
-    padding:10px 12px !important;
-    font-size:.92rem !important;
+    padding:8px 10px !important;
+    font-size:.84rem !important;
+    border-radius:17px !important;
+    min-height:40px !important;
   }
 
   .livemode-row span{
     display:none !important;
+  }
+
+  .resultbar{
+    margin-top:8px !important;
+  }
+
+  .resultbar .mini{
+    padding:7px 10px !important;
+    font-size:.84rem !important;
   }
 }

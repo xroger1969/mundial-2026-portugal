@@ -164,12 +164,12 @@ input:focus,select:focus{
   color:var(--accent);
 }
 
-/* Botões empilhados no iPhone */
+/* Botões compactos no iPhone */
 @media (max-width: 600px){
   .chips{
     display:grid !important;
-    grid-template-columns:1fr !important;
-    gap:10px !important;
+    grid-template-columns:repeat(2, minmax(0, 1fr)) !important;
+    gap:8px !important;
     width:100% !important;
     overflow:visible !important;
   }
@@ -184,22 +184,28 @@ input:focus,select:focus{
     justify-content:center !important;
     text-align:center !important;
     white-space:normal !important;
-    line-height:1.25 !important;
-    padding:13px 14px !important;
+    line-height:1.18 !important;
+    padding:10px 10px !important;
+    font-size:.94rem !important;
   }
 
   #resultsJump{
+    grid-column:1 / -1 !important;
     order:4;
+    font-size:.98rem !important;
+    padding:11px 12px !important;
   }
 
   #clear{
+    grid-column:1 / -1 !important;
     order:5;
   }
 
   .livemode-row{
     display:grid !important;
     grid-template-columns:1fr !important;
-    gap:8px !important;
+    gap:6px !important;
+    margin-top:10px !important;
   }
 
   .livemode-quick-link{
@@ -208,5 +214,11 @@ input:focus,select:focus{
     justify-content:center !important;
     text-align:center !important;
     white-space:normal !important;
+    padding:10px 12px !important;
+    font-size:.92rem !important;
+  }
+
+  .livemode-row span{
+    display:none !important;
   }
 }

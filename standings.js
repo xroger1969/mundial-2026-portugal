@@ -206,10 +206,10 @@
   }
 
   function qualificationTag(row, hasFinished) {
-    if (!hasFinished) return `<span class="qual-tag wait">A aguardar</span>`;
-    if (row.rank <= 2) return `<span class="qual-tag direct">Apurado</span>`;
-    if (row.rank === 3 && row.thirdRank && row.thirdRank <= 8) return `<span class="qual-tag third">Melhor 3.º</span>`;
-    return `<span class="qual-tag out">Fora</span>`;
+    if (!hasFinished) return `<span class="qual-tag wait" title="A aguardar jogos">Aguard.</span>`;
+    if (row.rank <= 2) return `<span class="qual-tag direct" title="Apurado neste momento">Apurado</span>`;
+    if (row.rank === 3 && row.thirdRank && row.thirdRank <= 8) return `<span class="qual-tag third" title="Melhor terceiro neste momento">Melhor 3.º</span>`;
+    return `<span class="qual-tag out" title="Fora neste momento">Fora</span>`;
   }
 
   function tableHtml(group, rows, hasFinished) {

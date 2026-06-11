@@ -1,0 +1,38 @@
+name: Atualizar resultados do Mundial 2026
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-results:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obter ficheiros do repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Atualizar results.json
+        run: node scripts/update-results.js
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+
+      - name: Gravar atualização se houver alterações
+        run: |
+          if [[ -n "$(git status --porcelain results.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add results.json
+            git commit -m "Atualizar resultados automáticos"
+            git push
+          else
+            echo "Sem alterações em results.json"
+          fi

@@ -1,0 +1,184 @@
+/* eslint-disable no-console */
+"use strict";
+
+const fs = require("fs");
+const path = require("path");
+const vm = require("vm");
+
+const ROOT = path.resolve(__dirname, "..");
+const RESULTS_PATH = path.join(ROOT, "results.json");
+const DATA_FILES = ["data-part-1.js", "data-part-2.js", "data-part-3.js", "data-part-4.js"];
+const API_URL = "https://api.football-data.org/v4/competitions/WC/matches?season=2026";
+
+function readExistingResults() {
+  try {
+    return JSON.parse(fs.readFileSync(RESULTS_PATH, "utf8"));
+  } catch {
+    return { matches: {} };
+  }
+}
+
+function writeResults(payload) {
+  const finalPayload = {
+    provider: "football-data.org",
+    competition: "WC",
+    season: "2026",
+    ...payload,
+    matches: payload.matches || {}
+  };
+  fs.writeFileSync(RESULTS_PATH, `${JSON.stringify(finalPayload, null, 2)}\n`, "utf8");
+}
+
+function loadSchedule() {
+  const context = { window: { WC2026_PARTS: [] } };
+  for (const file of DATA_FILES) {
+    const filePath = path.join(ROOT, file);
+    const code = fs.readFileSync(filePath, "utf8");
+    vm.runInNewContext(code, context, { filename: file });
+  }
+
+  return context.window.WC2026_PARTS.flat().map(row => ({
+    num: row[0],
+    date: row[1],
+    time: row[2],
+    match: row[3]
+  })).sort((a, b) => a.num - b.num);
+}
+
+function isTournamentWindow() {
+  const now = new Date();
+  const start = new Date("2026-06-01T00:00:00Z");
+  const end = new Date("2026-07-25T23:59:59Z");
+  return now >= start && now <= end;
+}
+
+function normalizeStatus(status) {
+  const value = String(status || "").toUpperCase();
+  if (value === "LIVE") return "IN_PLAY";
+  return value || "SCHEDULED";
+}
+
+function extractScore(match) {
+  const score = match.score || {};
+  const fullTime = score.fullTime || {};
+  const regularTime = score.regularTime || {};
+  const halfTime = score.halfTime || {};
+  const source = fullTime.home !== null && fullTime.home !== undefined
+    ? fullTime
+    : regularTime.home !== null && regularTime.home !== undefined
+      ? regularTime
+      : halfTime;
+
+  return {
+    homeScore: source.home ?? null,
+    awayScore: source.away ?? null,
+    winner: score.winner || null
+  };
+}
+
+function buildResultsFromApi(apiMatches, schedule, previousMatches) {
+  const sorted = [...(apiMatches || [])].sort((a, b) => {
+    const da = new Date(a.utcDate || 0).getTime();
+    const db = new Date(b.utcDate || 0).getTime();
+    if (da !== db) return da - db;
+    return Number(a.id || 0) - Number(b.id || 0);
+  });
+
+  const matches = { ...(previousMatches || {}) };
+
+  sorted.forEach((apiMatch, index) => {
+    const scheduledGame = schedule[index];
+    if (!scheduledGame) return;
+
+    const { homeScore, awayScore, winner } = extractScore(apiMatch);
+    const status = normalizeStatus(apiMatch.status);
+
+    matches[String(scheduledGame.num)] = {
+      apiId: apiMatch.id || null,
+      status,
+      homeTeam: apiMatch.homeTeam?.name || null,
+      awayTeam: apiMatch.awayTeam?.name || null,
+      homeScore,
+      awayScore,
+      winner,
+      utcDate: apiMatch.utcDate || null,
+      lastUpdated: apiMatch.lastUpdated || new Date().toISOString(),
+      provider: "football-data.org"
+    };
+  });
+
+  return matches;
+}
+
+async function main() {
+  const token = process.env.FOOTBALL_DATA_TOKEN;
+  const previous = readExistingResults();
+  const schedule = loadSchedule();
+
+  if (!token) {
+    writeResults({
+      status: "waiting_for_api_token",
+      updatedAt: previous.updatedAt || null,
+      message: "Resultados automáticos preparados. Falta configurar o segredo FOOTBALL_DATA_TOKEN no GitHub.",
+      matches: previous.matches || {}
+    });
+    console.log("FOOTBALL_DATA_TOKEN não está configurado. results.json mantido em modo preparado.");
+    return;
+  }
+
+  if (!isTournamentWindow() && !process.env.FORCE_RESULTS_UPDATE) {
+    writeResults({
+      status: "standby",
+      updatedAt: previous.updatedAt || null,
+      message: "Automação preparada. Fora da janela principal do Mundial 2026, a rotina fica em espera para evitar chamadas desnecessárias à API.",
+      matches: previous.matches || {}
+    });
+    console.log("Fora da janela do torneio. Sem chamada à API.");
+    return;
+  }
+
+  const response = await fetch(API_URL, {
+    headers: {
+      "X-Auth-Token": token,
+      "Accept": "application/json"
+    }
+  });
+
+  if (!response.ok) {
+    const body = await response.text();
+    writeResults({
+      status: "api_error",
+      updatedAt: previous.updatedAt || null,
+      message: `Erro na API football-data.org: HTTP ${response.status}`,
+      lastError: body.slice(0, 500),
+      matches: previous.matches || {}
+    });
+    console.log(`Erro na API: HTTP ${response.status}`);
+    return;
+  }
+
+  const data = await response.json();
+  const apiMatches = data.matches || [];
+  const matches = buildResultsFromApi(apiMatches, schedule, previous.matches || {});
+
+  writeResults({
+    status: "ok",
+    updatedAt: new Date().toISOString(),
+    message: `Atualização automática concluída. Jogos recebidos da API: ${apiMatches.length}.`,
+    apiCount: apiMatches.length,
+    matches
+  });
+
+  console.log(`Resultados atualizados. Jogos recebidos: ${apiMatches.length}.`);
+}
+
+main().catch(error => {
+  const previous = readExistingResults();
+  writeResults({
+    status: "script_error",
+    updatedAt: previous.updatedAt || null,
+    message: `Erro no script de atualização: ${error.message}`,
+    matches: previous.matches || {}
+  });
+  console.error(error);
+});

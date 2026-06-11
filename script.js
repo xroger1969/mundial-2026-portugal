@@ -1,17 +1,27 @@
 "use strict";
 
-const games = (window.WC2026_PARTS || []).flat().map(row => ({
-  num: row[0], date: row[1], time: row[2], match: row[3], channels: row[4],
-  stage: row[5], group: row[6], round: row[7], venue: row[8],
-  portugal: Boolean(row[9]), free: Boolean(row[10]), open: Boolean(row[11]), notes: row[12] || ""
-}));
+const DATA_FILES = ["data-part-1.js", "data-part-2.js", "data-part-3.js", "data-part-4.js"];
 
 const sources = [
-  ["Record — Onde ver os jogos do Mundial 2026 em direto: TV e Streaming", "https://www.record.pt/casas-de-apostas/mundial-2026/onde-ver-mundial-2026/"],
-  ["Record — Lista de jogos grátis na LiveModeTV durante o Mundial 2026", "https://www.record.pt/casas-de-apostas/mundial-2026/livemodetv/"],
-  ["Renascença — Jogos de Portugal, horas e canais", "https://rr.pt/bola-branca/especial/clube-portugal/2026/06/01/mundial-2026-quando-joga-portugal-a-que-horas-sao-os-jogos-e-onde-ver-na-tv-e-online/472960/"],
-  ["Diário de Notícias — RTP, SIC e TVI transmitem os jogos de Portugal em sinal aberto", "https://www.dn.pt/desporto/mundial-2026-rtp-sic-e-tvi-garantem-transmisso-em-sinal-aberto-dos-jogos-de-portugal"]
+  {
+    label: "Record — Onde ver os jogos do Mundial 2026 em direto: TV e Streaming",
+    url: "https://www.record.pt/casas-de-apostas/mundial-2026/onde-ver-mundial-2026/"
+  },
+  {
+    label: "Record — Lista de jogos grátis na LiveModeTV durante o Mundial 2026",
+    url: "https://www.record.pt/casas-de-apostas/mundial-2026/livemodetv/"
+  },
+  {
+    label: "Renascença — Jogos de Portugal, horas e canais",
+    url: "https://rr.pt/bola-branca/especial/clube-portugal/2026/06/01/mundial-2026-quando-joga-portugal-a-que-horas-sao-os-jogos-e-onde-ver-na-tv-e-online/472960/"
+  },
+  {
+    label: "Diário de Notícias — RTP, SIC e TVI transmitem os jogos de Portugal em sinal aberto",
+    url: "https://www.dn.pt/desporto/mundial-2026-rtp-sic-e-tvi-garantem-transmisso-em-sinal-aberto-dos-jogos-de-portugal"
+  }
 ];
+
+let games = [];
 
 const els = {
   q: document.getElementById("q"),
@@ -23,96 +33,263 @@ const els = {
   summary: document.getElementById("summary"),
   sources: document.getElementById("sources")
 };
-const state = { portugal:false, open:false, free:false };
-const dateFmt = new Intl.DateTimeFormat("pt-PT", { weekday:"short", day:"2-digit", month:"short" });
 
-function norm(v){return String(v||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\s+/g," ").trim()}
-function esc(v){return String(v==null?"":v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#039;")}
-function uniq(a){return Array.from(new Set(a.filter(Boolean))).sort((x,y)=>String(x).localeCompare(String(y),"pt-PT"))}
+const state = { portugal: false, open: false, free: false };
+const dateFmt = new Intl.DateTimeFormat("pt-PT", { weekday: "short", day: "2-digit", month: "short" });
 
-function addOptions(select, values){
-  values.forEach(v => {
-    const opt = document.createElement("option");
-    opt.value = v; opt.textContent = v;
-    select.appendChild(opt);
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = false;
+    script.onload = resolve;
+    script.onerror = () => reject(new Error(`Não foi possível carregar ${src}`));
+    document.head.appendChild(script);
   });
 }
-function channelList(){
-  const names = new Set();
-  games.forEach(g => String(g.channels).split(/,| e |;/).map(s=>s.trim()).filter(Boolean).forEach(c=>names.add(c.replace(/\s+/g," "))));
-  return Array.from(names).sort((a,b)=>a.localeCompare(b,"pt-PT"));
-}
-function init(){
-  addOptions(els.phase, uniq(games.map(g=>g.stage)));
-  addOptions(els.group, uniq(games.map(g=>g.group)).map(g=>`Grupo ${g}`));
-  addOptions(els.channel, channelList());
-  els.summary.innerHTML = `
-    <div class="box"><b>${games.length}</b><span>jogos</span></div>
-    <div class="box"><b>${games.filter(g=>g.portugal).length}</b><span>Portugal</span></div>
-    <div class="box"><b>${games.filter(g=>g.open).length}</b><span>sinal aberto</span></div>
-    <div class="box"><b>${games.filter(g=>g.free).length}</b><span>grátis/LiveModeTV</span></div>`;
-  els.sources.innerHTML = sources.map(([label,url])=>`<li><a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a></li>`).join("");
-  document.querySelectorAll("[data-toggle]").forEach(btn => btn.addEventListener("click", () => { state[btn.dataset.toggle] = !state[btn.dataset.toggle]; btn.classList.toggle("active"); render(); }));
-  document.getElementById("clear").addEventListener("click", clearFilters);
-  document.getElementById("printBtn").addEventListener("click", () => window.print());
-  document.getElementById("csvBtn").addEventListener("click", exportCsv);
-  [els.q, els.phase, els.group, els.channel].forEach(el => el.addEventListener("input", render));
-  render();
-}
-function filtered(){
-  const q = norm(els.q.value);
-  const phase = els.phase.value;
-  const group = els.group.value.replace("Grupo ", "");
-  const channel = norm(els.channel.value);
-  return games.filter(g => {
-    const hay = norm([g.match,g.channels,g.stage,g.group,g.round,g.venue,g.notes].join(" "));
-    if (q && !hay.includes(q)) return false;
-    if (phase && g.stage !== phase) return false;
-    if (group && g.group !== group) return false;
-    if (channel && !norm(g.channels).includes(channel)) return false;
-    if (state.portugal && !g.portugal) return false;
-    if (state.open && !g.open) return false;
-    if (state.free && !g.free) return false;
-    return true;
-  }).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time) || a.num-b.num);
-}
-function render(){
-  const list = filtered();
-  els.visibleCount.textContent = list.length;
-  if (!list.length) { els.cards.innerHTML = `<div class="empty">Nenhum jogo encontrado com estes filtros.</div>`; return; }
-  els.cards.innerHTML = list.map(card).join("");
-}
-function card(g){
-  const d = new Date(`${g.date}T12:00:00`);
-  const channels = String(g.channels).split(/,|;/).map(s=>s.trim()).filter(Boolean).map(c => {
-    const cls = /livemode/i.test(c) ? "live" : /sport/i.test(c) ? "sport" : "open";
-    return `<span class="tag ${cls}">${esc(c)}</span>`;
-  }).join("");
-  return `<article class="card ${g.portugal ? "portugal" : ""}">
-    <div class="topline"><span class="game-no">Jogo ${g.num}</span><div class="datetime"><div class="date">${esc(dateFmt.format(d))}</div><span class="time">${esc(g.time)}</span></div></div>
-    <div class="match">${esc(g.match)}</div>
-    <div class="meta"><span class="tag">${esc(g.stage)}</span>${g.group?`<span class="tag group">Grupo ${esc(g.group)}</span>`:""}${g.portugal?`<span class="tag pt">Portugal</span>`:""}${g.open?`<span class="tag open">Sinal aberto</span>`:""}${g.free?`<span class="tag live">Grátis</span>`:""}</div>
-    <div class="channels"><div class="label">Onde ver</div><div class="channel-list">${channels}</div></div>
-    <div class="venue"><span class="label">Local</span><br>${esc(g.venue)}</div>
-    ${g.notes?`<div class="notes"><span class="label">Nota</span><br>${esc(g.notes)}</div>`:""}
-  </article>`;
-}
-function clearFilters(){
-  els.q.value = ""; els.phase.value = ""; els.group.value = ""; els.channel.value = "";
-  Object.keys(state).forEach(k => state[k] = false);
-  document.querySelectorAll(".chip.active").forEach(b => b.classList.remove("active"));
-  render();
-}
-function exportCsv(){
-  const rows = [["Jogo","Data","Hora","Jogo","Canais","Fase","Grupo","Local","Notas"]].concat(filtered().map(g=>[g.num,g.date,g.time,g.match,g.channels,g.stage,g.group,g.venue,g.notes]));
-  const csv = rows.map(r => r.map(v => `"${String(v).replace(/"/g,'""')}"`).join(",")).join("\n");
-  const blob = new Blob(["\ufeff" + csv], {type:"text/csv;charset=utf-8"});
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob); a.download = "calendario-mundial-2026-portugal.csv"; a.click(); URL.revokeObjectURL(a.href);
+
+async function loadGameData() {
+  window.WC2026_PARTS = window.WC2026_PARTS || [];
+
+  if (!window.WC2026_PARTS.length) {
+    for (const file of DATA_FILES) {
+      await loadScript(file);
+    }
+  }
+
+  return (window.WC2026_PARTS || []).flat().map(row => ({
+    num: row[0],
+    date: row[1],
+    time: row[2],
+    match: row[3],
+    channels: row[4],
+    stage: row[5],
+    group: row[6],
+    round: row[7],
+    venue: row[8],
+    portugal: Boolean(row[9]),
+    free: Boolean(row[10]),
+    open: Boolean(row[11]),
+    notes: row[12] || ""
+  })).sort((a, b) => a.num - b.num);
 }
 
-if (!games.length) {
-  els.cards.innerHTML = `<div class="empty">Os dados dos jogos não foram carregados. Verifica se os ficheiros data-part-1.js a data-part-4.js estão no repositório.</div>`;
-} else {
-  init();
+function norm(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
+
+function escapeHtml(value) {
+  return String(value == null ? "" : value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function unique(values) {
+  return Array.from(new Set(values.filter(Boolean))).sort((a, b) => String(a).localeCompare(String(b), "pt-PT"));
+}
+
+function addOptions(select, values, prefix) {
+  values.forEach(value => {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = prefix ? `${prefix} ${value}` : value;
+    select.appendChild(option);
+  });
+}
+
+function channelOptions() {
+  return ["RTP 1", "SIC", "TVI", "Sport TV", "Sport TV 1", "Sport TV 5", "LiveModeTV"];
+}
+
+function hasChannel(game, selected) {
+  if (!selected) return true;
+  const ch = norm(game.channels);
+  const sel = norm(selected);
+  if (sel === "sport tv") return ch.includes("sport tv");
+  if (sel === "sport tv 1") return ch.includes("sport tv 1") || ch.includes("sport tv 1 e 5");
+  if (sel === "sport tv 5") return ch.includes("sport tv 5") || ch.includes("sport tv 1 e 5");
+  if (sel === "livemodetv") return ch.includes("livemodetv");
+  return ch.includes(sel);
+}
+
+function isFree(game) {
+  return Boolean(game.free || game.open || norm(game.channels).includes("livemodetv"));
+}
+
+function searchable(game) {
+  return norm([
+    game.num,
+    game.date,
+    game.time,
+    game.match,
+    game.stage,
+    game.group,
+    game.round,
+    game.venue,
+    game.channels,
+    game.notes
+  ].join(" "));
+}
+
+function filteredGames() {
+  const query = norm(els.q.value);
+  return games.filter(game => {
+    if (query && !searchable(game).includes(query)) return false;
+    if (els.phase.value && game.stage !== els.phase.value) return false;
+    if (els.group.value && game.group !== els.group.value) return false;
+    if (!hasChannel(game, els.channel.value)) return false;
+    if (state.portugal && !game.portugal) return false;
+    if (state.open && !game.open) return false;
+    if (state.free && !isFree(game)) return false;
+    return true;
+  });
+}
+
+function splitChannels(channels) {
+  return String(channels || "")
+    .split(/[,;]/)
+    .map(part => part.trim())
+    .filter(Boolean)
+    .map(part => part.replace("LiveModeTV (YouTube)", "LiveModeTV"));
+}
+
+function channelClass(label) {
+  const n = norm(label);
+  if (n.includes("rtp") || n === "sic" || n === "tvi") return "open";
+  if (n.includes("live")) return "live";
+  if (n.includes("sport")) return "sport";
+  return "";
+}
+
+function formatDate(dateStr) {
+  const d = new Date(`${dateStr}T12:00:00`);
+  return dateFmt.format(d).replace(".", "");
+}
+
+function renderSummary(list) {
+  const boxes = [
+    [games.length, "Jogos totais"],
+    [games.filter(g => g.portugal).length, "Jogos de Portugal"],
+    [games.filter(g => g.open).length, "Sinal aberto indicado"],
+    [games.filter(g => norm(g.channels).includes("livemodetv")).length, "LiveModeTV indicado"]
+  ];
+
+  els.summary.innerHTML = boxes.map(([num, label]) => `<div class="box"><b>${num}</b><span>${label}</span></div>`).join("");
+  els.visibleCount.textContent = list.length;
+}
+
+function renderCards() {
+  const list = filteredGames();
+  renderSummary(list);
+
+  if (!list.length) {
+    els.cards.innerHTML = `<div class="empty">Não encontrei jogos com esses filtros. Toca em “Limpar filtros” para voltar ao calendário completo.</div>`;
+    return;
+  }
+
+  els.cards.innerHTML = list.map(game => {
+    const group = game.group ? `<span class="tag group">Grupo ${escapeHtml(game.group)}</span>` : "";
+    const pt = game.portugal ? `<span class="tag pt">Portugal</span>` : "";
+    const open = game.open ? `<span class="tag open">Sinal aberto</span>` : "";
+    const free = isFree(game) ? `<span class="tag live">Grátis</span>` : "";
+    const channels = splitChannels(game.channels)
+      .map(label => `<span class="tag ${channelClass(label)}">${escapeHtml(label)}</span>`)
+      .join("");
+    const note = game.notes ? `<div class="notes"><div class="label">Nota</div>${escapeHtml(game.notes)}</div>` : "";
+
+    return `<article class="card ${game.portugal ? "portugal" : ""}" data-num="${game.num}">
+      <div class="topline">
+        <div class="game-no">Jogo ${game.num}</div>
+        <div class="datetime"><div class="date">${escapeHtml(formatDate(game.date))}</div><div class="time">${escapeHtml(game.time)}</div></div>
+      </div>
+      <div class="match">${escapeHtml(game.match)}</div>
+      <div class="meta">
+        <span class="tag">${escapeHtml(game.stage)}</span>
+        ${game.round ? `<span class="tag">${escapeHtml(game.round)}</span>` : ""}
+        ${group}${pt}${open}${free}
+      </div>
+      <div class="venue"><div class="label">Estádio / Cidade</div>${escapeHtml(game.venue || "A confirmar")}</div>
+      <div class="channels"><div class="label">Onde ver em Portugal</div><div class="channel-list">${channels}</div></div>
+      ${note}
+    </article>`;
+  }).join("");
+}
+
+function downloadCSV() {
+  const list = filteredGames();
+  const header = ["N.º", "Data", "Hora PT", "Fase", "Grupo", "Jogo", "Estádio/Cidade", "Canais em Portugal", "Notas"];
+  const rows = list.map(g => [g.num, g.date, g.time, g.stage, g.group, g.match, g.venue, g.channels, g.notes]);
+  const csv = [header]
+    .concat(rows)
+    .map(row => row.map(cell => `"${String(cell == null ? "" : cell).replace(/"/g, '""')}"`).join(","))
+    .join("\n");
+
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "calendario_mundial_2026_portugal.csv";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function clearFilters() {
+  els.q.value = "";
+  els.phase.value = "";
+  els.group.value = "";
+  els.channel.value = "";
+  state.portugal = false;
+  state.open = false;
+  state.free = false;
+  document.querySelectorAll("[data-toggle]").forEach(btn => btn.classList.remove("active"));
+  renderCards();
+}
+
+function setupControls() {
+  addOptions(els.phase, unique(games.map(g => g.stage)), "");
+  addOptions(els.group, unique(games.map(g => g.group)), "Grupo");
+  addOptions(els.channel, channelOptions(), "");
+  els.sources.innerHTML = sources.map(s => `<li><a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.label)}</a></li>`).join("");
+
+  [els.q, els.phase, els.group, els.channel].forEach(el => {
+    el.addEventListener("input", renderCards);
+    el.addEventListener("change", renderCards);
+  });
+
+  document.querySelectorAll("[data-toggle]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const key = btn.getAttribute("data-toggle");
+      state[key] = !state[key];
+      btn.classList.toggle("active", state[key]);
+      renderCards();
+    });
+  });
+
+  document.getElementById("clear").addEventListener("click", clearFilters);
+  document.getElementById("printBtn").addEventListener("click", () => window.print());
+  document.getElementById("csvBtn").addEventListener("click", downloadCSV);
+}
+
+async function init() {
+  try {
+    els.cards.innerHTML = `<div class="empty">A carregar calendário...</div>`;
+    games = await loadGameData();
+    setupControls();
+    renderCards();
+  } catch (error) {
+    console.error(error);
+    els.cards.innerHTML = `<div class="empty">Não foi possível carregar os dados do calendário. Verifica se os ficheiros data-part estão no repositório.</div>`;
+  }
+}
+
+init();

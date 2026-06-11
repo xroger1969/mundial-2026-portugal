@@ -1,6 +1,7 @@
 "use strict";
 
 const DATA_FILES = ["data-part-1.js", "data-part-2.js", "data-part-3.js", "data-part-4.js"];
+const RESULTS_FILE = "results.json";
 
 const sources = [
   {
@@ -22,6 +23,7 @@ const sources = [
 ];
 
 let games = [];
+let resultsData = { matches: {}, status: "not_loaded", updatedAt: null };
 
 const els = {
   q: document.getElementById("q"),
@@ -36,6 +38,13 @@ const els = {
 
 const state = { portugal: false, open: false, free: false };
 const dateFmt = new Intl.DateTimeFormat("pt-PT", { weekday: "short", day: "2-digit", month: "short" });
+const updatedFmt = new Intl.DateTimeFormat("pt-PT", {
+  day: "2-digit",
+  month: "2-digit",
+  year: "numeric",
+  hour: "2-digit",
+  minute: "2-digit"
+});
 
 function loadScript(src) {
   return new Promise((resolve, reject) => {
@@ -72,6 +81,23 @@ async function loadGameData() {
     open: Boolean(row[11]),
     notes: row[12] || ""
   })).sort((a, b) => a.num - b.num);
+}
+
+async function loadResults() {
+  try {
+    const response = await fetch(`${RESULTS_FILE}?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    resultsData = {
+      matches: data.matches || {},
+      status: data.status || "loaded",
+      provider: data.provider || "",
+      updatedAt: data.updatedAt || null,
+      message: data.message || ""
+    };
+  } catch (error) {
+    resultsData = { matches: {}, status: "offline", updatedAt: null, message: "Resultados automáticos ainda não disponíveis." };
+  }
 }
 
 function norm(value) {
@@ -124,7 +150,75 @@ function isFree(game) {
   return Boolean(game.free || game.open || norm(game.channels).includes("livemodetv"));
 }
 
+function getGameResult(game) {
+  const matches = resultsData.matches || {};
+  return matches[String(game.num)] || matches[game.num] || null;
+}
+
+function statusText(status) {
+  const key = norm(status);
+  if (["in_play", "live", "paused"].includes(key)) return "Ao vivo";
+  if (["finished", "finalizado"].includes(key)) return "Finalizado";
+  if (["postponed", "adiado"].includes(key)) return "Adiado";
+  if (["cancelled", "canceled", "cancelado"].includes(key)) return "Cancelado";
+  if (["suspended", "suspenso"].includes(key)) return "Suspenso";
+  if (["timed", "scheduled", "por disputar"].includes(key)) return "Por disputar";
+  return status ? String(status) : "Por disputar";
+}
+
+function inferredStatus(game) {
+  const date = new Date(`${game.date}T${game.time}:00+01:00`);
+  if (Number.isNaN(date.getTime())) return "SCHEDULED";
+  const now = new Date();
+  if (now < date) return "SCHEDULED";
+  if (now - date < 2 * 60 * 60 * 1000) return "IN_PLAY";
+  return "SCHEDULED";
+}
+
+function resultClass(status) {
+  const key = norm(status);
+  if (["in_play", "live", "paused"].includes(key)) return "live";
+  if (["finished", "finalizado"].includes(key)) return "finished";
+  if (["postponed", "cancelled", "canceled", "suspended", "adiado", "cancelado", "suspenso"].includes(key)) return "warning";
+  return "scheduled";
+}
+
+function scoreText(result) {
+  if (!result) return "";
+  const home = result.homeScore;
+  const away = result.awayScore;
+  if (home === null || home === undefined || away === null || away === undefined) return "";
+  return `${home}–${away}`;
+}
+
+function updatedText() {
+  if (!resultsData.updatedAt) return "";
+  const d = new Date(resultsData.updatedAt);
+  if (Number.isNaN(d.getTime())) return "";
+  return `Atualizado ${updatedFmt.format(d)}`;
+}
+
+function renderResult(game) {
+  const result = getGameResult(game);
+  const status = result?.status || inferredStatus(game);
+  const score = scoreText(result);
+  const minute = result?.minute ? ` · ${escapeHtml(result.minute)}` : "";
+  const provider = result?.provider ? ` · ${escapeHtml(result.provider)}` : "";
+  const lastUpdate = result?.lastUpdated ? ` · ${escapeHtml(updatedText() || result.lastUpdated)}` : "";
+
+  const main = score
+    ? `<span class="score">${escapeHtml(score)}</span>`
+    : `<span class="score muted-score">${statusText(status)}</span>`;
+
+  return `<div class="result ${resultClass(status)}">
+    <div class="label">Resultado</div>
+    <div class="result-line">${main}<span class="status-pill">${escapeHtml(statusText(status))}${minute}</span></div>
+    ${result ? `<div class="result-extra">${escapeHtml(result.homeTeam || "")}${result.homeTeam || result.awayTeam ? " vs " : ""}${escapeHtml(result.awayTeam || "")}${provider}${lastUpdate}</div>` : `<div class="result-extra">Resultado automático preparado.</div>`}
+  </div>`;
+}
+
 function searchable(game) {
+  const result = getGameResult(game);
   return norm([
     game.num,
     game.date,
@@ -135,7 +229,9 @@ function searchable(game) {
     game.round,
     game.venue,
     game.channels,
-    game.notes
+    game.notes,
+    result?.status,
+    scoreText(result)
   ].join(" "));
 }
 
@@ -175,11 +271,13 @@ function formatDate(dateStr) {
 }
 
 function renderSummary(list) {
+  const liveCount = games.filter(g => ["IN_PLAY", "LIVE", "PAUSED"].includes(String(getGameResult(g)?.status || "").toUpperCase())).length;
+  const finishedCount = games.filter(g => String(getGameResult(g)?.status || "").toUpperCase() === "FINISHED").length;
   const boxes = [
     [games.length, "Jogos totais"],
     [games.filter(g => g.portugal).length, "Jogos de Portugal"],
-    [games.filter(g => g.open).length, "Sinal aberto indicado"],
-    [games.filter(g => norm(g.channels).includes("livemodetv")).length, "LiveModeTV indicado"]
+    [finishedCount, "Resultados finais"],
+    [liveCount, "Ao vivo agora"]
   ];
 
   els.summary.innerHTML = boxes.map(([num, label]) => `<div class="box"><b>${num}</b><span>${label}</span></div>`).join("");
@@ -211,6 +309,7 @@ function renderCards() {
         <div class="datetime"><div class="date">${escapeHtml(formatDate(game.date))}</div><div class="time">${escapeHtml(game.time)}</div></div>
       </div>
       <div class="match">${escapeHtml(game.match)}</div>
+      ${renderResult(game)}
       <div class="meta">
         <span class="tag">${escapeHtml(game.stage)}</span>
         ${game.round ? `<span class="tag">${escapeHtml(game.round)}</span>` : ""}
@@ -225,8 +324,11 @@ function renderCards() {
 
 function downloadCSV() {
   const list = filteredGames();
-  const header = ["N.º", "Data", "Hora PT", "Fase", "Grupo", "Jogo", "Estádio/Cidade", "Canais em Portugal", "Notas"];
-  const rows = list.map(g => [g.num, g.date, g.time, g.stage, g.group, g.match, g.venue, g.channels, g.notes]);
+  const header = ["N.º", "Data", "Hora PT", "Fase", "Grupo", "Jogo", "Resultado", "Estado", "Estádio/Cidade", "Canais em Portugal", "Notas"];
+  const rows = list.map(g => {
+    const result = getGameResult(g);
+    return [g.num, g.date, g.time, g.stage, g.group, g.match, scoreText(result), statusText(result?.status || inferredStatus(g)), g.venue, g.channels, g.notes];
+  });
   const csv = [header]
     .concat(rows)
     .map(row => row.map(cell => `"${String(cell == null ? "" : cell).replace(/"/g, '""')}"`).join(","))
@@ -261,6 +363,14 @@ function setupControls() {
   addOptions(els.channel, channelOptions(), "");
   els.sources.innerHTML = sources.map(s => `<li><a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.label)}</a></li>`).join("");
 
+  if (resultsData.updatedAt || resultsData.message) {
+    const li = document.createElement("li");
+    li.textContent = resultsData.updatedAt
+      ? `Resultados automáticos: ${updatedText()}.`
+      : `Resultados automáticos: ${resultsData.message}`;
+    els.sources.appendChild(li);
+  }
+
   [els.q, els.phase, els.group, els.channel].forEach(el => {
     el.addEventListener("input", renderCards);
     el.addEventListener("change", renderCards);
@@ -284,6 +394,7 @@ async function init() {
   try {
     els.cards.innerHTML = `<div class="empty">A carregar calendário...</div>`;
     games = await loadGameData();
+    await loadResults();
     setupControls();
     renderCards();
   } catch (error) {

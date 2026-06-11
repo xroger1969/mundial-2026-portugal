@@ -1,93 +1,165 @@
-:root {
-  --bg:#07170f;
-  --panel:#0d2b1f;
-  --panel2:#18472f;
-  --ink:#f8fbf6;
-  --muted:#c7d7c7;
-  --accent:#ffcd00;
-  --accent2:#8ee3b8;
-  --open:#ffcd00;
-  --sport:#59c98c;
-  --live:#da291c;
-  --portugal:#046a38;
+:root{
+  --bg:#0B1E3F;
+  --panel:#132B55;
+  --panel2:#19386b;
+  --ink:#EEF2F7;
+  --muted:#8AA7C9;
+  --line:rgba(255,255,255,.12);
+  --accent:#E8C84A;
+  --accent2:#8AA7C9;
+  --open:#E8C84A;
+  --sport:#8AA7C9;
+  --live:#D84040;
+  --portugal:#1B6B4A;
 }
 
 body{
   background:
-    radial-gradient(circle at 16% 0%, rgba(218,41,28,.22), transparent 34%),
-    radial-gradient(circle at 88% 10%, rgba(255,205,0,.16), transparent 28%),
-    radial-gradient(circle at 78% 100%, rgba(4,106,56,.22), transparent 34%),
+    radial-gradient(circle at 18% 0%, rgba(19,43,85,.30), transparent 36%),
+    radial-gradient(circle at 85% 12%, rgba(232,200,74,.12), transparent 24%),
+    radial-gradient(circle at 78% 100%, rgba(192,57,43,.14), transparent 28%),
     var(--bg);
 }
 
-a{color:#fff1a8}
-
+a{color:var(--accent)}
 header{
-  background:linear-gradient(145deg, rgba(13,43,31,.97), rgba(24,71,47,.90));
+  background:linear-gradient(145deg, rgba(11,30,63,.98), rgba(19,43,85,.94));
 }
-
 header:after{
-  background:rgba(255,205,0,.11);
+  background:rgba(232,200,74,.10);
 }
-
+.eyebrow{color:var(--accent)}
+h1{color:var(--ink)}
+.subtitle,.resultbar,.sources,.label,.summary span{color:var(--muted)}
+.summary .box,
+.filters,
+.card,
+.group-card,
+.thirds-card,
+.knockout-card{
+  border-color:var(--line);
+}
+.notice{
+  border:1px solid rgba(232,200,74,.35);
+  background:rgba(232,200,74,.08);
+  color:#F6E7A1;
+}
 .filters{
-  background:rgba(7,23,15,.92);
+  background:rgba(11,30,63,.92);
 }
-
 input,select,button{
-  background:#0a2015;
+  background:#10284f;
+  color:var(--ink);
 }
-
 input:focus,select:focus{
-  border-color:rgba(255,205,0,.78);
-  box-shadow:0 0 0 3px rgba(255,205,0,.14);
+  border-color:rgba(232,200,74,.75);
+  box-shadow:0 0 0 3px rgba(232,200,74,.12);
 }
-
 .chip.active{
-  border-color:rgba(255,205,0,.85);
-  background:linear-gradient(135deg, rgba(255,205,0,.18), rgba(4,106,56,.20));
+  border-color:rgba(232,200,74,.82);
+  background:linear-gradient(135deg, rgba(232,200,74,.20), rgba(216,64,64,.14));
 }
-
 .card{
-  background:linear-gradient(180deg, rgba(13,43,31,.94), rgba(10,31,22,.88));
+  background:linear-gradient(180deg, rgba(19,43,85,.94), rgba(15,36,72,.90));
 }
-
 .card.portugal{
-  border-color:rgba(255,205,0,.50);
-  background:linear-gradient(180deg, rgba(218,41,28,.20), rgba(13,43,31,.92));
+  border-color:rgba(232,200,74,.42);
+  background:linear-gradient(180deg, rgba(19,43,85,.96), rgba(16,40,79,.92));
+  box-shadow:0 0 0 1px rgba(232,200,74,.10), 0 10px 24px rgba(0,0,0,.18);
 }
-
 .game-no{color:var(--accent)}
-.tag.group{color:#fff7cc}
-.tag.open{border-color:rgba(255,205,0,.58);background:rgba(255,205,0,.16);color:#fff4c2}
-.tag.sport{border-color:rgba(89,201,140,.58);background:rgba(89,201,140,.14);color:#e9fff1}
-.tag.live{border-color:rgba(218,41,28,.60);background:rgba(218,41,28,.16);color:#ffe5e2}
-.tag.pt{border-color:rgba(4,106,56,.76);background:rgba(4,106,56,.24);color:#e9fff1}
-.venue,.notes{color:#d7e2d7}
+.tag.group{color:#D8E4F2}
+.tag.open{
+  border-color:rgba(232,200,74,.55);
+  background:rgba(232,200,74,.16);
+  color:#FFF3B4;
+}
+.tag.sport{
+  border-color:rgba(138,167,201,.55);
+  background:rgba(138,167,201,.14);
+  color:#E8F0FA;
+}
+.tag.live{
+  border-color:rgba(216,64,64,.55);
+  background:rgba(216,64,64,.15);
+  color:#FFE3E3;
+}
+.tag.pt{
+  border-color:rgba(27,107,74,.72);
+  background:rgba(27,107,74,.22);
+  color:#E5FFF3;
+}
+.venue,.notes{color:#D8E4F2}
 
-.result.finished{
-  border-color:rgba(4,106,56,.70);
-  background:rgba(4,106,56,.18);
+/* Resultados / estados */
+.status-badge,
+.status-pill,
+.result-status{
+  border-radius:999px;
+}
+.status-live,
+.result-live,
+.live-now{
+  background:#D84040 !important;
+  color:#fff !important;
+}
+.status-finished,
+.result-finished,
+.finished{
+  background:#1B6B4A !important;
+  color:#EAF9F0 !important;
+}
+.status-upcoming,
+.result-upcoming,
+.upcoming{
+  background:#E8C84A !important;
+  color:#18233B !important;
 }
 
-.result.live{
-  border-color:rgba(218,41,28,.75);
-  background:rgba(218,41,28,.16);
+/* Classificações */
+.standings-wrap{
+  background:linear-gradient(180deg, rgba(19,43,85,.30), rgba(11,30,63,.08));
 }
-
-.result.warning{
-  border-color:rgba(255,205,0,.72);
-  background:rgba(255,205,0,.13);
+.standings-head{
+  background:linear-gradient(90deg, rgba(19,43,85,.84), rgba(232,200,74,.18), rgba(192,57,43,.18));
+  color:var(--ink);
 }
-
-.live .status-pill{
-  border-color:rgba(218,41,28,.70);
-  background:rgba(218,41,28,.22);
-  color:#ffe5e2;
+.group-card,
+.thirds-card,
+.knockout-card{
+  background:linear-gradient(180deg, rgba(19,43,85,.90), rgba(15,36,72,.84));
 }
-
-.finished .status-pill{
-  border-color:rgba(4,106,56,.72);
-  background:rgba(4,106,56,.22);
-  color:#e9fff1;
+.group-title,
+.thirds-title,
+.knockout-title{
+  color:var(--ink);
+}
+.standings-table th,
+.standings-table td{
+  color:var(--ink);
+}
+.standings-table thead th{
+  color:#D8E4F2;
+}
+.standings-table tbody tr + tr td{
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.standings-table tbody tr.is-qualified{
+  background:rgba(232,200,74,.10);
+}
+.standings-table tbody tr.is-third-qualified{
+  background:rgba(138,167,201,.10);
+}
+.standings-table tbody tr.is-eliminated{
+  opacity:.88;
+}
+.standings-meta,
+.team-subline,
+.thirds-note,
+.knockout-note{
+  color:var(--muted);
+}
+.link-inline,
+.livemode-link{
+  color:var(--accent);
 }

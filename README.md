@@ -6,16 +6,15 @@ Projeto simples em HTML, CSS e JavaScript para consultar o calendário do Mundia
 
 - `index.html` — estrutura da página
 - `style.css` — layout mobile-first para iPhone
-- `script.js` — dados dos jogos, filtros, pesquisa, exportação CSV e impressão/PDF
+- `script.js` — filtros, pesquisa, exportação CSV, impressão/PDF e carregamento dos dados
+- `data-part-1.js` a `data-part-4.js` — dados dos 104 jogos do calendário
 
 ## Como publicar no GitHub Pages
 
-1. Cria ou escolhe um repositório no GitHub.
-2. Faz upload destes ficheiros para a raiz do repositório.
-3. Vai a **Settings > Pages**.
-4. Em **Build and deployment**, escolhe **Deploy from a branch**.
-5. Escolhe a branch `main` e a pasta `/root`.
-6. Guarda e aguarda o link público do GitHub Pages.
+1. Vai a **Settings > Pages**.
+2. Em **Build and deployment**, escolhe **Deploy from a branch**.
+3. Escolhe a branch `main` e a pasta `/root`.
+4. Guarda e aguarda o link público do GitHub Pages.
 
 ## Nota
 

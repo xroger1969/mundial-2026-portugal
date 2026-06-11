@@ -1,0 +1,9 @@
+{
+  "provider": "football-data.org",
+  "competition": "WC",
+  "season": "2026",
+  "status": "waiting_for_api_token",
+  "updatedAt": null,
+  "message": "Resultados automáticos preparados. Falta configurar o segredo FOOTBALL_DATA_TOKEN no GitHub.",
+  "matches": {}
+}

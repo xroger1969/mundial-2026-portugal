@@ -58,6 +58,13 @@ function normalizeStatus(status) {
   return value || "SCHEDULED";
 }
 
+function hasScore(homeScore, awayScore) {
+  return homeScore !== null
+    && homeScore !== undefined
+    && awayScore !== null
+    && awayScore !== undefined;
+}
+
 function extractScore(match) {
   const score = match.score || {};
   const fullTime = score.fullTime || {};
@@ -90,18 +97,32 @@ function buildResultsFromApi(apiMatches, schedule, previousMatches) {
     const scheduledGame = schedule[index];
     if (!scheduledGame) return;
 
+    const previous = matches[String(scheduledGame.num)] || {};
     const { homeScore, awayScore, winner } = extractScore(apiMatch);
-    const status = normalizeStatus(apiMatch.status);
+    let status = normalizeStatus(apiMatch.status);
+    let finalHomeScore = homeScore;
+    let finalAwayScore = awayScore;
+    let finalWinner = winner;
+
+    if (!hasScore(finalHomeScore, finalAwayScore) && hasScore(previous.homeScore, previous.awayScore)) {
+      finalHomeScore = previous.homeScore;
+      finalAwayScore = previous.awayScore;
+      finalWinner = previous.winner || finalWinner;
+    }
+
+    if (status === "FINISHED" && !hasScore(finalHomeScore, finalAwayScore)) {
+      status = "SCORE_PENDING";
+    }
 
     matches[String(scheduledGame.num)] = {
-      apiId: apiMatch.id || null,
+      apiId: apiMatch.id || previous.apiId || null,
       status,
-      homeTeam: apiMatch.homeTeam?.name || null,
-      awayTeam: apiMatch.awayTeam?.name || null,
-      homeScore,
-      awayScore,
-      winner,
-      utcDate: apiMatch.utcDate || null,
+      homeTeam: apiMatch.homeTeam?.name || previous.homeTeam || null,
+      awayTeam: apiMatch.awayTeam?.name || previous.awayTeam || null,
+      homeScore: finalHomeScore,
+      awayScore: finalAwayScore,
+      winner: finalWinner,
+      utcDate: apiMatch.utcDate || previous.utcDate || null,
       lastUpdated: apiMatch.lastUpdated || new Date().toISOString(),
       provider: "football-data.org"
     };

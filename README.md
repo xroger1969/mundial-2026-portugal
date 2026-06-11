@@ -10,10 +10,12 @@ Projeto simples em HTML, CSS e JavaScript para consultar o calendário do Mundia
 
 ## Como publicar no GitHub Pages
 
-1. Vai a **Settings > Pages**.
-2. Em **Build and deployment**, escolhe **Deploy from a branch**.
-3. Escolhe a branch `main` e a pasta `/root`.
-4. Guarda e aguarda o link público do GitHub Pages.
+1. Cria ou escolhe um repositório no GitHub.
+2. Faz upload destes ficheiros para a raiz do repositório.
+3. Vai a **Settings > Pages**.
+4. Em **Build and deployment**, escolhe **Deploy from a branch**.
+5. Escolhe a branch `main` e a pasta `/root`.
+6. Guarda e aguarda o link público do GitHub Pages.
 
 ## Nota
 

@@ -1,0 +1,93 @@
+:root {
+  --bg:#07170f;
+  --panel:#0d2b1f;
+  --panel2:#18472f;
+  --ink:#f8fbf6;
+  --muted:#c7d7c7;
+  --accent:#ffcd00;
+  --accent2:#8ee3b8;
+  --open:#ffcd00;
+  --sport:#59c98c;
+  --live:#da291c;
+  --portugal:#046a38;
+}
+
+body{
+  background:
+    radial-gradient(circle at 16% 0%, rgba(218,41,28,.22), transparent 34%),
+    radial-gradient(circle at 88% 10%, rgba(255,205,0,.16), transparent 28%),
+    radial-gradient(circle at 78% 100%, rgba(4,106,56,.22), transparent 34%),
+    var(--bg);
+}
+
+a{color:#fff1a8}
+
+header{
+  background:linear-gradient(145deg, rgba(13,43,31,.97), rgba(24,71,47,.90));
+}
+
+header:after{
+  background:rgba(255,205,0,.11);
+}
+
+.filters{
+  background:rgba(7,23,15,.92);
+}
+
+input,select,button{
+  background:#0a2015;
+}
+
+input:focus,select:focus{
+  border-color:rgba(255,205,0,.78);
+  box-shadow:0 0 0 3px rgba(255,205,0,.14);
+}
+
+.chip.active{
+  border-color:rgba(255,205,0,.85);
+  background:linear-gradient(135deg, rgba(255,205,0,.18), rgba(4,106,56,.20));
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(13,43,31,.94), rgba(10,31,22,.88));
+}
+
+.card.portugal{
+  border-color:rgba(255,205,0,.50);
+  background:linear-gradient(180deg, rgba(218,41,28,.20), rgba(13,43,31,.92));
+}
+
+.game-no{color:var(--accent)}
+.tag.group{color:#fff7cc}
+.tag.open{border-color:rgba(255,205,0,.58);background:rgba(255,205,0,.16);color:#fff4c2}
+.tag.sport{border-color:rgba(89,201,140,.58);background:rgba(89,201,140,.14);color:#e9fff1}
+.tag.live{border-color:rgba(218,41,28,.60);background:rgba(218,41,28,.16);color:#ffe5e2}
+.tag.pt{border-color:rgba(4,106,56,.76);background:rgba(4,106,56,.24);color:#e9fff1}
+.venue,.notes{color:#d7e2d7}
+
+.result.finished{
+  border-color:rgba(4,106,56,.70);
+  background:rgba(4,106,56,.18);
+}
+
+.result.live{
+  border-color:rgba(218,41,28,.75);
+  background:rgba(218,41,28,.16);
+}
+
+.result.warning{
+  border-color:rgba(255,205,0,.72);
+  background:rgba(255,205,0,.13);
+}
+
+.live .status-pill{
+  border-color:rgba(218,41,28,.70);
+  background:rgba(218,41,28,.22);
+  color:#ffe5e2;
+}
+
+.finished .status-pill{
+  border-color:rgba(4,106,56,.72);
+  background:rgba(4,106,56,.22);
+  color:#e9fff1;
+}

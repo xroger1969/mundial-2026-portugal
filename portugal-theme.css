@@ -163,3 +163,50 @@ input:focus,select:focus{
 .livemode-link{
   color:var(--accent);
 }
+
+/* Botões empilhados no iPhone */
+@media (max-width: 600px){
+  .chips{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+    width:100% !important;
+    overflow:visible !important;
+  }
+
+  .chips .chip,
+  .chips button,
+  #resultsJump{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+    margin:0 !important;
+    justify-content:center !important;
+    text-align:center !important;
+    white-space:normal !important;
+    line-height:1.25 !important;
+    padding:13px 14px !important;
+  }
+
+  #resultsJump{
+    order:4;
+  }
+
+  #clear{
+    order:5;
+  }
+
+  .livemode-row{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:8px !important;
+  }
+
+  .livemode-quick-link{
+    width:100% !important;
+    box-sizing:border-box !important;
+    justify-content:center !important;
+    text-align:center !important;
+    white-space:normal !important;
+  }
+}

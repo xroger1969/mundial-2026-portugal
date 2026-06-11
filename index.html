@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#06111f">
+  <meta name="description" content="Calendário do Mundial 2026 com horários em Portugal Continental e canais em Portugal.">
+  <title>Calendário Mundial 2026 — Portugal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <p class="eyebrow">Horários em Portugal Continental</p>
+      <h1>Calendário Mundial 2026</h1>
+      <p class="subtitle">Todos os jogos, com canais indicados para Portugal. Versão mobile-first para iPhone, com filtros funcionais por pesquisa, fase, grupo e canal.</p>
+      <div class="summary" id="summary"></div>
+    </header>
+
+    <div class="notice">Nos jogos da fase a eliminar, alguns canais em sinal aberto/LiveModeTV podem depender do percurso de Portugal ou da escolha final das televisões. Quando não há atribuição fechada, fica indicado como “a confirmar”.</div>
+
+    <section class="filters" aria-label="Filtros do calendário">
+      <div class="searchline">
+        <input id="q" type="search" inputmode="search" placeholder="Pesquisar equipa, canal, cidade..." autocomplete="off">
+        <select id="phase"><option value="">Todas as fases</option></select>
+        <select id="group"><option value="">Todos os grupos</option></select>
+        <select id="channel"><option value="">Todos os canais</option></select>
+      </div>
+      <div class="chips" aria-label="Filtros rápidos">
+        <button type="button" class="chip" data-toggle="portugal">Só Portugal</button>
+        <button type="button" class="chip" data-toggle="open">Sinal aberto</button>
+        <button type="button" class="chip" data-toggle="free">Grátis / LiveModeTV</button>
+        <button type="button" class="chip" id="clear">Limpar filtros</button>
+      </div>
+    </section>
+
+    <div class="resultbar">
+      <div><strong id="visibleCount">0</strong> jogos visíveis</div>
+      <div class="actions">
+        <button type="button" class="mini" id="printBtn">PDF</button>
+        <button type="button" class="mini" id="csvBtn">CSV</button>
+      </div>
+    </div>
+
+    <main class="cards" id="cards" aria-live="polite"></main>
+
+    <section class="sources">
+      <strong>Fontes indicadas no ficheiro:</strong>
+      <ul id="sources"></ul>
+    </section>
+
+    <noscript>
+      <div class="empty">Para usar os filtros e ver o calendário completo, ativa o JavaScript no navegador.</div>
+    </noscript>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

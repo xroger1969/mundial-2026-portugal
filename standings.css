@@ -1,3 +1,6 @@
+/* Classificações — estrutura e responsividade.
+   As cores vêm das variáveis definidas no tema principal. */
+
 .standings-panel{
   border:1px solid var(--line);
   border-radius:24px;
@@ -6,67 +9,83 @@
   margin:14px 0;
   overflow:hidden;
 }
+
 .standings-panel details{padding:0}
+
 .standings-panel summary{
   cursor:pointer;
   list-style:none;
-  padding:14px 14px;
+  padding:14px;
   font-weight:950;
   letter-spacing:-.02em;
-  color:#fff;
+  color:var(--ink);
   display:flex;
   justify-content:space-between;
   gap:12px;
   align-items:center;
 }
+
 .standings-panel summary::-webkit-details-marker{display:none}
+
 .standings-panel summary:after{
   content:"▾";
   color:var(--accent);
   font-size:1.1rem;
   transition:transform .2s ease;
 }
+
 .standings-panel details:not([open]) summary:after{transform:rotate(-90deg)}
+
 .standings-intro{
   border-top:1px solid var(--line);
   padding:12px 14px 4px;
   color:var(--muted);
   font-size:.86rem;
 }
+
 .standings-intro p{margin:0 0 8px}
+
 .standings-grid{
   display:grid;
   grid-template-columns:1fr;
   gap:12px;
   padding:10px;
 }
-.standings-card{
-  min-width:0;
+
+.standings-card,
+.best-thirds{
   border:1px solid var(--line);
   border-radius:18px;
   background:rgba(255,255,255,.045);
   overflow:hidden;
 }
+
+.standings-card{min-width:0}
+.best-thirds{margin:0 10px 10px;background:rgba(255,255,255,.04)}
+
 .standings-card h3,
 .best-thirds h3{
   margin:0;
   padding:10px 11px;
   font-size:.95rem;
-  color:#fff;
+  color:var(--ink);
   border-bottom:1px solid var(--line);
 }
+
 .table-wrap{
   width:100%;
   overflow-x:auto;
   -webkit-overflow-scrolling:touch;
 }
+
 .standings-table{
   width:100%;
-  border-collapse:collapse;
   min-width:500px;
   table-layout:fixed;
+  border-collapse:collapse;
   font-size:.76rem;
 }
+
 .standings-table th,
 .standings-table td{
   padding:8px 6px;
@@ -74,6 +93,7 @@
   text-align:left;
   vertical-align:middle;
 }
+
 .standings-table th{
   color:var(--muted);
   font-size:.64rem;
@@ -81,16 +101,22 @@
   letter-spacing:.06em;
   font-weight:900;
 }
+
 .standings-table th:nth-child(1),
 .standings-table td:nth-child(1){width:30px;text-align:center}
+
 .standings-table th:nth-child(3),
 .standings-table td:nth-child(3){width:38px;text-align:center}
+
 .standings-table th:nth-child(4),
 .standings-table td:nth-child(4){width:48px;text-align:center}
+
 .standings-table th:nth-child(5),
 .standings-table td:nth-child(5){width:44px;text-align:center}
+
 .standings-table th:nth-child(6),
 .standings-table td:nth-child(6){width:106px;text-align:center}
+
 .standings-table td span{
   display:block;
   color:var(--muted);
@@ -98,8 +124,10 @@
   margin-top:2px;
   white-space:nowrap;
 }
+
 .standings-table tr:last-child td{border-bottom:0}
-.portugal-row{background:rgba(34,197,94,.10)}
+.portugal-row{background:rgba(0,196,106,.10)}
+
 .qual-tag{
   display:inline-flex;
   align-items:center;
@@ -113,18 +141,14 @@
   font-weight:900;
   line-height:1;
 }
-.qual-tag.direct{border-color:rgba(34,197,94,.65);background:rgba(34,197,94,.16);color:#dcfce7}
-.qual-tag.third{border-color:rgba(251,191,36,.65);background:rgba(251,191,36,.14);color:#fef3c7}
-.qual-tag.out{border-color:rgba(248,113,113,.55);background:rgba(248,113,113,.12);color:#fee2e2}
-.qual-tag.wait{border-color:rgba(148,163,184,.35);background:rgba(148,163,184,.10);color:#e2e8f0}
-.best-thirds{
-  margin:0 10px 10px;
-  border:1px solid var(--line);
-  border-radius:18px;
-  background:rgba(255,255,255,.04);
-  overflow:hidden;
-}
+
+.qual-tag.direct{border-color:rgba(0,196,106,.65);background:rgba(0,196,106,.16);color:var(--ink)}
+.qual-tag.third{border-color:rgba(242,185,75,.65);background:rgba(242,185,75,.14);color:var(--open)}
+.qual-tag.out{border-color:rgba(226,76,76,.55);background:rgba(226,76,76,.12);color:#FFD6D6}
+.qual-tag.wait{border-color:rgba(184,192,204,.35);background:rgba(184,192,204,.10);color:var(--muted)}
+
 .thirds-list{display:grid;grid-template-columns:1fr;gap:0}
+
 .third-row{
   display:flex;
   justify-content:space-between;
@@ -134,10 +158,12 @@
   color:var(--ink);
   font-size:.82rem;
 }
+
 .third-row:first-child{border-top:0}
 .third-row small{display:block;color:var(--muted);font-size:.7rem;margin-top:2px}
-.third-row.inside{background:rgba(251,191,36,.10)}
+.third-row.inside{background:rgba(242,185,75,.10)}
 .third-row.outside{opacity:.72}
+
 .thirds-note,
 .standings-warning{
   margin:10px;
@@ -148,7 +174,9 @@
   font-size:.82rem;
   background:rgba(255,255,255,.025);
 }
+
 .standings-warning{margin-top:0}
+
 .livemode-row{
   display:flex;
   align-items:center;
@@ -158,32 +186,50 @@
   color:var(--muted);
   font-size:.78rem;
 }
+
 .livemode-quick-link{
   display:inline-flex;
   align-items:center;
   width:auto;
   min-height:34px;
-  border:1px solid rgba(255,205,0,.70);
+  border:1px solid var(--accent);
   border-radius:999px;
   padding:7px 11px;
-  background:linear-gradient(135deg, rgba(255,205,0,.18), rgba(218,41,28,.12));
-  color:#fff1a8;
+  background:linear-gradient(135deg, rgba(0,196,106,.20), rgba(0,169,91,.14));
+  color:var(--ink);
   font-weight:900;
   text-decoration:none;
   white-space:nowrap;
 }
+
 .livemode-quick-link:hover{filter:brightness(1.08)}
+
 @media (min-width:760px){
   .standings-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .thirds-list{grid-template-columns:repeat(2,1fr)}
 }
+
 @media (min-width:1200px){
   .standings-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+
 @media print{
-  .standings-panel,.standings-card,.best-thirds{box-shadow:none;background:#fff;color:#111;border-color:#ccc}
-  .standings-panel summary,.standings-card h3,.best-thirds h3,.standings-table td strong{color:#111}
-  .standings-intro,.standings-table th,.standings-table td span,.standings-warning,.third-row small{color:#333}
-  .qual-tag,.third-row{color:#111;border-color:#aaa;background:#fff}
+  .standings-panel,
+  .standings-card,
+  .best-thirds{box-shadow:none;background:#fff;color:#111;border-color:#ccc}
+
+  .standings-panel summary,
+  .standings-card h3,
+  .best-thirds h3,
+  .standings-table td strong{color:#111}
+
+  .standings-intro,
+  .standings-table th,
+  .standings-table td span,
+  .standings-warning,
+  .third-row small{color:#333}
+
+  .qual-tag,
+  .third-row{color:#111;border-color:#aaa;background:#fff}
   .livemode-row{display:none}
 }

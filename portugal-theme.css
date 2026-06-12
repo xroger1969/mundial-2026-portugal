@@ -167,6 +167,63 @@ input:focus,select:focus{
   color:var(--accent);
 }
 
+/* Mais contraste nos cartões dos jogos */
+.date,
+.datetime,
+.resultbar strong,
+.summary b{
+  color:#14345D !important;
+}
+
+.time,
+.status-pill{
+  color:#14345D !important;
+  background:rgba(255,255,255,.92) !important;
+  border-color:rgba(20,52,93,.22) !important;
+}
+
+.match,
+.score,
+.muted-score{
+  color:#14345D !important;
+}
+
+.result-extra,
+.subtitle,
+.summary span,
+.resultbar,
+.sources,
+.label,
+.venue,
+.notes,
+.standings-meta,
+.team-subline,
+.thirds-note,
+.knockout-note{
+  color:#4E6F96 !important;
+}
+
+.result{
+  background:rgba(255,255,255,.78) !important;
+  border-color:rgba(20,52,93,.18) !important;
+}
+
+.tag{
+  color:#365C82 !important;
+  border-color:rgba(20,52,93,.18) !important;
+  background:rgba(255,255,255,.74) !important;
+}
+
+.tag.open{color:#725215 !important;background:rgba(255,238,184,.80) !important;border-color:rgba(215,155,40,.55) !important}
+.tag.sport{color:#285989 !important;background:rgba(226,239,255,.86) !important;border-color:rgba(79,134,198,.50) !important}
+.tag.live{color:#A72D2D !important;background:rgba(255,231,231,.88) !important;border-color:rgba(216,64,64,.40) !important}
+.tag.pt{color:#216B45 !important;background:rgba(225,248,237,.88) !important;border-color:rgba(47,143,91,.45) !important}
+
+::placeholder{
+  color:#7C8FA8 !important;
+  opacity:1 !important;
+}
+
 /* Botões e filtros compactos no iPhone */
 @media (max-width: 600px){
   .filters{

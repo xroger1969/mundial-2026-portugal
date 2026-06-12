@@ -45,6 +45,9 @@ h1{color:var(--ink)}
   color:#6E5117;
 }
 .filters{
+  position:relative !important;
+  top:auto !important;
+  z-index:2 !important;
   background:rgba(255,255,255,.96);
 }
 input,select,button{

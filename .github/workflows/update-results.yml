@@ -2,6 +2,12 @@ name: Atualizar resultados e notícias do Mundial 2026
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - results.json
+      - news.json
   schedule:
     - cron: "*/15 * * * *"
 

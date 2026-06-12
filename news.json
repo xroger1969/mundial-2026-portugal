@@ -1,7 +1,111 @@
 {
   "provider": "gnews.io",
-  "status": "waiting_for_first_update",
-  "updatedAt": null,
-  "message": "Notícias preparadas. Aguarda a primeira execução do GitHub Actions com o segredo GNEWS_API_KEY.",
-  "articles": []
+  "topic": "Mundial 2026",
+  "status": "ok",
+  "updatedAt": "2026-06-12T14:01:21.956Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
+  "query": "Mundial 2026 futebol Portugal",
+  "totalArticles": 102,
+  "articles": [
+    {
+      "title": "Portugal segura quinto lugar do ranking FIFA antes do arranque do Mundial",
+      "description": "A seleção portuguesa de futebol manteve o quinto lugar do ranking da FIFA, esta quinta-feira atualizado no dia que arranca o Mundial 2026, com a campeã Argentina a recuperar a liderança.",
+      "content": "Depois de ter subido ao quinto lugar na última atualização, em abril, a equipa das \"quinas\" manteve o posto antes do arranque do Mundial 2026, que se disputa de hoje a 19 de julho, nos Estados Unidos, no Canadá e no México. Numa inversão do que tinha... [1099 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/portugal-segura-quinto-lugar-do-ranking-fifa-antes-do-arranque-do-mundial/18094110",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/b7c2f4df-cfc5-4c77-8a94-a45a472abc13_1200x675.jpg",
+      "publishedAt": "2026-06-11T15:04:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
+    {
+      "title": "'Pontapé de saída' da 23.ª edição do Campeonato do Mundo de futebol é dado esta quinta-feira",
+      "description": "Entre os 48 participantes no Mundial 2026 está Portugal, presente pela nona vez e sétima consecutiva.",
+      "content": "O Correio da Manhã incentiva todos os Leitores a interagirem através de comentários às notícias publicadas no seu site, de uma maneira respeitadora com o cumprimento dos princípios legais e constitucionais. Assim são totalmente ilegítimos comentários... [7369 chars]",
+      "url": "https://www.cmjornal.pt/mais-cm/especiais/mundial-2026/detalhe/pontape-de-saida-da-23-edicao-do-campeonato-do-mundo-de-futebol-e-dado-esta-quinta-feira",
+      "image": "https://cdn.cmjornal.pt/images/2026-06/img_1280x721uu2026-06-11-07-56-48-2290368.jpg",
+      "publishedAt": "2026-06-11T00:00:00Z",
+      "sourceName": "Correio da Manhã",
+      "sourceUrl": "https://www.cmjornal.pt"
+    },
+    {
+      "title": "Mundial2026: Portugal faz o último treino antes do duelo com a Nigéria",
+      "description": "A seleção portuguesa faz esta terça-feira o último treino antes do duelo particular de quarta-feira com a Nigéria, naquele que será o último teste antes da partida para os Estados Unidos, com vista à participação no Mundial 2026 de futebol.",
+      "content": "Tal como tem sido habitual, Portugal tem uma sessão agendada para as 18 horas, na Cidade do Futebol, em Oeiras, com os primeiros 15 minutos abertos à comunicação social. Na segunda-feira, o selecionador Roberto Martínez contou com todos os 26 jogador... [1578 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/mundial2026-portugal-faz-o-ultimo-treino-antes-do-duelo-com-a-nigeria/18093291",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/401b7a83-3231-4142-b193-e21d524ef512_1200x675.jpg",
+      "publishedAt": "2026-06-09T08:25:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
+    {
+      "title": "Colômbia, adversária de Portugal, vence Jordânia no último teste antes do Mundial",
+      "description": "A Colômbia, adversária de Portugal, venceu no domingo a Jordânia, por 2-0, no último jogo de preparação antes do Mundial 2026 de futebol.",
+      "content": "O avançado Jhon Arias, do Palmeiras, marcou os dois golos do encontro, aos 41 minutos, após um passe do ex-portista James Rodríguez, e aos 55, com uma assistência de Santiago Arias, antigo jogador do Sporting. Luis Suárez, avançado do Sporting e melh... [471 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/colombia-adversaria-de-portugal-vence-jordania-no-ultimo-teste-antes-do-mundial/18092967",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/cef12c52-c821-4959-b5e6-f28d4e7b8e66_1200x675.jpg",
+      "publishedAt": "2026-06-08T10:35:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
+    {
+      "title": "Mundial 2026: Matheus Nunes e João Félix falham treino de Portugal",
+      "description": "Matheus Nunes e João Félix falharam esta quinta-feira o treino da seleção portuguesa, que continua a preparar a participação no Mundial 2026 de futebol, prova que arranca em 11 de junho nos Estados Unidos, Canadá e México.",
+      "content": "Uma indisposição deixou Matheus Nunes sem condições para participar na sessão que decorreu no relvado principal da Cidade do Futebol, em Oeiras, enquanto Félix efetuou apenas trabalho de recuperação no ginásio. Ambos os jogadores deverão estar aptos ... [1658 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/mundial-2026-matheus-nunes-e-joao-felix-falham-treino-de-portugal/18091894",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/bcbb6c64-6490-4143-a736-cdfcd683f4d8_1200x675.jpg",
+      "publishedAt": "2026-06-04T19:44:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
+    {
+      "title": "Mundial 2026 pode ter impacto recorde em Portugal",
+      "description": "Apesar de a competição ser disputada nos Estados Unidos, Canadá e México, o Mundial de futebol deste ano pode ter um impacto económico recorde em Portugal de até 945 milhões de euros.",
+      "content": "O estudo do Instituto Português de Administração de Marketing (IPAM) explica que tudo depende do desempenho desportivo da seleção e do consumo dos adeptos. Se a Seleção for eliminada na fase de grupos, o impacto económico estimado é de 378 milhões de... [412 chars]",
+      "url": "https://sicnoticias.pt/programas/economia-expresso/2026-06-02-video-mundial-2026-pode-ter-impacto-recorde-em-portugal-5b2cbb34",
+      "image": "https://images.impresa.pt/sicnot/2026-05-27-trofeu-mundial-futebol-681e3648-1/1.91x1?wm=true&outputFormat=jpeg",
+      "publishedAt": "2026-06-02T18:36:43Z",
+      "sourceName": "SIC Notícias",
+      "sourceUrl": "https://sicnoticias.pt"
+    },
+    {
+      "title": "Uzbequistão perde com Canadá em jogo de preparação",
+      "description": "A seleção do Uzbequistão, adversário de Portugal no Grupo K do Mundial 2026 de futebol, perdeu 0-2 com o Canadá, num jogo de preparação para a estreia deste país da Ásia Central em campeonatos mundiais.",
+      "content": "Num jogo disputado em Edmonton, no oeste do Canadá, perante cerca de 46 mil espectadores, o Uzbequistão, treinado pelo italiano Fabio Cannavaro, foi o primeiro a criar perigo. Aos seis minutos, o avançado Shomurodov ultrapassou o defesa Moise Bombito... [1640 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/uzbequistao-perde-com-canada-em-jogo-de-preparacao/18091053",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/b634700e-8bf0-4c94-832a-58e660d33612_1200x675.jpg",
+      "publishedAt": "2026-06-02T08:49:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
+    {
+      "title": "Mundial de 2026 pode gerar impacto económico de até 945 milhões em Portugal",
+      "description": "Estudo do IPAM diz que o Campeonato do Mundo de futebol, que tem o pontapé de saída marcado para terça-feira, pode vir a representar o maior impacto económico de sempre em Portugal associado a uma competição que o país não organiza.",
+      "content": "Dependendo da \"performance\" da seleção nacional, o Campeonato do Mundo de futebol pode gerar um impacto económico entre 378 milhões e 945 milhões de euros em Portugal, revela um estudo do Instituto Português de Administração de Marketing (IPAM). À lu... [4771 chars]",
+      "url": "https://www.jornaldenegocios.pt/empresas/turismo---lazer/detalhe/mundial-de-2026-pode-gerar-impacto-economico-de-ate-945-milhoes-em-portugal",
+      "image": "https://cdn.jornaldenegocios.pt/images/2026-06/img_1200x676uu2026-06-02-08-46-21-524696.jpg",
+      "publishedAt": "2026-06-02T00:00:00Z",
+      "sourceName": "Jornal de Negócios - Portugal",
+      "sourceUrl": "https://www.jornaldenegocios.pt"
+    },
+    {
+      "title": "Começa o sonho Mundial: Seleção inicia estágio na Cidade do Futebol",
+      "description": "Arranca esta segunda-feira a preparação de Portugal para o Campeonato do Mundo 2026, dando o primeiro passo numa caminhada que alimenta o sonho de milhões de portugueses: conquistar, pela primeira vez, o título de campeã do mundo. Continue a ler.",
+      "content": "Hoje não é apenas mais um dia na Cidade do Futebol. É o primeiro passo de uma caminhada que Portugal espera ver terminar da forma mais gloriosa possível: com a conquista do Campeonato do Mundo. Os eleitos de Roberto Martínez começam esta segunda-feir... [8652 chars]",
+      "url": "https://www.abola.pt/noticias/comeca-o-sonho-mundial-selecao-inicia-estagio-na-cidade-do-futebol-2026053117401393633",
+      "image": "https://sportal365images.com/process/smp-images-production/abola.pt/31052026/d1602f57-e987-4de0-9aba-0bf09ad60055.jpeg?operations=autocrop(1200:630)",
+      "publishedAt": "2026-06-01T07:40:00Z",
+      "sourceName": "A Bola",
+      "sourceUrl": "https://www.abola.pt"
+    },
+    {
+      "title": "Oficial! Foi apresentado o carro da seleção de Portugal antes do Mundial 2026",
+      "description": "Numa cerimónia realizada na Cidade do Futebol, a FPF celebrou a sua parceria com a Shangan, com destaque para o modelo Deepal S05 Plug-On Hybrid.",
+      "content": "Entra no nosso canal Telegram e recebe as melhores ofertas A marca chinesa Changan Automobile foi anunciada como parceira oficial da seleção nacional de futebol de Portugal, através de uma colaboração com a Federação Portuguesa de Futebol (FPF). O an... [1699 chars]",
+      "url": "https://4gnews.pt/oficial-foi-apresentado-o-carro-da-selecao-de-portugal-antes-do-mundial-2026/",
+      "image": "https://cdn.4gnews.pt/imagens/oficial-foi-apresentado-o-carro-da-selecao-de-portugal-antes-do-mundial-2026-og.jpg",
+      "publishedAt": "2026-05-26T15:45:01Z",
+      "sourceName": "4gnews",
+      "sourceUrl": "https://4gnews.pt"
+    }
+  ]
 }

@@ -1,0 +1,7 @@
+{
+  "provider": "gnews.io",
+  "status": "waiting_for_first_update",
+  "updatedAt": null,
+  "message": "Notícias preparadas. Aguarda a primeira execução do GitHub Actions com o segredo GNEWS_API_KEY.",
+  "articles": []
+}

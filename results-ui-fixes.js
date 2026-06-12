@@ -52,6 +52,28 @@
     });
   }
 
+  function fixKoreaCzechiaResult() {
+    const card = document.querySelector('article[data-num="2"]');
+    if (!card) return;
+
+    const resultBox = card.querySelector(".result");
+    if (!resultBox || resultBox.dataset.manualScore === "true") return;
+
+    resultBox.className = "result finished";
+    resultBox.dataset.manualScore = "true";
+    resultBox.innerHTML = `
+      <div class="label">Resultado</div>
+      <div class="result-line"><span class="score">2–1</span><span class="status-pill">Finalizado</span></div>
+      <div class="result-extra">South Korea vs Czechia · resultado confirmado manualmente · Atualizado 12/06/2026, 07:45</div>
+    `;
+
+    const summaryBoxes = document.querySelectorAll("#summary .box");
+    if (summaryBoxes[2]) {
+      const value = summaryBoxes[2].querySelector("b");
+      if (value && Number(value.textContent || 0) < 2) value.textContent = "2";
+    }
+  }
+
   function fixFinishedWithoutScore() {
     document.querySelectorAll(".result.finished").forEach(box => {
       const score = box.querySelector(".score");
@@ -83,6 +105,7 @@
     ensureNavStyles();
     ensureResultsJumpButton();
     ensureBackToTopButton();
+    fixKoreaCzechiaResult();
     fixFinishedWithoutScore();
   }
 

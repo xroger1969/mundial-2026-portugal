@@ -32,7 +32,7 @@
 
   function renderArticles(articles) {
     if (!articles.length) {
-      return `<div class="news-empty">Ainda não há notícias carregadas. Corre o GitHub Actions ou aguarda a próxima atualização automática.</div>`;
+      return `<div class="news-empty">Ainda não há notícias carregadas. Aguarda a próxima atualização automática.</div>`;
     }
 
     return `<div class="news-list">${articles.map(article => `
@@ -76,11 +76,8 @@
     const updated = data.updatedAt ? `Atualizado ${formatDate(data.updatedAt)}` : "GNews";
 
     panel.innerHTML = `
-      <div class="news-head">
-        <div>
-          <h2>Notícias do Mundial 2026</h2>
-          <p>Atualização automática via GNews, sem expor a chave da API no site.</p>
-        </div>
+      <div class="news-head news-head-compact">
+        <h2>Notícias do Mundial 2026</h2>
         <div class="news-status">${escapeHtml(updated)}</div>
       </div>
       ${renderArticles(articles)}

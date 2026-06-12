@@ -1,0 +1,116 @@
+.news-panel{
+  margin:22px 0 18px;
+  border:1px solid rgba(20,52,93,.14);
+  border-radius:28px;
+  background:linear-gradient(180deg, rgba(255,255,255,.96), rgba(235,244,255,.92));
+  overflow:hidden;
+  box-shadow:0 12px 32px rgba(20,52,93,.10);
+}
+
+.news-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  padding:18px 18px 14px;
+  border-bottom:1px solid rgba(20,52,93,.12);
+  background:linear-gradient(90deg, rgba(255,244,204,.84), rgba(234,242,255,.92));
+}
+
+.news-head h2{
+  margin:0;
+  color:#14345D;
+  font-size:1.05rem;
+  letter-spacing:.01em;
+}
+
+.news-head p{
+  margin:5px 0 0;
+  color:#4E6F96;
+  font-size:.86rem;
+  line-height:1.35;
+}
+
+.news-status{
+  color:#6E5117;
+  font-size:.75rem;
+  font-weight:900;
+  white-space:nowrap;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(215,155,40,.40);
+  background:rgba(255,255,255,.64);
+}
+
+.news-list{
+  display:grid;
+  gap:10px;
+  padding:14px;
+}
+
+.news-card{
+  display:grid;
+  grid-template-columns:78px 1fr;
+  gap:12px;
+  padding:10px;
+  border:1px solid rgba(20,52,93,.12);
+  border-radius:20px;
+  background:rgba(255,255,255,.82);
+  text-decoration:none;
+}
+
+.news-card:hover{
+  border-color:rgba(215,155,40,.55);
+}
+
+.news-image{
+  width:78px;
+  height:78px;
+  object-fit:cover;
+  border-radius:15px;
+  background:#EAF2FF;
+}
+
+.news-copy{
+  min-width:0;
+}
+
+.news-title{
+  margin:0;
+  color:#14345D;
+  font-size:.94rem;
+  line-height:1.18;
+  font-weight:900;
+}
+
+.news-desc{
+  margin:6px 0 0;
+  color:#4E6F96;
+  font-size:.82rem;
+  line-height:1.3;
+}
+
+.news-meta{
+  margin-top:7px;
+  color:#6E86A6;
+  font-size:.74rem;
+  font-weight:800;
+}
+
+.news-empty{
+  padding:16px;
+  color:#4E6F96;
+  font-size:.9rem;
+}
+
+@media (max-width: 600px){
+  .news-panel{border-radius:24px;margin:18px 0 14px}
+  .news-head{padding:15px}
+  .news-head h2{font-size:1rem}
+  .news-status{font-size:.7rem;padding:5px 8px}
+  .news-list{padding:12px;gap:9px}
+  .news-card{grid-template-columns:64px 1fr;padding:9px;border-radius:18px}
+  .news-image{width:64px;height:64px;border-radius:13px}
+  .news-title{font-size:.88rem}
+  .news-desc{font-size:.78rem}
+}

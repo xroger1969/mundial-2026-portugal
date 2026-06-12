@@ -7,11 +7,34 @@
     const style = document.createElement("style");
     style.id = "resultsNavStyles";
     style.textContent = `
-      #resultsJump{border-color:#00C46A !important;background:linear-gradient(135deg, rgba(0,196,106,.22) 0%, rgba(30,35,44,.96) 58%, rgba(23,26,33,.96) 100%) !important;color:#FFFFFF !important;font-weight:900 !important}
-      .livemode-quick-link{border-color:#00C46A !important;background:linear-gradient(135deg, rgba(0,196,106,.20) 0%, rgba(0,169,91,.14) 100%) !important;color:#FFFFFF !important;font-weight:900 !important;text-shadow:none !important}
-      .livemode-quick-link:visited,.livemode-quick-link:hover,.livemode-quick-link:active{color:#FFFFFF !important}
+      #resultsJump{
+        border-color:var(--accent) !important;
+        background:linear-gradient(135deg, rgba(0,196,106,.22), rgba(30,35,44,.96) 58%, rgba(23,26,33,.96)) !important;
+        color:var(--ink) !important;
+        font-weight:900 !important;
+      }
+      .livemode-quick-link{
+        border-color:var(--accent) !important;
+        background:linear-gradient(135deg, rgba(0,196,106,.20), rgba(0,169,91,.14)) !important;
+        color:var(--ink) !important;
+        font-weight:900 !important;
+        text-shadow:none !important;
+      }
+      .livemode-quick-link:visited,
+      .livemode-quick-link:hover,
+      .livemode-quick-link:active{color:var(--ink) !important}
       .back-top-wrap{margin:18px 0 4px;display:flex;justify-content:center}
-      .back-top-button{border:1px solid #00C46A;background:linear-gradient(135deg, rgba(0,196,106,.22), rgba(30,35,44,.96));color:#FFFFFF;border-radius:999px;padding:12px 16px;font-weight:900;cursor:pointer;width:100%;max-width:420px}
+      .back-top-button{
+        width:100%;
+        max-width:420px;
+        border:1px solid var(--accent);
+        border-radius:999px;
+        padding:12px 16px;
+        background:linear-gradient(135deg, rgba(0,196,106,.22), rgba(30,35,44,.96));
+        color:var(--ink);
+        font-weight:900;
+        cursor:pointer;
+      }
     `;
     document.head.appendChild(style);
   }
@@ -95,9 +118,7 @@
         score.classList.add("muted-score");
       }
 
-      if (pill) {
-        pill.textContent = "A aguardar golos";
-      }
+      if (pill) pill.textContent = "A aguardar golos";
 
       if (extra && !extra.textContent.includes("golos ainda não chegaram")) {
         extra.textContent = `${extra.textContent} · golos ainda não chegaram da API`;

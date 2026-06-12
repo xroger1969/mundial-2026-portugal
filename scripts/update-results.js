@@ -10,6 +10,23 @@ const RESULTS_PATH = path.join(ROOT, "results.json");
 const DATA_FILES = ["data-part-1.js", "data-part-2.js", "data-part-3.js", "data-part-4.js"];
 const API_URL = "https://api.football-data.org/v4/competitions/WC/matches?season=2026";
 
+// Estes valores só são usados como fallback quando a API ainda não devolve golos.
+// Se a API trouxer resultado, a API tem sempre prioridade.
+const MANUAL_FALLBACK_RESULTS = {
+  "2": {
+    apiId: 537328,
+    status: "FINISHED",
+    homeTeam: "South Korea",
+    awayTeam: "Czechia",
+    homeScore: 2,
+    awayScore: 1,
+    winner: "HOME_TEAM",
+    utcDate: "2026-06-12T02:00:00Z",
+    lastUpdated: "2026-06-12T06:45:00Z",
+    provider: "manual-fallback"
+  }
+};
+
 function readExistingResults() {
   try {
     return JSON.parse(fs.readFileSync(RESULTS_PATH, "utf8"));
@@ -83,6 +100,31 @@ function extractScore(match) {
   };
 }
 
+function applyManualFallbackResults(matches) {
+  const finalMatches = { ...(matches || {}) };
+
+  Object.entries(MANUAL_FALLBACK_RESULTS).forEach(([num, fallback]) => {
+    const current = finalMatches[num] || {};
+
+    // Prioridade absoluta: se a API já trouxe golos, não mexemos.
+    if (hasScore(current.homeScore, current.awayScore) && current.provider === "football-data.org") {
+      return;
+    }
+
+    // Fallback: só entra quando ainda não há resultado fiável.
+    if (!hasScore(current.homeScore, current.awayScore)) {
+      finalMatches[num] = {
+        ...current,
+        ...fallback,
+        apiId: current.apiId || fallback.apiId,
+        utcDate: current.utcDate || fallback.utcDate
+      };
+    }
+  });
+
+  return finalMatches;
+}
+
 function buildResultsFromApi(apiMatches, schedule, previousMatches) {
   const sorted = [...(apiMatches || [])].sort((a, b) => {
     const da = new Date(a.utcDate || 0).getTime();
@@ -124,7 +166,7 @@ function buildResultsFromApi(apiMatches, schedule, previousMatches) {
       winner: finalWinner,
       utcDate: apiMatch.utcDate || previous.utcDate || null,
       lastUpdated: apiMatch.lastUpdated || new Date().toISOString(),
-      provider: "football-data.org"
+      provider: hasScore(homeScore, awayScore) ? "football-data.org" : (previous.provider || "football-data.org")
     };
   });
 
@@ -180,12 +222,13 @@ async function main() {
 
   const data = await response.json();
   const apiMatches = data.matches || [];
-  const matches = buildResultsFromApi(apiMatches, schedule, previous.matches || {});
+  const apiMatchesBySchedule = buildResultsFromApi(apiMatches, schedule, previous.matches || {});
+  const matches = applyManualFallbackResults(apiMatchesBySchedule);
 
   writeResults({
     status: "ok",
     updatedAt: new Date().toISOString(),
-    message: `Atualização automática concluída. Jogos recebidos da API: ${apiMatches.length}.`,
+    message: `Atualização automática concluída. Jogos recebidos da API: ${apiMatches.length}. API prioritária; fallback manual usado apenas quando a API não devolve golos.`,
     apiCount: apiMatches.length,
     matches
   });

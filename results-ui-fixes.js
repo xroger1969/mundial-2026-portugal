@@ -59,6 +59,10 @@
     const resultBox = card.querySelector(".result");
     if (!resultBox || resultBox.dataset.manualScore === "true") return;
 
+    const currentScore = (resultBox.querySelector(".score")?.textContent || "").trim().toLowerCase();
+    const isStillPending = !currentScore || ["por disputar", "finalizado", "resultado por confirmar"].includes(currentScore);
+    if (!isStillPending) return;
+
     resultBox.className = "result finished";
     resultBox.dataset.manualScore = "true";
     resultBox.innerHTML = `

@@ -1,7 +1,12 @@
+/* Tema visual final — paleta dark sports.
+   Este ficheiro é carregado depois do CSS base e serve apenas para consolidar cores e contraste.
+   Não altera a estrutura, grelha, dados ou funcionamento da página. */
+
 :root{
   --bg:#0F1115;
   --panel:#171A21;
   --panel2:#1E232C;
+  --card-bg:#1E232C;
   --ink:#FFFFFF;
   --muted:#B8C0CC;
   --line:#2A313D;
@@ -22,16 +27,39 @@ body{
     var(--bg);
 }
 
-a{color:var(--accent)}
+a,
+.link-inline,
+.livemode-link{color:var(--accent)}
+
 header{
   background:linear-gradient(145deg, rgba(23,26,33,.98), rgba(30,35,44,.96));
 }
-header:after{
-  background:rgba(0,196,106,.10);
-}
-.eyebrow{color:var(--accent)}
-h1{color:var(--ink)}
-.subtitle,.resultbar,.sources,.label,.summary span{color:var(--muted)}
+header:after{background:rgba(0,196,106,.10)}
+
+h1,
+.group-title,
+.thirds-title,
+.knockout-title,
+.standings-head,
+.standings-table th,
+.standings-table td{color:var(--ink)}
+
+.eyebrow,
+.game-no{color:var(--accent)}
+
+.subtitle,
+.resultbar,
+.sources,
+.label,
+.summary span,
+.venue,
+.notes,
+.result-extra,
+.standings-meta,
+.team-subline,
+.thirds-note,
+.knockout-note{color:var(--muted) !important}
+
 .summary .box,
 .filters,
 .card,
@@ -40,182 +68,122 @@ h1{color:var(--ink)}
 .knockout-card{
   border-color:var(--line);
 }
+
 .notice{
   border:1px solid rgba(242,185,75,.38);
   background:rgba(242,185,75,.08);
-  color:#F2B94B;
+  color:var(--open);
 }
+
 .filters{
   position:relative !important;
   top:auto !important;
   z-index:2 !important;
   background:rgba(23,26,33,.96);
 }
-input,select,button{
-  background:var(--card-bg, #1E232C);
+
+input,
+select,
+button{
+  background:var(--card-bg);
   color:var(--ink);
 }
-input:focus,select:focus{
+
+input:focus,
+select:focus{
   border-color:rgba(0,196,106,.75);
   box-shadow:0 0 0 3px rgba(0,196,106,.14);
 }
+
 .chip.active{
   border-color:rgba(0,196,106,.82);
   background:linear-gradient(135deg, rgba(0,196,106,.24), rgba(0,169,91,.16));
 }
-.card{
-  background:linear-gradient(180deg, rgba(30,35,44,.98), rgba(23,26,33,.96));
-}
-.card.portugal{
-  border-color:rgba(0,196,106,.48);
-  background:linear-gradient(180deg, rgba(0,196,106,.16), rgba(30,35,44,.96));
-  box-shadow:0 0 0 1px rgba(0,196,106,.12), 0 10px 24px rgba(0,0,0,.22);
-}
-.game-no{color:var(--accent)}
-.tag.group{color:#B8C0CC}
-.tag.open{
-  border-color:rgba(242,185,75,.55);
-  background:rgba(242,185,75,.15);
-  color:#F2B94B;
-}
-.tag.sport{
-  border-color:rgba(0,196,106,.55);
-  background:rgba(0,196,106,.13);
-  color:#FFFFFF;
-}
-.tag.live{
-  border-color:rgba(0,196,106,.65);
-  background:rgba(0,196,106,.18);
-  color:#FFFFFF;
-}
-.tag.pt{
-  border-color:rgba(0,196,106,.65);
-  background:rgba(0,196,106,.18);
-  color:#FFFFFF;
-}
-.venue,.notes{color:#B8C0CC}
 
-/* Resultados / estados */
-.status-badge,
-.status-pill,
-.result-status{
-  border-radius:999px;
-}
-.status-live,
-.result-live,
-.live-now{
-  background:#00C46A !important;
-  color:#FFFFFF !important;
-}
-.status-finished,
-.result-finished,
-.finished{
-  background:#00A95B !important;
-  color:#FFFFFF !important;
-}
-.status-upcoming,
-.result-upcoming,
-.upcoming{
-  background:#F2B94B !important;
-  color:#0F1115 !important;
-}
-
-/* Classificações */
-.standings-wrap{
-  background:linear-gradient(180deg, rgba(30,35,44,.72), rgba(23,26,33,.55));
-}
-.standings-head{
-  background:linear-gradient(90deg, rgba(30,35,44,.96), rgba(0,196,106,.16), rgba(23,26,33,.90));
-  color:var(--ink);
-}
+.card,
 .group-card,
 .thirds-card,
 .knockout-card{
   background:linear-gradient(180deg, rgba(30,35,44,.98), rgba(23,26,33,.96));
 }
-.group-title,
-.thirds-title,
-.knockout-title{
-  color:var(--ink);
-}
-.standings-table th,
-.standings-table td{
-  color:var(--ink);
-}
-.standings-table thead th{
-  color:#B8C0CC;
-}
-.standings-table tbody tr + tr td{
-  border-top:1px solid rgba(184,192,204,.10);
-}
-.standings-table tbody tr.is-qualified{
-  background:rgba(0,196,106,.14);
-}
-.standings-table tbody tr.is-third-qualified{
-  background:rgba(242,185,75,.12);
-}
-.standings-table tbody tr.is-eliminated{
-  opacity:.92;
-}
-.standings-meta,
-.team-subline,
-.thirds-note,
-.knockout-note{
-  color:var(--muted);
-}
-.link-inline,
-.livemode-link{
-  color:var(--accent);
+
+.card.portugal{
+  border-color:rgba(0,196,106,.48);
+  background:linear-gradient(180deg, rgba(0,196,106,.16), rgba(30,35,44,.96));
+  box-shadow:0 0 0 1px rgba(0,196,106,.12), 0 10px 24px rgba(0,0,0,.22);
 }
 
-/* Mais contraste nos cartões dos jogos */
 .date,
 .datetime,
 .resultbar strong,
-.summary b{
-  color:#FFFFFF !important;
-}
+.summary b,
+.match,
+.score,
+.muted-score{color:var(--ink) !important}
 
 .time,
 .status-pill{
-  color:#FFFFFF !important;
+  color:var(--ink) !important;
   background:rgba(255,255,255,.08) !important;
-  border-color:#2A313D !important;
-}
-
-.match,
-.score,
-.muted-score{
-  color:#FFFFFF !important;
-}
-
-.result-extra,
-.subtitle,
-.summary span,
-.resultbar,
-.sources,
-.label,
-.venue,
-.notes,
-.standings-meta,
-.team-subline,
-.thirds-note,
-.knockout-note{
-  color:#B8C0CC !important;
+  border-color:var(--line) !important;
 }
 
 .result{
   background:rgba(255,255,255,.045) !important;
-  border-color:#2A313D !important;
+  border-color:var(--line) !important;
+}
+
+.result.finished{border-color:rgba(0,196,106,.55)}
+.result.live{border-color:rgba(0,196,106,.70)}
+.result.warning{border-color:rgba(242,185,75,.70)}
+
+.status-badge,
+.status-pill,
+.result-status{border-radius:999px}
+
+.status-live,
+.result-live,
+.live-now{
+  background:var(--live) !important;
+  color:var(--ink) !important;
+}
+
+.status-finished,
+.result-finished,
+.finished{
+  background:var(--accent2) !important;
+  color:var(--ink) !important;
+}
+
+.status-upcoming,
+.result-upcoming,
+.upcoming{
+  background:var(--open) !important;
+  color:var(--bg) !important;
 }
 
 .tag{
-  color:#B8C0CC !important;
-  border-color:#2A313D !important;
+  color:var(--muted) !important;
+  border-color:var(--line) !important;
   background:rgba(255,255,255,.06) !important;
 }
 
-.tag.open{color:#F2B94B !important;background:rgba(242,185,75,.15) !important;border-color:rgba(242,185,75,.55) !important}
-.tag.sport{color:#FFFFFF !important;background:rgba(0,196,106,.13) !important;border-color:rgba(0,196,106,.55) !important}
-.tag.live{color:#FFFFFF !important;background:rgba(0,196,106,.18) !important;border-color:rgba(0,196,106,.65) !important}
-.tag.pt{color:#FFFFFF !important;background:rgba(0,196,106,.18) !important;border-color:rgba(0,196,106,.65) !important}
+.tag.group{color:var(--muted) !important}
+.tag.open{color:var(--open) !important;background:rgba(242,185,75,.15) !important;border-color:rgba(242,185,75,.55) !important}
+.tag.sport{color:var(--ink) !important;background:rgba(0,196,106,.13) !important;border-color:rgba(0,196,106,.55) !important}
+.tag.live,
+.tag.pt{color:var(--ink) !important;background:rgba(0,196,106,.18) !important;border-color:rgba(0,196,106,.65) !important}
+
+.standings-wrap{
+  background:linear-gradient(180deg, rgba(30,35,44,.72), rgba(23,26,33,.55));
+}
+
+.standings-head{
+  background:linear-gradient(90deg, rgba(30,35,44,.96), rgba(0,196,106,.16), rgba(23,26,33,.90));
+}
+
+.standings-table thead th{color:var(--muted)}
+.standings-table tbody tr + tr td{border-top:1px solid rgba(184,192,204,.10)}
+.standings-table tbody tr.is-qualified{background:rgba(0,196,106,.14)}
+.standings-table tbody tr.is-third-qualified{background:rgba(242,185,75,.12)}
+.standings-table tbody tr.is-eliminated{opacity:.92}

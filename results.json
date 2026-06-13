@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-13T22:40:08.060Z",
+  "updatedAt": "2026-06-13T22:43:40.715Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -72,11 +72,11 @@
       "status": "IN_PLAY",
       "homeTeam": "Brazil",
       "awayTeam": "Morocco",
-      "homeScore": 0,
+      "homeScore": 1,
       "awayScore": 1,
-      "winner": "AWAY_TEAM",
+      "winner": "DRAW",
       "utcDate": "2026-06-13T22:00:00Z",
-      "lastUpdated": "2026-06-13T22:40:02Z",
+      "lastUpdated": "2026-06-13T22:42:47Z",
       "provider": "football-data.org"
     },
     "7": {

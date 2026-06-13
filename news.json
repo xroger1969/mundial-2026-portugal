@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-13T12:59:01.945Z",
+  "updatedAt": "2026-06-13T15:06:06.305Z",
   "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 104,
+  "totalArticles": 105,
   "articles": [
+    {
+      "title": "O sonho de Diogo Jota viaja com Portugal: O detalhe que Matheus Nunes levou para o Mundial de 2026",
+      "description": "Momento foi captado à chegada da Seleção de futebol aos Estados Unidos, onde vai disputar o mundial.",
+      "content": "O Correio da Manhã incentiva todos os Leitores a interagirem através de comentários às notícias publicadas no seu site, de uma maneira respeitadora com o cumprimento dos princípios legais e constitucionais. Assim são totalmente ilegítimos comentários... [7369 chars]",
+      "url": "https://www.cmjornal.pt/mais-cm/especiais/mundial-2026/detalhe/o-sonho-de-jota-viaja-com-portugal-o-detalhe-que-matheus-nunes-levou-para-o-mundial-de-2026",
+      "image": "https://cdn.cmjornal.pt/images/2026-06/img_1280x721uu2026-06-13-14-36-57-2290846.jpg",
+      "publishedAt": "2026-06-13T00:00:00Z",
+      "sourceName": "Correio da Manhã",
+      "sourceUrl": "https://www.cmjornal.pt"
+    },
     {
       "title": "Jogo de estreia do Mundial 2026 visto por quase 1,5 milhões em Portugal",
       "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-06-02T08:49:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Mundial de 2026 pode gerar impacto económico de até 945 milhões em Portugal",
-      "description": "Estudo do IPAM diz que o Campeonato do Mundo de futebol, que tem o pontapé de saída marcado para terça-feira, pode vir a representar o maior impacto económico de sempre em Portugal associado a uma competição que o país não organiza.",
-      "content": "Dependendo da \"performance\" da seleção nacional, o Campeonato do Mundo de futebol pode gerar um impacto económico entre 378 milhões e 945 milhões de euros em Portugal, revela um estudo do Instituto Português de Administração de Marketing (IPAM). À lu... [4771 chars]",
-      "url": "https://www.jornaldenegocios.pt/empresas/turismo---lazer/detalhe/mundial-de-2026-pode-gerar-impacto-economico-de-ate-945-milhoes-em-portugal",
-      "image": "https://cdn.jornaldenegocios.pt/images/2026-06/img_1200x676uu2026-06-02-08-46-21-524696.jpg",
-      "publishedAt": "2026-06-02T00:00:00Z",
-      "sourceName": "Jornal de Negócios - Portugal",
-      "sourceUrl": "https://www.jornaldenegocios.pt"
     }
   ]
 }

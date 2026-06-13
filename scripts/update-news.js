@@ -8,6 +8,7 @@ const ROOT = path.resolve(__dirname, "..");
 const NEWS_PATH = path.join(ROOT, "news.json");
 const API_URL = "https://gnews.io/api/v4/search";
 const QUERY = "Mundial 2026 futebol Portugal";
+const MIN_UPDATE_INTERVAL_MS = 6 * 60 * 60 * 1000;
 
 function readExistingNews() {
   try {
@@ -46,6 +47,16 @@ function dedupeArticles(articles) {
   });
 }
 
+function shouldSkipUpdate(previous) {
+  if (process.env.FORCE_NEWS_UPDATE === "1") return false;
+  if (!previous.updatedAt) return false;
+
+  const updatedAt = new Date(previous.updatedAt).getTime();
+  if (Number.isNaN(updatedAt)) return false;
+
+  return Date.now() - updatedAt < MIN_UPDATE_INTERVAL_MS;
+}
+
 function writeNews(payload) {
   const finalPayload = {
     provider: "gnews.io",
@@ -69,6 +80,16 @@ async function main() {
       articles: previous.articles || []
     });
     console.log("GNEWS_API_KEY não está configurada.");
+    return;
+  }
+
+  if (shouldSkipUpdate(previous)) {
+    writeNews({
+      ...previous,
+      status: previous.status || "ok",
+      message: "Notícias mantidas em cache para poupar a quota da GNews."
+    });
+    console.log("Notícias mantidas em cache: intervalo mínimo ainda não passou.");
     return;
   }
 

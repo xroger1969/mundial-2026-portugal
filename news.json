@@ -2,11 +2,31 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-13T00:24:24.532Z",
+  "updatedAt": "2026-06-13T05:06:08.391Z",
   "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 102,
+  "totalArticles": 104,
   "articles": [
+    {
+      "title": "Jogo de estreia do Mundial 2026 visto por quase 1,5 milhões em Portugal",
+      "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
+      "content": "O jogo inaugural do Mundial de Futebol 2026, que opôs o México à África do Sul no Estádio Azteca — Cidade do México — perante 80.000 espetadores, terminou com a vitória da seleção mexicana por 2-0, numa partida que ficou marcada por três expulsões. E... [665 chars]",
+      "url": "https://eco.sapo.pt/2026/06/12/jogo-de-estreia-do-mundial-2026-visto-por-quase-15-milhoes-em-portugal/",
+      "image": "https://eco.imgix.net/uploads/2026/06/audiencias-mundial-2000x1125-1.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+      "publishedAt": "2026-06-12T16:48:08Z",
+      "sourceName": "ECO Economia Online",
+      "sourceUrl": "https://eco.sapo.pt"
+    },
+    {
+      "title": "Roberto Martínez diz que leva \"uma mala cheia de sonhos\" para o Mundial 2026",
+      "description": "Roberto Martínez, selecionador de Portugal, evidenciou confiança esta sexta-feira, onde falou na Cidade do Futebol antes da viagem para o Mundial 2026.",
+      "content": "\"Temos três jogos, poder ganhar os jogos é o objetivo coletivo. Sinto que estão preparados. É um passo muito claro para todos nós. É uma geração de muita responsabilidade e talentosa. Mas mais importante é a atitude e a responsabilidade de representa... [544 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/roberto-martinez-diz-que-leva-uma-mala-cheia-de-sonhos-para-o-mundial-2026/18094505",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/3ed70fc7-7656-4f4d-95a4-61f57c4077a2_1200x675.jpg",
+      "publishedAt": "2026-06-12T12:53:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Portugal segura quinto lugar do ranking FIFA antes do arranque do Mundial",
       "description": "A seleção portuguesa de futebol manteve o quinto lugar do ranking da FIFA, esta quinta-feira atualizado no dia que arranca o Mundial 2026, com a campeã Argentina a recuperar a liderança.",
@@ -86,26 +106,6 @@
       "publishedAt": "2026-06-02T00:00:00Z",
       "sourceName": "Jornal de Negócios - Portugal",
       "sourceUrl": "https://www.jornaldenegocios.pt"
-    },
-    {
-      "title": "Começa o sonho Mundial: Seleção inicia estágio na Cidade do Futebol",
-      "description": "Arranca esta segunda-feira a preparação de Portugal para o Campeonato do Mundo 2026, dando o primeiro passo numa caminhada que alimenta o sonho de milhões de portugueses: conquistar, pela primeira vez, o título de campeã do mundo. Continue a ler.",
-      "content": "Hoje não é apenas mais um dia na Cidade do Futebol. É o primeiro passo de uma caminhada que Portugal espera ver terminar da forma mais gloriosa possível: com a conquista do Campeonato do Mundo. Os eleitos de Roberto Martínez começam esta segunda-feir... [8652 chars]",
-      "url": "https://www.abola.pt/noticias/comeca-o-sonho-mundial-selecao-inicia-estagio-na-cidade-do-futebol-2026053117401393633",
-      "image": "https://sportal365images.com/process/smp-images-production/abola.pt/31052026/d1602f57-e987-4de0-9aba-0bf09ad60055.jpeg?operations=autocrop(1200:630)",
-      "publishedAt": "2026-06-01T07:40:00Z",
-      "sourceName": "A Bola",
-      "sourceUrl": "https://www.abola.pt"
-    },
-    {
-      "title": "Oficial! Foi apresentado o carro da seleção de Portugal antes do Mundial 2026",
-      "description": "Numa cerimónia realizada na Cidade do Futebol, a FPF celebrou a sua parceria com a Shangan, com destaque para o modelo Deepal S05 Plug-On Hybrid.",
-      "content": "Entra no nosso canal Telegram e recebe as melhores ofertas A marca chinesa Changan Automobile foi anunciada como parceira oficial da seleção nacional de futebol de Portugal, através de uma colaboração com a Federação Portuguesa de Futebol (FPF). O an... [1699 chars]",
-      "url": "https://4gnews.pt/oficial-foi-apresentado-o-carro-da-selecao-de-portugal-antes-do-mundial-2026/",
-      "image": "https://cdn.4gnews.pt/imagens/oficial-foi-apresentado-o-carro-da-selecao-de-portugal-antes-do-mundial-2026-og.jpg",
-      "publishedAt": "2026-05-26T15:45:01Z",
-      "sourceName": "4gnews",
-      "sourceUrl": "https://4gnews.pt"
     }
   ]
 }

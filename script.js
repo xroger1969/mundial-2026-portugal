@@ -191,6 +191,41 @@ function scoreText(result) {
   return `${home}–${away}`;
 }
 
+function miniScore(value) {
+  if (!value) return "";
+  const home = value.homeScore;
+  const away = value.awayScore;
+  if (home === null || home === undefined || away === null || away === undefined) return "";
+  return `${home}–${away}`;
+}
+
+function goalText(goal) {
+  const minute = goal.minute === null || goal.minute === undefined ? "" : `${goal.minute}’ `;
+  const scorer = goal.scorer || "Golo";
+  const flags = [goal.penalty ? "pen." : "", goal.ownGoal ? "p.b." : ""].filter(Boolean).join(" ");
+  return `${minute}${scorer}${flags ? ` (${flags})` : ""}`.trim();
+}
+
+function resultDetailsText(result) {
+  const openLiga = result?.openLiga || null;
+  if (!openLiga) return "";
+
+  const parts = [];
+  const ht = miniScore(openLiga.halftime);
+  if (ht) parts.push(`Intervalo: ${ht}`);
+
+  const goals = Array.isArray(openLiga.goals) ? openLiga.goals : [];
+  if (goals.length) {
+    const visibleGoals = goals.slice(0, 4).map(goalText).filter(Boolean);
+    if (visibleGoals.length) {
+      const more = goals.length > visibleGoals.length ? ` +${goals.length - visibleGoals.length}` : "";
+      parts.push(`Golos: ${visibleGoals.join("; ")}${more}`);
+    }
+  }
+
+  return parts.join(" · ");
+}
+
 function updatedText() {
   if (!resultsData.updatedAt) return "";
   const d = new Date(resultsData.updatedAt);
@@ -205,6 +240,7 @@ function renderResult(game) {
   const minute = result?.minute ? ` · ${escapeHtml(result.minute)}` : "";
   const provider = result?.provider ? ` · ${escapeHtml(result.provider)}` : "";
   const lastUpdate = result?.lastUpdated ? ` · ${escapeHtml(updatedText() || result.lastUpdated)}` : "";
+  const details = resultDetailsText(result);
 
   const main = score
     ? `<span class="score">${escapeHtml(score)}</span>`
@@ -214,11 +250,15 @@ function renderResult(game) {
     <div class="label">Resultado</div>
     <div class="result-line">${main}<span class="status-pill">${escapeHtml(statusText(status))}${minute}</span></div>
     ${result ? `<div class="result-extra">${escapeHtml(result.homeTeam || "")}${result.homeTeam || result.awayTeam ? " vs " : ""}${escapeHtml(result.awayTeam || "")}${provider}${lastUpdate}</div>` : `<div class="result-extra">Resultado automático preparado.</div>`}
+    ${details ? `<div class="result-details">${escapeHtml(details)}</div>` : ""}
   </div>`;
 }
 
 function searchable(game) {
   const result = getGameResult(game);
+  const goalNames = Array.isArray(result?.openLiga?.goals)
+    ? result.openLiga.goals.map(goal => goal.scorer).join(" ")
+    : "";
   return norm([
     game.num,
     game.date,
@@ -231,7 +271,9 @@ function searchable(game) {
     game.channels,
     game.notes,
     result?.status,
-    scoreText(result)
+    scoreText(result),
+    resultDetailsText(result),
+    goalNames
   ].join(" "));
 }
 
@@ -324,10 +366,10 @@ function renderCards() {
 
 function downloadCSV() {
   const list = filteredGames();
-  const header = ["N.º", "Data", "Hora PT", "Fase", "Grupo", "Jogo", "Resultado", "Estado", "Estádio/Cidade", "Canais em Portugal", "Notas"];
+  const header = ["N.º", "Data", "Hora PT", "Fase", "Grupo", "Jogo", "Resultado", "Estado", "Detalhes", "Estádio/Cidade", "Canais em Portugal", "Notas"];
   const rows = list.map(g => {
     const result = getGameResult(g);
-    return [g.num, g.date, g.time, g.stage, g.group, g.match, scoreText(result), statusText(result?.status || inferredStatus(g)), g.venue, g.channels, g.notes];
+    return [g.num, g.date, g.time, g.stage, g.group, g.match, scoreText(result), statusText(result?.status || inferredStatus(g)), resultDetailsText(result), g.venue, g.channels, g.notes];
   });
   const csv = [header]
     .concat(rows)

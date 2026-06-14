@@ -3,6 +3,8 @@
 (function () {
   const STYLE_ID = "precisionScrollControlStyles";
   const CONTROL_ID = "precisionScrollControl";
+  let scrollTimer = null;
+  let activeDirection = 0;
 
   function injectStyles() {
     if (document.getElementById(STYLE_ID)) return;
@@ -13,9 +15,9 @@
       #floatingScrollButton{display:none !important}
       .precision-scroll-control{
         position:fixed;
-        right:14px;
-        bottom:calc(18px + env(safe-area-inset-bottom));
-        z-index:140;
+        right:12px;
+        bottom:calc(16px + env(safe-area-inset-bottom));
+        z-index:160;
         display:flex;
         flex-direction:column;
         gap:8px;
@@ -23,9 +25,9 @@
         pointer-events:auto;
       }
       .precision-scroll-btn{
-        width:50px;
-        height:50px;
-        min-height:50px;
+        width:48px;
+        height:48px;
+        min-height:48px;
         padding:0;
         border-radius:999px;
         border:1px solid rgba(0,196,106,.82);
@@ -35,39 +37,38 @@
         display:flex;
         align-items:center;
         justify-content:center;
-        font-size:1.24rem;
+        font-size:1.18rem;
         font-weight:950;
         line-height:1;
         cursor:pointer;
         user-select:none;
         -webkit-user-select:none;
         -webkit-touch-callout:none;
-        touch-action:none;
+        touch-action:manipulation;
         backdrop-filter:blur(14px);
         -webkit-backdrop-filter:blur(14px);
       }
       .precision-scroll-btn.active{
         transform:scale(.94);
         background:linear-gradient(135deg, rgba(0,196,106,1), rgba(0,125,68,.96));
-        box-shadow:0 0 0 4px rgba(0,196,106,.16), 0 12px 30px rgba(0,0,0,.36);
+        box-shadow:0 0 0 4px rgba(0,196,106,.18), 0 12px 30px rgba(0,0,0,.36);
       }
-      .precision-scroll-hint{
-        width:40px;
-        min-height:24px;
-        border-radius:999px;
-        border:1px solid rgba(255,255,255,.16);
-        background:rgba(15,17,21,.78);
-        color:rgba(255,255,255,.78);
-        font-size:.69rem;
-        font-weight:900;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        box-shadow:0 8px 18px rgba(0,0,0,.22);
+      .precision-scroll-stop{
+        width:42px;
+        height:42px;
+        min-height:42px;
+        border-color:rgba(255,255,255,.24);
+        background:rgba(15,17,21,.88);
+        font-size:.95rem;
+      }
+      .precision-scroll-stop.active{
+        background:rgba(226,76,76,.9);
+        border-color:rgba(226,76,76,.9);
       }
       @media (max-width:420px){
-        .precision-scroll-control{right:10px;bottom:calc(14px + env(safe-area-inset-bottom))}
-        .precision-scroll-btn{width:48px;height:48px;min-height:48px}
+        .precision-scroll-control{right:9px;bottom:calc(12px + env(safe-area-inset-bottom))}
+        .precision-scroll-btn{width:46px;height:46px;min-height:46px}
+        .precision-scroll-stop{width:40px;height:40px;min-height:40px}
       }
     `;
     document.head.appendChild(style);
@@ -88,85 +89,74 @@
     return Math.max(min, Math.min(max, value));
   }
 
+  function updateActiveButtons() {
+    document.querySelectorAll(".precision-scroll-btn").forEach(button => {
+      const direction = Number(button.dataset.scrollDir || 0);
+      button.classList.toggle("active", direction !== 0 && direction === activeDirection);
+    });
+    document.querySelector(".precision-scroll-stop")?.classList.toggle("active", activeDirection !== 0);
+  }
+
+  function stopAutoScroll() {
+    if (scrollTimer) clearInterval(scrollTimer);
+    scrollTimer = null;
+    activeDirection = 0;
+    updateActiveButtons();
+  }
+
   function scrollStep(direction, amount) {
     const next = clamp(window.scrollY + direction * amount, 0, maxScrollTop());
     window.scrollTo(0, next);
+
+    const atTop = next <= 0;
+    const atBottom = next >= maxScrollTop() - 2;
+    if ((direction < 0 && atTop) || (direction > 0 && atBottom)) {
+      stopAutoScroll();
+    }
   }
 
-  function createHoldScroll(button, direction) {
-    let pressTimer = null;
-    let animationFrame = null;
-    let isPressed = false;
-    let didLongScroll = false;
-    let lastFrameTime = 0;
-
-    function cancelTimers() {
-      if (pressTimer) clearTimeout(pressTimer);
-      if (animationFrame) cancelAnimationFrame(animationFrame);
-      pressTimer = null;
-      animationFrame = null;
+  function startAutoScroll(direction) {
+    if (activeDirection === direction) {
+      // Segundo toque no mesmo botão aumenta um pouco o avanço e dá sensação de controlo.
+      scrollStep(direction, 260);
+      return;
     }
 
-    function stop(event) {
-      if (event?.cancelable) event.preventDefault();
+    stopAutoScroll();
+    activeDirection = direction;
+    updateActiveButtons();
 
-      const shouldDoShortStep = isPressed && !didLongScroll;
-      isPressed = false;
-      button.classList.remove("active");
-      cancelTimers();
+    scrollStep(direction, 90);
+    scrollTimer = setInterval(() => scrollStep(direction, 38), 28);
+  }
 
-      if (shouldDoShortStep) {
-        window.scrollBy({ top: direction * 180, behavior: "smooth" });
-      }
-    }
+  function shortStep(direction) {
+    stopAutoScroll();
+    window.scrollBy({ top: direction * 190, behavior: "smooth" });
+  }
 
-    function continuousScroll(time) {
-      if (!isPressed) return;
+  function bindButton(button) {
+    const direction = Number(button.dataset.scrollDir || 0);
+    let touchStarted = false;
 
-      if (!lastFrameTime) lastFrameTime = time;
-      const delta = Math.min(32, time - lastFrameTime);
-      lastFrameTime = time;
-
-      // Velocidade ajustada para iPhone: suficientemente rápida, mas controlável.
-      scrollStep(direction, Math.max(5, delta * 1.25));
-      didLongScroll = true;
-
-      const atTop = window.scrollY <= 0;
-      const atBottom = window.scrollY >= maxScrollTop() - 2;
-      if ((direction < 0 && atTop) || (direction > 0 && atBottom)) {
-        stop();
+    button.addEventListener("click", event => {
+      event.preventDefault();
+      if (direction === 0) {
+        stopAutoScroll();
         return;
       }
+      startAutoScroll(direction);
+    });
 
-      animationFrame = requestAnimationFrame(continuousScroll);
-    }
+    button.addEventListener("dblclick", event => {
+      event.preventDefault();
+      if (direction !== 0) shortStep(direction);
+    });
 
-    function start(event) {
-      if (event?.cancelable) event.preventDefault();
-      if (isPressed) return;
-
-      isPressed = true;
-      didLongScroll = false;
-      lastFrameTime = 0;
-      button.classList.add("active");
-
-      pressTimer = setTimeout(() => {
-        if (!isPressed) return;
-        animationFrame = requestAnimationFrame(continuousScroll);
-      }, 170);
-    }
-
-    button.addEventListener("pointerdown", start);
-    button.addEventListener("pointerup", stop);
-    button.addEventListener("pointercancel", stop);
-
-    button.addEventListener("touchstart", start, { passive: false });
-    button.addEventListener("touchend", stop, { passive: false });
-    button.addEventListener("touchcancel", stop, { passive: false });
-
-    button.addEventListener("mousedown", start);
-    window.addEventListener("mouseup", stop);
-    window.addEventListener("blur", stop);
+    button.addEventListener("touchstart", () => {
+      touchStarted = true;
+      setTimeout(() => { touchStarted = false; }, 350);
+    }, { passive: true });
   }
 
   function ensureControl() {
@@ -179,15 +169,17 @@
     control.id = CONTROL_ID;
     control.className = "precision-scroll-control";
     control.innerHTML = `
-      <button type="button" class="precision-scroll-btn" data-scroll-dir="-1" aria-label="Manter pressionado para subir">↑</button>
-      <div class="precision-scroll-hint" aria-hidden="true">manter</div>
-      <button type="button" class="precision-scroll-btn" data-scroll-dir="1" aria-label="Manter pressionado para descer">↓</button>
+      <button type="button" class="precision-scroll-btn" data-scroll-dir="-1" aria-label="Subir automaticamente">↑</button>
+      <button type="button" class="precision-scroll-btn precision-scroll-stop" data-scroll-dir="0" aria-label="Parar scroll">■</button>
+      <button type="button" class="precision-scroll-btn" data-scroll-dir="1" aria-label="Descer automaticamente">↓</button>
     `;
 
     document.body.appendChild(control);
 
-    control.querySelectorAll(".precision-scroll-btn").forEach(button => {
-      createHoldScroll(button, Number(button.dataset.scrollDir || 1));
+    control.querySelectorAll(".precision-scroll-btn").forEach(bindButton);
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stopAutoScroll();
     });
   }
 

@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-14T21:24:00.575Z",
+  "updatedAt": "2026-06-14T22:42:23.801Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -117,14 +117,14 @@
     },
     "10": {
       "apiId": 537357,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeTeam": "Netherlands",
       "awayTeam": "Japan",
-      "homeScore": 1,
-      "awayScore": 1,
+      "homeScore": 2,
+      "awayScore": 2,
       "winner": "DRAW",
       "utcDate": "2026-06-14T20:00:00Z",
-      "lastUpdated": "2026-06-14T21:23:04Z",
+      "lastUpdated": "2026-06-14T22:01:31Z",
       "provider": "football-data.org"
     },
     "11": {

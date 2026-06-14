@@ -23,6 +23,13 @@
       .livemode-quick-link:visited,
       .livemode-quick-link:hover,
       .livemode-quick-link:active{color:var(--ink) !important}
+      .standings-inline-link{
+        cursor:pointer !important;
+        text-decoration:underline !important;
+        text-decoration-thickness:1px !important;
+        text-underline-offset:3px !important;
+      }
+      .standings-inline-link:active{transform:scale(.98)}
       .back-top-wrap{margin:18px 0 4px;display:flex;justify-content:center}
       .back-top-button{
         width:100%;
@@ -39,6 +46,24 @@
     document.head.appendChild(style);
   }
 
+  function openStandingsPanel(groupLetter) {
+    const panel = document.getElementById("standingsPanel");
+    if (!panel) return;
+
+    const details = panel.querySelector("details");
+    if (details) details.open = true;
+
+    const groupSelect = document.getElementById("group");
+    if (groupSelect) {
+      groupSelect.value = groupLetter || "";
+      groupSelect.dispatchEvent(new Event("change", { bubbles: true }));
+    }
+
+    setTimeout(() => {
+      panel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 80);
+  }
+
   function ensureResultsJumpButton() {
     const chips = document.querySelector(".chips");
     if (!chips || document.getElementById("resultsJump")) return;
@@ -48,14 +73,7 @@
     button.id = "resultsJump";
     button.className = "chip";
     button.textContent = "Quadro geral de resultados e classificações";
-    button.addEventListener("click", () => {
-      const panel = document.getElementById("standingsPanel");
-      if (!panel) return;
-
-      const details = panel.querySelector("details");
-      if (details) details.open = true;
-      panel.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
+    button.addEventListener("click", () => openStandingsPanel(""));
 
     const clear = document.getElementById("clear");
     chips.insertBefore(button, clear || null);
@@ -72,6 +90,37 @@
 
     wrap.querySelector("button").addEventListener("click", () => {
       document.querySelector("header")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
+  function makeGroupTagsJumpToStandings() {
+    document.querySelectorAll("article.card .tag").forEach(tag => {
+      if (tag.dataset.standingsJumpReady === "true") return;
+
+      const text = (tag.textContent || "").trim();
+      const groupMatch = text.match(/^Grupo\s+([A-L])$/i);
+      const isGroupStage = text.toLowerCase() === "fase de grupos";
+      if (!groupMatch && !isGroupStage) return;
+
+      tag.dataset.standingsJumpReady = "true";
+      tag.classList.add("standings-inline-link");
+      tag.setAttribute("role", "button");
+      tag.setAttribute("tabindex", "0");
+      tag.setAttribute(
+        "title",
+        groupMatch ? `Ver classificação do Grupo ${groupMatch[1].toUpperCase()}` : "Ver quadro geral de grupos"
+      );
+
+      const action = event => {
+        event.preventDefault();
+        event.stopPropagation();
+        openStandingsPanel(groupMatch ? groupMatch[1].toUpperCase() : "");
+      };
+
+      tag.addEventListener("click", action);
+      tag.addEventListener("keydown", event => {
+        if (event.key === "Enter" || event.key === " ") action(event);
+      });
     });
   }
 
@@ -175,6 +224,7 @@
     ensureNavStyles();
     ensureResultsJumpButton();
     ensureBackToTopButton();
+    makeGroupTagsJumpToStandings();
     fixKoreaCzechiaResult();
     fixFinishedWithoutScore();
     fixExpiredScheduledGames();

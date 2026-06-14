@@ -49,6 +49,50 @@ const NAME_ALIASES = {
   "turquia": "turkey",
   "uruguai": "uruguay",
   "usa": "united states",
+
+  "mexiko": "mexico",
+  "sudafrika": "south africa",
+  "suedafrika": "south africa",
+  "sudkorea": "south korea",
+  "suedkorea": "south korea",
+  "tschechien": "czechia",
+  "kanada": "canada",
+  "bosnien und herzegowina": "bosnia herzegovina",
+  "katar": "qatar",
+  "schweiz": "switzerland",
+  "brasilien": "brazil",
+  "marokko": "morocco",
+  "schottland": "scotland",
+  "turkei": "turkey",
+  "tuerkei": "turkey",
+  "deutschland": "germany",
+  "niederlande": "netherlands",
+  "elfenbeinkuste": "ivory coast",
+  "elfenbeinkueste": "ivory coast",
+  "ecuador": "ecuador",
+  "schweden": "sweden",
+  "tunesien": "tunisia",
+  "spanien": "spain",
+  "kap verde": "cape verde",
+  "belgien": "belgium",
+  "agypten": "egypt",
+  "aegypten": "egypt",
+  "saudi arabien": "saudi arabia",
+  "neuseeland": "new zealand",
+  "frankreich": "france",
+  "irak": "iraq",
+  "norwegen": "norway",
+  "argentinien": "argentina",
+  "algerien": "algeria",
+  "osterreich": "austria",
+  "oesterreich": "austria",
+  "jordanien": "jordan",
+  "dr kongo": "dr congo",
+  "kongo dr": "dr congo",
+  "usbekistan": "uzbekistan",
+  "kolumbien": "colombia",
+  "kroatien": "croatia",
+
   "deu": "germany",
   "cuw": "curacao",
   "sct": "scotland",
@@ -270,16 +314,21 @@ async function main() {
 
   let applied = 0;
   let enriched = 0;
+  let linked = 0;
+  let withDetails = 0;
 
   for (const match of matches) {
     const { game, home, away } = findScheduledGame(match, schedule);
     if (!game) continue;
+    linked += 1;
 
     const { homeScore, awayScore } = finalScore(match);
     const status = match.matchIsFinished ? "FINISHED" : "TIMED";
     const key = String(game.num);
     const previous = results.matches?.[key] || {};
     const extra = openLigaExtra(match);
+    if (extra) withDetails += 1;
+
     const overwriteScore = shouldOverwriteScore(previous, status, homeScore, awayScore);
     const hasNewExtra = extra && !sameJson(previous.openLiga, extra);
 
@@ -314,16 +363,25 @@ async function main() {
     results.matches[key] = next;
   }
 
-  if (applied > 0 || enriched > 0) {
+  results.openLigaStatus = {
+    checkedAt: new Date().toISOString(),
+    receivedMatches: matches.length,
+    linkedMatches: linked,
+    matchesWithDetails: withDetails,
+    appliedResults: applied,
+    enrichedMatches: enriched
+  };
+
+  if (applied > 0 || enriched > 0 || linked > 0) {
     results.provider = applied > 0 ? "football-data.org + openligadb" : results.provider || "football-data.org";
     results.updatedAt = new Date().toISOString();
     results.message = applied > 0
       ? `OpenLigaDB aplicada a ${applied} jogo(s) e detalhes acrescentados a ${enriched} jogo(s).`
-      : `OpenLigaDB acrescentou detalhes a ${enriched} jogo(s).`;
+      : `OpenLigaDB ligada a ${linked} jogo(s); detalhes acrescentados a ${enriched} jogo(s).`;
     writeResults(results);
   }
 
-  console.log(`OpenLigaDB: ${applied} resultado(s), ${enriched} detalhe(s) acrescentado(s).`);
+  console.log(`OpenLigaDB: ${matches.length} recebidos, ${linked} ligados, ${withDetails} com detalhes, ${applied} resultado(s), ${enriched} detalhe(s).`);
 }
 
 main().catch(error => {

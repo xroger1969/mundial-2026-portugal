@@ -30,6 +30,31 @@
         text-underline-offset:3px !important;
       }
       .standings-inline-link:active{transform:scale(.98)}
+      .floating-scroll-button{
+        position:fixed;
+        right:16px;
+        bottom:calc(18px + env(safe-area-inset-bottom));
+        z-index:80;
+        width:54px;
+        height:54px;
+        min-height:54px;
+        border-radius:999px;
+        border:1px solid rgba(0,196,106,.72);
+        background:linear-gradient(135deg, rgba(0,196,106,.92), rgba(0,169,91,.82));
+        color:#fff;
+        box-shadow:0 14px 34px rgba(0,0,0,.34);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:1.35rem;
+        font-weight:950;
+        cursor:pointer;
+        backdrop-filter:blur(14px);
+        -webkit-backdrop-filter:blur(14px);
+      }
+      .floating-scroll-button span{transform:translateY(-1px)}
+      .floating-scroll-button:active{transform:scale(.96)}
+      .floating-scroll-button.hidden{opacity:0;pointer-events:none;transform:translateY(8px)}
       .back-top-wrap{margin:18px 0 4px;display:flex;justify-content:center}
       .back-top-button{
         width:100%;
@@ -77,6 +102,50 @@
 
     const clear = document.getElementById("clear");
     chips.insertBefore(button, clear || null);
+  }
+
+  function ensureFloatingScrollButton() {
+    if (document.getElementById("floatingScrollButton")) return;
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.id = "floatingScrollButton";
+    button.className = "floating-scroll-button";
+    button.setAttribute("aria-label", "Descer na página");
+    button.innerHTML = "<span>↓</span>";
+
+    function isNearBottom() {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      return window.scrollY >= Math.max(0, maxScroll - 260);
+    }
+
+    function updateButton() {
+      const nearBottom = isNearBottom();
+      const icon = button.querySelector("span");
+      if (icon) icon.textContent = nearBottom ? "↑" : "↓";
+      button.setAttribute("aria-label", nearBottom ? "Subir ao topo" : "Descer na página");
+    }
+
+    button.addEventListener("click", () => {
+      if (isNearBottom()) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
+
+      const panel = document.getElementById("standingsPanel");
+      const cards = document.getElementById("cards");
+      const target = window.scrollY < 360 ? (cards || panel) : document.body;
+      if (target && target !== document.body) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        window.scrollBy({ top: Math.round(window.innerHeight * 0.85), behavior: "smooth" });
+      }
+    });
+
+    window.addEventListener("scroll", updateButton, { passive: true });
+    window.addEventListener("resize", updateButton);
+    document.body.appendChild(button);
+    updateButton();
   }
 
   function ensureBackToTopButton() {
@@ -223,6 +292,7 @@
   function applyUiFixes() {
     ensureNavStyles();
     ensureResultsJumpButton();
+    ensureFloatingScrollButton();
     ensureBackToTopButton();
     makeGroupTagsJumpToStandings();
     fixKoreaCzechiaResult();

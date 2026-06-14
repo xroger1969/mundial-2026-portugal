@@ -147,6 +147,7 @@
     .muted-score{font-size:1rem;color:#B8C0CC;letter-spacing:0}
     .status-pill{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:5px 9px;font-size:.76rem;font-weight:900;background:rgba(255,255,255,.07);color:#FFFFFF}
     .result-extra{margin-top:6px;color:#B8C0CC;font-size:.78rem}
+    .result-details{margin-top:6px;color:#FFFFFF;font-size:.78rem;line-height:1.35;border-top:1px solid rgba(255,255,255,.08);padding-top:6px}
     .live .status-pill{border-color:rgba(0,196,106,.65);background:rgba(0,196,106,.2);color:#FFFFFF}
     .finished .status-pill{border-color:rgba(0,196,106,.65);background:rgba(0,196,106,.18);color:#FFFFFF}
     .empty{border:1px dashed var(--line);border-radius:20px;padding:24px 14px;text-align:center;color:var(--muted);background:rgba(255,255,255,.035)}
@@ -172,6 +173,6 @@
       .cards{display:block}
       .card{break-inside:avoid;margin:0 0 8px;border-color:#ccc}
       .tag,.time,.status-pill{color:#111;border-color:#888;background:#fff}
-      .subtitle,.venue,.notes,.sources,.label,.result-extra{color:#333}
+      .subtitle,.venue,.notes,.sources,.label,.result-extra,.result-details{color:#333}
       .score{color:#111}
     }

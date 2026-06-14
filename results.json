@@ -3,7 +3,11 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
+<<<<<<< Updated upstream
   "updatedAt": "2026-06-14T18:08:44.986Z",
+=======
+  "updatedAt": "2026-06-14T19:26:21.189Z",
+>>>>>>> Stashed changes
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -105,6 +109,7 @@
     },
     "9": {
       "apiId": 537351,
+<<<<<<< Updated upstream
       "status": "PAUSED",
       "homeTeam": "Germany",
       "awayTeam": "Curaçao",
@@ -113,6 +118,16 @@
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-14T17:00:00Z",
       "lastUpdated": "2026-06-14T18:01:53Z",
+=======
+      "status": "FINISHED",
+      "homeTeam": "Germany",
+      "awayTeam": "Curaçao",
+      "homeScore": 7,
+      "awayScore": 1,
+      "winner": "HOME_TEAM",
+      "utcDate": "2026-06-14T17:00:00Z",
+      "lastUpdated": "2026-06-14T19:03:57Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "10": {
@@ -124,7 +139,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-14T20:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "11": {
@@ -136,7 +155,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-14T23:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "12": {
@@ -148,7 +171,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-15T02:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "13": {
@@ -160,7 +187,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-15T16:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "14": {
@@ -172,7 +203,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-15T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "15": {
@@ -184,7 +219,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-15T22:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "16": {
@@ -196,7 +235,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-16T01:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "17": {
@@ -208,7 +251,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-16T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "18": {
@@ -220,7 +267,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-16T22:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "19": {
@@ -232,7 +283,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-17T01:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "20": {
@@ -244,7 +299,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-17T04:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "21": {
@@ -256,7 +315,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-17T17:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "22": {
@@ -268,7 +331,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-17T20:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "23": {
@@ -280,7 +347,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-17T23:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "24": {
@@ -292,7 +363,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-18T02:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "25": {
@@ -304,7 +379,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-18T16:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "26": {
@@ -316,7 +395,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-18T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "27": {
@@ -328,7 +411,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-18T22:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "28": {
@@ -340,7 +427,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-19T01:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "29": {
@@ -352,7 +443,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-19T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "30": {
@@ -364,7 +459,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-19T22:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "31": {
@@ -376,7 +475,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-20T00:30:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "32": {
@@ -388,7 +491,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-20T03:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "33": {
@@ -400,7 +507,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-20T17:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "34": {
@@ -412,7 +523,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-20T20:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "35": {
@@ -424,7 +539,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-21T00:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "36": {
@@ -436,7 +555,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-21T04:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "37": {
@@ -448,7 +571,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-21T16:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "38": {
@@ -460,7 +587,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-21T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "39": {
@@ -472,7 +603,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-21T22:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "40": {
@@ -484,7 +619,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-22T01:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "41": {
@@ -496,7 +635,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-22T17:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "42": {
@@ -508,7 +651,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-22T21:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "43": {
@@ -520,7 +667,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-23T00:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "44": {
@@ -532,7 +683,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-23T03:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "45": {
@@ -544,7 +699,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-23T17:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "46": {
@@ -556,7 +715,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-23T20:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "47": {
@@ -568,7 +731,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-23T23:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "48": {
@@ -580,7 +747,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-24T02:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "49": {
@@ -592,7 +763,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-24T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "50": {
@@ -604,7 +779,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-24T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "51": {
@@ -616,7 +795,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-24T22:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "52": {
@@ -628,7 +811,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-24T22:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "53": {
@@ -640,7 +827,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-25T01:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "54": {
@@ -652,7 +843,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-25T01:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "55": {
@@ -664,7 +859,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-25T20:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "56": {
@@ -676,7 +875,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-25T20:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "57": {
@@ -688,7 +891,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-25T23:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "58": {
@@ -700,7 +907,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-25T23:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "59": {
@@ -712,7 +923,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-26T02:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "60": {
@@ -724,7 +939,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-26T02:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "61": {
@@ -736,7 +955,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-26T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "62": {
@@ -748,7 +971,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-26T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "63": {
@@ -760,7 +987,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T00:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "64": {
@@ -772,7 +1003,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T00:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "65": {
@@ -784,7 +1019,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T03:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "66": {
@@ -796,7 +1035,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T03:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "67": {
@@ -808,7 +1051,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T21:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "68": {
@@ -820,7 +1067,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T21:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "69": {
@@ -832,7 +1083,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T23:30:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "70": {
@@ -844,7 +1099,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T23:30:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "71": {
@@ -856,7 +1115,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-28T02:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "72": {
@@ -868,7 +1131,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-28T02:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "73": {
@@ -880,7 +1147,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-28T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "74": {
@@ -892,7 +1163,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-29T17:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "75": {
@@ -904,7 +1179,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-29T20:30:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "76": {
@@ -916,7 +1195,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-30T01:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "77": {
@@ -928,7 +1211,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-30T17:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "78": {
@@ -940,7 +1227,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-30T21:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "79": {
@@ -952,7 +1243,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-01T01:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "80": {
@@ -964,7 +1259,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-01T16:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "81": {
@@ -976,7 +1275,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-01T20:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "82": {
@@ -988,7 +1291,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-02T00:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "83": {
@@ -1000,7 +1307,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-02T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "84": {
@@ -1012,7 +1323,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-02T23:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "85": {
@@ -1024,7 +1339,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-03T03:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "86": {
@@ -1036,7 +1355,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-03T18:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "87": {
@@ -1048,7 +1371,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-03T22:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "88": {
@@ -1060,7 +1387,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-04T01:30:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "89": {
@@ -1072,7 +1403,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-04T17:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "90": {
@@ -1084,7 +1419,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-04T21:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "91": {
@@ -1096,7 +1435,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-05T20:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "92": {
@@ -1108,7 +1451,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-06T00:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "93": {
@@ -1120,7 +1467,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-06T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "94": {
@@ -1132,7 +1483,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-07T00:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "95": {
@@ -1144,7 +1499,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-07T16:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "96": {
@@ -1156,7 +1515,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-07T20:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "97": {
@@ -1168,7 +1531,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-09T20:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "98": {
@@ -1180,7 +1547,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-10T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "99": {
@@ -1192,7 +1563,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-11T21:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "100": {
@@ -1204,7 +1579,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-12T01:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "101": {
@@ -1216,7 +1595,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-14T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "102": {
@@ -1228,7 +1611,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-15T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "103": {
@@ -1240,7 +1627,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-18T21:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     },
     "104": {
@@ -1252,7 +1643,11 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-19T19:00:00Z",
+<<<<<<< Updated upstream
       "lastUpdated": "2026-06-13T15:20:17Z",
+=======
+      "lastUpdated": "2026-06-09T10:20:22Z",
+>>>>>>> Stashed changes
       "provider": "football-data.org"
     }
   }

@@ -117,8 +117,8 @@
 
   function startAutoScroll(direction) {
     if (activeDirection === direction) {
-      // Segundo toque no mesmo botão aumenta um pouco o avanço e dá sensação de controlo.
-      scrollStep(direction, 260);
+      // Segundo toque no mesmo botão dá um avanço maior.
+      scrollStep(direction, 360);
       return;
     }
 
@@ -126,18 +126,17 @@
     activeDirection = direction;
     updateActiveButtons();
 
-    scrollStep(direction, 90);
-    scrollTimer = setInterval(() => scrollStep(direction, 38), 28);
+    scrollStep(direction, 140);
+    scrollTimer = setInterval(() => scrollStep(direction, 62), 24);
   }
 
   function shortStep(direction) {
     stopAutoScroll();
-    window.scrollBy({ top: direction * 190, behavior: "smooth" });
+    window.scrollBy({ top: direction * 260, behavior: "smooth" });
   }
 
   function bindButton(button) {
     const direction = Number(button.dataset.scrollDir || 0);
-    let touchStarted = false;
 
     button.addEventListener("click", event => {
       event.preventDefault();
@@ -152,11 +151,6 @@
       event.preventDefault();
       if (direction !== 0) shortStep(direction);
     });
-
-    button.addEventListener("touchstart", () => {
-      touchStarted = true;
-      setTimeout(() => { touchStarted = false; }, 350);
-    }, { passive: true });
   }
 
   function ensureControl() {

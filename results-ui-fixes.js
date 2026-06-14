@@ -101,6 +101,51 @@
     }
   }
 
+  function parseCardKickoff(card) {
+    const dateText = card.querySelector(".date")?.textContent || "";
+    const timeText = card.querySelector(".time")?.textContent || "";
+    const dateMatch = dateText.match(/(\d{1,2})\/(\d{1,2})/);
+    const timeMatch = timeText.match(/(\d{1,2}):(\d{2})/);
+
+    if (!dateMatch || !timeMatch) return null;
+
+    const day = Number(dateMatch[1]);
+    const month = Number(dateMatch[2]) - 1;
+    const hour = Number(timeMatch[1]);
+    const minute = Number(timeMatch[2]);
+    const date = new Date(2026, month, day, hour, minute, 0, 0);
+
+    return Number.isNaN(date.getTime()) ? null : date;
+  }
+
+  function fixExpiredScheduledGames() {
+    const now = new Date();
+    const resultDelayLimit = 135 * 60 * 1000;
+
+    document.querySelectorAll("article.card").forEach(card => {
+      const resultBox = card.querySelector(".result");
+      const score = resultBox?.querySelector(".score");
+      const pill = resultBox?.querySelector(".status-pill");
+      const extra = resultBox?.querySelector(".result-extra");
+      const scoreText = (score?.textContent || "").trim().toLowerCase();
+
+      if (!resultBox || scoreText !== "por disputar") return;
+
+      const kickoff = parseCardKickoff(card);
+      if (!kickoff || now - kickoff < resultDelayLimit) return;
+
+      resultBox.classList.remove("scheduled");
+      resultBox.classList.add("warning");
+      resultBox.dataset.waitingApi = "true";
+
+      score.textContent = "A aguardar resultado da API";
+      if (pill) pill.textContent = "A aguardar API";
+      if (extra && !extra.textContent.includes("API ainda sem golos")) {
+        extra.textContent = `${extra.textContent} · API ainda sem golos`;
+      }
+    });
+  }
+
   function fixFinishedWithoutScore() {
     document.querySelectorAll(".result.finished").forEach(box => {
       const score = box.querySelector(".score");
@@ -132,6 +177,7 @@
     ensureBackToTopButton();
     fixKoreaCzechiaResult();
     fixFinishedWithoutScore();
+    fixExpiredScheduledGames();
   }
 
   function start() {

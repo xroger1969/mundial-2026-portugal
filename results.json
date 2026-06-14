@@ -4,9 +4,13 @@
   "season": "2026",
   "status": "ok",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   "updatedAt": "2026-06-14T18:08:44.986Z",
 =======
   "updatedAt": "2026-06-14T19:26:21.189Z",
+>>>>>>> Stashed changes
+=======
+  "updatedAt": "2026-06-14T19:33:06.141Z",
 >>>>>>> Stashed changes
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
@@ -110,6 +114,7 @@
     "9": {
       "apiId": 537351,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "status": "PAUSED",
       "homeTeam": "Germany",
       "awayTeam": "Curaçao",
@@ -118,6 +123,16 @@
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-14T17:00:00Z",
       "lastUpdated": "2026-06-14T18:01:53Z",
+=======
+      "status": "FINISHED",
+      "homeTeam": "Germany",
+      "awayTeam": "Curaçao",
+      "homeScore": 7,
+      "awayScore": 1,
+      "winner": "HOME_TEAM",
+      "utcDate": "2026-06-14T17:00:00Z",
+      "lastUpdated": "2026-06-14T19:03:57Z",
+>>>>>>> Stashed changes
 =======
       "status": "FINISHED",
       "homeTeam": "Germany",

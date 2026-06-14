@@ -1,11 +1,11 @@
 {
   "source": "OpenLigaDB",
   "url": "https://api.openligadb.de/getmatchdata/wm26/2026",
-  "checkedAt": "2026-06-14T19:58:33.310Z",
+  "checkedAt": "2026-06-14T21:24:02.652Z",
   "totalMatches": 72,
   "finishedMatches": 9,
-  "matchesWithAnyResult": 9,
-  "matchesWithHalftime": 9,
+  "matchesWithAnyResult": 10,
+  "matchesWithHalftime": 10,
   "matchesWithGoals": 0,
   "samples": [
     {
@@ -113,8 +113,8 @@
       "team1": "Niederlande",
       "team2": "Japan",
       "finished": false,
-      "finalScore": null,
-      "halftimeScore": null,
+      "finalScore": "2–1",
+      "halftimeScore": "0–0",
       "goalsCount": 0,
       "goalSamples": []
     },

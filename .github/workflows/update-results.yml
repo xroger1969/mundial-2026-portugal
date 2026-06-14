@@ -14,12 +14,18 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: mundial-2026-updates
+  cancel-in-progress: false
+
 jobs:
   update-results:
     runs-on: ubuntu-latest
     steps:
       - name: Obter ficheiros do repositório
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Preparar Node.js
         uses: actions/setup-node@v4
@@ -52,8 +58,11 @@ jobs:
           if [[ -n "$(git status --porcelain results.json news.json)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git stash push --include-untracked results.json news.json
+            git pull --rebase origin main
+            git stash pop || true
             git add results.json news.json
-            git commit -m "Atualizar resultados e notícias automáticas"
+            git commit -m "Atualizar resultados e notícias automáticas" || exit 0
             git push
           else
             echo "Sem alterações em results.json ou news.json"

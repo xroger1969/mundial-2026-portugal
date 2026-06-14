@@ -1,11 +1,11 @@
 {
   "source": "OpenLigaDB",
   "url": "https://api.openligadb.de/getmatchdata/wm26/2026",
-  "checkedAt": "2026-06-14T16:50:50.153Z",
+  "checkedAt": "2026-06-14T18:08:47.031Z",
   "totalMatches": 72,
   "finishedMatches": 8,
-  "matchesWithAnyResult": 8,
-  "matchesWithHalftime": 8,
+  "matchesWithAnyResult": 9,
+  "matchesWithHalftime": 9,
   "matchesWithGoals": 0,
   "samples": [
     {
@@ -102,8 +102,8 @@
       "team1": "Deutschland",
       "team2": "Curaçao",
       "finished": false,
-      "finalScore": null,
-      "halftimeScore": null,
+      "finalScore": "3–1",
+      "halftimeScore": "3–1",
       "goalsCount": 0,
       "goalSamples": []
     },

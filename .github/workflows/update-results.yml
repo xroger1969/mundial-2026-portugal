@@ -26,10 +26,15 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Atualizar results.json
+      - name: Atualizar results.json pela football-data
         run: node scripts/update-results.js
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+
+      - name: Aplicar atualização rápida Sportmonks
+        run: node scripts/update-sportmonks-live.js
+        env:
+          SPORTMONKS_API_TOKEN: ${{ secrets.SPORTMONKS_API_TOKEN }}
 
       - name: Atualizar news.json
         run: node scripts/update-news.js

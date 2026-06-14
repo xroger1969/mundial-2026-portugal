@@ -117,8 +117,7 @@
 
   function startAutoScroll(direction) {
     if (activeDirection === direction) {
-      // Segundo toque no mesmo botão dá um avanço maior.
-      scrollStep(direction, 360);
+      scrollStep(direction, 900);
       return;
     }
 
@@ -126,13 +125,13 @@
     activeDirection = direction;
     updateActiveButtons();
 
-    scrollStep(direction, 140);
-    scrollTimer = setInterval(() => scrollStep(direction, 62), 24);
+    scrollStep(direction, 320);
+    scrollTimer = setInterval(() => scrollStep(direction, 185), 12);
   }
 
   function shortStep(direction) {
     stopAutoScroll();
-    window.scrollBy({ top: direction * 260, behavior: "smooth" });
+    window.scrollBy({ top: direction * 520, behavior: "smooth" });
   }
 
   function bindButton(button) {

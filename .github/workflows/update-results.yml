@@ -31,6 +31,9 @@ jobs:
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
 
+      - name: Aplicar atualização gratuita OpenLigaDB
+        run: node scripts/update-openligadb.js
+
       - name: Aplicar atualização rápida Sportmonks
         run: node scripts/update-sportmonks-live.js
         env:

@@ -8,6 +8,7 @@ on:
     paths-ignore:
       - results.json
       - news.json
+      - openligadb-status.json
   schedule:
     - cron: "2-59/5 * * * *"
 
@@ -41,6 +42,10 @@ jobs:
         run: node scripts/update-openligadb.js
         continue-on-error: true
 
+      - name: Verificar detalhes disponíveis na OpenLigaDB
+        run: node scripts/check-openligadb-status.js
+        continue-on-error: true
+
       - name: Aplicar atualização rápida Sportmonks
         run: node scripts/update-sportmonks-live.js
         continue-on-error: true
@@ -55,15 +60,15 @@ jobs:
 
       - name: Gravar atualização se houver alterações
         run: |
-          if [[ -n "$(git status --porcelain results.json news.json)" ]]; then
+          if [[ -n "$(git status --porcelain results.json news.json openligadb-status.json)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git stash push --include-untracked results.json news.json
+            git stash push --include-untracked results.json news.json openligadb-status.json
             git pull --rebase origin main
             git stash pop || true
-            git add results.json news.json
-            git commit -m "Atualizar resultados e notícias automáticas" || exit 0
+            git add results.json news.json openligadb-status.json
+            git commit -m "Atualizar resultados, notícias e diagnóstico OpenLigaDB" || exit 0
             git push
           else
-            echo "Sem alterações em results.json ou news.json"
+            echo "Sem alterações em results.json, news.json ou openligadb-status.json"
           fi

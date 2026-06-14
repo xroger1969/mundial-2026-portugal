@@ -1,11 +1,11 @@
 {
   "source": "OpenLigaDB",
   "url": "https://api.openligadb.de/getmatchdata/wm26/2026",
-  "checkedAt": "2026-06-14T22:42:25.884Z",
+  "checkedAt": "2026-06-14T23:54:33.868Z",
   "totalMatches": 72,
   "finishedMatches": 10,
-  "matchesWithAnyResult": 10,
-  "matchesWithHalftime": 10,
+  "matchesWithAnyResult": 11,
+  "matchesWithHalftime": 11,
   "matchesWithGoals": 0,
   "samples": [
     {
@@ -124,8 +124,8 @@
       "team1": "Elfenbeinküste",
       "team2": "Ecuador",
       "finished": false,
-      "finalScore": null,
-      "halftimeScore": null,
+      "finalScore": "0–0",
+      "halftimeScore": "0–0",
       "goalsCount": 0,
       "goalSamples": []
     },

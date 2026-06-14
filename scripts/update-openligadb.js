@@ -165,20 +165,71 @@ function findScheduledGame(openligaMatch, schedule) {
   return { game: null, home, away };
 }
 
-function finalScore(match) {
+function pickResult(match, typeId, fallbackRegex) {
   const results = Array.isArray(match.matchResults) ? match.matchResults : [];
-  if (!results.length) return { homeScore: null, awayScore: null };
+  if (!results.length) return null;
 
-  const fullTime = results.find(r => Number(r.resultTypeID) === 2)
-    || results.find(r => /endstand|final|full/i.test(`${r.resultName || ""} ${r.resultDescription || ""}`))
-    || results.sort((a, b) => Number(b.resultOrderID || 0) - Number(a.resultOrderID || 0))[0];
+  if (typeId !== null && typeId !== undefined) {
+    const found = results.find(r => Number(r.resultTypeID) === Number(typeId));
+    if (found) return found;
+  }
 
-  const homeScore = fullTime?.pointsTeam1;
-  const awayScore = fullTime?.pointsTeam2;
+  if (fallbackRegex) {
+    const found = results.find(r => fallbackRegex.test(`${r.resultName || ""} ${r.resultDescription || ""}`));
+    if (found) return found;
+  }
+
+  return null;
+}
+
+function resultScore(result) {
+  if (!result) return null;
+  const homeScore = result.pointsTeam1;
+  const awayScore = result.pointsTeam2;
+  if (homeScore === null || homeScore === undefined || awayScore === null || awayScore === undefined) return null;
+  return { homeScore: Number(homeScore), awayScore: Number(awayScore) };
+}
+
+function finalScore(match) {
+  const final = pickResult(match, 2, /endstand|final|full/i)
+    || (Array.isArray(match.matchResults) ? [...match.matchResults].sort((a, b) => Number(b.resultOrderID || 0) - Number(a.resultOrderID || 0))[0] : null);
+
+  return resultScore(final) || { homeScore: null, awayScore: null };
+}
+
+function halftimeScore(match) {
+  const halftime = pickResult(match, 1, /halbzeit|half|intervalo/i);
+  return resultScore(halftime);
+}
+
+function extractGoals(match) {
+  const goals = Array.isArray(match.matchGoals) ? match.matchGoals : [];
+  return goals
+    .map(goal => ({
+      minute: goal.matchMinute === null || goal.matchMinute === undefined ? null : Number(goal.matchMinute),
+      scorer: goal.goalGetterName || goal.goalGetter?.goalGetterName || "",
+      score: goal.scoreTeam1 !== undefined && goal.scoreTeam2 !== undefined
+        ? `${goal.scoreTeam1}–${goal.scoreTeam2}`
+        : "",
+      penalty: Boolean(goal.isPenalty),
+      ownGoal: Boolean(goal.isOwnGoal),
+      overtime: Boolean(goal.isOvertime),
+      comment: goal.comment || ""
+    }))
+    .filter(goal => goal.scorer || goal.minute !== null || goal.score)
+    .sort((a, b) => (a.minute ?? 999) - (b.minute ?? 999));
+}
+
+function openLigaExtra(match) {
+  const halftime = halftimeScore(match);
+  const goals = extractGoals(match);
+  if (!halftime && !goals.length) return null;
 
   return {
-    homeScore: homeScore === null || homeScore === undefined ? null : Number(homeScore),
-    awayScore: awayScore === null || awayScore === undefined ? null : Number(awayScore)
+    id: match.matchID || null,
+    halftime,
+    goals,
+    source: "openligadb"
   };
 }
 
@@ -189,10 +240,9 @@ function winner(homeScore, awayScore) {
   return "DRAW";
 }
 
-function shouldApplyOpenLiga(previous, openligaStatus, homeScore, awayScore) {
+function shouldOverwriteScore(previous, openligaStatus, homeScore, awayScore) {
   if (homeScore === null || awayScore === null) return false;
 
-  const previousProvider = String(previous.provider || "").toLowerCase();
   const previousHasScore = previous.homeScore !== null
     && previous.homeScore !== undefined
     && previous.awayScore !== null
@@ -200,10 +250,12 @@ function shouldApplyOpenLiga(previous, openligaStatus, homeScore, awayScore) {
 
   if (!previousHasScore) return true;
   if (previous.status !== "FINISHED" && openligaStatus === "FINISHED") return true;
-  if (previousProvider === "openligadb") return true;
 
-  // Se a football-data já tiver um resultado final diferente, não o substituímos sem necessidade.
   return false;
+}
+
+function sameJson(a, b) {
+  return JSON.stringify(a || null) === JSON.stringify(b || null);
 }
 
 async function main() {
@@ -217,6 +269,7 @@ async function main() {
   if (!Array.isArray(matches)) throw new Error("Resposta inesperada da OpenLigaDB.");
 
   let applied = 0;
+  let enriched = 0;
 
   for (const match of matches) {
     const { game, home, away } = findScheduledGame(match, schedule);
@@ -226,34 +279,51 @@ async function main() {
     const status = match.matchIsFinished ? "FINISHED" : "TIMED";
     const key = String(game.num);
     const previous = results.matches?.[key] || {};
+    const extra = openLigaExtra(match);
+    const overwriteScore = shouldOverwriteScore(previous, status, homeScore, awayScore);
+    const hasNewExtra = extra && !sameJson(previous.openLiga, extra);
 
-    if (!shouldApplyOpenLiga(previous, status, homeScore, awayScore)) continue;
+    if (!overwriteScore && !hasNewExtra) continue;
 
     results.matches = results.matches || {};
-    results.matches[key] = {
+
+    const next = {
       ...previous,
-      openLigaId: match.matchID || null,
-      status,
-      homeTeam: home.name || previous.homeTeam || game.homeName,
-      awayTeam: away.name || previous.awayTeam || game.awayName,
-      homeScore,
-      awayScore,
-      winner: winner(homeScore, awayScore),
-      utcDate: match.matchDateTimeUTC ? `${String(match.matchDateTimeUTC).replace(" ", "T")}Z` : previous.utcDate || null,
-      lastUpdated: new Date().toISOString(),
-      provider: "openligadb"
+      openLigaId: match.matchID || previous.openLigaId || null,
+      openLiga: extra || previous.openLiga || null
     };
-    applied += 1;
+
+    if (overwriteScore) {
+      Object.assign(next, {
+        status,
+        homeTeam: home.name || previous.homeTeam || game.homeName,
+        awayTeam: away.name || previous.awayTeam || game.awayName,
+        homeScore,
+        awayScore,
+        winner: winner(homeScore, awayScore),
+        utcDate: match.matchDateTimeUTC ? `${String(match.matchDateTimeUTC).replace(" ", "T")}Z` : previous.utcDate || null,
+        lastUpdated: new Date().toISOString(),
+        provider: "openligadb"
+      });
+      applied += 1;
+    } else if (hasNewExtra) {
+      next.openLigaUpdatedAt = new Date().toISOString();
+      enriched += 1;
+    }
+
+    results.matches[key] = next;
   }
 
-  if (applied > 0) {
-    results.provider = "football-data.org + openligadb";
+  if (applied > 0 || enriched > 0) {
+    results.provider = applied > 0 ? "football-data.org + openligadb" : results.provider || "football-data.org";
     results.updatedAt = new Date().toISOString();
-    results.message = `OpenLigaDB aplicada a ${applied} jogo(s). Football-data mantém calendário completo.`;
+    results.message = applied > 0
+      ? `OpenLigaDB aplicada a ${applied} jogo(s) e detalhes acrescentados a ${enriched} jogo(s).`
+      : `OpenLigaDB acrescentou detalhes a ${enriched} jogo(s).`;
     writeResults(results);
   }
 
-  console.log(`OpenLigaDB: ${applied} atualização(ões) aplicada(s).`);
+  console.log(`OpenLigaDB: ${applied} resultado(s), ${enriched} detalhe(s) acrescentado(s).`);
 }
 
 main().catch(error => {

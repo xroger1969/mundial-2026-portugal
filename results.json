@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-13T23:52:24.054Z",
+  "updatedAt": "2026-06-14T03:54:19.633Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -69,26 +69,26 @@
     },
     "6": {
       "apiId": 537339,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeTeam": "Brazil",
       "awayTeam": "Morocco",
       "homeScore": 1,
       "awayScore": 1,
       "winner": "DRAW",
       "utcDate": "2026-06-13T22:00:00Z",
-      "lastUpdated": "2026-06-13T23:52:17Z",
+      "lastUpdated": "2026-06-14T00:10:33Z",
       "provider": "football-data.org"
     },
     "7": {
       "apiId": 537340,
-      "status": "TIMED",
+      "status": "FINISHED",
       "homeTeam": "Haiti",
       "awayTeam": "Scotland",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 0,
+      "awayScore": 1,
+      "winner": "AWAY_TEAM",
       "utcDate": "2026-06-14T01:00:00Z",
-      "lastUpdated": "2026-06-10T10:20:19Z",
+      "lastUpdated": "2026-06-14T03:09:14Z",
       "provider": "football-data.org"
     },
     "8": {

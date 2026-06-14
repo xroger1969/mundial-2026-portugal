@@ -1,21 +1,9 @@
 {
   "source": "OpenLigaDB",
   "url": "https://api.openligadb.de/getmatchdata/wm26/2026",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "checkedAt": "2026-06-14T18:08:47.031Z",
-  "totalMatches": 72,
-  "finishedMatches": 8,
-=======
-  "checkedAt": "2026-06-14T19:26:22.920Z",
+  "checkedAt": "2026-06-14T19:45:34.098Z",
   "totalMatches": 72,
   "finishedMatches": 9,
->>>>>>> Stashed changes
-=======
-  "checkedAt": "2026-06-14T19:33:08.060Z",
-  "totalMatches": 72,
-  "finishedMatches": 9,
->>>>>>> Stashed changes
   "matchesWithAnyResult": 9,
   "matchesWithHalftime": 9,
   "matchesWithGoals": 0,
@@ -113,18 +101,8 @@
       "date": "2026-06-14T17:00:00Z",
       "team1": "Deutschland",
       "team2": "Curaçao",
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-      "finished": false,
-      "finalScore": "3–1",
-=======
       "finished": true,
       "finalScore": "7–1",
->>>>>>> Stashed changes
-=======
-      "finished": true,
-      "finalScore": "7–1",
->>>>>>> Stashed changes
       "halftimeScore": "3–1",
       "goalsCount": 0,
       "goalSamples": []

@@ -1,0 +1,144 @@
+{
+  "source": "OpenLigaDB",
+  "url": "https://api.openligadb.de/getmatchdata/wm26/2026",
+  "checkedAt": "2026-06-14T09:07:00.299Z",
+  "totalMatches": 72,
+  "finishedMatches": 8,
+  "matchesWithAnyResult": 8,
+  "matchesWithHalftime": 8,
+  "matchesWithGoals": 0,
+  "samples": [
+    {
+      "id": 80099,
+      "date": "2026-06-11T19:00:00Z",
+      "team1": "Mexiko",
+      "team2": "Südafrika",
+      "finished": true,
+      "finalScore": "2–0",
+      "halftimeScore": "1–0",
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80100,
+      "date": "2026-06-12T02:00:00Z",
+      "team1": "Südkorea",
+      "team2": "Tschechien",
+      "finished": true,
+      "finalScore": "2–1",
+      "halftimeScore": "0–0",
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80101,
+      "date": "2026-06-12T19:00:00Z",
+      "team1": "Kanada",
+      "team2": "Bosnien und Herzegowina",
+      "finished": true,
+      "finalScore": "1–1",
+      "halftimeScore": "0–1",
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80102,
+      "date": "2026-06-13T01:00:00Z",
+      "team1": "USA",
+      "team2": "Paraguay",
+      "finished": true,
+      "finalScore": "4–1",
+      "halftimeScore": "3–0",
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80104,
+      "date": "2026-06-13T19:00:00Z",
+      "team1": "Katar",
+      "team2": "Schweiz",
+      "finished": true,
+      "finalScore": "1–1",
+      "halftimeScore": "0–1",
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80105,
+      "date": "2026-06-13T22:00:00Z",
+      "team1": "Brasilien",
+      "team2": "Marokko",
+      "finished": true,
+      "finalScore": "1–1",
+      "halftimeScore": "1–1",
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80106,
+      "date": "2026-06-14T01:00:00Z",
+      "team1": "Haiti",
+      "team2": "Schottland",
+      "finished": true,
+      "finalScore": "0–1",
+      "halftimeScore": "0–1",
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80103,
+      "date": "2026-06-14T04:00:00Z",
+      "team1": "Australien",
+      "team2": "Türkei",
+      "finished": true,
+      "finalScore": "2–0",
+      "halftimeScore": "1–0",
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80107,
+      "date": "2026-06-14T17:00:00Z",
+      "team1": "Deutschland",
+      "team2": "Curaçao",
+      "finished": false,
+      "finalScore": null,
+      "halftimeScore": null,
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80108,
+      "date": "2026-06-14T20:00:00Z",
+      "team1": "Niederlande",
+      "team2": "Japan",
+      "finished": false,
+      "finalScore": null,
+      "halftimeScore": null,
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80109,
+      "date": "2026-06-14T23:00:00Z",
+      "team1": "Elfenbeinküste",
+      "team2": "Ecuador",
+      "finished": false,
+      "finalScore": null,
+      "halftimeScore": null,
+      "goalsCount": 0,
+      "goalSamples": []
+    },
+    {
+      "id": 80110,
+      "date": "2026-06-15T02:00:00Z",
+      "team1": "Schweden",
+      "team2": "Tunesien",
+      "finished": false,
+      "finalScore": null,
+      "halftimeScore": null,
+      "goalsCount": 0,
+      "goalSamples": []
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "provider": "Open-Meteo",
+  "status": "pending",
+  "generatedAt": null,
+  "forecastDays": 16,
+  "message": "A previsão meteorológica será preenchida automaticamente pelo GitHub Actions.",
+  "matches": {}
+}

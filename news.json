@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-15T19:57:58.012Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-16T05:38:14.282Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 105,
+  "totalArticles": 106,
   "articles": [
+    {
+      "title": "Galp une seis rádios na estreia da Seleção no Mundial 2026",
+      "description": "O projeto, impulsionado pela Galp, marca a estreia de Portugal no Mundial 2026, com uma transmissão em direto da Cidade do Futebol.",
+      "content": "Numa iniciativa inédita em mais de um século de história da rádio em Portugal, seis das principais estações do país vão realizar uma emissão conjunta no próximo dia 17 de junho. O projeto, impulsionado pela Galp, marca a estreia de Portugal no Mundia... [1913 chars]",
+      "url": "https://eco.sapo.pt/2026/06/15/galp-une-seis-radios-na-estreia-da-selecao-no-mundial-2026/",
+      "image": "https://eco.imgix.net/uploads/2026/06/art-galp-mundialfutebol-energia-1920x1080px.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+      "publishedAt": "2026-06-15T16:05:23Z",
+      "sourceName": "ECO Economia Online",
+      "sourceUrl": "https://eco.sapo.pt"
+    },
     {
       "title": "O sonho de Diogo Jota viaja com Portugal: O detalhe que Matheus Nunes levou para o Mundial de 2026",
       "description": "Momento foi captado à chegada da Seleção de futebol aos Estados Unidos, onde vai disputar o mundial.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-06-02T18:36:43Z",
       "sourceName": "SIC Notícias",
       "sourceUrl": "https://sicnoticias.pt"
-    },
-    {
-      "title": "Uzbequistão perde com Canadá em jogo de preparação",
-      "description": "A seleção do Uzbequistão, adversário de Portugal no Grupo K do Mundial 2026 de futebol, perdeu 0-2 com o Canadá, num jogo de preparação para a estreia deste país da Ásia Central em campeonatos mundiais.",
-      "content": "Num jogo disputado em Edmonton, no oeste do Canadá, perante cerca de 46 mil espectadores, o Uzbequistão, treinado pelo italiano Fabio Cannavaro, foi o primeiro a criar perigo. Aos seis minutos, o avançado Shomurodov ultrapassou o defesa Moise Bombito... [1640 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/uzbequistao-perde-com-canada-em-jogo-de-preparacao/18091053",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/b634700e-8bf0-4c94-832a-58e660d33612_1200x675.jpg",
-      "publishedAt": "2026-06-02T08:49:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
     }
   ]
 }

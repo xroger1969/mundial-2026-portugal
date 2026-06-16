@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-16T21:47:47.278Z",
+  "updatedAt": "2026-06-16T23:15:25.982Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -213,14 +213,14 @@
     },
     "18": {
       "apiId": 537392,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Iraq",
       "awayTeam": "Norway",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 1,
+      "awayScore": 2,
+      "winner": "AWAY_TEAM",
       "utcDate": "2026-06-16T22:00:00Z",
-      "lastUpdated": "2026-06-11T15:20:18Z",
+      "lastUpdated": "2026-06-16T23:15:10Z",
       "provider": "football-data.org"
     },
     "19": {

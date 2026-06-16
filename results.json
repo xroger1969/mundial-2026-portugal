@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-16T21:00:55.029Z",
+  "updatedAt": "2026-06-16T21:47:47.278Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -201,14 +201,14 @@
     },
     "17": {
       "apiId": 537391,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeTeam": "France",
       "awayTeam": "Senegal",
-      "homeScore": 2,
-      "awayScore": 0,
+      "homeScore": 3,
+      "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-16T19:00:00Z",
-      "lastUpdated": "2026-06-16T20:58:49Z",
+      "lastUpdated": "2026-06-16T21:10:25Z",
       "provider": "football-data.org"
     },
     "18": {

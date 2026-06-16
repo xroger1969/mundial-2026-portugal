@@ -1,7 +1,7 @@
 "use strict";
 
-const XAI_API_URL = "https://api.x.ai/v1/responses";
-const DEFAULT_MODEL = "grok-4.3";
+const XAI_API_URL = "https://api.x.ai/v1/chat/completions";
+const DEFAULT_MODEL = "grok-4";
 const MAX_CONTEXT_CHARS = 9000;
 const MAX_MESSAGES = 10;
 
@@ -51,34 +51,38 @@ function systemPrompt(context) {
 }
 
 function extractReply(data) {
-  if (typeof data.output_text === "string" && data.output_text.trim()) {
-    return data.output_text.trim();
-  }
-
-  const output = Array.isArray(data.output) ? data.output : [];
-  const parts = [];
-
-  for (const item of output) {
-    const content = Array.isArray(item.content) ? item.content : [];
-    for (const block of content) {
-      if (typeof block.text === "string" && block.text.trim()) parts.push(block.text.trim());
-      if (typeof block.content === "string" && block.content.trim()) parts.push(block.content.trim());
-    }
-  }
-
-  return parts.join("\n\n").trim();
+  const content = data?.choices?.[0]?.message?.content;
+  if (typeof content === "string" && content.trim()) return content.trim();
+  return "";
 }
 
 function parseUpstreamPayload(text) {
   try {
     return JSON.parse(text || "{}");
   } catch (error) {
-    return { raw: cleanText(text, 600) };
+    return { raw: cleanText(text, 900) };
   }
 }
 
 function upstreamErrorMessage(status, data) {
   const detail = data?.error?.message || data?.message || data?.raw || "Sem detalhe devolvido pela xAI.";
+
+  if (status === 401) {
+    return `Erro xAI 401: chave inválida ou mal colocada na Vercel. ${detail}`;
+  }
+
+  if (status === 403) {
+    return `Erro xAI 403: a chave foi reconhecida, mas a xAI recusou o acesso. Verifica no painel da xAI se a API está ativa, se há créditos/billing e se o modelo tem acesso. Detalhe: ${detail}`;
+  }
+
+  if (status === 404) {
+    return `Erro xAI 404: endpoint ou modelo não encontrado. Experimenta definir XAI_MODEL=grok-4 na Vercel. Detalhe: ${detail}`;
+  }
+
+  if (status === 429) {
+    return `Erro xAI 429: limite de pedidos ou créditos atingido. Detalhe: ${detail}`;
+  }
+
   return `Erro xAI ${status}: ${detail}`;
 }
 
@@ -117,13 +121,12 @@ module.exports = async function handler(req, res) {
       },
       body: JSON.stringify({
         model: process.env.XAI_MODEL || DEFAULT_MODEL,
-        input: [
+        messages: [
           { role: "system", content: systemPrompt(context) },
           ...userMessages
         ],
         temperature: 0.4,
-        max_output_tokens: 900,
-        store: false
+        max_tokens: 900
       })
     });
 

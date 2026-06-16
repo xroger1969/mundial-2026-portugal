@@ -2,7 +2,7 @@
 
 (function () {
   const RESULTS_FILE = "results.json";
-  const CHECK_INTERVAL_MS = 60 * 1000;
+  const CHECK_INTERVAL_MS = 15 * 1000;
   let lastSignature = null;
 
   function buildSignature(data) {

@@ -1,7 +1,7 @@
 "use strict";
 
-const XAI_API_URL = "https://api.x.ai/v1/chat/completions";
-const DEFAULT_MODEL = "grok-4";
+const XAI_API_URL = "https://api.x.ai/v1/responses";
+const DEFAULT_MODEL = "grok-4.3";
 const MAX_CONTEXT_CHARS = 9000;
 const MAX_MESSAGES = 10;
 
@@ -50,6 +50,38 @@ function systemPrompt(context) {
   ].join("\n");
 }
 
+function extractReply(data) {
+  if (typeof data.output_text === "string" && data.output_text.trim()) {
+    return data.output_text.trim();
+  }
+
+  const output = Array.isArray(data.output) ? data.output : [];
+  const parts = [];
+
+  for (const item of output) {
+    const content = Array.isArray(item.content) ? item.content : [];
+    for (const block of content) {
+      if (typeof block.text === "string" && block.text.trim()) parts.push(block.text.trim());
+      if (typeof block.content === "string" && block.content.trim()) parts.push(block.content.trim());
+    }
+  }
+
+  return parts.join("\n\n").trim();
+}
+
+function parseUpstreamPayload(text) {
+  try {
+    return JSON.parse(text || "{}");
+  } catch (error) {
+    return { raw: cleanText(text, 600) };
+  }
+}
+
+function upstreamErrorMessage(status, data) {
+  const detail = data?.error?.message || data?.message || data?.raw || "Sem detalhe devolvido pela xAI.";
+  return `Erro xAI ${status}: ${detail}`;
+}
+
 module.exports = async function handler(req, res) {
   if (req.method === "OPTIONS") {
     return sendJson(res, 200, { ok: true });
@@ -71,8 +103,8 @@ module.exports = async function handler(req, res) {
     const messages = safeMessages(body.messages);
     const question = cleanText(body.question || body.message, 2000);
     const context = cleanText(body.context, MAX_CONTEXT_CHARS);
-
     const userMessages = messages.length ? messages : [{ role: "user", content: question }];
+
     if (!userMessages.length || !userMessages.some(message => message.role === "user" && message.content)) {
       return sendJson(res, 400, { error: "Pergunta em falta." });
     }
@@ -85,24 +117,26 @@ module.exports = async function handler(req, res) {
       },
       body: JSON.stringify({
         model: process.env.XAI_MODEL || DEFAULT_MODEL,
-        messages: [
+        input: [
           { role: "system", content: systemPrompt(context) },
           ...userMessages
         ],
         temperature: 0.4,
-        max_tokens: 900
+        max_output_tokens: 900,
+        store: false
       })
     });
 
-    const data = await upstream.json().catch(() => ({}));
+    const responseText = await upstream.text();
+    const data = parseUpstreamPayload(responseText);
 
     if (!upstream.ok) {
       return sendJson(res, upstream.status, {
-        error: data.error?.message || data.message || "Erro ao contactar a API da xAI."
+        error: upstreamErrorMessage(upstream.status, data)
       });
     }
 
-    const reply = data.choices?.[0]?.message?.content || "Não recebi resposta do Grok.";
+    const reply = extractReply(data) || "Não recebi resposta do Grok.";
     return sendJson(res, 200, { reply });
   } catch (error) {
     return sendJson(res, 500, { error: error.message || "Erro inesperado no chatbot." });

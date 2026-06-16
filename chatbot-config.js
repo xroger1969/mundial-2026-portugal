@@ -7,6 +7,12 @@ window.WC_CHAT_API_URL = "https://mundial-2026-portugal.vercel.app/api/chat";
 (function () {
   const STYLE_ID = "assistantTopLayoutStyles";
   const TOPBAR_ID = "assistantTopbar";
+  const ASSISTANT_TITLE = "Assistente Mundial 2026";
+  const ASSISTANT_SUBTITLE = "Pergunta AI sobre jogos, resultados e tudo sobre o Mundial";
+  const TEXTS_TO_REMOVE = [
+    "Olá! Estou pronto, mas para falar com o Grok tens de abrir a versão Vercel do site. No GitHub Pages só consigo usar dados locais.",
+    "Olá! Estou ligado ao assistente Grok. Posso responder a perguntas gerais e também usar os dados do calendário quando for útil."
+  ];
 
   function injectStyles() {
     if (document.getElementById(STYLE_ID)) return;
@@ -102,6 +108,23 @@ window.WC_CHAT_API_URL = "https://mundial-2026-portugal.vercel.app/api/chat";
     document.body.classList.toggle("assistant-chat-open", Boolean(panel && panel.classList.contains("open")));
   }
 
+  function cleanAssistantIntroMessages() {
+    document.querySelectorAll("#mundialAssistantChat .assistant-msg.bot").forEach(message => {
+      const text = (message.textContent || "").trim();
+      if (TEXTS_TO_REMOVE.includes(text)) message.remove();
+    });
+  }
+
+  function updateAssistantTexts() {
+    document.querySelectorAll("#mundialAssistantChat .assistant-title, #assistantTopbar .assistant-top-title").forEach(el => {
+      el.textContent = ASSISTANT_TITLE;
+    });
+
+    document.querySelectorAll("#mundialAssistantChat .assistant-subtitle, #assistantTopbar .assistant-top-subtitle").forEach(el => {
+      el.textContent = ASSISTANT_SUBTITLE;
+    });
+  }
+
   function openAssistant() {
     const panel = document.querySelector("#mundialAssistantChat .assistant-panel");
     const input = document.querySelector("#mundialAssistantChat .assistant-input");
@@ -114,8 +137,12 @@ window.WC_CHAT_API_URL = "https://mundial-2026-portugal.vercel.app/api/chat";
       else panel.classList.add("open");
     }
 
+    updateAssistantTexts();
     setChatOpenState();
-    setTimeout(() => input?.focus(), 120);
+    setTimeout(() => {
+      cleanAssistantIntroMessages();
+      input?.focus();
+    }, 120);
   }
 
   function createTopbar() {
@@ -129,8 +156,8 @@ window.WC_CHAT_API_URL = "https://mundial-2026-portugal.vercel.app/api/chat";
     topbar.innerHTML = `
       <button type="button" class="assistant-top-btn" aria-label="Abrir Assistente Mundial 2026">
         <span class="assistant-top-main">
-          <span class="assistant-top-title">Assistente Mundial 2026</span>
-          <span class="assistant-top-subtitle">Pergunta ao Grok sobre jogos, resultados ou qualquer assunto</span>
+          <span class="assistant-top-title">${ASSISTANT_TITLE}</span>
+          <span class="assistant-top-subtitle">${ASSISTANT_SUBTITLE}</span>
         </span>
         <span class="assistant-top-icon">💬</span>
       </button>
@@ -150,6 +177,8 @@ window.WC_CHAT_API_URL = "https://mundial-2026-portugal.vercel.app/api/chat";
   function applyLayout() {
     injectStyles();
     createTopbar();
+    updateAssistantTexts();
+    cleanAssistantIntroMessages();
     wireCloseButton();
     setChatOpenState();
   }

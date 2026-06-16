@@ -257,7 +257,7 @@
     addMessage("user", message);
     conversation.push({ role: "user", content: message });
 
-    const pending = addMessage("bot", "A ligar ao Grok...");
+    const pending = addMessage("bot", "A obter resposta...");
 
     try {
       const external = await backendAnswer(message);

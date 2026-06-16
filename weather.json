@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-16T11:50:09.930Z",
+  "generatedAt": "2026-06-16T12:36:22.595Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -29,9 +29,9 @@
       "temperatureC": 24.3,
       "precipitationProbability": 0,
       "windKmh": 10.8,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "19": {
       "available": true,
@@ -69,7 +69,7 @@
       "kickoffUtc": "2026-06-17T17:00:00.000Z",
       "forecastHourUtc": "2026-06-17T17:00:00Z",
       "temperatureC": 27.5,
-      "precipitationProbability": 43,
+      "precipitationProbability": 41,
       "windKmh": 7.6,
       "weatherCode": 3,
       "icon": "☁️",
@@ -97,7 +97,7 @@
       "kickoffUtc": "2026-06-17T23:00:00.000Z",
       "forecastHourUtc": "2026-06-17T23:00:00Z",
       "temperatureC": 18,
-      "precipitationProbability": 18,
+      "precipitationProbability": 3,
       "windKmh": 13,
       "weatherCode": 3,
       "icon": "☁️",
@@ -126,7 +126,7 @@
       "forecastHourUtc": "2026-06-18T16:00:00Z",
       "temperatureC": 21.8,
       "precipitationProbability": 53,
-      "windKmh": 15.5,
+      "windKmh": 16.3,
       "weatherCode": 80,
       "icon": "🌦️",
       "description": "Aguaceiros fracos"
@@ -140,7 +140,7 @@
       "forecastHourUtc": "2026-06-18T19:00:00Z",
       "temperatureC": 20.8,
       "precipitationProbability": 0,
-      "windKmh": 16.6,
+      "windKmh": 17.3,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -154,7 +154,7 @@
       "forecastHourUtc": "2026-06-18T22:00:00Z",
       "temperatureC": 22.4,
       "precipitationProbability": 0,
-      "windKmh": 16.5,
+      "windKmh": 15.4,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -182,7 +182,7 @@
       "forecastHourUtc": "2026-06-19T19:00:00Z",
       "temperatureC": 24.9,
       "precipitationProbability": 0,
-      "windKmh": 7.3,
+      "windKmh": 9.3,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -196,7 +196,7 @@
       "forecastHourUtc": "2026-06-19T22:00:00Z",
       "temperatureC": 26.6,
       "precipitationProbability": 5,
-      "windKmh": 18.9,
+      "windKmh": 19.7,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -210,7 +210,7 @@
       "forecastHourUtc": "2026-06-20T00:00:00Z",
       "temperatureC": 26,
       "precipitationProbability": 8,
-      "windKmh": 13,
+      "windKmh": 14,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -224,7 +224,7 @@
       "forecastHourUtc": "2026-06-20T03:00:00Z",
       "temperatureC": 23.5,
       "precipitationProbability": 0,
-      "windKmh": 10.1,
+      "windKmh": 7.4,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -252,7 +252,7 @@
       "forecastHourUtc": "2026-06-20T20:00:00Z",
       "temperatureC": 21.8,
       "precipitationProbability": 6,
-      "windKmh": 22.4,
+      "windKmh": 20.7,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -266,7 +266,7 @@
       "forecastHourUtc": "2026-06-21T00:00:00Z",
       "temperatureC": 24.3,
       "precipitationProbability": 20,
-      "windKmh": 19.6,
+      "windKmh": 13.6,
       "weatherCode": 95,
       "icon": "⛈️",
       "description": "Trovoada"
@@ -280,7 +280,7 @@
       "forecastHourUtc": "2026-06-21T04:00:00Z",
       "temperatureC": 27.4,
       "precipitationProbability": 35,
-      "windKmh": 17.8,
+      "windKmh": 11.3,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -294,7 +294,7 @@
       "forecastHourUtc": "2026-06-21T16:00:00Z",
       "temperatureC": 29.5,
       "precipitationProbability": 10,
-      "windKmh": 11.2,
+      "windKmh": 7,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -308,7 +308,7 @@
       "forecastHourUtc": "2026-06-21T19:00:00Z",
       "temperatureC": 20.6,
       "precipitationProbability": 0,
-      "windKmh": 13.6,
+      "windKmh": 16.3,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -322,7 +322,7 @@
       "forecastHourUtc": "2026-06-21T22:00:00Z",
       "temperatureC": 31.1,
       "precipitationProbability": 51,
-      "windKmh": 13.9,
+      "windKmh": 15.3,
       "weatherCode": 81,
       "icon": "🌦️",
       "description": "Aguaceiros"
@@ -336,7 +336,7 @@
       "forecastHourUtc": "2026-06-22T01:00:00Z",
       "temperatureC": 21.9,
       "precipitationProbability": 0,
-      "windKmh": 10.1,
+      "windKmh": 9.7,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -350,7 +350,7 @@
       "forecastHourUtc": "2026-06-22T17:00:00Z",
       "temperatureC": 33.2,
       "precipitationProbability": 5,
-      "windKmh": 22.2,
+      "windKmh": 22.7,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -364,7 +364,7 @@
       "forecastHourUtc": "2026-06-22T21:00:00Z",
       "temperatureC": 18.6,
       "precipitationProbability": 39,
-      "windKmh": 26.8,
+      "windKmh": 19.9,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -378,7 +378,7 @@
       "forecastHourUtc": "2026-06-23T00:00:00Z",
       "temperatureC": 16,
       "precipitationProbability": 37,
-      "windKmh": 22,
+      "windKmh": 16.9,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -392,7 +392,7 @@
       "forecastHourUtc": "2026-06-23T03:00:00Z",
       "temperatureC": 22.2,
       "precipitationProbability": 0,
-      "windKmh": 15.9,
+      "windKmh": 14.5,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -406,7 +406,7 @@
       "forecastHourUtc": "2026-06-23T17:00:00Z",
       "temperatureC": 29.2,
       "precipitationProbability": 5,
-      "windKmh": 11,
+      "windKmh": 16.9,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -420,7 +420,7 @@
       "forecastHourUtc": "2026-06-23T20:00:00Z",
       "temperatureC": 26.5,
       "precipitationProbability": 15,
-      "windKmh": 10.4,
+      "windKmh": 8.7,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -434,7 +434,7 @@
       "forecastHourUtc": "2026-06-23T23:00:00Z",
       "temperatureC": 21.5,
       "precipitationProbability": 10,
-      "windKmh": 6.1,
+      "windKmh": 7.5,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -462,7 +462,7 @@
       "forecastHourUtc": "2026-06-24T19:00:00Z",
       "temperatureC": 20.9,
       "precipitationProbability": 1,
-      "windKmh": 19,
+      "windKmh": 7.1,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -476,7 +476,7 @@
       "forecastHourUtc": "2026-06-24T19:00:00Z",
       "temperatureC": 23.7,
       "precipitationProbability": 1,
-      "windKmh": 12.6,
+      "windKmh": 8.5,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -490,7 +490,7 @@
       "forecastHourUtc": "2026-06-24T22:00:00Z",
       "temperatureC": 32.7,
       "precipitationProbability": 30,
-      "windKmh": 9.6,
+      "windKmh": 17.7,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -504,7 +504,7 @@
       "forecastHourUtc": "2026-06-24T22:00:00Z",
       "temperatureC": 21.3,
       "precipitationProbability": 30,
-      "windKmh": 17.4,
+      "windKmh": 2.2,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -532,7 +532,7 @@
       "forecastHourUtc": "2026-06-25T01:00:00Z",
       "temperatureC": 23.9,
       "precipitationProbability": 5,
-      "windKmh": 18.9,
+      "windKmh": 12.9,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -546,7 +546,7 @@
       "forecastHourUtc": "2026-06-25T20:00:00Z",
       "temperatureC": 25.1,
       "precipitationProbability": 18,
-      "windKmh": 18.2,
+      "windKmh": 20.3,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -560,7 +560,7 @@
       "forecastHourUtc": "2026-06-25T20:00:00Z",
       "temperatureC": 28.2,
       "precipitationProbability": 19,
-      "windKmh": 13.4,
+      "windKmh": 11.9,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -574,7 +574,7 @@
       "forecastHourUtc": "2026-06-25T23:00:00Z",
       "temperatureC": 34.4,
       "precipitationProbability": 6,
-      "windKmh": 12.3,
+      "windKmh": 25.6,
       "weatherCode": 1,
       "icon": "🌤️",
       "description": "Pouco nublado"
@@ -588,7 +588,7 @@
       "forecastHourUtc": "2026-06-25T23:00:00Z",
       "temperatureC": 27.4,
       "precipitationProbability": 10,
-      "windKmh": 19.5,
+      "windKmh": 16.3,
       "weatherCode": 96,
       "icon": "⛈️",
       "description": "Trovoada com granizo"
@@ -602,7 +602,7 @@
       "forecastHourUtc": "2026-06-26T02:00:00Z",
       "temperatureC": 23.3,
       "precipitationProbability": 0,
-      "windKmh": 13.8,
+      "windKmh": 13.3,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -616,7 +616,7 @@
       "forecastHourUtc": "2026-06-26T02:00:00Z",
       "temperatureC": 28.5,
       "precipitationProbability": 0,
-      "windKmh": 12.6,
+      "windKmh": 13.8,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -630,7 +630,7 @@
       "forecastHourUtc": "2026-06-26T19:00:00Z",
       "temperatureC": 27.3,
       "precipitationProbability": 17,
-      "windKmh": 14.6,
+      "windKmh": 20.5,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -644,7 +644,7 @@
       "forecastHourUtc": "2026-06-26T19:00:00Z",
       "temperatureC": 27.6,
       "precipitationProbability": 23,
-      "windKmh": 15,
+      "windKmh": 17.2,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -658,7 +658,7 @@
       "forecastHourUtc": "2026-06-27T00:00:00Z",
       "temperatureC": 30.6,
       "precipitationProbability": 10,
-      "windKmh": 19.2,
+      "windKmh": 18.1,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -686,7 +686,7 @@
       "forecastHourUtc": "2026-06-27T03:00:00Z",
       "temperatureC": 11.8,
       "precipitationProbability": 6,
-      "windKmh": 8.3,
+      "windKmh": 10.8,
       "weatherCode": 51,
       "icon": "🌦️",
       "description": "Chuvisco fraco"
@@ -700,7 +700,7 @@
       "forecastHourUtc": "2026-06-27T03:00:00Z",
       "temperatureC": 14.1,
       "precipitationProbability": 7,
-      "windKmh": 4.3,
+      "windKmh": 6.6,
       "weatherCode": 51,
       "icon": "🌦️",
       "description": "Chuvisco fraco"
@@ -714,7 +714,7 @@
       "forecastHourUtc": "2026-06-27T21:00:00Z",
       "temperatureC": 30.4,
       "precipitationProbability": 8,
-      "windKmh": 22.5,
+      "windKmh": 16.6,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -728,7 +728,7 @@
       "forecastHourUtc": "2026-06-27T21:00:00Z",
       "temperatureC": 25.6,
       "precipitationProbability": 8,
-      "windKmh": 17.7,
+      "windKmh": 37.1,
       "weatherCode": 51,
       "icon": "🌦️",
       "description": "Chuvisco fraco"
@@ -742,7 +742,7 @@
       "forecastHourUtc": "2026-06-27T23:00:00Z",
       "temperatureC": 31.1,
       "precipitationProbability": 44,
-      "windKmh": 13.1,
+      "windKmh": 15.2,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -756,7 +756,7 @@
       "forecastHourUtc": "2026-06-27T23:00:00Z",
       "temperatureC": 29.7,
       "precipitationProbability": 18,
-      "windKmh": 2.6,
+      "windKmh": 10.2,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -770,7 +770,7 @@
       "forecastHourUtc": "2026-06-28T02:00:00Z",
       "temperatureC": 27,
       "precipitationProbability": 18,
-      "windKmh": 14.2,
+      "windKmh": 21.5,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -784,7 +784,7 @@
       "forecastHourUtc": "2026-06-28T02:00:00Z",
       "temperatureC": 32,
       "precipitationProbability": 6,
-      "windKmh": 15.6,
+      "windKmh": 24.3,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -798,7 +798,7 @@
       "forecastHourUtc": "2026-06-28T19:00:00Z",
       "temperatureC": 21.9,
       "precipitationProbability": 0,
-      "windKmh": 14.3,
+      "windKmh": 15,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -812,7 +812,7 @@
       "forecastHourUtc": "2026-06-29T20:00:00Z",
       "temperatureC": 31.3,
       "precipitationProbability": 27,
-      "windKmh": 15.6,
+      "windKmh": 8.5,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -826,7 +826,7 @@
       "forecastHourUtc": "2026-06-30T01:00:00Z",
       "temperatureC": 31.9,
       "precipitationProbability": 41,
-      "windKmh": 27.1,
+      "windKmh": 30.5,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -840,7 +840,7 @@
       "forecastHourUtc": "2026-06-29T17:00:00Z",
       "temperatureC": 32.9,
       "precipitationProbability": 17,
-      "windKmh": 13,
+      "windKmh": 18.9,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -854,7 +854,7 @@
       "forecastHourUtc": "2026-06-30T21:00:00Z",
       "temperatureC": 37.8,
       "precipitationProbability": 25,
-      "windKmh": 19,
+      "windKmh": 21.7,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -868,7 +868,7 @@
       "forecastHourUtc": "2026-06-30T17:00:00Z",
       "temperatureC": 32.9,
       "precipitationProbability": 5,
-      "windKmh": 22.3,
+      "windKmh": 20.2,
       "weatherCode": 1,
       "icon": "🌤️",
       "description": "Pouco nublado"
@@ -882,7 +882,7 @@
       "forecastHourUtc": "2026-07-01T01:00:00Z",
       "temperatureC": 18.1,
       "precipitationProbability": 91,
-      "windKmh": 7.9,
+      "windKmh": 4.6,
       "weatherCode": 51,
       "icon": "🌦️",
       "description": "Chuvisco fraco"
@@ -896,7 +896,7 @@
       "forecastHourUtc": "2026-07-01T16:00:00Z",
       "temperatureC": 29.7,
       "precipitationProbability": 30,
-      "windKmh": 10.9,
+      "windKmh": 10.4,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -910,7 +910,7 @@
       "forecastHourUtc": "2026-07-01T23:00:00Z",
       "temperatureC": 21.2,
       "precipitationProbability": 0,
-      "windKmh": 23.5,
+      "windKmh": 17.5,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -924,7 +924,7 @@
       "forecastHourUtc": "2026-07-01T20:00:00Z",
       "temperatureC": 17.5,
       "precipitationProbability": 2,
-      "windKmh": 3.4,
+      "windKmh": 12.3,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"

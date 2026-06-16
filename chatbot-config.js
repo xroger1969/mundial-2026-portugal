@@ -1,5 +1,5 @@
 "use strict";
 
-// No GitHub Pages esta rota não existe. Na Vercel, /api/chat chama a função segura
-// que usa a variável de ambiente XAI_API_KEY sem expor a chave no HTML.
-window.WC_CHAT_API_URL = window.WC_CHAT_API_URL || "/api/chat";
+// Mantém o site público no GitHub Pages, mas envia as perguntas para a função segura da Vercel.
+// A chave XAI_API_KEY fica protegida na Vercel e nunca aparece no HTML/JavaScript público.
+window.WC_CHAT_API_URL = "https://mundial-2026-portugal.vercel.app/api/chat";

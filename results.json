@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-16T14:13:38.486Z",
+  "updatedAt": "2026-06-16T14:15:35.623Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {

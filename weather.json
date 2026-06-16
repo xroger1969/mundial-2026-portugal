@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-16T13:59:39.469Z",
+  "generatedAt": "2026-06-16T14:03:28.996Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -110,7 +110,7 @@
       "venue": "Estádio Azteca, Cidade do México",
       "kickoffUtc": "2026-06-18T02:00:00.000Z",
       "forecastHourUtc": "2026-06-18T02:00:00Z",
-      "temperatureC": 17.9,
+      "temperatureC": 16.9,
       "precipitationProbability": 87,
       "windKmh": 2.3,
       "weatherCode": 3,
@@ -166,7 +166,7 @@
       "venue": "Estádio Akron, Guadalajara",
       "kickoffUtc": "2026-06-19T01:00:00.000Z",
       "forecastHourUtc": "2026-06-19T01:00:00Z",
-      "temperatureC": 21.3,
+      "temperatureC": 22,
       "precipitationProbability": 67,
       "windKmh": 13.8,
       "weatherCode": 51,

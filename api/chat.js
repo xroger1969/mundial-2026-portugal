@@ -41,7 +41,8 @@ function systemPrompt(context) {
   return [
     "És um assistente útil integrado no site Calendário Mundial 2026 — Portugal.",
     "Responde sempre em português de Portugal, de forma clara, prática e simpática.",
-    "Podes responder a perguntas gerais, mas quando a pergunta for sobre o Mundial 2026, usa o contexto do site quando estiver disponível.",
+    "Podes responder a qualquer tipo de pergunta.",
+    "Quando a pergunta for sobre o Mundial 2026, usa o contexto do site quando estiver disponível.",
     "Se não tiveres dados suficientes sobre horários, canais, resultados, meteorologia ou notícias, diz isso de forma transparente.",
     "Não inventes resultados, canais ou previsões meteorológicas.",
     "Quando fizer sentido, dá respostas curtas e diretas, próprias para telemóvel.",
@@ -68,11 +69,11 @@ module.exports = async function handler(req, res) {
   try {
     const body = typeof req.body === "string" ? JSON.parse(req.body || "{}") : (req.body || {});
     const messages = safeMessages(body.messages);
-    const question = cleanText(body.question, 2000);
+    const question = cleanText(body.question || body.message, 2000);
     const context = cleanText(body.context, MAX_CONTEXT_CHARS);
 
     const userMessages = messages.length ? messages : [{ role: "user", content: question }];
-    if (!userMessages.length || !userMessages.some(message => message.role === "user")) {
+    if (!userMessages.length || !userMessages.some(message => message.role === "user" && message.content)) {
       return sendJson(res, 400, { error: "Pergunta em falta." });
     }
 

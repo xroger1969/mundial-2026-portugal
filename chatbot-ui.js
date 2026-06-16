@@ -3,11 +3,13 @@
 (function () {
   const CHAT_ID = "mundialAssistantChat";
   const STYLE_ID = "mundialAssistantChatStyles";
-  const BACKEND_URL = window.WC_CHAT_API_URL || "";
+  const BACKEND_URL = window.WC_CHAT_API_URL || "/api/chat";
+  const IS_GITHUB_PAGES = /github\.io$/i.test(window.location.hostname);
 
   let resultsData = { matches: {} };
   let weatherData = { matches: {} };
   let newsData = { items: [] };
+  const conversation = [];
 
   function norm(value) {
     return String(value || "")
@@ -51,17 +53,22 @@
     return Number.isNaN(date.getTime()) ? null : date;
   }
 
-  function formatGame(game) {
-    const result = resultFor(game);
-    const score = result && result.homeScore != null && result.awayScore != null
-      ? ` · Resultado ${result.homeScore}–${result.awayScore}`
-      : "";
-    return `Jogo ${game.num}: ${game.match} — ${game.date} às ${game.time}, ${game.venue}. TV: ${game.channels}${score}`;
-  }
-
   function resultFor(game) {
     const matches = resultsData.matches || {};
     return matches[String(game.num)] || null;
+  }
+
+  function scoreText(result) {
+    if (!result) return "";
+    if (result.homeScore === null || result.homeScore === undefined) return "";
+    if (result.awayScore === null || result.awayScore === undefined) return "";
+    return `${result.homeScore}–${result.awayScore}`;
+  }
+
+  function formatGame(game) {
+    const result = resultFor(game);
+    const score = scoreText(result);
+    return `Jogo ${game.num}: ${game.match} — ${game.date} às ${game.time}, ${game.venue}. TV: ${game.channels}${score ? ` · Resultado ${score}` : ""}`;
   }
 
   function isFinished(game) {
@@ -97,7 +104,7 @@
       .assistant-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 13px;background:linear-gradient(135deg,rgba(0,196,106,.22),rgba(30,35,44,.96));border-bottom:1px solid #2a313d}
       .assistant-title{font-weight:950;line-height:1.1}.assistant-subtitle{font-size:.76rem;color:#b8c0cc;margin-top:2px}.assistant-close{width:36px;min-height:36px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);color:#fff;cursor:pointer}
       .assistant-messages{height:310px;overflow:auto;padding:12px;background:#0f1115;display:flex;flex-direction:column;gap:8px}
-      .assistant-msg{max-width:88%;padding:10px 11px;border-radius:14px;font-size:.9rem;line-height:1.35;white-space:pre-line}.assistant-msg.bot{align-self:flex-start;background:#1e232c;border:1px solid #2a313d}.assistant-msg.user{align-self:flex-end;background:#00a95b;color:#fff}
+      .assistant-msg{max-width:88%;padding:10px 11px;border-radius:14px;font-size:.9rem;line-height:1.35;white-space:pre-line}.assistant-msg.bot{align-self:flex-start;background:#1e232c;border:1px solid #2a313d}.assistant-msg.user{align-self:flex-end;background:#00a95b;color:#fff}.assistant-msg.error{background:#3a1d22;border-color:#7a3038;color:#ffd6da}
       .assistant-suggestions{display:flex;gap:6px;overflow-x:auto;padding:8px 10px;border-top:1px solid #2a313d;background:#171a21}.assistant-suggestion{width:auto;min-height:34px;white-space:nowrap;border-radius:999px;border:1px solid #2a313d;background:rgba(255,255,255,.06);color:#fff;font-size:.78rem;padding:7px 10px;cursor:pointer}
       .assistant-form{display:flex;gap:8px;padding:10px;background:#171a21;border-top:1px solid #2a313d}.assistant-input{flex:1;min-height:42px;border-radius:14px;border:1px solid #2a313d;background:#0f1115;color:#fff;padding:10px;font-size:16px}.assistant-send{width:auto;min-height:42px;border-radius:14px;border:1px solid rgba(0,196,106,.70);background:#00a95b;color:#fff;font-weight:900;padding:9px 12px;cursor:pointer}
       @media(min-width:520px){.assistant-panel{left:16px;right:auto;margin:0;width:430px}.assistant-messages{height:360px}}
@@ -105,26 +112,14 @@
     document.head.appendChild(style);
   }
 
-  function addMessage(sender, text) {
+  function addMessage(sender, text, extraClass = "") {
     const messages = document.querySelector(`#${CHAT_ID} .assistant-messages`);
     const div = document.createElement("div");
-    div.className = `assistant-msg ${sender}`;
+    div.className = `assistant-msg ${sender}${extraClass ? ` ${extraClass}` : ""}`;
     div.textContent = text;
     messages.appendChild(div);
     messages.scrollTop = messages.scrollHeight;
     return div;
-  }
-
-  function findGamesByQuery(query) {
-    const q = norm(query);
-    return games().filter(game => norm([
-      game.match,
-      game.channels,
-      game.stage,
-      game.group,
-      game.venue,
-      game.notes
-    ].join(" ")).includes(q));
   }
 
   function nextGames(list, count = 4) {
@@ -149,6 +144,15 @@
     const weather = (weatherData.matches || {})[String(game.num)];
     if (!weather || !weather.available) return "Ainda não tenho previsão meteorológica disponível para esse jogo.";
     return `${game.match}: ${weather.icon || "🌡️"} ${Math.round(weather.temperatureC)}°C, chuva ${Math.round(weather.precipitationProbability)}%, vento ${Math.round(weather.windKmh)} km/h — ${weather.description}, ${weather.city}.`;
+  }
+
+  function isCalendarIntent(message) {
+    const q = norm(message);
+    return [
+      "portugal", "jogo", "mundial", "resultado", "acabou", "finalizado", "marcador",
+      "sinal aberto", "rtp", "sic", "tvi", "livemode", "youtube", "gratis", "grátis",
+      "tempo", "meteorolog", "chuva", "vento", "grupo", "classificacao", "classificação"
+    ].some(token => q.includes(token));
   }
 
   function localAnswer(message) {
@@ -200,37 +204,72 @@
       return "Posso ajudar com grupos. Escreve, por exemplo: “grupo de Portugal” ou toca na etiqueta do grupo em qualquer jogo.";
     }
 
-    const candidates = findGamesByQuery(message).slice(0, 5);
-    if (candidates.length) {
-      return `Encontrei estes jogos relacionados:\n${candidates.map(formatGame).join("\n\n")}`;
-    }
+    return "";
+  }
 
-    return "Posso ajudar com: próximos jogos de Portugal, onde ver na TV, jogos em sinal aberto, LiveModeTV, resultados, meteorologia e grupos. Experimenta: “Quando joga Portugal?”";
+  function buildSiteContext() {
+    const all = games();
+    const portugal = all.filter(game => game.portugal || norm(game.match).includes("portugal"));
+    const recentResults = lastFinished(8);
+    const upcoming = nextGames(all, 8);
+    const weatherMatches = all.filter(game => (weatherData.matches || {})[String(game.num)]).slice(0, 6);
+    const newsItems = Array.isArray(newsData.items) ? newsData.items.slice(0, 4) : [];
+
+    return [
+      "Resumo do site Calendário Mundial 2026 — Portugal.",
+      `Jogos totais carregados: ${all.length}.`,
+      portugal.length ? `Jogos de Portugal:\n${portugal.map(formatGame).join("\n")}` : "Sem jogos de Portugal carregados.",
+      upcoming.length ? `Próximos jogos:\n${upcoming.map(formatGame).join("\n")}` : "Sem próximos jogos carregados.",
+      recentResults.length ? `Resultados recentes:\n${recentResults.map(formatGame).join("\n")}` : "Sem resultados recentes carregados.",
+      weatherMatches.length ? `Meteorologia disponível:\n${weatherMatches.map(weatherLine).join("\n")}` : "Sem meteorologia disponível ainda.",
+      newsItems.length ? `Notícias recentes:\n${newsItems.map(item => item.title || item.label || "Notícia").join("\n")}` : "Sem notícias carregadas."
+    ].join("\n\n").slice(0, 9000);
   }
 
   async function backendAnswer(message) {
-    if (!BACKEND_URL) return null;
-    try {
-      const response = await fetch(BACKEND_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message })
-      });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
-      return data.reply || data.message || null;
-    } catch (error) {
-      return null;
+    if (IS_GITHUB_PAGES && BACKEND_URL.startsWith("/")) {
+      throw new Error("Estás a abrir a versão GitHub Pages. O Grok só funciona no link da Vercel, porque é lá que existe a rota /api/chat.");
     }
+
+    const response = await fetch(BACKEND_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message,
+        messages: conversation.slice(-8),
+        context: buildSiteContext()
+      })
+    });
+
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) {
+      throw new Error(data.error || data.message || `Erro HTTP ${response.status} ao contactar o Grok.`);
+    }
+
+    const reply = data.reply || data.message || "Não recebi resposta do Grok.";
+    return reply;
   }
 
   async function handleSend(text) {
     const message = text.trim();
     if (!message) return;
+
     addMessage("user", message);
-    const pending = addMessage("bot", "A procurar nos dados do Mundial...");
-    const external = await backendAnswer(message);
-    pending.textContent = external || localAnswer(message);
+    conversation.push({ role: "user", content: message });
+
+    const pending = addMessage("bot", "A ligar ao Grok...");
+
+    try {
+      const external = await backendAnswer(message);
+      pending.textContent = external;
+      conversation.push({ role: "assistant", content: external });
+    } catch (error) {
+      const local = isCalendarIntent(message) ? localAnswer(message) : "";
+      pending.classList.add("error");
+      pending.textContent = local
+        ? `${local}\n\nNota técnica: não consegui ligar ao Grok. ${error.message}`
+        : `Não consegui ligar ao Grok. ${error.message}\n\nConfirma se estás no link da Vercel, se fizeste Redeploy depois de criar XAI_API_KEY e se a variável está em Production.`;
+    }
   }
 
   function mount() {
@@ -243,18 +282,18 @@
       <button type="button" class="assistant-toggle">💬 Assistente</button>
       <section class="assistant-panel" aria-label="Assistente Mundial 2026">
         <div class="assistant-head">
-          <div><div class="assistant-title">Assistente Mundial 2026</div><div class="assistant-subtitle">Horários, TV, resultados, tempo e grupos</div></div>
+          <div><div class="assistant-title">Assistente Mundial 2026</div><div class="assistant-subtitle">Grok + dados do calendário</div></div>
           <button type="button" class="assistant-close" aria-label="Fechar">×</button>
         </div>
         <div class="assistant-messages"></div>
         <div class="assistant-suggestions">
+          <button type="button" class="assistant-suggestion">O que é inteligência artificial?</button>
           <button type="button" class="assistant-suggestion">Quando joga Portugal?</button>
           <button type="button" class="assistant-suggestion">Jogos em sinal aberto</button>
-          <button type="button" class="assistant-suggestion">Resultados</button>
           <button type="button" class="assistant-suggestion">Tempo no estádio</button>
         </div>
         <form class="assistant-form">
-          <input class="assistant-input" type="text" placeholder="Pergunta sobre o Mundial..." autocomplete="off">
+          <input class="assistant-input" type="text" placeholder="Pergunta ao Grok..." autocomplete="off">
           <button class="assistant-send" type="submit">Enviar</button>
         </form>
       </section>
@@ -268,7 +307,10 @@
       panel.classList.toggle("open");
       if (panel.classList.contains("open") && !panel.dataset.welcomed) {
         panel.dataset.welcomed = "true";
-        addMessage("bot", "Olá! Sou o assistente do calendário. Pergunta-me por jogos, TV, resultados, tempo ou grupos.");
+        addMessage("bot", IS_GITHUB_PAGES
+          ? "Olá! Estou pronto, mas para falar com o Grok tens de abrir a versão Vercel do site. No GitHub Pages só consigo usar dados locais."
+          : "Olá! Estou ligado ao assistente Grok. Posso responder a perguntas gerais e também usar os dados do calendário quando for útil."
+        );
       }
       setTimeout(() => input.focus(), 80);
     });

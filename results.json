@@ -2,10 +2,9 @@
   "provider": "football-data.org",
   "competition": "WC",
   "season": "2026",
-  "status": "ok",
+  "status": "script_error",
   "updatedAt": "2026-06-16T19:06:30.775Z",
-  "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
-  "apiCount": 104,
+  "message": "Erro no script de atualização: fetch failed",
   "matches": {
     "1": {
       "apiId": 537327,

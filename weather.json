@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-16T10:31:50.319Z",
+  "generatedAt": "2026-06-16T10:51:31.341Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -29,9 +29,9 @@
       "temperatureC": 24.9,
       "precipitationProbability": 0,
       "windKmh": 8.8,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "19": {
       "available": true,

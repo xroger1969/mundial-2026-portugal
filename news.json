@@ -2,11 +2,31 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-17T11:54:13.234Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-17T18:05:38.425Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 107,
+  "totalArticles": 109,
   "articles": [
+    {
+      "title": "Paulo Costa na Fan Zone Betano: \"É uma festa do futebol\"",
+      "description": "Diretor executivo da Liga Portugal com 'esperança' para a campanha no Mundial'2026",
+      "content": "Paulo Costa, diretor executivo da Liga Portugal, é um dos rostos do nosso futebol a marcar presença na Fan Zone Betano, em Vila Nova de Gaia. \"É uma festa do futebol, que prova que a Seleção Nacional é um ótimo veículo de propaganda do futebol. A Lig... [487 chars]",
+      "url": "https://www.record.pt/internacional/competicoes-de-selecoes/mundial/mundial-2026/detalhe/paulo-costa-na-fan-zone-betano-e-uma-festa-do-futebol",
+      "image": "https://cdn.record.pt/images/2026-06/img_1200x721uu2026-06-17-18-11-35-2445143.jpg",
+      "publishedAt": "2026-06-17T00:00:00Z",
+      "sourceName": "Record",
+      "sourceUrl": "https://www.record.pt"
+    },
+    {
+      "title": "O Negócios pergunta. Maioria acredita que a Seleção Nacional chega à final do Mundial",
+      "description": "O Negócios desafiou os seus leitores a responderem a uma pergunta no canal do WhatsApp sobre as hipóteses de Portugal na edição de 2026 do Campeonato do Mundo de futebol. Eis as conclusões.",
+      "content": "A detentora do título Argentina, a França, vencedora em 2018 e vice em 2022, e a Espanha, campeã europeia em 2024, partem como principais candidatas a vencer o maior Mundial de futebol de sempre, que arrancou na quinta-feira, 11 de junho e decorre at... [1288 chars]",
+      "url": "https://www.jornaldenegocios.pt/empresas/media/o-negocios/detalhe/o-negocios-pergunta-maioria-acredita-que-a-selecao-nacional-chega-a-final-do-mundial",
+      "image": "https://cdn.jornaldenegocios.pt/images/2026-06/img_1200x676uu2026-06-09-11-50-11-524977.png",
+      "publishedAt": "2026-06-17T00:00:00Z",
+      "sourceName": "Jornal de Negócios - Portugal",
+      "sourceUrl": "https://www.jornaldenegocios.pt"
+    },
     {
       "title": "Rúben Dias ainda à parte na véspera da estreia de Portugal",
       "description": "O defesa Rúben Dias voltou esta terça-feira a trabalhar à parte da restante seleção portuguesa de futebol, no derradeiro treino antes da estreia no Mundial 2026, frente à República Democrática do Congo, na quarta-feira.",
@@ -84,26 +104,6 @@
       "url": "https://www.jn.pt/desporto/artigo/mundial2026-portugal-faz-o-ultimo-treino-antes-do-duelo-com-a-nigeria/18093291",
       "image": "https://staticx.noticiasilimitadas.pt/jn/401b7a83-3231-4142-b193-e21d524ef512_1200x675.jpg",
       "publishedAt": "2026-06-09T08:25:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Colômbia, adversária de Portugal, vence Jordânia no último teste antes do Mundial",
-      "description": "A Colômbia, adversária de Portugal, venceu no domingo a Jordânia, por 2-0, no último jogo de preparação antes do Mundial 2026 de futebol.",
-      "content": "O avançado Jhon Arias, do Palmeiras, marcou os dois golos do encontro, aos 41 minutos, após um passe do ex-portista James Rodríguez, e aos 55, com uma assistência de Santiago Arias, antigo jogador do Sporting. Luis Suárez, avançado do Sporting e melh... [471 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/colombia-adversaria-de-portugal-vence-jordania-no-ultimo-teste-antes-do-mundial/18092967",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/cef12c52-c821-4959-b5e6-f28d4e7b8e66_1200x675.jpg",
-      "publishedAt": "2026-06-08T10:35:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Mundial 2026: Matheus Nunes e João Félix falham treino de Portugal",
-      "description": "Matheus Nunes e João Félix falharam esta quinta-feira o treino da seleção portuguesa, que continua a preparar a participação no Mundial 2026 de futebol, prova que arranca em 11 de junho nos Estados Unidos, Canadá e México.",
-      "content": "Uma indisposição deixou Matheus Nunes sem condições para participar na sessão que decorreu no relvado principal da Cidade do Futebol, em Oeiras, enquanto Félix efetuou apenas trabalho de recuperação no ginásio. Ambos os jogadores deverão estar aptos ... [1658 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/mundial-2026-matheus-nunes-e-joao-felix-falham-treino-de-portugal/18091894",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/bcbb6c64-6490-4143-a736-cdfcd683f4d8_1200x675.jpg",
-      "publishedAt": "2026-06-04T19:44:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
     }

@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-17T01:45:01.724Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-17T11:54:13.234Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 106,
+  "totalArticles": 107,
   "articles": [
+    {
+      "title": "Rúben Dias ainda à parte na véspera da estreia de Portugal",
+      "description": "O defesa Rúben Dias voltou esta terça-feira a trabalhar à parte da restante seleção portuguesa de futebol, no derradeiro treino antes da estreia no Mundial 2026, frente à República Democrática do Congo, na quarta-feira.",
+      "content": "O jogador do Manchester City ainda não fez qualquer treino com a equipa das \"quinas\" no estágio em Palm Beach, nos Estados Unidos, e hoje, durante os 15 minutos abertos à comunicação social, fez a corrida de aquecimento com os restantes jogadores de ... [1007 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/ruben-dias-ainda-a-parte-na-vespera-da-estreia-de-portugal/18095912",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/2cd7fd1c-864d-42d5-8247-00fe59f5b6b0_1200x675.jpg",
+      "publishedAt": "2026-06-16T15:53:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Galp une seis rádios na estreia da Seleção no Mundial 2026",
       "description": "O projeto, impulsionado pela Galp, marca a estreia de Portugal no Mundial 2026, com uma transmissão em direto da Cidade do Futebol.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-06-04T19:44:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Mundial 2026 pode ter impacto recorde em Portugal",
-      "description": "Apesar de a competição ser disputada nos Estados Unidos, Canadá e México, o Mundial de futebol deste ano pode ter um impacto económico recorde em Portugal de até 945 milhões de euros.",
-      "content": "O estudo do Instituto Português de Administração de Marketing (IPAM) explica que tudo depende do desempenho desportivo da seleção e do consumo dos adeptos. Se a Seleção for eliminada na fase de grupos, o impacto económico estimado é de 378 milhões de... [412 chars]",
-      "url": "https://sicnoticias.pt/programas/economia-expresso/2026-06-02-video-mundial-2026-pode-ter-impacto-recorde-em-portugal-5b2cbb34",
-      "image": "https://images.impresa.pt/sicnot/2026-05-27-trofeu-mundial-futebol-681e3648-1/1.91x1?wm=true&outputFormat=jpeg",
-      "publishedAt": "2026-06-02T18:36:43Z",
-      "sourceName": "SIC Notícias",
-      "sourceUrl": "https://sicnoticias.pt"
     }
   ]
 }

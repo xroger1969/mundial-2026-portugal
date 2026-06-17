@@ -3,7 +3,7 @@
   "topic": "Mundial 2026",
   "status": "ok",
   "updatedAt": "2026-06-17T01:45:01.724Z",
-  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
+  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
   "query": "Mundial 2026 futebol Portugal",
   "totalArticles": 106,
   "articles": [

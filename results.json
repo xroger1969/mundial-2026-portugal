@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-18T21:11:30.924Z",
+  "updatedAt": "2026-06-18T23:11:56.199Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -321,14 +321,14 @@
     },
     "27": {
       "apiId": 537336,
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "Canada",
       "awayTeam": "Qatar",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 3,
+      "awayScore": 0,
+      "winner": "HOME_TEAM",
       "utcDate": "2026-06-18T22:00:00Z",
-      "lastUpdated": "2026-06-18T21:10:00Z",
+      "lastUpdated": "2026-06-18T22:58:26Z",
       "provider": "football-data.org"
     },
     "28": {

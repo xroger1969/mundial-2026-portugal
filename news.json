@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-19T02:08:13.558Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-19T11:50:53.470Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 110,
+  "totalArticles": 111,
   "articles": [
+    {
+      "title": "Mais de três milhões de portugueses assistiram à estreia de Portugal no Mundial de 2026",
+      "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
+      "content": "O empate da Seleção Nacional contra a República Democrática do Congo por 1-1 reuniu mais de três milhões de portugueses à frente da televisão, revela a análise elaborada pela Dentsu para o +M. O encontro foi acompanhado na televisão portuguesa, em mé... [3066 chars]",
+      "url": "https://eco.sapo.pt/2026/06/18/mais-de-tres-milhoes-de-portugueses-assistiram-a-estreia-de-portugal-no-mundial-de-2026/",
+      "image": "https://eco.imgix.net/uploads/2026/06/audiencias-mundial-2000x1125-1.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+      "publishedAt": "2026-06-18T17:41:33Z",
+      "sourceName": "ECO Economia Online",
+      "sourceUrl": "https://eco.sapo.pt"
+    },
     {
       "title": "Mundial 2026: pais de Diogo Jota assistem à estreia de Portugal",
       "description": "Convite partiu da Federação Portuguesa de Futebol Continue a ler.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-06-11T15:04:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "'Pontapé de saída' da 23.ª edição do Campeonato do Mundo de futebol é dado esta quinta-feira",
-      "description": "Entre os 48 participantes no Mundial 2026 está Portugal, presente pela nona vez e sétima consecutiva.",
-      "content": "O Correio da Manhã incentiva todos os Leitores a interagirem através de comentários às notícias publicadas no seu site, de uma maneira respeitadora com o cumprimento dos princípios legais e constitucionais. Assim são totalmente ilegítimos comentários... [7369 chars]",
-      "url": "https://www.cmjornal.pt/mais-cm/especiais/mundial-2026/detalhe/pontape-de-saida-da-23-edicao-do-campeonato-do-mundo-de-futebol-e-dado-esta-quinta-feira",
-      "image": "https://cdn.cmjornal.pt/images/2026-06/img_1280x721uu2026-06-11-07-56-48-2290368.jpg",
-      "publishedAt": "2026-06-11T00:00:00Z",
-      "sourceName": "Correio da Manhã",
-      "sourceUrl": "https://www.cmjornal.pt"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-21T18:04:35.196Z",
+  "generatedAt": "2026-06-21T20:00:13.552Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -26,12 +26,12 @@
       "venue": "SoFi Stadium, Los Angeles",
       "kickoffUtc": "2026-06-21T19:00:00.000Z",
       "forecastHourUtc": "2026-06-21T19:00:00Z",
-      "temperatureC": 22.4,
+      "temperatureC": 19.9,
       "precipitationProbability": 0,
-      "windKmh": 14.2,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "windKmh": 12.1,
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "39": {
       "available": true,
@@ -40,9 +40,9 @@
       "venue": "Hard Rock Stadium, Miami",
       "kickoffUtc": "2026-06-21T22:00:00.000Z",
       "forecastHourUtc": "2026-06-21T22:00:00Z",
-      "temperatureC": 30.9,
+      "temperatureC": 32,
       "precipitationProbability": 14,
-      "windKmh": 15.6,
+      "windKmh": 17.6,
       "weatherCode": 95,
       "icon": "⛈️",
       "description": "Trovoada"
@@ -54,9 +54,9 @@
       "venue": "BC Place, Vancouver",
       "kickoffUtc": "2026-06-22T01:00:00.000Z",
       "forecastHourUtc": "2026-06-22T01:00:00Z",
-      "temperatureC": 22.9,
+      "temperatureC": 22.7,
       "precipitationProbability": 0,
-      "windKmh": 17.3,
+      "windKmh": 17,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -69,7 +69,7 @@
       "kickoffUtc": "2026-06-22T17:00:00.000Z",
       "forecastHourUtc": "2026-06-22T17:00:00Z",
       "temperatureC": 28.3,
-      "precipitationProbability": 11,
+      "precipitationProbability": 10,
       "windKmh": 6.5,
       "weatherCode": 95,
       "icon": "⛈️",
@@ -83,7 +83,7 @@
       "kickoffUtc": "2026-06-22T21:00:00.000Z",
       "forecastHourUtc": "2026-06-22T21:00:00Z",
       "temperatureC": 31.4,
-      "precipitationProbability": 25,
+      "precipitationProbability": 26,
       "windKmh": 29.7,
       "weatherCode": 3,
       "icon": "☁️",
@@ -97,7 +97,7 @@
       "kickoffUtc": "2026-06-23T00:00:00.000Z",
       "forecastHourUtc": "2026-06-23T00:00:00Z",
       "temperatureC": 24.9,
-      "precipitationProbability": 24,
+      "precipitationProbability": 26,
       "windKmh": 30.4,
       "weatherCode": 3,
       "icon": "☁️",
@@ -166,9 +166,9 @@
       "venue": "Estádio Akron, Guadalajara",
       "kickoffUtc": "2026-06-24T02:00:00.000Z",
       "forecastHourUtc": "2026-06-24T02:00:00Z",
-      "temperatureC": 19.1,
+      "temperatureC": 19.6,
       "precipitationProbability": 86,
-      "windKmh": 11.3,
+      "windKmh": 1.3,
       "weatherCode": 53,
       "icon": "🌦️",
       "description": "Chuvisco"
@@ -211,9 +211,9 @@
       "temperatureC": 32.3,
       "precipitationProbability": 33,
       "windKmh": 18.4,
-      "weatherCode": 51,
-      "icon": "🌦️",
-      "description": "Chuvisco fraco"
+      "weatherCode": 95,
+      "icon": "⛈️",
+      "description": "Trovoada"
     },
     "52": {
       "available": true,
@@ -238,10 +238,10 @@
       "forecastHourUtc": "2026-06-25T01:00:00Z",
       "temperatureC": 16.3,
       "precipitationProbability": 98,
-      "windKmh": 4.1,
-      "weatherCode": 95,
-      "icon": "⛈️",
-      "description": "Trovoada"
+      "windKmh": 2.3,
+      "weatherCode": 80,
+      "icon": "🌦️",
+      "description": "Aguaceiros fracos"
     },
     "54": {
       "available": true,
@@ -309,9 +309,9 @@
       "temperatureC": 25.2,
       "precipitationProbability": 16,
       "windKmh": 17.1,
-      "weatherCode": 95,
-      "icon": "⛈️",
-      "description": "Trovoada"
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "59": {
       "available": true,
@@ -390,9 +390,9 @@
       "venue": "Estádio Akron, Guadalajara",
       "kickoffUtc": "2026-06-27T00:00:00.000Z",
       "forecastHourUtc": "2026-06-27T00:00:00Z",
-      "temperatureC": 21.9,
+      "temperatureC": 22.6,
       "precipitationProbability": 90,
-      "windKmh": 17.7,
+      "windKmh": 8.4,
       "weatherCode": 51,
       "icon": "🌦️",
       "description": "Chuvisco fraco"
@@ -561,9 +561,9 @@
       "temperatureC": 33.9,
       "precipitationProbability": 4,
       "windKmh": 20.9,
-      "weatherCode": 95,
-      "icon": "⛈️",
-      "description": "Trovoada"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "77": {
       "available": true,
@@ -600,12 +600,12 @@
       "venue": "Estádio Azteca, Cidade do México",
       "kickoffUtc": "2026-07-01T01:00:00.000Z",
       "forecastHourUtc": "2026-07-01T01:00:00Z",
-      "temperatureC": 19.4,
+      "temperatureC": 17.1,
       "precipitationProbability": 78,
-      "windKmh": 4.5,
-      "weatherCode": 55,
+      "windKmh": 2.6,
+      "weatherCode": 80,
       "icon": "🌦️",
-      "description": "Chuvisco forte"
+      "description": "Aguaceiros fracos"
     },
     "80": {
       "available": true,
@@ -657,7 +657,7 @@
       "kickoffUtc": "2026-07-02T23:00:00.000Z",
       "forecastHourUtc": "2026-07-02T23:00:00Z",
       "temperatureC": 34,
-      "precipitationProbability": 17,
+      "precipitationProbability": 26,
       "windKmh": 14.6,
       "weatherCode": 95,
       "icon": "⛈️",
@@ -685,7 +685,7 @@
       "kickoffUtc": "2026-07-03T03:00:00.000Z",
       "forecastHourUtc": "2026-07-03T03:00:00Z",
       "temperatureC": 16.1,
-      "precipitationProbability": 15,
+      "precipitationProbability": 7,
       "windKmh": 4.2,
       "weatherCode": 3,
       "icon": "☁️",
@@ -699,7 +699,7 @@
       "kickoffUtc": "2026-07-03T22:00:00.000Z",
       "forecastHourUtc": "2026-07-03T22:00:00Z",
       "temperatureC": 31.7,
-      "precipitationProbability": 41,
+      "precipitationProbability": 38,
       "windKmh": 20.5,
       "weatherCode": 0,
       "icon": "☀️",
@@ -713,11 +713,11 @@
       "kickoffUtc": "2026-07-04T01:30:00.000Z",
       "forecastHourUtc": "2026-07-04T01:00:00Z",
       "temperatureC": 29.4,
-      "precipitationProbability": 12,
+      "precipitationProbability": 10,
       "windKmh": 17.7,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 95,
+      "icon": "⛈️",
+      "description": "Trovoada"
     },
     "88": {
       "available": true,
@@ -741,11 +741,11 @@
       "kickoffUtc": "2026-07-04T21:00:00.000Z",
       "forecastHourUtc": "2026-07-04T21:00:00Z",
       "temperatureC": 39.2,
-      "precipitationProbability": 7,
+      "precipitationProbability": 16,
       "windKmh": 13.1,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "weatherCode": 95,
+      "icon": "⛈️",
+      "description": "Trovoada"
     },
     "90": {
       "available": true,
@@ -755,11 +755,11 @@
       "kickoffUtc": "2026-07-04T17:00:00.000Z",
       "forecastHourUtc": "2026-07-04T17:00:00Z",
       "temperatureC": 33.8,
-      "precipitationProbability": 22,
+      "precipitationProbability": 19,
       "windKmh": 11.5,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "weatherCode": 95,
+      "icon": "⛈️",
+      "description": "Trovoada"
     },
     "91": {
       "available": true,
@@ -769,7 +769,7 @@
       "kickoffUtc": "2026-07-05T20:00:00.000Z",
       "forecastHourUtc": "2026-07-05T20:00:00Z",
       "temperatureC": 37.5,
-      "precipitationProbability": 8,
+      "precipitationProbability": 14,
       "windKmh": 6.6,
       "weatherCode": 1,
       "icon": "🌤️",
@@ -782,9 +782,9 @@
       "venue": "Estádio Azteca, Cidade do México",
       "kickoffUtc": "2026-07-06T00:00:00.000Z",
       "forecastHourUtc": "2026-07-06T00:00:00Z",
-      "temperatureC": 16.8,
+      "temperatureC": 18.3,
       "precipitationProbability": 86,
-      "windKmh": 6.2,
+      "windKmh": 2.7,
       "weatherCode": 51,
       "icon": "🌦️",
       "description": "Chuvisco fraco"
@@ -797,7 +797,7 @@
       "kickoffUtc": "2026-07-06T19:00:00.000Z",
       "forecastHourUtc": "2026-07-06T19:00:00Z",
       "temperatureC": 37,
-      "precipitationProbability": 3,
+      "precipitationProbability": 8,
       "windKmh": 16.4,
       "weatherCode": 2,
       "icon": "⛅",
@@ -811,7 +811,7 @@
       "kickoffUtc": "2026-07-07T00:00:00.000Z",
       "forecastHourUtc": "2026-07-06T23:00:00Z",
       "temperatureC": 20.3,
-      "precipitationProbability": 3,
+      "precipitationProbability": 4,
       "windKmh": 8.6,
       "weatherCode": 3,
       "icon": "☁️",

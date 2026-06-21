@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-21T20:00:11.090Z",
+  "updatedAt": "2026-06-21T21:38:35.250Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -444,23 +444,23 @@
       "status": "FINISHED",
       "homeTeam": "Spain",
       "awayTeam": "Saudi Arabia",
-      "homeScore": 5,
+      "homeScore": 4,
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-21T16:00:00Z",
-      "lastUpdated": "2026-06-21T18:07:46Z",
+      "lastUpdated": "2026-06-21T20:36:54Z",
       "provider": "football-data.org"
     },
     "38": {
       "apiId": 537365,
-      "status": "PAUSED",
+      "status": "FINISHED",
       "homeTeam": "Belgium",
       "awayTeam": "Iran",
       "homeScore": 0,
       "awayScore": 0,
       "winner": "DRAW",
       "utcDate": "2026-06-21T19:00:00Z",
-      "lastUpdated": "2026-06-21T19:59:34Z",
+      "lastUpdated": "2026-06-21T21:06:37Z",
       "provider": "football-data.org"
     },
     "39": {

@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-21T16:22:25.463Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-21T22:49:36.209Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 112,
+  "totalArticles": 113,
   "articles": [
+    {
+      "title": "Marroquino Jalad Jayed dirige jogo entre Portugal e o Uzbequistão",
+      "description": "O árbitro marroquino Jalad Jayed vai dirigir o jogo entre Portugal e o Uzbequistão, da segunda jornada do Grupo K do Mundial 2026 de futebol.",
+      "content": "Jalad Jayed, de 39 anos, vai ter como auxiliares os compatriotas Zakaria Brinsi e Mostafa Akarkad, enquanto o quarto árbitro será o sul-africano Abongile Tom. Já a equipa de videoarbitragem só vai ser divulgada mais tarde. Jalad Jayed vai dirigir a s... [894 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/marroquino-jalad-jayed-dirige-jogo-entre-portugal-e-o-uzbequistao/18097540",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/866d97c6-1475-4c09-a20d-dfb82ef7e64f_1200x675.jpg",
+      "publishedAt": "2026-06-21T08:37:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Mais de três milhões de portugueses assistiram à estreia de Portugal no Mundial de 2026",
       "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-06-12T16:48:08Z",
       "sourceName": "ECO Economia Online",
       "sourceUrl": "https://eco.sapo.pt"
-    },
-    {
-      "title": "Roberto Martínez diz que leva \"uma mala cheia de sonhos\" para o Mundial 2026",
-      "description": "Roberto Martínez, selecionador de Portugal, evidenciou confiança esta sexta-feira, onde falou na Cidade do Futebol antes da viagem para o Mundial 2026.",
-      "content": "\"Temos três jogos, poder ganhar os jogos é o objetivo coletivo. Sinto que estão preparados. É um passo muito claro para todos nós. É uma geração de muita responsabilidade e talentosa. Mas mais importante é a atitude e a responsabilidade de representa... [544 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/roberto-martinez-diz-que-leva-uma-mala-cheia-de-sonhos-para-o-mundial-2026/18094505",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/3ed70fc7-7656-4f4d-95a4-61f57c4077a2_1200x675.jpg",
-      "publishedAt": "2026-06-12T12:53:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
     }
   ]
 }

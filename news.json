@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-21T22:49:36.209Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-22T05:27:07.315Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 113,
+  "totalArticles": 114,
   "articles": [
+    {
+      "title": "Tomás Araújo novamente ausente do treino da seleção nacional deve falhar Uzbequistão",
+      "description": "O central Tomás Araújo voltou este domingo a estar ausente no treino de Portugal, devido a problemas físicos, e deve falhar o duelo com o Uzbequistão, da segunda jornada do Grupo K do Mundial 2026 de futebol.",
+      "content": "Tal como sucedeu nos últimos dias, Araújo voltou a fazer apenas trabalho de recuperação e esteve à parte do resto do grupo no Gardens North County District Park, em Palm Beach, nos Estados Unidos, nos primeiros 15 minutos do treino, abertos à comunic... [1543 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/tomas-araujo-novamente-ausente-do-treino-da-selecao-nacional-deve-falhar-uzbequistao/18097647",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/08458e64-c17d-459d-a894-8e0e9a3cdaa9_1200x675.jpg",
+      "publishedAt": "2026-06-21T16:03:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Marroquino Jalad Jayed dirige jogo entre Portugal e o Uzbequistão",
       "description": "O árbitro marroquino Jalad Jayed vai dirigir o jogo entre Portugal e o Uzbequistão, da segunda jornada do Grupo K do Mundial 2026 de futebol.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-06-13T00:00:00Z",
       "sourceName": "Correio da Manhã",
       "sourceUrl": "https://www.cmjornal.pt"
-    },
-    {
-      "title": "Jogo de estreia do Mundial 2026 visto por quase 1,5 milhões em Portugal",
-      "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
-      "content": "O jogo inaugural do Mundial de Futebol 2026, que opôs o México à África do Sul no Estádio Azteca — Cidade do México — perante 80.000 espetadores, terminou com a vitória da seleção mexicana por 2-0, numa partida que ficou marcada por três expulsões. E... [665 chars]",
-      "url": "https://eco.sapo.pt/2026/06/12/jogo-de-estreia-do-mundial-2026-visto-por-quase-15-milhoes-em-portugal/",
-      "image": "https://eco.imgix.net/uploads/2026/06/audiencias-mundial-2000x1125-1.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
-      "publishedAt": "2026-06-12T16:48:08Z",
-      "sourceName": "ECO Economia Online",
-      "sourceUrl": "https://eco.sapo.pt"
     }
   ]
 }

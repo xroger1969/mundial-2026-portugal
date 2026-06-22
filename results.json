@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-21T22:49:30.308Z",
+  "updatedAt": "2026-06-22T00:03:29.267Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -468,11 +468,11 @@
       "status": "IN_PLAY",
       "homeTeam": "Uruguay",
       "awayTeam": "Cape Verde Islands",
-      "homeScore": 0,
-      "awayScore": 1,
-      "winner": "AWAY_TEAM",
+      "homeScore": 2,
+      "awayScore": 2,
+      "winner": "DRAW",
       "utcDate": "2026-06-21T22:00:00Z",
-      "lastUpdated": "2026-06-21T22:48:28Z",
+      "lastUpdated": "2026-06-22T00:03:28Z",
       "provider": "football-data.org"
     },
     "40": {

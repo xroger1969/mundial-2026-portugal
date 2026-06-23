@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-23T21:16:12.009Z",
+  "generatedAt": "2026-06-23T22:41:58.802Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -26,9 +26,9 @@
       "venue": "Gillette Stadium, Foxborough",
       "kickoffUtc": "2026-06-23T20:00:00.000Z",
       "forecastHourUtc": "2026-06-23T20:00:00Z",
-      "temperatureC": 18.8,
+      "temperatureC": 19,
       "precipitationProbability": 30,
-      "windKmh": 8.8,
+      "windKmh": 5.8,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -40,9 +40,9 @@
       "venue": "BMO Field, Toronto",
       "kickoffUtc": "2026-06-23T23:00:00.000Z",
       "forecastHourUtc": "2026-06-23T23:00:00Z",
-      "temperatureC": 22.8,
+      "temperatureC": 22,
       "precipitationProbability": 0,
-      "windKmh": 16.4,
+      "windKmh": 15.3,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"

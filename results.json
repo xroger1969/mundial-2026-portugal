@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-23T19:26:56.855Z",
+  "updatedAt": "2026-06-23T21:16:09.541Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -544,19 +544,19 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-23T17:00:00Z",
-      "lastUpdated": "2026-06-23T19:04:30Z",
+      "lastUpdated": "2026-06-23T20:40:13Z",
       "provider": "football-data.org"
     },
     "46": {
       "apiId": 537411,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "England",
       "awayTeam": "Ghana",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "winner": "DRAW",
       "utcDate": "2026-06-23T20:00:00Z",
-      "lastUpdated": "2026-06-23T19:24:04Z",
+      "lastUpdated": "2026-06-23T21:15:57Z",
       "provider": "football-data.org"
     },
     "47": {

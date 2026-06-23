@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-23T15:19:29.306Z",
+  "generatedAt": "2026-06-23T17:23:50.287Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,9 +12,9 @@
       "venue": "NRG Stadium, Houston",
       "kickoffUtc": "2026-06-23T17:00:00.000Z",
       "forecastHourUtc": "2026-06-23T17:00:00Z",
-      "temperatureC": 33.3,
-      "precipitationProbability": 1,
-      "windKmh": 13.6,
+      "temperatureC": 33.5,
+      "precipitationProbability": 0,
+      "windKmh": 10.6,
       "weatherCode": 1,
       "icon": "🌤️",
       "description": "Pouco nublado"
@@ -26,12 +26,12 @@
       "venue": "Gillette Stadium, Foxborough",
       "kickoffUtc": "2026-06-23T20:00:00.000Z",
       "forecastHourUtc": "2026-06-23T20:00:00Z",
-      "temperatureC": 19.8,
-      "precipitationProbability": 34,
-      "windKmh": 9,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "temperatureC": 19.9,
+      "precipitationProbability": 22,
+      "windKmh": 10.6,
+      "weatherCode": 55,
+      "icon": "🌦️",
+      "description": "Chuvisco forte"
     },
     "47": {
       "available": true,
@@ -40,12 +40,12 @@
       "venue": "BMO Field, Toronto",
       "kickoffUtc": "2026-06-23T23:00:00.000Z",
       "forecastHourUtc": "2026-06-23T23:00:00Z",
-      "temperatureC": 23.2,
+      "temperatureC": 23.5,
       "precipitationProbability": 0,
-      "windKmh": 16.8,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "windKmh": 16.9,
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "48": {
       "available": true,
@@ -56,7 +56,7 @@
       "forecastHourUtc": "2026-06-24T02:00:00Z",
       "temperatureC": 21.8,
       "precipitationProbability": 54,
-      "windKmh": 4.8,
+      "windKmh": 10.5,
       "weatherCode": 1,
       "icon": "🌤️",
       "description": "Pouco nublado"
@@ -97,7 +97,7 @@
       "kickoffUtc": "2026-06-24T22:00:00.000Z",
       "forecastHourUtc": "2026-06-24T22:00:00Z",
       "temperatureC": 25.5,
-      "precipitationProbability": 18,
+      "precipitationProbability": 17,
       "windKmh": 16.5,
       "weatherCode": 3,
       "icon": "☁️",
@@ -111,7 +111,7 @@
       "kickoffUtc": "2026-06-24T22:00:00.000Z",
       "forecastHourUtc": "2026-06-24T22:00:00Z",
       "temperatureC": 31.2,
-      "precipitationProbability": 0,
+      "precipitationProbability": 1,
       "windKmh": 7.6,
       "weatherCode": 3,
       "icon": "☁️",
@@ -126,7 +126,7 @@
       "forecastHourUtc": "2026-06-25T01:00:00Z",
       "temperatureC": 16.7,
       "precipitationProbability": 86,
-      "windKmh": 1.8,
+      "windKmh": 1.5,
       "weatherCode": 53,
       "icon": "🌦️",
       "description": "Chuvisco"
@@ -280,7 +280,7 @@
       "forecastHourUtc": "2026-06-27T00:00:00Z",
       "temperatureC": 22.8,
       "precipitationProbability": 90,
-      "windKmh": 9.5,
+      "windKmh": 7.7,
       "weatherCode": 51,
       "icon": "🌦️",
       "description": "Chuvisco fraco"
@@ -490,7 +490,7 @@
       "forecastHourUtc": "2026-07-01T01:00:00Z",
       "temperatureC": 15.2,
       "precipitationProbability": 78,
-      "windKmh": 6.6,
+      "windKmh": 4.3,
       "weatherCode": 51,
       "icon": "🌦️",
       "description": "Chuvisco fraco"
@@ -672,7 +672,7 @@
       "forecastHourUtc": "2026-07-06T00:00:00Z",
       "temperatureC": 16.7,
       "precipitationProbability": 82,
-      "windKmh": 4.5,
+      "windKmh": 2.7,
       "weatherCode": 53,
       "icon": "🌦️",
       "description": "Chuvisco"

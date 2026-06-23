@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-23T22:41:57.083Z",
+  "updatedAt": "2026-06-23T23:42:30.234Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "matches": {
@@ -561,14 +561,14 @@
     },
     "47": {
       "apiId": 537412,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Panama",
       "awayTeam": "Croatia",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "winner": "DRAW",
       "utcDate": "2026-06-23T23:00:00Z",
-      "lastUpdated": "2026-06-20T15:20:13Z",
+      "lastUpdated": "2026-06-23T23:42:08Z",
       "provider": "football-data.org"
     },
     "48": {

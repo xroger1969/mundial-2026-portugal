@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-24T22:21:59.907Z",
+  "generatedAt": "2026-06-24T23:41:37.387Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -40,12 +40,12 @@
       "venue": "Hard Rock Stadium, Miami",
       "kickoffUtc": "2026-06-24T22:00:00.000Z",
       "forecastHourUtc": "2026-06-24T22:00:00Z",
-      "temperatureC": 30.3,
+      "temperatureC": 30.6,
       "precipitationProbability": 20,
-      "windKmh": 4.3,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "windKmh": 16.3,
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "52": {
       "available": true,
@@ -54,9 +54,9 @@
       "venue": "Mercedes-Benz Stadium, Atlanta",
       "kickoffUtc": "2026-06-24T22:00:00.000Z",
       "forecastHourUtc": "2026-06-24T22:00:00Z",
-      "temperatureC": 28.5,
+      "temperatureC": 28.7,
       "precipitationProbability": 0,
-      "windKmh": 4.1,
+      "windKmh": 3.7,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -69,7 +69,7 @@
       "kickoffUtc": "2026-06-25T01:00:00.000Z",
       "forecastHourUtc": "2026-06-25T01:00:00Z",
       "temperatureC": 16.2,
-      "precipitationProbability": 95,
+      "precipitationProbability": 97,
       "windKmh": 2.2,
       "weatherCode": 96,
       "icon": "⛈️",
@@ -82,9 +82,9 @@
       "venue": "Estádio BBVA, Monterrey",
       "kickoffUtc": "2026-06-25T01:00:00.000Z",
       "forecastHourUtc": "2026-06-25T01:00:00Z",
-      "temperatureC": 31.2,
+      "temperatureC": 31.1,
       "precipitationProbability": 1,
-      "windKmh": 23.7,
+      "windKmh": 23.5,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -97,7 +97,7 @@
       "kickoffUtc": "2026-06-25T20:00:00.000Z",
       "forecastHourUtc": "2026-06-25T20:00:00Z",
       "temperatureC": 29.6,
-      "precipitationProbability": 6,
+      "precipitationProbability": 5,
       "windKmh": 20.1,
       "weatherCode": 3,
       "icon": "☁️",
@@ -139,7 +139,7 @@
       "kickoffUtc": "2026-06-25T23:00:00.000Z",
       "forecastHourUtc": "2026-06-25T23:00:00Z",
       "temperatureC": 23.2,
-      "precipitationProbability": 42,
+      "precipitationProbability": 38,
       "windKmh": 11.9,
       "weatherCode": 82,
       "icon": "🌧️",
@@ -183,9 +183,9 @@
       "temperatureC": 27.3,
       "precipitationProbability": 25,
       "windKmh": 10.8,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "62": {
       "available": true,
@@ -197,9 +197,9 @@
       "temperatureC": 22.4,
       "precipitationProbability": 1,
       "windKmh": 6.8,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "63": {
       "available": true,
@@ -223,7 +223,7 @@
       "kickoffUtc": "2026-06-27T00:00:00.000Z",
       "forecastHourUtc": "2026-06-27T00:00:00Z",
       "temperatureC": 21.9,
-      "precipitationProbability": 92,
+      "precipitationProbability": 80,
       "windKmh": 8.9,
       "weatherCode": 53,
       "icon": "🌦️",
@@ -253,9 +253,9 @@
       "temperatureC": 15,
       "precipitationProbability": 67,
       "windKmh": 16.2,
-      "weatherCode": 51,
+      "weatherCode": 53,
       "icon": "🌦️",
-      "description": "Chuvisco fraco"
+      "description": "Chuvisco"
     },
     "67": {
       "available": true,
@@ -267,9 +267,9 @@
       "temperatureC": 25.7,
       "precipitationProbability": 25,
       "windKmh": 12.5,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 51,
+      "icon": "🌦️",
+      "description": "Chuvisco fraco"
     },
     "68": {
       "available": true,
@@ -281,9 +281,9 @@
       "temperatureC": 22.1,
       "precipitationProbability": 58,
       "windKmh": 6.6,
-      "weatherCode": 51,
-      "icon": "🌦️",
-      "description": "Chuvisco fraco"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "69": {
       "available": true,
@@ -323,9 +323,9 @@
       "temperatureC": 27.2,
       "precipitationProbability": 3,
       "windKmh": 23.1,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "72": {
       "available": true,
@@ -379,9 +379,9 @@
       "temperatureC": 32.9,
       "precipitationProbability": 2,
       "windKmh": 31.3,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "76": {
       "available": true,
@@ -433,7 +433,7 @@
       "kickoffUtc": "2026-07-01T01:00:00.000Z",
       "forecastHourUtc": "2026-07-01T01:00:00Z",
       "temperatureC": 17,
-      "precipitationProbability": 80,
+      "precipitationProbability": 74,
       "windKmh": 3,
       "weatherCode": 51,
       "icon": "🌦️",
@@ -463,9 +463,9 @@
       "temperatureC": 28,
       "precipitationProbability": 0,
       "windKmh": 19.1,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "82": {
       "available": true,
@@ -477,9 +477,9 @@
       "temperatureC": 17.5,
       "precipitationProbability": 3,
       "windKmh": 13.3,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "83": {
       "available": true,
@@ -491,9 +491,9 @@
       "temperatureC": 26.3,
       "precipitationProbability": 24,
       "windKmh": 9.2,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "84": {
       "available": true,
@@ -519,9 +519,9 @@
       "temperatureC": 11.5,
       "precipitationProbability": 13,
       "windKmh": 7.6,
-      "weatherCode": 51,
-      "icon": "🌦️",
-      "description": "Chuvisco fraco"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "86": {
       "available": true,
@@ -533,9 +533,9 @@
       "temperatureC": 29.1,
       "precipitationProbability": 37,
       "windKmh": 20.8,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 51,
+      "icon": "🌦️",
+      "description": "Chuvisco fraco"
     },
     "87": {
       "available": true,
@@ -561,9 +561,9 @@
       "temperatureC": 35.4,
       "precipitationProbability": 2,
       "windKmh": 9.3,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "89": {
       "available": true,
@@ -603,9 +603,9 @@
       "temperatureC": 27.9,
       "precipitationProbability": 9,
       "windKmh": 20.8,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "92": {
       "available": true,
@@ -615,7 +615,7 @@
       "kickoffUtc": "2026-07-06T00:00:00.000Z",
       "forecastHourUtc": "2026-07-06T00:00:00Z",
       "temperatureC": 17.7,
-      "precipitationProbability": 94,
+      "precipitationProbability": 84,
       "windKmh": 4.6,
       "weatherCode": 80,
       "icon": "🌦️",
@@ -631,9 +631,9 @@
       "temperatureC": 38.4,
       "precipitationProbability": 12,
       "windKmh": 11.5,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "94": {
       "available": true,
@@ -645,9 +645,9 @@
       "temperatureC": 23.2,
       "precipitationProbability": 0,
       "windKmh": 13.6,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "95": {
       "available": true,
@@ -659,9 +659,9 @@
       "temperatureC": 28.1,
       "precipitationProbability": 30,
       "windKmh": 2.3,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "96": {
       "available": true,

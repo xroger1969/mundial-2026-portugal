@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-24T17:18:06.253Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-24T23:41:41.045Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 114,
+  "totalArticles": 115,
   "articles": [
+    {
+      "title": "Colômbia vence RD Congo e é líder do Grupo K. Portugal com apuramento quase garantido",
+      "description": "A Colômbia garantiu terça-feira um lugar nos 16 avos de final do Mundial de futebol de 2026, ao vencer a República Democrática do Congo por 1-0, no fecho da segunda jornada do Grupo K, em Zapopan, no México.",
+      "content": "Depois de já ter marcado no 3-1 ao Uzbequistão, Daniel Muñoz apontou, aos 76 minutos, o golo dos \"cafeteros\", que se juntaram na fase a eliminar a México, Estados Unidos, Alemanha, França, Noruega e à campeã em título Argentina. Os colombianos lidera... [2053 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/colombia-vence-rd-congo-e-qualifica-se-para-os-16-avos-portugal-com-apuramento-quase-garantido/18098618",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/0e0590a3-282d-468e-a92e-acd9d3b000d3_1200x675.jpg",
+      "publishedAt": "2026-06-24T07:21:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Tomás Araújo novamente ausente do treino da seleção nacional deve falhar Uzbequistão",
       "description": "O central Tomás Araújo voltou este domingo a estar ausente no treino de Portugal, devido a problemas físicos, e deve falhar o duelo com o Uzbequistão, da segunda jornada do Grupo K do Mundial 2026 de futebol.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-06-15T16:05:23Z",
       "sourceName": "ECO Economia Online",
       "sourceUrl": "https://eco.sapo.pt"
-    },
-    {
-      "title": "O sonho de Diogo Jota viaja com Portugal: O detalhe que Matheus Nunes levou para o Mundial de 2026",
-      "description": "Momento foi captado à chegada da Seleção de futebol aos Estados Unidos, onde vai disputar o mundial.",
-      "content": "O Correio da Manhã incentiva todos os Leitores a interagirem através de comentários às notícias publicadas no seu site, de uma maneira respeitadora com o cumprimento dos princípios legais e constitucionais. Assim são totalmente ilegítimos comentários... [7369 chars]",
-      "url": "https://www.cmjornal.pt/mais-cm/especiais/mundial-2026/detalhe/o-sonho-de-jota-viaja-com-portugal-o-detalhe-que-matheus-nunes-levou-para-o-mundial-de-2026",
-      "image": "https://cdn.cmjornal.pt/images/2026-06/img_1280x721uu2026-06-13-14-36-57-2290846.jpg",
-      "publishedAt": "2026-06-13T00:00:00Z",
-      "sourceName": "Correio da Manhã",
-      "sourceUrl": "https://www.cmjornal.pt"
     }
   ]
 }

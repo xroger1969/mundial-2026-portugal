@@ -2,11 +2,31 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-25T12:06:41.036Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-25T19:25:40.396Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 117,
+  "totalArticles": 119,
   "articles": [
+    {
+      "title": "Portugal deverá ser um dos muitos apurados para os 16 avos no \"sofá\"",
+      "description": "Portugal deverá ser, esta quinta-feira, uma das muitas seleções a garantir, sem jogar, o apuramento para os 16 avos de final do Mundial de futebol de 2026, o que poderá acontecer logo com o fecho do Grupo E.",
+      "content": "Com quatro pontos, depois do 1-1 com a República Democrática do Congo e o 5-0 ao Uzbequistão, a formação das \"quinas\" vai, tudo indica, garantir no \"sofá\" que, na pior das hipóteses, seguirá em frente com uma das oito melhores terceiras. A Coreia do ... [2013 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/portugal-devera-ser-um-dos-muitos-apurados-no-sofa/18099018",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/bc13c549-fe7b-48c9-86b3-08139aa73f49_1200x675.jpg",
+      "publishedAt": "2026-06-25T06:54:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
+    {
+      "title": "Portugal pode apurar-se já no Mundial... no sofá. O que tem de acontecer",
+      "description": "Portugal deverá será hoje uma das muitas seleções a garantir, sem jogar, o apuramento para os 16 avos de final do Mundial de futebol de 2026, o que poderá acontecer logo com o fecho do Grupo E.",
+      "content": "Com quatro pontos, depois do 1-1 com a República Democrática do Congo e o 5-0 ao Uzbequistão, a formação das 'quinas' vai, tudo indica, garantir no 'sofá' que, na pior das hipóteses, seguirá em frente com uma das oito melhores terceiras. A Coreia do ... [2013 chars]",
+      "url": "https://www.noticiasaominuto.com/desporto/3010938/portugal-pode-apurar-se-ja-no-mundial-no-sofa-o-que-tem-de-acontecer",
+      "image": "https://media-manager.noticiasaominuto.com/960/naom_6a331255959f3.webp",
+      "publishedAt": "2026-06-25T04:59:50Z",
+      "sourceName": "Notícias ao Minuto",
+      "sourceUrl": "https://www.noticiasaominuto.com"
+    },
     {
       "title": "Mundial 2026: Vitória de Portugal contra Uzbequistão vista em média por mais de 3,3 milhões de portugueses",
       "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
@@ -86,26 +106,6 @@
       "publishedAt": "2026-06-17T09:32:00Z",
       "sourceName": "A Bola",
       "sourceUrl": "https://www.abola.pt"
-    },
-    {
-      "title": "Paulo Costa na Fan Zone Betano: \"É uma festa do futebol\"",
-      "description": "Diretor executivo da Liga Portugal com 'esperança' para a campanha no Mundial'2026",
-      "content": "Paulo Costa, diretor executivo da Liga Portugal, é um dos rostos do nosso futebol a marcar presença na Fan Zone Betano, em Vila Nova de Gaia. \"É uma festa do futebol, que prova que a Seleção Nacional é um ótimo veículo de propaganda do futebol. A Lig... [487 chars]",
-      "url": "https://www.record.pt/internacional/competicoes-de-selecoes/mundial/mundial-2026/detalhe/paulo-costa-na-fan-zone-betano-e-uma-festa-do-futebol",
-      "image": "https://cdn.record.pt/images/2026-06/img_1200x721uu2026-06-17-18-11-35-2445143.jpg",
-      "publishedAt": "2026-06-17T00:00:00Z",
-      "sourceName": "Record",
-      "sourceUrl": "https://www.record.pt"
-    },
-    {
-      "title": "O Negócios pergunta. Maioria acredita que a Seleção Nacional chega à final do Mundial",
-      "description": "O Negócios desafiou os seus leitores a responderem a uma pergunta no canal do WhatsApp sobre as hipóteses de Portugal na edição de 2026 do Campeonato do Mundo de futebol. Eis as conclusões.",
-      "content": "A detentora do título Argentina, a França, vencedora em 2018 e vice em 2022, e a Espanha, campeã europeia em 2024, partem como principais candidatas a vencer o maior Mundial de futebol de sempre, que arrancou na quinta-feira, 11 de junho e decorre at... [1288 chars]",
-      "url": "https://www.jornaldenegocios.pt/empresas/media/o-negocios/detalhe/o-negocios-pergunta-maioria-acredita-que-a-selecao-nacional-chega-a-final-do-mundial",
-      "image": "https://cdn.jornaldenegocios.pt/images/2026-06/img_1200x676uu2026-06-09-11-50-11-524977.png",
-      "publishedAt": "2026-06-17T00:00:00Z",
-      "sourceName": "Jornal de Negócios - Portugal",
-      "sourceUrl": "https://www.jornaldenegocios.pt"
     }
   ]
 }

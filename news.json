@@ -2,11 +2,31 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-24T23:41:41.045Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-25T06:01:28.982Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 115,
+  "totalArticles": 117,
   "articles": [
+    {
+      "title": "Mundial 2026: Vitória de Portugal contra Uzbequistão vista em média por mais de 3,3 milhões de portugueses",
+      "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
+      "content": "A vitória da Seleção Nacional contra o Uzbequistão por 5-0 — que ditou mais um recorde para Ronaldo — reuniu em média mais de três milhões de portugueses à frente da televisão, revela a análise elaborada pela Dentsu para o +M. O encontro foi acompanh... [2593 chars]",
+      "url": "https://eco.sapo.pt/2026/06/24/mundial-2026-vitoria-de-portugal-contra-uzbequistao-vista-em-media-por-mais-de-33-milhoes-de-portugueses/",
+      "image": "https://eco.imgix.net/uploads/2026/06/audiencias-mundial-2000x1125-1.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+      "publishedAt": "2026-06-24T14:25:33Z",
+      "sourceName": "ECO Economia Online",
+      "sourceUrl": "https://eco.sapo.pt"
+    },
+    {
+      "title": "Australiano Alireza Faghani é o árbitro do jogo entre Portugal e Colômbia",
+      "description": "O árbitro australiano Alireza Faghani vai dirigir o jogo entre Portugal e a Colômbia, da terceira e última jornada do Grupo K do Mundial 2026 de futebol.",
+      "content": "Alireza Faghani, de 48 anos, terá como auxiliares os compatriotas George Lakrindis e Andrew Lindsay, enquanto a função de quarto árbitro vai recair sobre o hondurenho Saíd Martínez, na partida do estádio Hard Rock, em Miami Gardens, com início às 19.... [1416 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/australiano-alireza-faghani-e-o-arbitro-do-jogo-entre-portugal-e-colombia/18098778",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/f94a30ce-92d9-4a18-b3df-aae8f9e57159_1200x675.jpg",
+      "publishedAt": "2026-06-24T14:05:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Colômbia vence RD Congo e é líder do Grupo K. Portugal com apuramento quase garantido",
       "description": "A Colômbia garantiu terça-feira um lugar nos 16 avos de final do Mundial de futebol de 2026, ao vencer a República Democrática do Congo por 1-0, no fecho da segunda jornada do Grupo K, em Zapopan, no México.",
@@ -86,26 +106,6 @@
       "publishedAt": "2026-06-17T00:00:00Z",
       "sourceName": "Jornal de Negócios - Portugal",
       "sourceUrl": "https://www.jornaldenegocios.pt"
-    },
-    {
-      "title": "Rúben Dias ainda à parte na véspera da estreia de Portugal",
-      "description": "O defesa Rúben Dias voltou esta terça-feira a trabalhar à parte da restante seleção portuguesa de futebol, no derradeiro treino antes da estreia no Mundial 2026, frente à República Democrática do Congo, na quarta-feira.",
-      "content": "O jogador do Manchester City ainda não fez qualquer treino com a equipa das \"quinas\" no estágio em Palm Beach, nos Estados Unidos, e hoje, durante os 15 minutos abertos à comunicação social, fez a corrida de aquecimento com os restantes jogadores de ... [1007 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/ruben-dias-ainda-a-parte-na-vespera-da-estreia-de-portugal/18095912",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/2cd7fd1c-864d-42d5-8247-00fe59f5b6b0_1200x675.jpg",
-      "publishedAt": "2026-06-16T15:53:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Galp une seis rádios na estreia da Seleção no Mundial 2026",
-      "description": "O projeto, impulsionado pela Galp, marca a estreia de Portugal no Mundial 2026, com uma transmissão em direto da Cidade do Futebol.",
-      "content": "Numa iniciativa inédita em mais de um século de história da rádio em Portugal, seis das principais estações do país vão realizar uma emissão conjunta no próximo dia 17 de junho. O projeto, impulsionado pela Galp, marca a estreia de Portugal no Mundia... [1913 chars]",
-      "url": "https://eco.sapo.pt/2026/06/15/galp-une-seis-radios-na-estreia-da-selecao-no-mundial-2026/",
-      "image": "https://eco.imgix.net/uploads/2026/06/art-galp-mundialfutebol-energia-1920x1080px.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
-      "publishedAt": "2026-06-15T16:05:23Z",
-      "sourceName": "ECO Economia Online",
-      "sourceUrl": "https://eco.sapo.pt"
     }
   ]
 }

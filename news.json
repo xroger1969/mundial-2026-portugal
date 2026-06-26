@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-25T19:25:40.396Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-26T04:37:45.965Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 119,
+  "totalArticles": 120,
   "articles": [
+    {
+      "title": "Pedro Neto pronto a \"explodir\" depois de lesões no passado",
+      "description": "O extremo Pedro Neto afirmou esta quinta-feira que está no Mundial 2026 de futebol para \"explodir\" e que sempre acreditou que iria representar Portugal na competição, apesar de ter vivido duas lesões graves.",
+      "content": "Aos 26 anos, o agora jogador do Chelsea está a viver o primeiro Campeonato do Mundo da carreira, e foi mesmo titular nos dois primeiros jogos da seleção nacional, mas no passado, ainda ao serviço ao Wolverhampton, em 2021 e 2022, sofreu duas lesões g... [2034 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/pedro-neto-pronto-a-explodir-depois-de-lesoes-no-passado/18099246",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/ef13e99f-7309-48dd-b8c3-020426a5abb7_1200x675.jpg",
+      "publishedAt": "2026-06-25T16:18:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Portugal deverá ser um dos muitos apurados para os 16 avos no \"sofá\"",
       "description": "Portugal deverá ser, esta quinta-feira, uma das muitas seleções a garantir, sem jogar, o apuramento para os 16 avos de final do Mundial de futebol de 2026, o que poderá acontecer logo com o fecho do Grupo E.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-06-17T20:00:59Z",
       "sourceName": "SIC Notícias",
       "sourceUrl": "https://sicnoticias.pt"
-    },
-    {
-      "title": "Mundial 2026: pais de Diogo Jota assistem à estreia de Portugal",
-      "description": "Convite partiu da Federação Portuguesa de Futebol Continue a ler.",
-      "content": "Joaquim e Isabel Silva, pais de Diogo Jota, que morreu há praticamente um ano, vão marcar presença no jogo de estreia de Portugal no Mundial 2026, contra a RD Congo. A informação foi confirmada esta quarta-feira pela Federação Portuguesa de Futebol. ... [1246 chars]",
-      "url": "https://www.abola.pt/noticias/mundial-2026-pais-de-diogo-jota-assistem-a-estreia-de-portugal-2026061709190928170",
-      "image": "https://sportal365images.com/process/smp-images-production/abola.pt/17062026/78dc2152-d9b4-487e-b1b4-b0a422ae4dab.jpeg?operations=crop(0:134:1278:853),autocrop(1200:630)",
-      "publishedAt": "2026-06-17T09:32:00Z",
-      "sourceName": "A Bola",
-      "sourceUrl": "https://www.abola.pt"
     }
   ]
 }

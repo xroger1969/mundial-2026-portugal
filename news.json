@@ -2,11 +2,31 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-27T15:35:20.419Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-27T22:42:01.615Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 121,
+  "totalArticles": 123,
   "articles": [
+    {
+      "title": "Portugal oficialmente apurado para os 16 avos a menos de 24 horas do embate com Colômbia",
+      "description": "A seleção portuguesa de futebol assegurou na sexta-feira, sem jogar, o apuramento para os 16 avos de final do Mundial de 2026, depois do fecho do Grupo H, no qual o estreante Cabo Verde conseguiu uma histórica qualificação.",
+      "content": "Portugal, que na pior das hipóteses, acabará em terceiro do Grupo K, com quatro pontos, fará sempre melhor do que os terceiros do Grupo A (Coreia do Sul), C (Escócia), I (Senegal) e H (Uruguai), no qual os cabo-verdianos foram segundos. Em Houston, o... [1011 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/portugal-esta-oficialmente-apurado-para-os-16-avos-a-menos-de-24-horas-do-embate-com-a-colombia/18099860",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/9b47794a-86af-4925-9952-45242d8591a3_1200x675.jpg",
+      "publishedAt": "2026-06-27T07:36:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
+    {
+      "title": "Portugal (e estreante Cabo Verde) nos 16 avos de final do Mundial2026",
+      "description": "A seleção portuguesa de futebol assegurou na sexta-feira, sem jogar, o apuramento para os 16 avos de final do Mundial de 2026, depois do fecho do Grupo H, no qual o estreante Cabo Verde conseguiu uma histórica qualificação.",
+      "content": "Portugal, que na pior das hipóteses, acabará em terceiro do Grupo K, com quatro pontos, fará sempre melhor do que os terceiros do Grupo A (Coreia do Sul), C (Escócia), I (Senegal) e H (Uruguai), no qual os cabo-verdianos foram segundos. Em Houston, o... [1011 chars]",
+      "url": "https://www.noticiasaominuto.com/desporto/3012188/portugal-e-estreante-cabo-verde-nos-16-avos-de-final-do-mundial2026",
+      "image": "https://media-manager.noticiasaominuto.com/960/47361704.webp",
+      "publishedAt": "2026-06-27T05:46:19Z",
+      "sourceName": "Notícias ao Minuto",
+      "sourceUrl": "https://www.noticiasaominuto.com"
+    },
     {
       "title": "Mundial 2026: Portugal termina treino no pavilhão devido ao mau tempo",
       "description": "A seleção portuguesa de futebol terminou esta quinta-feira o treino num pavilhão, em Palm Beach, nos Estados Unidos, depois de a sessão de trabalho de preparação do jogo com a Colômbia, para o Mundial 2026, ter sido interrompida pela trovoada.",
@@ -86,26 +106,6 @@
       "publishedAt": "2026-06-21T16:03:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Marroquino Jalad Jayed dirige jogo entre Portugal e o Uzbequistão",
-      "description": "O árbitro marroquino Jalad Jayed vai dirigir o jogo entre Portugal e o Uzbequistão, da segunda jornada do Grupo K do Mundial 2026 de futebol.",
-      "content": "Jalad Jayed, de 39 anos, vai ter como auxiliares os compatriotas Zakaria Brinsi e Mostafa Akarkad, enquanto o quarto árbitro será o sul-africano Abongile Tom. Já a equipa de videoarbitragem só vai ser divulgada mais tarde. Jalad Jayed vai dirigir a s... [894 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/marroquino-jalad-jayed-dirige-jogo-entre-portugal-e-o-uzbequistao/18097540",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/866d97c6-1475-4c09-a20d-dfb82ef7e64f_1200x675.jpg",
-      "publishedAt": "2026-06-21T08:37:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Mais de três milhões de portugueses assistiram à estreia de Portugal no Mundial de 2026",
-      "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
-      "content": "O empate da Seleção Nacional contra a República Democrática do Congo por 1-1 reuniu mais de três milhões de portugueses à frente da televisão, revela a análise elaborada pela Dentsu para o +M. O encontro foi acompanhado na televisão portuguesa, em mé... [3066 chars]",
-      "url": "https://eco.sapo.pt/2026/06/18/mais-de-tres-milhoes-de-portugueses-assistiram-a-estreia-de-portugal-no-mundial-de-2026/",
-      "image": "https://eco.imgix.net/uploads/2026/06/audiencias-mundial-2000x1125-1.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
-      "publishedAt": "2026-06-18T17:41:33Z",
-      "sourceName": "ECO Economia Online",
-      "sourceUrl": "https://eco.sapo.pt"
     }
   ]
 }

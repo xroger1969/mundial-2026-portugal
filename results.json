@@ -3,9 +3,11 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-27T11:58:34.229Z",
-  "message": "Atualização automática concluída. Jogos recebidos da API: 104. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
+  "updatedAt": "2026-06-27T13:05:04.754Z",
+  "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
+  "linkedCount": 101,
+  "skippedWithoutSafeMatch": 3,
   "matches": {
     "1": {
       "apiId": 537327,
@@ -16,7 +18,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-11T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-12T08:25:00Z",
       "provider": "football-data.org"
     },
     "2": {
@@ -28,7 +30,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-12T02:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-12T08:25:00Z",
       "provider": "football-data.org"
     },
     "3": {
@@ -40,7 +42,7 @@
       "awayScore": 1,
       "winner": "DRAW",
       "utcDate": "2026-06-12T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-12T22:25:00Z",
       "provider": "football-data.org"
     },
     "4": {
@@ -52,7 +54,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-13T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-13T03:25:00Z",
       "provider": "football-data.org"
     },
     "5": {
@@ -64,7 +66,7 @@
       "awayScore": 1,
       "winner": "DRAW",
       "utcDate": "2026-06-13T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-13T21:09:44Z",
       "provider": "football-data.org"
     },
     "6": {
@@ -76,7 +78,7 @@
       "awayScore": 1,
       "winner": "DRAW",
       "utcDate": "2026-06-13T22:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-14T00:10:33Z",
       "provider": "football-data.org"
     },
     "7": {
@@ -88,7 +90,7 @@
       "awayScore": 1,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-14T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-14T03:09:14Z",
       "provider": "football-data.org"
     },
     "8": {
@@ -100,7 +102,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-14T04:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-14T06:03:26Z",
       "provider": "football-data.org"
     },
     "9": {
@@ -112,7 +114,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-14T17:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-15T08:25:00Z",
       "provider": "football-data.org"
     },
     "10": {
@@ -124,7 +126,7 @@
       "awayScore": 2,
       "winner": "DRAW",
       "utcDate": "2026-06-14T20:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-15T08:25:01Z",
       "provider": "football-data.org"
     },
     "11": {
@@ -136,7 +138,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-14T23:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-15T08:25:01Z",
       "provider": "football-data.org"
     },
     "12": {
@@ -148,7 +150,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-15T02:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-15T08:25:01Z",
       "provider": "football-data.org"
     },
     "13": {
@@ -160,7 +162,7 @@
       "awayScore": 0,
       "winner": "DRAW",
       "utcDate": "2026-06-15T16:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-16T03:25:00Z",
       "provider": "football-data.org"
     },
     "14": {
@@ -172,7 +174,7 @@
       "awayScore": 1,
       "winner": "DRAW",
       "utcDate": "2026-06-15T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-16T03:25:00Z",
       "provider": "football-data.org"
     },
     "15": {
@@ -184,7 +186,7 @@
       "awayScore": 1,
       "winner": "DRAW",
       "utcDate": "2026-06-15T22:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-16T03:25:00Z",
       "provider": "football-data.org"
     },
     "16": {
@@ -196,7 +198,7 @@
       "awayScore": 2,
       "winner": "DRAW",
       "utcDate": "2026-06-16T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-16T03:25:00Z",
       "provider": "football-data.org"
     },
     "17": {
@@ -208,7 +210,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-16T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-17T08:25:00Z",
       "provider": "football-data.org"
     },
     "18": {
@@ -220,7 +222,7 @@
       "awayScore": 4,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-16T22:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-17T08:25:00Z",
       "provider": "football-data.org"
     },
     "19": {
@@ -232,7 +234,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-17T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-17T08:25:01Z",
       "provider": "football-data.org"
     },
     "20": {
@@ -244,7 +246,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-17T04:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-17T08:25:01Z",
       "provider": "football-data.org"
     },
     "21": {
@@ -256,7 +258,7 @@
       "awayScore": 1,
       "winner": "DRAW",
       "utcDate": "2026-06-17T17:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-18T08:25:01Z",
       "provider": "football-data.org"
     },
     "22": {
@@ -280,7 +282,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-17T23:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-18T08:25:01Z",
       "provider": "football-data.org"
     },
     "24": {
@@ -292,7 +294,7 @@
       "awayScore": 3,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-18T02:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-18T08:25:01Z",
       "provider": "football-data.org"
     },
     "25": {
@@ -304,7 +306,7 @@
       "awayScore": 1,
       "winner": "DRAW",
       "utcDate": "2026-06-18T16:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-19T03:25:00Z",
       "provider": "football-data.org"
     },
     "26": {
@@ -316,7 +318,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-18T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-19T03:25:00Z",
       "provider": "football-data.org"
     },
     "27": {
@@ -328,7 +330,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-18T22:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-19T03:25:00Z",
       "provider": "football-data.org"
     },
     "28": {
@@ -340,7 +342,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-19T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-19T03:25:00Z",
       "provider": "football-data.org"
     },
     "29": {
@@ -352,7 +354,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-19T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-20T08:25:00Z",
       "provider": "football-data.org"
     },
     "30": {
@@ -364,7 +366,7 @@
       "awayScore": 1,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-19T22:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-20T08:25:00Z",
       "provider": "football-data.org"
     },
     "31": {
@@ -376,7 +378,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-20T00:30:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T03:25:00Z",
       "provider": "football-data.org"
     },
     "32": {
@@ -388,7 +390,7 @@
       "awayScore": 1,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-20T03:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-20T08:25:01Z",
       "provider": "football-data.org"
     },
     "33": {
@@ -400,7 +402,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-20T17:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-23T13:25:01Z",
       "provider": "football-data.org"
     },
     "34": {
@@ -412,7 +414,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-20T20:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-21T08:25:00Z",
       "provider": "football-data.org"
     },
     "35": {
@@ -424,7 +426,7 @@
       "awayScore": 0,
       "winner": "DRAW",
       "utcDate": "2026-06-21T00:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-21T08:25:00Z",
       "provider": "football-data.org"
     },
     "36": {
@@ -436,7 +438,7 @@
       "awayScore": 4,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-21T04:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-21T08:25:01Z",
       "provider": "football-data.org"
     },
     "37": {
@@ -448,7 +450,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-21T16:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-22T03:25:01Z",
       "provider": "football-data.org"
     },
     "38": {
@@ -460,7 +462,7 @@
       "awayScore": 0,
       "winner": "DRAW",
       "utcDate": "2026-06-21T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-22T03:25:01Z",
       "provider": "football-data.org"
     },
     "39": {
@@ -472,7 +474,7 @@
       "awayScore": 2,
       "winner": "DRAW",
       "utcDate": "2026-06-21T22:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-22T03:25:01Z",
       "provider": "football-data.org"
     },
     "40": {
@@ -484,7 +486,7 @@
       "awayScore": 3,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-22T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-22T03:25:01Z",
       "provider": "football-data.org"
     },
     "41": {
@@ -496,7 +498,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-22T17:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-23T08:25:01Z",
       "provider": "football-data.org"
     },
     "42": {
@@ -508,7 +510,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-22T21:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T13:25:01Z",
       "provider": "football-data.org"
     },
     "43": {
@@ -520,7 +522,7 @@
       "awayScore": 2,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-23T00:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-23T08:25:01Z",
       "provider": "football-data.org"
     },
     "44": {
@@ -532,7 +534,7 @@
       "awayScore": 2,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-23T03:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-23T08:25:01Z",
       "provider": "football-data.org"
     },
     "45": {
@@ -544,7 +546,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-23T17:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T03:25:01Z",
       "provider": "football-data.org"
     },
     "46": {
@@ -556,7 +558,7 @@
       "awayScore": 0,
       "winner": "DRAW",
       "utcDate": "2026-06-23T20:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T03:25:01Z",
       "provider": "football-data.org"
     },
     "47": {
@@ -580,7 +582,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-24T02:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T03:25:01Z",
       "provider": "football-data.org"
     },
     "49": {
@@ -592,7 +594,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-24T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T03:25:00Z",
       "provider": "football-data.org"
     },
     "50": {
@@ -604,7 +606,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-24T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T13:25:00Z",
       "provider": "football-data.org"
     },
     "51": {
@@ -616,7 +618,7 @@
       "awayScore": 3,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-24T22:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T03:25:01Z",
       "provider": "football-data.org"
     },
     "52": {
@@ -628,7 +630,7 @@
       "awayScore": 2,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-24T22:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T13:25:00Z",
       "provider": "football-data.org"
     },
     "53": {
@@ -640,7 +642,7 @@
       "awayScore": 3,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-25T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T03:25:00Z",
       "provider": "football-data.org"
     },
     "54": {
@@ -652,7 +654,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-25T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-25T03:25:00Z",
       "provider": "football-data.org"
     },
     "55": {
@@ -664,7 +666,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-25T20:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-26T05:53:25Z",
       "provider": "football-data.org"
     },
     "56": {
@@ -676,22 +678,10 @@
       "awayScore": 2,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-25T20:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-26T05:53:25Z",
       "provider": "football-data.org"
     },
     "57": {
-      "apiId": 537361,
-      "status": "FINISHED",
-      "homeTeam": "Tunisia",
-      "awayTeam": "Netherlands",
-      "homeScore": 1,
-      "awayScore": 3,
-      "winner": "AWAY_TEAM",
-      "utcDate": "2026-06-25T23:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
-      "provider": "football-data.org"
-    },
-    "58": {
       "apiId": 537362,
       "status": "FINISHED",
       "homeTeam": "Japan",
@@ -700,7 +690,19 @@
       "awayScore": 1,
       "winner": "DRAW",
       "utcDate": "2026-06-25T23:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-26T05:53:25Z",
+      "provider": "football-data.org"
+    },
+    "58": {
+      "apiId": 537361,
+      "status": "FINISHED",
+      "homeTeam": "Tunisia",
+      "awayTeam": "Netherlands",
+      "homeScore": 1,
+      "awayScore": 3,
+      "winner": "AWAY_TEAM",
+      "utcDate": "2026-06-25T23:00:00Z",
+      "lastUpdated": "2026-06-26T05:53:25Z",
       "provider": "football-data.org"
     },
     "59": {
@@ -712,7 +714,7 @@
       "awayScore": 2,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-26T02:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-26T05:53:25Z",
       "provider": "football-data.org"
     },
     "60": {
@@ -724,7 +726,7 @@
       "awayScore": 0,
       "winner": "DRAW",
       "utcDate": "2026-06-26T02:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-26T05:53:25Z",
       "provider": "football-data.org"
     },
     "61": {
@@ -752,18 +754,6 @@
       "provider": "football-data.org"
     },
     "63": {
-      "apiId": 537373,
-      "status": "FINISHED",
-      "homeTeam": "Uruguay",
-      "awayTeam": "Spain",
-      "homeScore": 0,
-      "awayScore": 1,
-      "winner": "AWAY_TEAM",
-      "utcDate": "2026-06-27T00:00:00Z",
-      "lastUpdated": "2026-06-27T07:23:05Z",
-      "provider": "football-data.org"
-    },
-    "64": {
       "apiId": 537374,
       "status": "FINISHED",
       "homeTeam": "Cape Verde Islands",
@@ -775,19 +765,19 @@
       "lastUpdated": "2026-06-27T07:23:05Z",
       "provider": "football-data.org"
     },
-    "65": {
-      "apiId": 537367,
+    "64": {
+      "apiId": 537373,
       "status": "FINISHED",
-      "homeTeam": "New Zealand",
-      "awayTeam": "Belgium",
-      "homeScore": 1,
-      "awayScore": 5,
+      "homeTeam": "Uruguay",
+      "awayTeam": "Spain",
+      "homeScore": 0,
+      "awayScore": 1,
       "winner": "AWAY_TEAM",
-      "utcDate": "2026-06-27T03:00:00Z",
+      "utcDate": "2026-06-27T00:00:00Z",
       "lastUpdated": "2026-06-27T07:23:05Z",
       "provider": "football-data.org"
     },
-    "66": {
+    "65": {
       "apiId": 537368,
       "status": "FINISHED",
       "homeTeam": "Egypt",
@@ -795,6 +785,18 @@
       "homeScore": 1,
       "awayScore": 1,
       "winner": "DRAW",
+      "utcDate": "2026-06-27T03:00:00Z",
+      "lastUpdated": "2026-06-27T07:23:05Z",
+      "provider": "football-data.org"
+    },
+    "66": {
+      "apiId": 537367,
+      "status": "FINISHED",
+      "homeTeam": "New Zealand",
+      "awayTeam": "Belgium",
+      "homeScore": 1,
+      "awayScore": 5,
+      "winner": "AWAY_TEAM",
       "utcDate": "2026-06-27T03:00:00Z",
       "lastUpdated": "2026-06-27T07:23:05Z",
       "provider": "football-data.org"
@@ -808,7 +810,7 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T21:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "68": {
@@ -832,7 +834,7 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T23:30:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "70": {
@@ -844,22 +846,10 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-27T23:30:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "71": {
-      "apiId": 537401,
-      "status": "TIMED",
-      "homeTeam": "Jordan",
-      "awayTeam": "Argentina",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
-      "utcDate": "2026-06-28T02:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
-      "provider": "football-data.org"
-    },
-    "72": {
       "apiId": 537402,
       "status": "TIMED",
       "homeTeam": "Algeria",
@@ -868,7 +858,19 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-28T02:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
+      "provider": "football-data.org"
+    },
+    "72": {
+      "apiId": 537401,
+      "status": "TIMED",
+      "homeTeam": "Jordan",
+      "awayTeam": "Argentina",
+      "homeScore": null,
+      "awayScore": null,
+      "winner": null,
+      "utcDate": "2026-06-28T02:00:00Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "73": {
@@ -880,379 +882,379 @@
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-28T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "74": {
-      "apiId": 537423,
+      "apiId": 537415,
       "status": "TIMED",
       "homeTeam": "Brazil",
       "awayTeam": "Japan",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
-      "utcDate": "2026-06-29T17:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "utcDate": "2026-06-29T20:30:00Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "75": {
-      "apiId": 537415,
+      "apiId": 537418,
       "status": "TIMED",
       "homeTeam": "Germany",
-      "awayTeam": null,
+      "awayTeam": "2.º Grupo C",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
-      "utcDate": "2026-06-29T20:30:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "utcDate": "2026-06-30T01:00:00Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "76": {
-      "apiId": 537418,
+      "apiId": 537423,
       "status": "TIMED",
       "homeTeam": "Netherlands",
       "awayTeam": "Morocco",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
-      "utcDate": "2026-06-30T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "utcDate": "2026-06-29T17:00:00Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "77": {
-      "apiId": 537424,
-      "status": "TIMED",
-      "homeTeam": "Ivory Coast",
-      "awayTeam": null,
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
-      "utcDate": "2026-06-30T17:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
-      "provider": "football-data.org"
-    },
-    "78": {
       "apiId": 537416,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Ivory Coast",
+      "awayTeam": "melhor 3.º dos grupos C/D/F/G/H",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-06-30T21:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
+      "provider": "football-data.org"
+    },
+    "78": {
+      "apiId": 537424,
+      "status": "TIMED",
+      "homeTeam": "2.º Grupo E",
+      "awayTeam": "2.º Grupo I",
+      "homeScore": null,
+      "awayScore": null,
+      "winner": null,
+      "utcDate": "2026-06-30T17:00:00Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "79": {
       "apiId": 537425,
       "status": "TIMED",
       "homeTeam": "Mexico",
-      "awayTeam": null,
+      "awayTeam": "melhor 3.º dos grupos C/E/F/H/I",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-01T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "80": {
       "apiId": 537426,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Grupo L",
+      "awayTeam": "melhor 3.º dos grupos E/H/I/J/K",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-01T16:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "81": {
-      "apiId": 537422,
+      "apiId": 537421,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Grupo D",
+      "awayTeam": "melhor 3.º dos grupos B/E/F/I/J",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
-      "utcDate": "2026-07-01T20:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "utcDate": "2026-07-02T00:00:00Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "82": {
-      "apiId": 537421,
+      "apiId": 537422,
       "status": "TIMED",
       "homeTeam": "United States",
       "awayTeam": "Bosnia-Herzegovina",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
-      "utcDate": "2026-07-02T00:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "utcDate": "2026-07-01T20:00:00Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "83": {
-      "apiId": 537420,
-      "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
-      "utcDate": "2026-07-02T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
-      "provider": "football-data.org"
-    },
-    "84": {
       "apiId": 537419,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "2.º Grupo K",
+      "awayTeam": "2.º Grupo L",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-02T23:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
+      "provider": "football-data.org"
+    },
+    "84": {
+      "apiId": 537420,
+      "status": "TIMED",
+      "homeTeam": "Vencedor Grupo H",
+      "awayTeam": "2.º Grupo J",
+      "homeScore": null,
+      "awayScore": null,
+      "winner": null,
+      "utcDate": "2026-07-02T19:00:00Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "85": {
       "apiId": 537429,
       "status": "TIMED",
       "homeTeam": "Switzerland",
-      "awayTeam": null,
+      "awayTeam": "melhor 3.º dos grupos E/F/G/I/J",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-03T03:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "86": {
-      "apiId": 537428,
-      "status": "TIMED",
-      "homeTeam": "Australia",
-      "awayTeam": null,
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
-      "utcDate": "2026-07-03T18:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
-      "provider": "football-data.org"
-    },
-    "87": {
       "apiId": 537427,
       "status": "TIMED",
-      "homeTeam": "Argentina",
-      "awayTeam": null,
+      "homeTeam": "Australia",
+      "awayTeam": "2.º Grupo H",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-03T22:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
-    "88": {
+    "87": {
       "apiId": 537430,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Argentina",
+      "awayTeam": "melhor 3.º dos grupos D/E/I/J/L",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-04T01:30:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
-    "89": {
-      "apiId": 537376,
+    "88": {
+      "apiId": 537428,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "2.º Grupo D",
+      "awayTeam": "2.º Grupo G",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
-      "utcDate": "2026-07-04T17:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "utcDate": "2026-07-03T18:00:00Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
-    "90": {
+    "89": {
       "apiId": 537375,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 74",
+      "awayTeam": "Vencedor Jogo 77",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-04T21:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
+      "provider": "football-data.org"
+    },
+    "90": {
+      "apiId": 537376,
+      "status": "TIMED",
+      "homeTeam": "Vencedor Jogo 73",
+      "awayTeam": "Vencedor Jogo 75",
+      "homeScore": null,
+      "awayScore": null,
+      "winner": null,
+      "utcDate": "2026-07-04T17:00:00Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "91": {
       "apiId": 537377,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 76",
+      "awayTeam": "Vencedor Jogo 78",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-05T20:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "92": {
       "apiId": 537378,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 79",
+      "awayTeam": "Vencedor Jogo 80",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-06T00:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "93": {
       "apiId": 537379,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 83",
+      "awayTeam": "Vencedor Jogo 84",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-06T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "94": {
       "apiId": 537380,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 81",
+      "awayTeam": "Vencedor Jogo 82",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-07T00:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "95": {
       "apiId": 537381,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 86",
+      "awayTeam": "Vencedor Jogo 88",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-07T16:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "96": {
       "apiId": 537382,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 85",
+      "awayTeam": "Vencedor Jogo 87",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-07T20:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "97": {
       "apiId": 537383,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 89",
+      "awayTeam": "Vencedor Jogo 90",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-09T20:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "98": {
       "apiId": 537384,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 93",
+      "awayTeam": "Vencedor Jogo 94",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-10T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "99": {
       "apiId": 537385,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 91",
+      "awayTeam": "Vencedor Jogo 92",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-11T21:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "100": {
       "apiId": 537386,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 95",
+      "awayTeam": "Vencedor Jogo 96",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-12T01:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "101": {
       "apiId": 537387,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 97",
+      "awayTeam": "Vencedor Jogo 98",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-14T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "102": {
       "apiId": 537388,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 99",
+      "awayTeam": "Vencedor Jogo 100",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-15T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "103": {
       "apiId": 537389,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencido Jogo 101",
+      "awayTeam": "Vencido Jogo 102",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-18T21:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     },
     "104": {
       "apiId": 537390,
       "status": "TIMED",
-      "homeTeam": null,
-      "awayTeam": null,
+      "homeTeam": "Vencedor Jogo 101",
+      "awayTeam": "Vencedor Jogo 102",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-19T19:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
+      "lastUpdated": "2026-06-09T10:20:22Z",
       "provider": "football-data.org"
     }
   }

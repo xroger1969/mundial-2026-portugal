@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-28T16:17:21.364Z",
+  "generatedAt": "2026-06-28T17:39:35.742Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,12 +12,12 @@
       "venue": "SoFi Stadium, Los Angeles",
       "kickoffUtc": "2026-06-28T19:00:00.000Z",
       "forecastHourUtc": "2026-06-28T19:00:00Z",
-      "temperatureC": 20.6,
+      "temperatureC": 23.2,
       "precipitationProbability": 0,
-      "windKmh": 6.9,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "windKmh": 5.8,
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "74": {
       "available": true,
@@ -41,7 +41,7 @@
       "kickoffUtc": "2026-06-30T01:00:00.000Z",
       "forecastHourUtc": "2026-06-30T01:00:00Z",
       "temperatureC": 31.3,
-      "precipitationProbability": 3,
+      "precipitationProbability": 2,
       "windKmh": 27.2,
       "weatherCode": 0,
       "icon": "☀️",
@@ -127,9 +127,9 @@
       "temperatureC": 28,
       "precipitationProbability": 0,
       "windKmh": 11.2,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "82": {
       "available": true,
@@ -141,9 +141,9 @@
       "temperatureC": 19.8,
       "precipitationProbability": 3,
       "windKmh": 16.8,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "83": {
       "available": true,
@@ -225,9 +225,9 @@
       "temperatureC": 35.7,
       "precipitationProbability": 0,
       "windKmh": 13.4,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "89": {
       "available": true,
@@ -239,9 +239,9 @@
       "temperatureC": 39.2,
       "precipitationProbability": 33,
       "windKmh": 19,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "90": {
       "available": true,
@@ -253,9 +253,9 @@
       "temperatureC": 34.2,
       "precipitationProbability": 0,
       "windKmh": 8.8,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "91": {
       "available": true,
@@ -267,9 +267,9 @@
       "temperatureC": 39,
       "precipitationProbability": 29,
       "windKmh": 12,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "92": {
       "available": true,
@@ -309,9 +309,9 @@
       "temperatureC": 21.7,
       "precipitationProbability": 1,
       "windKmh": 14.7,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "95": {
       "available": true,
@@ -323,9 +323,9 @@
       "temperatureC": 32.1,
       "precipitationProbability": 13,
       "windKmh": 14.4,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "96": {
       "available": true,
@@ -337,9 +337,9 @@
       "temperatureC": 18,
       "precipitationProbability": 13,
       "windKmh": 18.4,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "97": {
       "available": true,
@@ -348,12 +348,12 @@
       "venue": "Gillette Stadium, Foxborough",
       "kickoffUtc": "2026-07-09T20:00:00.000Z",
       "forecastHourUtc": "2026-07-09T20:00:00Z",
-      "temperatureC": 25.9,
+      "temperatureC": 31.4,
       "precipitationProbability": 20,
       "windKmh": 11.7,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "98": {
       "available": true,
@@ -362,7 +362,7 @@
       "venue": "SoFi Stadium, Los Angeles",
       "kickoffUtc": "2026-07-10T19:00:00.000Z",
       "forecastHourUtc": "2026-07-10T19:00:00Z",
-      "temperatureC": 26.5,
+      "temperatureC": 24.4,
       "precipitationProbability": 0,
       "windKmh": 12.5,
       "weatherCode": 0,
@@ -376,12 +376,12 @@
       "venue": "Hard Rock Stadium, Miami",
       "kickoffUtc": "2026-07-11T21:00:00.000Z",
       "forecastHourUtc": "2026-07-11T21:00:00Z",
-      "temperatureC": 35.1,
+      "temperatureC": 34.8,
       "precipitationProbability": 17,
       "windKmh": 24.4,
-      "weatherCode": 95,
-      "icon": "⛈️",
-      "description": "Trovoada"
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "100": {
       "available": true,
@@ -390,12 +390,12 @@
       "venue": "Arrowhead Stadium, Kansas City",
       "kickoffUtc": "2026-07-12T01:00:00.000Z",
       "forecastHourUtc": "2026-07-12T01:00:00Z",
-      "temperatureC": 21.8,
+      "temperatureC": 24.9,
       "precipitationProbability": 8,
       "windKmh": 10.2,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-28T11:27:33.504Z",
+  "generatedAt": "2026-06-28T13:02:29.531Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,12 +12,12 @@
       "venue": "SoFi Stadium, Los Angeles",
       "kickoffUtc": "2026-06-28T19:00:00.000Z",
       "forecastHourUtc": "2026-06-28T19:00:00Z",
-      "temperatureC": 23.6,
+      "temperatureC": 22.5,
       "precipitationProbability": 0,
-      "windKmh": 9.5,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "windKmh": 6.2,
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "74": {
       "available": true,
@@ -68,9 +68,9 @@
       "venue": "MetLife Stadium, East Rutherford",
       "kickoffUtc": "2026-06-30T21:00:00.000Z",
       "forecastHourUtc": "2026-06-30T21:00:00Z",
-      "temperatureC": 30.1,
+      "temperatureC": 26.4,
       "precipitationProbability": 6,
-      "windKmh": 5.7,
+      "windKmh": 12.8,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -82,9 +82,9 @@
       "venue": "AT&T Stadium, Arlington",
       "kickoffUtc": "2026-06-30T17:00:00.000Z",
       "forecastHourUtc": "2026-06-30T17:00:00Z",
-      "temperatureC": 33.1,
+      "temperatureC": 33,
       "precipitationProbability": 0,
-      "windKmh": 18.1,
+      "windKmh": 19.1,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -110,9 +110,9 @@
       "venue": "Mercedes-Benz Stadium, Atlanta",
       "kickoffUtc": "2026-07-01T16:00:00.000Z",
       "forecastHourUtc": "2026-07-01T16:00:00Z",
-      "temperatureC": 33.2,
+      "temperatureC": 33.6,
       "precipitationProbability": 0,
-      "windKmh": 8.7,
+      "windKmh": 8.8,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -124,9 +124,9 @@
       "venue": "Levi’s Stadium, Santa Clara",
       "kickoffUtc": "2026-07-02T00:00:00.000Z",
       "forecastHourUtc": "2026-07-02T00:00:00Z",
-      "temperatureC": 26,
+      "temperatureC": 28,
       "precipitationProbability": 0,
-      "windKmh": 20.6,
+      "windKmh": 11.2,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -138,12 +138,12 @@
       "venue": "Lumen Field, Seattle",
       "kickoffUtc": "2026-07-01T20:00:00.000Z",
       "forecastHourUtc": "2026-07-01T20:00:00Z",
-      "temperatureC": 20.2,
+      "temperatureC": 19.8,
       "precipitationProbability": 2,
-      "windKmh": 16.1,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "windKmh": 16.8,
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "83": {
       "available": true,
@@ -152,9 +152,9 @@
       "venue": "BMO Field, Toronto",
       "kickoffUtc": "2026-07-02T23:00:00.000Z",
       "forecastHourUtc": "2026-07-02T23:00:00Z",
-      "temperatureC": 34.1,
+      "temperatureC": 34.5,
       "precipitationProbability": 17,
-      "windKmh": 18.8,
+      "windKmh": 16.8,
       "weatherCode": 95,
       "icon": "⛈️",
       "description": "Trovoada"
@@ -166,12 +166,12 @@
       "venue": "SoFi Stadium, Los Angeles",
       "kickoffUtc": "2026-07-02T19:00:00.000Z",
       "forecastHourUtc": "2026-07-02T19:00:00Z",
-      "temperatureC": 22.3,
+      "temperatureC": 22.4,
       "precipitationProbability": 0,
-      "windKmh": 13.9,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "windKmh": 13.4,
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "85": {
       "available": true,
@@ -180,12 +180,12 @@
       "venue": "BC Place, Vancouver",
       "kickoffUtc": "2026-07-03T03:00:00.000Z",
       "forecastHourUtc": "2026-07-03T03:00:00Z",
-      "temperatureC": 17.9,
+      "temperatureC": 14.8,
       "precipitationProbability": 17,
-      "windKmh": 3.7,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "windKmh": 4.9,
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "86": {
       "available": true,
@@ -194,12 +194,12 @@
       "venue": "Hard Rock Stadium, Miami",
       "kickoffUtc": "2026-07-03T22:00:00.000Z",
       "forecastHourUtc": "2026-07-03T22:00:00Z",
-      "temperatureC": 32,
+      "temperatureC": 32.7,
       "precipitationProbability": 54,
-      "windKmh": 18.5,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "windKmh": 19,
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "87": {
       "available": true,
@@ -208,9 +208,9 @@
       "venue": "Arrowhead Stadium, Kansas City",
       "kickoffUtc": "2026-07-04T01:30:00.000Z",
       "forecastHourUtc": "2026-07-04T01:00:00Z",
-      "temperatureC": 28.7,
+      "temperatureC": 28.8,
       "precipitationProbability": 2,
-      "windKmh": 16.2,
+      "windKmh": 18,
       "weatherCode": 95,
       "icon": "⛈️",
       "description": "Trovoada"
@@ -222,12 +222,12 @@
       "venue": "AT&T Stadium, Arlington",
       "kickoffUtc": "2026-07-03T18:00:00.000Z",
       "forecastHourUtc": "2026-07-03T18:00:00Z",
-      "temperatureC": 35.6,
+      "temperatureC": 35.7,
       "precipitationProbability": 0,
-      "windKmh": 13,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "windKmh": 13.4,
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "89": {
       "available": true,
@@ -236,12 +236,12 @@
       "venue": "Lincoln Financial Field, Philadelphia",
       "kickoffUtc": "2026-07-04T21:00:00.000Z",
       "forecastHourUtc": "2026-07-04T21:00:00Z",
-      "temperatureC": 38.7,
+      "temperatureC": 39.2,
       "precipitationProbability": 27,
-      "windKmh": 19.9,
-      "weatherCode": 95,
-      "icon": "⛈️",
-      "description": "Trovoada"
+      "windKmh": 19,
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "90": {
       "available": true,
@@ -250,7 +250,7 @@
       "venue": "NRG Stadium, Houston",
       "kickoffUtc": "2026-07-04T17:00:00.000Z",
       "forecastHourUtc": "2026-07-04T17:00:00Z",
-      "temperatureC": 34,
+      "temperatureC": 34.2,
       "precipitationProbability": 2,
       "windKmh": 8.8,
       "weatherCode": 1,
@@ -264,12 +264,12 @@
       "venue": "MetLife Stadium, East Rutherford",
       "kickoffUtc": "2026-07-05T20:00:00.000Z",
       "forecastHourUtc": "2026-07-05T20:00:00Z",
-      "temperatureC": 29,
+      "temperatureC": 39,
       "precipitationProbability": 29,
-      "windKmh": 15.3,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "windKmh": 12,
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "92": {
       "available": true,
@@ -292,9 +292,9 @@
       "venue": "AT&T Stadium, Arlington",
       "kickoffUtc": "2026-07-06T19:00:00.000Z",
       "forecastHourUtc": "2026-07-06T19:00:00Z",
-      "temperatureC": 37.5,
+      "temperatureC": 36.2,
       "precipitationProbability": 7,
-      "windKmh": 10.9,
+      "windKmh": 9.3,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -306,12 +306,12 @@
       "venue": "Lumen Field, Seattle",
       "kickoffUtc": "2026-07-07T00:00:00.000Z",
       "forecastHourUtc": "2026-07-07T00:00:00Z",
-      "temperatureC": 19.2,
+      "temperatureC": 21.7,
       "precipitationProbability": 2,
-      "windKmh": 8.7,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "windKmh": 14.7,
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "95": {
       "available": true,
@@ -320,12 +320,12 @@
       "venue": "Mercedes-Benz Stadium, Atlanta",
       "kickoffUtc": "2026-07-07T16:00:00.000Z",
       "forecastHourUtc": "2026-07-07T16:00:00Z",
-      "temperatureC": 31,
+      "temperatureC": 32.1,
       "precipitationProbability": 20,
-      "windKmh": 3.8,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "windKmh": 14.4,
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "96": {
       "available": true,
@@ -334,9 +334,9 @@
       "venue": "BC Place, Vancouver",
       "kickoffUtc": "2026-07-07T20:00:00.000Z",
       "forecastHourUtc": "2026-07-07T20:00:00Z",
-      "temperatureC": 17.7,
+      "temperatureC": 18,
       "precipitationProbability": 3,
-      "windKmh": 9.5,
+      "windKmh": 18.4,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -348,9 +348,9 @@
       "venue": "Gillette Stadium, Foxborough",
       "kickoffUtc": "2026-07-09T20:00:00.000Z",
       "forecastHourUtc": "2026-07-09T20:00:00Z",
-      "temperatureC": 31.4,
-      "precipitationProbability": 19,
-      "windKmh": 9.1,
+      "temperatureC": 25.9,
+      "precipitationProbability": 20,
+      "windKmh": 11.7,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -362,9 +362,9 @@
       "venue": "SoFi Stadium, Los Angeles",
       "kickoffUtc": "2026-07-10T19:00:00.000Z",
       "forecastHourUtc": "2026-07-10T19:00:00Z",
-      "temperatureC": 23.1,
+      "temperatureC": 26.5,
       "precipitationProbability": 0,
-      "windKmh": 17,
+      "windKmh": 12.5,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -376,12 +376,12 @@
       "venue": "Hard Rock Stadium, Miami",
       "kickoffUtc": "2026-07-11T21:00:00.000Z",
       "forecastHourUtc": "2026-07-11T21:00:00Z",
-      "temperatureC": 37.1,
-      "precipitationProbability": 36,
-      "windKmh": 24.1,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "temperatureC": 35.1,
+      "precipitationProbability": 17,
+      "windKmh": 24.4,
+      "weatherCode": 95,
+      "icon": "⛈️",
+      "description": "Trovoada"
     },
     "100": {
       "available": true,
@@ -390,9 +390,9 @@
       "venue": "Arrowhead Stadium, Kansas City",
       "kickoffUtc": "2026-07-12T01:00:00.000Z",
       "forecastHourUtc": "2026-07-12T01:00:00Z",
-      "temperatureC": 29.3,
-      "precipitationProbability": 23,
-      "windKmh": 7.8,
+      "temperatureC": 21.8,
+      "precipitationProbability": 8,
+      "windKmh": 10.2,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"

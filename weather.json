@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-28T18:51:45.617Z",
+  "generatedAt": "2026-06-28T20:10:29.551Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,9 +12,9 @@
       "venue": "SoFi Stadium, Los Angeles",
       "kickoffUtc": "2026-06-28T19:00:00.000Z",
       "forecastHourUtc": "2026-06-28T19:00:00Z",
-      "temperatureC": 21.6,
+      "temperatureC": 21.1,
       "precipitationProbability": 0,
-      "windKmh": 7.3,
+      "windKmh": 6.5,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -26,9 +26,9 @@
       "venue": "Gillette Stadium, Foxborough",
       "kickoffUtc": "2026-06-29T20:30:00.000Z",
       "forecastHourUtc": "2026-06-29T20:00:00Z",
-      "temperatureC": 27.5,
+      "temperatureC": 26.7,
       "precipitationProbability": 0,
-      "windKmh": 11.8,
+      "windKmh": 12.1,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -40,12 +40,12 @@
       "venue": "Estádio BBVA, Monterrey",
       "kickoffUtc": "2026-06-30T01:00:00.000Z",
       "forecastHourUtc": "2026-06-30T01:00:00Z",
-      "temperatureC": 31.3,
+      "temperatureC": 31.5,
       "precipitationProbability": 3,
-      "windKmh": 27.2,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "windKmh": 25,
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "76": {
       "available": true,
@@ -56,7 +56,7 @@
       "forecastHourUtc": "2026-06-29T17:00:00Z",
       "temperatureC": 33.9,
       "precipitationProbability": 1,
-      "windKmh": 17.1,
+      "windKmh": 17,
       "weatherCode": 95,
       "icon": "⛈️",
       "description": "Trovoada"
@@ -82,9 +82,9 @@
       "venue": "AT&T Stadium, Arlington",
       "kickoffUtc": "2026-06-30T17:00:00.000Z",
       "forecastHourUtc": "2026-06-30T17:00:00Z",
-      "temperatureC": 32.9,
+      "temperatureC": 32.2,
       "precipitationProbability": 0,
-      "windKmh": 18.4,
+      "windKmh": 19.1,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"

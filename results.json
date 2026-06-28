@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-28T18:51:43.010Z",
+  "updatedAt": "2026-06-28T20:10:27.561Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -875,14 +875,14 @@
     },
     "73": {
       "apiId": 537417,
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "South Africa",
       "awayTeam": "Canada",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "winner": "DRAW",
       "utcDate": "2026-06-28T19:00:00Z",
-      "lastUpdated": "2026-06-28T06:02:40Z",
+      "lastUpdated": "2026-06-28T19:54:42Z",
       "provider": "football-data.org"
     },
     "74": {

@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-28T13:02:32.823Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-28T20:10:32.123Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 123,
+  "totalArticles": 124,
   "articles": [
+    {
+      "title": "Os caminhos de Portugal: Segue-se a Croácia e, talvez, um duelo ibérico",
+      "description": "Portugal ficou a conhecer no sábado o seu possível caminho até à final do Mundial de futebol de 2026, que pode contemplar um confronto com a Espanha, nos 'oitavos', e um duelo com a França, nas meias-finais.",
+      "content": "Com o segundo lugar do Grupo K, depois do segundo empate em três jogos, com a líder Colômbia (0-0), a formação comandada pelo espanhol Roberto Martínez marcou, para já, encontro com a Croácia nos inéditos 16 avos de final. O encontro está marcado par... [1280 chars]",
+      "url": "https://www.noticiasaominuto.com/desporto/3012477/os-caminhos-de-portugal-segue-se-a-croacia-e-talvez-um-duelo-iberico",
+      "image": "https://media-manager.noticiasaominuto.com/960/naom_6a40c2453bfbc.webp?crop_params=eyJsYW5kc2NhcGUiOnsiY3JvcFdpZHRoIjoyNTYxLCJjcm9wSGVpZ2h0IjoxNDQxLCJjcm9wWCI6LTEsImNyb3BZIjoxOTl9fQ==",
+      "publishedAt": "2026-06-28T06:43:19Z",
+      "sourceName": "Notícias ao Minuto",
+      "sourceUrl": "https://www.noticiasaominuto.com"
+    },
     {
       "title": "Portugal oficialmente apurado para os 16 avos a menos de 24 horas do embate com Colômbia",
       "description": "A seleção portuguesa de futebol assegurou na sexta-feira, sem jogar, o apuramento para os 16 avos de final do Mundial de 2026, depois do fecho do Grupo H, no qual o estreante Cabo Verde conseguiu uma histórica qualificação.",
@@ -94,16 +104,6 @@
       "url": "https://www.jn.pt/desporto/artigo/colombia-vence-rd-congo-e-qualifica-se-para-os-16-avos-portugal-com-apuramento-quase-garantido/18098618",
       "image": "https://staticx.noticiasilimitadas.pt/jn/0e0590a3-282d-468e-a92e-acd9d3b000d3_1200x675.jpg",
       "publishedAt": "2026-06-24T07:21:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Tomás Araújo novamente ausente do treino da seleção nacional deve falhar Uzbequistão",
-      "description": "O central Tomás Araújo voltou este domingo a estar ausente no treino de Portugal, devido a problemas físicos, e deve falhar o duelo com o Uzbequistão, da segunda jornada do Grupo K do Mundial 2026 de futebol.",
-      "content": "Tal como sucedeu nos últimos dias, Araújo voltou a fazer apenas trabalho de recuperação e esteve à parte do resto do grupo no Gardens North County District Park, em Palm Beach, nos Estados Unidos, nos primeiros 15 minutos do treino, abertos à comunic... [1543 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/tomas-araujo-novamente-ausente-do-treino-da-selecao-nacional-deve-falhar-uzbequistao/18097647",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/08458e64-c17d-459d-a894-8e0e9a3cdaa9_1200x675.jpg",
-      "publishedAt": "2026-06-21T16:03:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
     }

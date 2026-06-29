@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-29T18:25:06.535Z",
+  "updatedAt": "2026-06-29T20:26:29.313Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -911,14 +911,14 @@
     },
     "76": {
       "apiId": 537423,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeTeam": "Brazil",
       "awayTeam": "Japan",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 1,
-      "winner": "DRAW",
+      "winner": "HOME_TEAM",
       "utcDate": "2026-06-29T17:00:00Z",
-      "lastUpdated": "2026-06-29T18:24:51Z",
+      "lastUpdated": "2026-06-29T19:09:03Z",
       "provider": "football-data.org"
     },
     "77": {

@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-29T20:26:29.313Z",
+  "updatedAt": "2026-06-29T21:54:49.215Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -887,14 +887,14 @@
     },
     "74": {
       "apiId": 537415,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Germany",
       "awayTeam": "Paraguay",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 1,
+      "awayScore": 1,
+      "winner": "DRAW",
       "utcDate": "2026-06-29T20:30:00Z",
-      "lastUpdated": "2026-06-29T05:20:12Z",
+      "lastUpdated": "2026-06-29T21:54:10Z",
       "provider": "football-data.org"
     },
     "75": {

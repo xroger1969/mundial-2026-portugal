@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-28T20:10:32.123Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-29T07:02:12.706Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 124,
+  "totalArticles": 125,
   "articles": [
+    {
+      "title": "Portugal pode encontrar Espanha nos \"oitavos\" e França nas \"meias\"",
+      "description": "Portugal ficou a conhecer no sábado o seu possível caminho até à final do Mundial de futebol de 2026, que pode contemplar um confronto com a Espanha, nos \"oitavos\", e um duelo com a França, nas meias-finais.",
+      "content": "Com o segundo lugar do Grupo K, depois do segundo empate em três jogos, com a líder Colômbia (0-0), a formação comandada pelo espanhol Roberto Martínez marcou, para já, encontro com a Croácia nos inéditos 16 avos de final. O encontro está marcado par... [1301 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/portugal-pode-encontrar-espanha-nos-oitavos-e-franca-nas-meias/18100166",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/cc63676e-e5aa-4c5c-9749-008c05756edf_1200x675.jpg",
+      "publishedAt": "2026-06-28T08:30:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Os caminhos de Portugal: Segue-se a Croácia e, talvez, um duelo ibérico",
       "description": "Portugal ficou a conhecer no sábado o seu possível caminho até à final do Mundial de futebol de 2026, que pode contemplar um confronto com a Espanha, nos 'oitavos', e um duelo com a França, nas meias-finais.",
@@ -94,16 +104,6 @@
       "url": "https://www.jn.pt/desporto/artigo/australiano-alireza-faghani-e-o-arbitro-do-jogo-entre-portugal-e-colombia/18098778",
       "image": "https://staticx.noticiasilimitadas.pt/jn/f94a30ce-92d9-4a18-b3df-aae8f9e57159_1200x675.jpg",
       "publishedAt": "2026-06-24T14:05:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Colômbia vence RD Congo e é líder do Grupo K. Portugal com apuramento quase garantido",
-      "description": "A Colômbia garantiu terça-feira um lugar nos 16 avos de final do Mundial de futebol de 2026, ao vencer a República Democrática do Congo por 1-0, no fecho da segunda jornada do Grupo K, em Zapopan, no México.",
-      "content": "Depois de já ter marcado no 3-1 ao Uzbequistão, Daniel Muñoz apontou, aos 76 minutos, o golo dos \"cafeteros\", que se juntaram na fase a eliminar a México, Estados Unidos, Alemanha, França, Noruega e à campeã em título Argentina. Os colombianos lidera... [2053 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/colombia-vence-rd-congo-e-qualifica-se-para-os-16-avos-portugal-com-apuramento-quase-garantido/18098618",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/0e0590a3-282d-468e-a92e-acd9d3b000d3_1200x675.jpg",
-      "publishedAt": "2026-06-24T07:21:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
     }

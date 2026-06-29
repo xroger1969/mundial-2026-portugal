@@ -1,24 +1,10 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-06-28T23:48:14.344Z",
+  "generatedAt": "2026-06-29T02:01:44.661Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
-    "73": {
-      "available": true,
-      "source": "Open-Meteo",
-      "city": "Los Angeles",
-      "venue": "SoFi Stadium, Los Angeles",
-      "kickoffUtc": "2026-06-28T19:00:00.000Z",
-      "forecastHourUtc": "2026-06-28T19:00:00Z",
-      "temperatureC": 20.9,
-      "precipitationProbability": 0,
-      "windKmh": 7.4,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
-    },
     "74": {
       "available": true,
       "source": "Open-Meteo",
@@ -54,9 +40,9 @@
       "venue": "NRG Stadium, Houston",
       "kickoffUtc": "2026-06-29T17:00:00.000Z",
       "forecastHourUtc": "2026-06-29T17:00:00Z",
-      "temperatureC": 33.9,
+      "temperatureC": 34.3,
       "precipitationProbability": 0,
-      "windKmh": 17,
+      "windKmh": 19.2,
       "weatherCode": 95,
       "icon": "⛈️",
       "description": "Trovoada"
@@ -377,11 +363,11 @@
       "kickoffUtc": "2026-07-11T21:00:00.000Z",
       "forecastHourUtc": "2026-07-11T21:00:00Z",
       "temperatureC": 34.4,
-      "precipitationProbability": 23,
+      "precipitationProbability": 19,
       "windKmh": 25.7,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "weatherCode": 95,
+      "icon": "⛈️",
+      "description": "Trovoada"
     },
     "100": {
       "available": true,
@@ -391,11 +377,25 @@
       "kickoffUtc": "2026-07-12T01:00:00.000Z",
       "forecastHourUtc": "2026-07-12T01:00:00Z",
       "temperatureC": 23.8,
-      "precipitationProbability": 12,
+      "precipitationProbability": 22,
       "windKmh": 12.3,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
+    },
+    "101": {
+      "available": true,
+      "source": "Open-Meteo",
+      "city": "Arlington",
+      "venue": "AT&T Stadium, Arlington",
+      "kickoffUtc": "2026-07-14T19:00:00.000Z",
+      "forecastHourUtc": "2026-07-14T19:00:00Z",
+      "temperatureC": null,
+      "precipitationProbability": 9,
+      "windKmh": null,
+      "weatherCode": null,
+      "icon": "☀️",
+      "description": "Céu limpo"
     }
   }
 }

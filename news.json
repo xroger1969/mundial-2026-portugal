@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-06-30T08:21:41.309Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-06-30T16:07:10.397Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 127,
+  "totalArticles": 128,
   "articles": [
+    {
+      "title": "LiveModeTV procede ao registo na ERC apesar de discordância com regulador",
+      "description": "A plataforma LiveModeTV, que transmite jogos de futebol do Mundial 2026 em Portugal, pediu esta segunda-feira o registo na Entidade Reguladora para a Comunicação Social (ERC) enquanto serviço audiovisual a pedido (\"streaming\"), conforme exigido, continuando a opor-se à classificação atribuída pelo regulador.",
+      "content": "Depois de a ERC ter dado um prazo de 72 horas à plataforma para fazer o registo, foi recusado pelo regulador o exercício do direito de audiência prévia apresentado pela LiveModeTV, que assim \"avançou de imediato\" para cumprir a exigência registando-s... [3193 chars]",
+      "url": "https://www.jn.pt/media/artigo/livemodetv-procede-ao-registo-na-erc-apesar-de-discordancia-com-regulador/18100765",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/0b351868-d151-4de2-a4ca-647a05c95a90_1200x675.jpg",
+      "publishedAt": "2026-06-29T22:14:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Portugal arranca treino com nove jogadores no ginásio",
       "description": "Nove jogadores da seleção portuguesa de futebol iniciaram esta segunda-feira o treino no ginásio, numa altura em que a equipa se encontra a preparar o jogo com a Croácia, dos 16 avos de final do Mundial 2026.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-06-25T06:54:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Portugal pode apurar-se já no Mundial... no sofá. O que tem de acontecer",
-      "description": "Portugal deverá será hoje uma das muitas seleções a garantir, sem jogar, o apuramento para os 16 avos de final do Mundial de futebol de 2026, o que poderá acontecer logo com o fecho do Grupo E.",
-      "content": "Com quatro pontos, depois do 1-1 com a República Democrática do Congo e o 5-0 ao Uzbequistão, a formação das 'quinas' vai, tudo indica, garantir no 'sofá' que, na pior das hipóteses, seguirá em frente com uma das oito melhores terceiras. A Coreia do ... [2013 chars]",
-      "url": "https://www.noticiasaominuto.com/desporto/3010938/portugal-pode-apurar-se-ja-no-mundial-no-sofa-o-que-tem-de-acontecer",
-      "image": "https://media-manager.noticiasaominuto.com/960/naom_6a331255959f3.webp",
-      "publishedAt": "2026-06-25T04:59:50Z",
-      "sourceName": "Notícias ao Minuto",
-      "sourceUrl": "https://www.noticiasaominuto.com"
     }
   ]
 }

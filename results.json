@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-30T08:21:37.235Z",
+  "updatedAt": "2026-06-30T11:26:19.082Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -918,7 +918,7 @@
       "awayScore": 1,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-29T17:00:00Z",
-      "lastUpdated": "2026-06-29T21:04:03Z",
+      "lastUpdated": "2026-06-30T08:25:01Z",
       "provider": "football-data.org"
     },
     "77": {

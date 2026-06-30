@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-30T18:14:08.854Z",
+  "updatedAt": "2026-06-30T20:23:25.693Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -935,14 +935,14 @@
     },
     "78": {
       "apiId": 537424,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeTeam": "Ivory Coast",
       "awayTeam": "Norway",
-      "homeScore": 0,
-      "awayScore": 1,
+      "homeScore": 1,
+      "awayScore": 2,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-30T17:00:00Z",
-      "lastUpdated": "2026-06-30T18:14:07Z",
+      "lastUpdated": "2026-06-30T19:04:39Z",
       "provider": "football-data.org"
     },
     "79": {

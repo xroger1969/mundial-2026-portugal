@@ -1,9 +1,9 @@
 {
   "source": "OpenLigaDB",
   "url": "https://api.openligadb.de/getmatchdata/wm26/2026",
-  "checkedAt": "2026-06-30T18:14:11.371Z",
+  "checkedAt": "2026-06-30T20:23:27.633Z",
   "totalMatches": 96,
-  "finishedMatches": 76,
+  "finishedMatches": 77,
   "matchesWithAnyResult": 77,
   "matchesWithHalftime": 77,
   "matchesWithGoals": 0,
@@ -121,7 +121,7 @@
     {
       "id": 80109,
       "date": "2026-06-14T23:00:00Z",
-      "team1": "Côte d’Ivoire",
+      "team1": "Elfenbeinküste",
       "team2": "Ecuador",
       "finished": true,
       "finalScore": "1–0",

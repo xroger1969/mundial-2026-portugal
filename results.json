@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-06-30T23:20:07.880Z",
+  "updatedAt": "2026-07-01T01:37:25.171Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -930,7 +930,7 @@
       "awayScore": 0,
       "winner": "HOME_TEAM",
       "utcDate": "2026-06-30T21:00:00Z",
-      "lastUpdated": "2026-06-30T23:00:18Z",
+      "lastUpdated": "2026-06-30T23:08:38Z",
       "provider": "football-data.org"
     },
     "78": {
@@ -947,14 +947,14 @@
     },
     "79": {
       "apiId": 537425,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Mexico",
       "awayTeam": "Ecuador",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "winner": "DRAW",
       "utcDate": "2026-07-01T01:00:00Z",
-      "lastUpdated": "2026-06-29T15:20:12Z",
+      "lastUpdated": "2026-07-01T01:05:45Z",
       "provider": "football-data.org"
     },
     "80": {

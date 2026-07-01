@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-01T20:13:59.277Z",
+  "updatedAt": "2026-07-01T21:52:25.172Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -987,10 +987,10 @@
       "homeTeam": "Belgium",
       "awayTeam": "Senegal",
       "homeScore": 0,
-      "awayScore": 0,
-      "winner": "DRAW",
+      "awayScore": 2,
+      "winner": "AWAY_TEAM",
       "utcDate": "2026-07-01T20:00:00Z",
-      "lastUpdated": "2026-07-01T20:13:57Z",
+      "lastUpdated": "2026-07-01T21:52:03Z",
       "provider": "football-data.org"
     },
     "83": {

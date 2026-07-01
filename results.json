@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-01T15:58:59.827Z",
+  "updatedAt": "2026-07-01T18:07:07.943Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -959,14 +959,14 @@
     },
     "80": {
       "apiId": 537426,
-      "status": "TIMED",
+      "status": "FINISHED",
       "homeTeam": "England",
       "awayTeam": "Congo DR",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 2,
+      "awayScore": 1,
+      "winner": "HOME_TEAM",
       "utcDate": "2026-07-01T16:00:00Z",
-      "lastUpdated": "2026-06-30T15:20:13Z",
+      "lastUpdated": "2026-07-01T18:06:21Z",
       "provider": "football-data.org"
     },
     "81": {

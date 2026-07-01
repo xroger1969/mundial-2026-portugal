@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-01T13:14:10.447Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-01T20:14:03.228Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 129,
+  "totalArticles": 130,
   "articles": [
+    {
+      "title": "Horário e Onde Assistir",
+      "description": "Portugal defronta Croácia no Mundial 2026: Guia do jogo, horários e transmissão em direto - Acompanhe a atualidade desportiva no Futebol 365.",
+      "content": "O Mundial de 2026 entra na sua fase mais emocionante com o arranque dos dezasseis-avos de final. A seleção de Portugal defronta a Croácia num duelo decisivo que promete paralisar os adeptos do futebol internacional. O encontro está marcado para quint... [2044 chars]",
+      "url": "https://futebol365.pt/artigo/portugal-defronta-croacia-no-mundial-2026-guia-do-jogo-horarios-e-transmissao-em-direto/",
+      "image": "https://futebol365.pt/wp-content/uploads/2026/07/1024_optimized.webp",
+      "publishedAt": "2026-07-01T03:45:18Z",
+      "sourceName": "Futebol365",
+      "sourceUrl": "https://futebol365.pt"
+    },
     {
       "title": "LiveModeTV procede ao registo na ERC apesar de discordância com regulador",
       "description": "A plataforma LiveModeTV, que transmite jogos de futebol do Mundial 2026 em Portugal, pediu esta segunda-feira o registo na Entidade Reguladora para a Comunicação Social (ERC) enquanto serviço audiovisual a pedido (\"streaming\"), conforme exigido, continuando a opor-se à classificação atribuída pelo regulador.",
@@ -94,16 +104,6 @@
       "url": "https://www.jn.pt/desporto/artigo/mundial-2026-portugal-termina-treino-no-pavilhao-devido-ao-mau-tempo/18099287",
       "image": "https://staticx.noticiasilimitadas.pt/jn/34ae4753-89c3-4073-a9ad-825ec160040d_1200x675.jpg",
       "publishedAt": "2026-06-25T18:03:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Pedro Neto pronto a \"explodir\" depois de lesões no passado",
-      "description": "O extremo Pedro Neto afirmou esta quinta-feira que está no Mundial 2026 de futebol para \"explodir\" e que sempre acreditou que iria representar Portugal na competição, apesar de ter vivido duas lesões graves.",
-      "content": "Aos 26 anos, o agora jogador do Chelsea está a viver o primeiro Campeonato do Mundo da carreira, e foi mesmo titular nos dois primeiros jogos da seleção nacional, mas no passado, ainda ao serviço ao Wolverhampton, em 2021 e 2022, sofreu duas lesões g... [2034 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/pedro-neto-pronto-a-explodir-depois-de-lesoes-no-passado/18099246",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/ef13e99f-7309-48dd-b8c3-020426a5abb7_1200x675.jpg",
-      "publishedAt": "2026-06-25T16:18:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
     }

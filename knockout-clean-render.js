@@ -50,6 +50,23 @@
     return String(value || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, " ").trim();
   }
 
+  function gameTimeValue(game) {
+    const date = String(game && game.date ? game.date : "9999-12-31");
+    const time = String(game && game.time ? game.time : "23:59");
+    const value = new Date(`${date}T${time}:00`).getTime();
+    return Number.isNaN(value) ? Number.MAX_SAFE_INTEGER : value;
+  }
+
+  function sortGamesChronologically() {
+    if (!Array.isArray(window.games) && !Array.isArray(games)) return;
+    const list = Array.isArray(window.games) ? window.games : games;
+    list.sort((a, b) => {
+      const byTime = gameTimeValue(a) - gameTimeValue(b);
+      if (byTime !== 0) return byTime;
+      return Number(a && a.num || 0) - Number(b && b.num || 0);
+    });
+  }
+
   function isKnockout(game) {
     const n = Number(game && game.num);
     const stage = safeNorm(game && game.stage);
@@ -105,5 +122,6 @@
     return winner ? `${winner} segue para o Jogo ${next}.` : `Vencedor segue para o Jogo ${next}.`;
   };
 
+  sortGamesChronologically();
   if (typeof renderCards === "function") renderCards();
 })();

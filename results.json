@@ -3,7 +3,11 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
+<<<<<<< Updated upstream
   "updatedAt": "2026-07-02T09:35:25.812Z",
+=======
+  "updatedAt": "2026-07-02T09:35:43.641Z",
+>>>>>>> Stashed changes
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,

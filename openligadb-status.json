@@ -1,7 +1,11 @@
 {
   "source": "OpenLigaDB",
   "url": "https://api.openligadb.de/getmatchdata/wm26/2026",
+<<<<<<< Updated upstream
   "checkedAt": "2026-07-02T09:35:27.785Z",
+=======
+  "checkedAt": "2026-07-02T09:35:45.579Z",
+>>>>>>> Stashed changes
   "totalMatches": 98,
   "finishedMatches": 82,
   "matchesWithAnyResult": 82,

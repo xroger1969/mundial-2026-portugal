@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-01T23:13:41.425Z",
+  "updatedAt": "2026-07-02T01:27:32.530Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -971,14 +971,14 @@
     },
     "81": {
       "apiId": 537421,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "United States",
       "awayTeam": "Bosnia-Herzegovina",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 1,
+      "awayScore": 0,
+      "winner": "HOME_TEAM",
       "utcDate": "2026-07-02T00:00:00Z",
-      "lastUpdated": "2026-06-30T15:20:13Z",
+      "lastUpdated": "2026-07-02T01:27:09Z",
       "provider": "football-data.org"
     },
     "82": {

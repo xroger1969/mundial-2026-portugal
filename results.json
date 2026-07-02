@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-02T22:46:47.226Z",
+  "updatedAt": "2026-07-02T23:51:11.277Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -959,14 +959,14 @@
     },
     "83": {
       "apiId": 537419,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Portugal",
       "awayTeam": "Croatia",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "winner": "DRAW",
       "utcDate": "2026-07-02T23:00:00Z",
-      "lastUpdated": "2026-07-02T05:20:12Z",
+      "lastUpdated": "2026-07-02T23:51:08Z",
       "provider": "football-data.org"
     },
     "84": {

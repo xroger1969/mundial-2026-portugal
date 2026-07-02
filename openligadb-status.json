@@ -1,9 +1,9 @@
 {
   "source": "OpenLigaDB",
   "url": "https://api.openligadb.de/getmatchdata/wm26/2026",
-  "checkedAt": "2026-07-02T20:17:20.703Z",
+  "checkedAt": "2026-07-02T21:38:03.052Z",
   "totalMatches": 98,
-  "finishedMatches": 82,
+  "finishedMatches": 83,
   "matchesWithAnyResult": 83,
   "matchesWithHalftime": 83,
   "matchesWithGoals": 0,

@@ -2,11 +2,31 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-01T20:14:03.228Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-02T05:37:24.341Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 130,
+  "totalArticles": 133,
   "articles": [
+    {
+      "title": "Luís Montenegro vai a Toronto ver jogo Portugal-Croácia",
+      "description": "O primeiro-ministro, Luís Montenegro, vai assistir ao jogo da seleção nacional de futebol contra a Croácia, que se disputa na quinta-feira em Toronto, Canadá, uma partida dos 16 avos de final do Mundial de 2026.",
+      "content": "O anúncio foi feito pelo gabinete do chefe do Governo, em comunicado. Na fase de grupos, Portugal terminou o Grupo K na segunda posição, atrás da Colômbia, e vai agora enfrentar a Croácia nos 16 avos de final, num jogo agendado para quinta-feira, pel... [894 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/luis-montenegro-vai-a-toronto-ver-jogo-portugal-croacia/18101384",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/7d96c3bf-af51-44bf-b335-c95a08c41f69_1200x675.jpg",
+      "publishedAt": "2026-07-01T13:59:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
+    {
+      "title": "ERC suspende instauração de contraordenação à LiveModeTV até reapreciação do processo",
+      "description": "Na segunda-feira, a plataforma LiveModeTV, que transmite jogos de futebol do Mundial 2026 em Portugal, anunciou que tinha pedido o registo na ERC enquanto serviço audiovisual a pedido ('streaming'), conforme exigido, apesar de continuar a opor-se à classificação atribuída pelo regulador.",
+      "content": "A ERC suspendeu a instauração do procedimento de contraordenação à LiveModeTV até reapreciação do processo pelo Conselho Regulador, depois da plataforma ter efetuado o registo na terça-feira, disse à Lusa fonte oficial do regulador. Fonte oficial da ... [1636 chars]",
+      "url": "https://jornaleconomico.sapo.pt/noticias/erc-suspende-instauracao-de-contraordenacao-a-livemodetv-ate-reapreciacao-do-processo/",
+      "image": "https://jornaleconomico.sapo.pt/wp-content/uploads/2026/06/Cristiano-Ronaldo-Portugal-Mundial-2026.jpg",
+      "publishedAt": "2026-07-01T09:33:53Z",
+      "sourceName": "Jornal Económico",
+      "sourceUrl": "https://jornaleconomico.sapo.pt"
+    },
     {
       "title": "Horário e Onde Assistir",
       "description": "Portugal defronta Croácia no Mundial 2026: Guia do jogo, horários e transmissão em direto - Acompanhe a atualidade desportiva no Futebol 365.",
@@ -16,6 +36,16 @@
       "publishedAt": "2026-07-01T03:45:18Z",
       "sourceName": "Futebol365",
       "sourceUrl": "https://futebol365.pt"
+    },
+    {
+      "title": "Quem é o misterioso escocês de cabelo comprido que ensina Portugal a marcar golos? Austin MacPhee é o guru de quem se fala",
+      "description": "É um dos melhores taticistas do Mundial de 2026. Os jogadores portugueses param para escutar as suas técnicas inovadoras. O escocês Austin MacPhee trouxe frescura à Federação Portuguesa de Futebol. E até CR7 aprende com as suas ideias certeiras. No lado mais pessoal, a sua vida permanece um mistério.",
+      "content": "Todos vimos na televisão, durante o jogo entre Portugal e o Uzbequistão, Cristiano Ronaldo a preparar-se para marcar um livre à entrada da área. Era o minuto 17, todas as câmaras de televisão apontavam para CR7, dando um plano fechado do rosto do jog... [7995 chars]",
+      "url": "https://www.flash.pt/the-mag/detalhe/quem-e-o-misterioso-escoces-de-cabelo-comprido-que-ensina-portugal-a-marcar-golos-austin-macphee-e-o-guru-de-quem-se-fala",
+      "image": "https://cdn.flash.pt/images/2026-07/img_1200x676uu2026-07-01-22-42-16-407664.jpg",
+      "publishedAt": "2026-07-01T00:00:00Z",
+      "sourceName": "Flash",
+      "sourceUrl": "https://www.flash.pt"
     },
     {
       "title": "LiveModeTV procede ao registo na ERC apesar de discordância com regulador",
@@ -76,36 +106,6 @@
       "publishedAt": "2026-06-28T06:43:19Z",
       "sourceName": "Notícias ao Minuto",
       "sourceUrl": "https://www.noticiasaominuto.com"
-    },
-    {
-      "title": "Portugal oficialmente apurado para os 16 avos a menos de 24 horas do embate com Colômbia",
-      "description": "A seleção portuguesa de futebol assegurou na sexta-feira, sem jogar, o apuramento para os 16 avos de final do Mundial de 2026, depois do fecho do Grupo H, no qual o estreante Cabo Verde conseguiu uma histórica qualificação.",
-      "content": "Portugal, que na pior das hipóteses, acabará em terceiro do Grupo K, com quatro pontos, fará sempre melhor do que os terceiros do Grupo A (Coreia do Sul), C (Escócia), I (Senegal) e H (Uruguai), no qual os cabo-verdianos foram segundos. Em Houston, o... [1011 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/portugal-esta-oficialmente-apurado-para-os-16-avos-a-menos-de-24-horas-do-embate-com-a-colombia/18099860",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/9b47794a-86af-4925-9952-45242d8591a3_1200x675.jpg",
-      "publishedAt": "2026-06-27T07:36:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Portugal (e estreante Cabo Verde) nos 16 avos de final do Mundial2026",
-      "description": "A seleção portuguesa de futebol assegurou na sexta-feira, sem jogar, o apuramento para os 16 avos de final do Mundial de 2026, depois do fecho do Grupo H, no qual o estreante Cabo Verde conseguiu uma histórica qualificação.",
-      "content": "Portugal, que na pior das hipóteses, acabará em terceiro do Grupo K, com quatro pontos, fará sempre melhor do que os terceiros do Grupo A (Coreia do Sul), C (Escócia), I (Senegal) e H (Uruguai), no qual os cabo-verdianos foram segundos. Em Houston, o... [1011 chars]",
-      "url": "https://www.noticiasaominuto.com/desporto/3012188/portugal-e-estreante-cabo-verde-nos-16-avos-de-final-do-mundial2026",
-      "image": "https://media-manager.noticiasaominuto.com/960/47361704.webp",
-      "publishedAt": "2026-06-27T05:46:19Z",
-      "sourceName": "Notícias ao Minuto",
-      "sourceUrl": "https://www.noticiasaominuto.com"
-    },
-    {
-      "title": "Mundial 2026: Portugal termina treino no pavilhão devido ao mau tempo",
-      "description": "A seleção portuguesa de futebol terminou esta quinta-feira o treino num pavilhão, em Palm Beach, nos Estados Unidos, depois de a sessão de trabalho de preparação do jogo com a Colômbia, para o Mundial 2026, ter sido interrompida pela trovoada.",
-      "content": "Já após os 15 minutos abertos aos jornalistas, no Gardens North County District, em Palm Beach, voltaram as trovoadas, levando os jornalistas a abandonarem o centro de treino da equipa das quinas e a recolherem às suas viaturas. O treino de Portugal,... [1096 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/mundial-2026-portugal-termina-treino-no-pavilhao-devido-ao-mau-tempo/18099287",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/34ae4753-89c3-4073-a9ad-825ec160040d_1200x675.jpg",
-      "publishedAt": "2026-06-25T18:03:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
     }
   ]
 }

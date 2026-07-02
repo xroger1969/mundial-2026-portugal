@@ -3,11 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-<<<<<<< Updated upstream
-  "updatedAt": "2026-07-02T09:35:25.812Z",
-=======
-  "updatedAt": "2026-07-02T09:35:43.641Z",
->>>>>>> Stashed changes
+  "updatedAt": "2026-07-02T11:00:11.289Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -263,18 +259,6 @@
       "winner": "DRAW",
       "utcDate": "2026-06-17T17:00:00Z",
       "lastUpdated": "2026-07-02T05:20:12Z",
-      "provider": "football-data.org"
-    },
-    "22": {
-      "apiId": 537409,
-      "status": "FINISHED",
-      "homeTeam": "England",
-      "awayTeam": "Croatia",
-      "homeScore": 4,
-      "awayScore": 2,
-      "winner": "HOME_TEAM",
-      "utcDate": "2026-06-17T20:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
       "provider": "football-data.org"
     },
     "23": {
@@ -565,18 +549,6 @@
       "lastUpdated": "2026-07-02T05:20:12Z",
       "provider": "football-data.org"
     },
-    "47": {
-      "apiId": 537412,
-      "status": "FINISHED",
-      "homeTeam": "Panama",
-      "awayTeam": "Croatia",
-      "homeScore": 0,
-      "awayScore": 1,
-      "winner": "AWAY_TEAM",
-      "utcDate": "2026-06-23T23:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
-      "provider": "football-data.org"
-    },
     "48": {
       "apiId": 537406,
       "status": "FINISHED",
@@ -815,18 +787,6 @@
       "winner": "AWAY_TEAM",
       "utcDate": "2026-06-27T21:00:00Z",
       "lastUpdated": "2026-07-02T05:20:12Z",
-      "provider": "football-data.org"
-    },
-    "68": {
-      "apiId": 537414,
-      "status": "TIMED",
-      "homeTeam": "Croatia",
-      "awayTeam": "Ghana",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
-      "utcDate": "2026-06-27T21:00:00Z",
-      "lastUpdated": "2026-06-26T15:20:14Z",
       "provider": "football-data.org"
     },
     "69": {
@@ -1120,8 +1080,8 @@
     "93": {
       "apiId": 537379,
       "status": "TIMED",
-      "homeTeam": "Vencedor Jogo 83",
-      "awayTeam": "Vencedor Jogo 84",
+      "homeTeam": "Vencedor 83",
+      "awayTeam": "Vencedor 84",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
@@ -1144,8 +1104,8 @@
     "95": {
       "apiId": 537381,
       "status": "TIMED",
-      "homeTeam": "Vencedor Jogo 86",
-      "awayTeam": "Vencedor Jogo 88",
+      "homeTeam": "Vencedor 86",
+      "awayTeam": "Vencedor 88",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
@@ -1156,8 +1116,8 @@
     "96": {
       "apiId": 537382,
       "status": "TIMED",
-      "homeTeam": "Vencedor Jogo 85",
-      "awayTeam": "Vencedor Jogo 87",
+      "homeTeam": "Vencedor 85",
+      "awayTeam": "Vencedor 87",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
@@ -1168,8 +1128,8 @@
     "97": {
       "apiId": 537383,
       "status": "TIMED",
-      "homeTeam": "Vencedor Jogo 89",
-      "awayTeam": "Vencedor Jogo 90",
+      "homeTeam": "Vencedor 89",
+      "awayTeam": "Vencedor 90",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
@@ -1180,8 +1140,8 @@
     "98": {
       "apiId": 537384,
       "status": "TIMED",
-      "homeTeam": "Vencedor Jogo 93",
-      "awayTeam": "Vencedor Jogo 94",
+      "homeTeam": "Vencedor 93",
+      "awayTeam": "Vencedor 94",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
@@ -1192,8 +1152,8 @@
     "99": {
       "apiId": 537385,
       "status": "TIMED",
-      "homeTeam": "Vencedor Jogo 91",
-      "awayTeam": "Vencedor Jogo 92",
+      "homeTeam": "Vencedor 91",
+      "awayTeam": "Vencedor 92",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
@@ -1204,8 +1164,8 @@
     "100": {
       "apiId": 537386,
       "status": "TIMED",
-      "homeTeam": "Vencedor Jogo 95",
-      "awayTeam": "Vencedor Jogo 96",
+      "homeTeam": "Vencedor 95",
+      "awayTeam": "Vencedor 96",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
@@ -1216,8 +1176,8 @@
     "101": {
       "apiId": 537387,
       "status": "TIMED",
-      "homeTeam": "Vencedor Jogo 97",
-      "awayTeam": "Vencedor Jogo 98",
+      "homeTeam": "Vencedor 97",
+      "awayTeam": "Vencedor 98",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
@@ -1228,8 +1188,8 @@
     "102": {
       "apiId": 537388,
       "status": "TIMED",
-      "homeTeam": "Vencedor Jogo 99",
-      "awayTeam": "Vencedor Jogo 100",
+      "homeTeam": "Vencedor 99",
+      "awayTeam": "Vencedor 100",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
@@ -1240,8 +1200,8 @@
     "103": {
       "apiId": 537389,
       "status": "TIMED",
-      "homeTeam": "Vencido Jogo 101",
-      "awayTeam": "Vencido Jogo 102",
+      "homeTeam": "Vencido 101",
+      "awayTeam": "Vencido 102",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
@@ -1252,8 +1212,8 @@
     "104": {
       "apiId": 537390,
       "status": "TIMED",
-      "homeTeam": "Vencedor Jogo 101",
-      "awayTeam": "Vencedor Jogo 102",
+      "homeTeam": "Vencedor 101",
+      "awayTeam": "Vencedor 102",
       "homeScore": null,
       "awayScore": null,
       "winner": null,

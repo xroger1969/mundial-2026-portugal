@@ -9,6 +9,58 @@ const sources = [
   { label: "Diário de Notícias — RTP, SIC e TVI transmitem os jogos de Portugal em sinal aberto", url: "https://www.dn.pt/desporto/mundial-2026-rtp-sic-e-tvi-garantem-transmisso-em-sinal-aberto-dos-jogos-de-portugal" }
 ];
 
+const TEAM_NAMES_PT = {
+  "algeria": "Argélia",
+  "argentina": "Argentina",
+  "australia": "Austrália",
+  "austria": "Áustria",
+  "belgium": "Bélgica",
+  "bosnia-herzegovina": "Bósnia e Herzegovina",
+  "bosnia and herzegovina": "Bósnia e Herzegovina",
+  "brazil": "Brasil",
+  "canada": "Canadá",
+  "cape verde islands": "Cabo Verde",
+  "cape verde": "Cabo Verde",
+  "colombia": "Colômbia",
+  "congo dr": "RD Congo",
+  "côte d’ivoire": "Costa do Marfim",
+  "cote d'ivoire": "Costa do Marfim",
+  "ivory coast": "Costa do Marfim",
+  "croatia": "Croácia",
+  "czechia": "Chéquia",
+  "ecuador": "Equador",
+  "egypt": "Egito",
+  "england": "Inglaterra",
+  "france": "França",
+  "germany": "Alemanha",
+  "ghana": "Gana",
+  "iraq": "Iraque",
+  "japan": "Japão",
+  "jordan": "Jordânia",
+  "mexico": "México",
+  "morocco": "Marrocos",
+  "netherlands": "Países Baixos",
+  "norway": "Noruega",
+  "paraguay": "Paraguai",
+  "portugal": "Portugal",
+  "senegal": "Senegal",
+  "south africa": "África do Sul",
+  "spain": "Espanha",
+  "sweden": "Suécia",
+  "switzerland": "Suíça",
+  "united states": "Estados Unidos",
+  "usa": "Estados Unidos"
+};
+
+const KNOCKOUT_NEXT = {
+  73: 90, 74: 89, 75: 90, 76: 91, 77: 89, 78: 91, 79: 92, 80: 92,
+  81: 94, 82: 94, 83: 93, 84: 93, 85: 96, 86: 95, 87: 96, 88: 95,
+  89: 97, 90: 97, 91: 99, 92: 99, 93: 98, 94: 98, 95: 100, 96: 100,
+  97: 101, 98: 101, 99: 102, 100: 102, 101: 104, 102: 104
+};
+
+const KNOCKOUT_LOSER_NEXT = { 101: 103, 102: 103 };
+
 let games = [];
 let resultsData = { matches: {}, status: "not_loaded", updatedAt: null };
 
@@ -92,9 +144,46 @@ function isFree(game) {
   return Boolean(game.free || game.open || norm(game.channels).includes("livemodetv"));
 }
 
+function isKnockoutGame(game) {
+  return Number(game?.num) >= 73 || norm(game?.stage).includes("avos") || norm(game?.stage).includes("quartos") || norm(game?.stage).includes("meias") || norm(game?.stage).includes("final") || norm(game?.stage).includes("3.");
+}
+
 function getGameResult(game) {
   const matches = resultsData.matches || {};
   return matches[String(game.num)] || null;
+}
+
+function teamNamePT(value) {
+  const text = String(value || "").trim();
+  if (!text) return "";
+  const key = norm(text);
+  if (TEAM_NAMES_PT[key]) return TEAM_NAMES_PT[key];
+  return text
+    .replace(/^Winner Match\s+(\d+)$/i, "Vencedor $1")
+    .replace(/^Loser Match\s+(\d+)$/i, "Vencido $1")
+    .replace(/^Vencedor Jogo\s+(\d+)$/i, "Vencedor $1")
+    .replace(/^Vencido Jogo\s+(\d+)$/i, "Vencido $1");
+}
+
+function cleanMatchText(text) {
+  return String(text || "")
+    .replace(/Vencedor Jogo\s+(\d+)/g, "Vencedor $1")
+    .replace(/Vencido Jogo\s+(\d+)/g, "Vencido $1");
+}
+
+function displayMatch(game) {
+  const result = getGameResult(game);
+  if (isKnockoutGame(game) && result?.homeTeam && result?.awayTeam) {
+    return `${teamNamePT(result.homeTeam)} vs ${teamNamePT(result.awayTeam)}`;
+  }
+  return cleanMatchText(game.match);
+}
+
+function winnerName(result) {
+  if (!result || !result.winner || result.winner === "DRAW") return "";
+  if (result.winner === "HOME_TEAM") return teamNamePT(result.homeTeam);
+  if (result.winner === "AWAY_TEAM") return teamNamePT(result.awayTeam);
+  return "";
 }
 
 function scoreText(result) {
@@ -108,6 +197,7 @@ function statusText(status) {
   const key = norm(status);
   if (["in_play", "live", "paused"].includes(key)) return "Ao vivo";
   if (["finished", "finalizado"].includes(key)) return "Finalizado";
+  if (["timed", "scheduled", "por disputar"].includes(key)) return "Por disputar";
   if (["postponed", "adiado"].includes(key)) return "Adiado";
   if (["cancelled", "canceled", "cancelado"].includes(key)) return "Cancelado";
   if (["suspended", "suspenso"].includes(key)) return "Suspenso";
@@ -143,6 +233,28 @@ function resultDetailsText(result) {
   }).join("; ");
 }
 
+function progressionText(game) {
+  if (!isKnockoutGame(game)) return "";
+  const num = Number(game.num);
+  if (num === 104) return "Final do Mundial.";
+  if (num === 103) return "Jogo de atribuição do 3.º lugar.";
+
+  const result = getGameResult(game);
+  const winner = winnerName(result);
+  const next = KNOCKOUT_NEXT[num];
+  const loserNext = KNOCKOUT_LOSER_NEXT[num];
+
+  if (next && loserNext) {
+    return winner
+      ? `${winner} segue para a Final. O vencido disputa o 3.º lugar.`
+      : `Vencedor segue para a Final. Vencido disputa o 3.º lugar.`;
+  }
+  if (next) {
+    return winner ? `${winner} segue para o Jogo ${next}.` : `Vencedor segue para o Jogo ${next}.`;
+  }
+  return "";
+}
+
 function renderResult(game) {
   const result = getGameResult(game);
   const status = inferredStatus(game);
@@ -150,6 +262,7 @@ function renderResult(game) {
   const provider = result?.provider ? ` · ${escapeHtml(result.provider)}` : "";
   const lastUpdate = result?.lastUpdated ? ` · ${escapeHtml(updatedText() || result.lastUpdated)}` : "";
   const details = resultDetailsText(result);
+  const teams = result?.homeTeam || result?.awayTeam ? `${teamNamePT(result.homeTeam || "")} vs ${teamNamePT(result.awayTeam || "")}` : "";
 
   const main = score
     ? `<span class="score">${escapeHtml(score)}</span>`
@@ -158,14 +271,14 @@ function renderResult(game) {
   return `<div class="result ${resultClass(status)}">
     <div class="label">Resultado</div>
     <div class="result-line">${main}<span class="status-pill">${escapeHtml(statusText(status))}</span></div>
-    ${result ? `<div class="result-extra">${escapeHtml(result.homeTeam || "")}${result.homeTeam || result.awayTeam ? " vs " : ""}${escapeHtml(result.awayTeam || "")}${provider}${lastUpdate}</div>` : `<div class="result-extra">Resultado automático preparado.</div>`}
+    ${result ? `<div class="result-extra">${escapeHtml(teams)}${provider}${lastUpdate}</div>` : `<div class="result-extra">Resultado automático preparado.</div>`}
     ${details ? `<div class="result-details">${escapeHtml(details)}</div>` : ""}
   </div>`;
 }
 
 function searchable(game) {
   const result = getGameResult(game);
-  return norm([game.num, game.date, game.time, game.match, game.stage, game.group, game.round, game.venue, game.channels, game.notes, result?.status, scoreText(result)].join(" "));
+  return norm([game.num, game.date, game.time, displayMatch(game), game.stage, game.group, game.round, game.venue, game.channels, game.notes, progressionText(game), result?.status, scoreText(result)].join(" "));
 }
 
 function filteredGames() {
@@ -175,7 +288,7 @@ function filteredGames() {
     if (els.phase?.value && game.stage !== els.phase.value) return false;
     if (els.group?.value && game.group !== els.group.value) return false;
     if (!hasChannel(game, els.channel?.value || "")) return false;
-    if (state.portugal && !game.portugal) return false;
+    if (state.portugal && !game.portugal && !norm(displayMatch(game)).includes("portugal")) return false;
     if (state.open && !game.open) return false;
     if (state.free && !isFree(game)) return false;
     return true;
@@ -202,7 +315,7 @@ function formatDate(dateStr) {
 function renderSummary(list) {
   const liveCount = games.filter(g => ["IN_PLAY", "LIVE", "PAUSED"].includes(String(getGameResult(g)?.status || "").toUpperCase())).length;
   const finishedCount = games.filter(g => String(getGameResult(g)?.status || "").toUpperCase() === "FINISHED").length;
-  const boxes = [[games.length, "Jogos totais"], [games.filter(g => g.portugal).length, "Jogos de Portugal"], [finishedCount, "Resultados finais"], [liveCount, "Ao vivo agora"]];
+  const boxes = [[games.length, "Jogos totais"], [games.filter(g => g.portugal || norm(displayMatch(g)).includes("portugal")).length, "Jogos de Portugal"], [finishedCount, "Resultados finais"], [liveCount, "Ao vivo agora"]];
   if (els.summary) els.summary.innerHTML = boxes.map(([num, label]) => `<div class="box"><b>${num}</b><span>${label}</span></div>`).join("");
   if (els.visibleCount) els.visibleCount.textContent = list.length;
 }
@@ -219,14 +332,18 @@ function renderCards() {
 
   els.cards.innerHTML = list.map(game => {
     const channels = splitChannels(game.channels).map(label => `<span class="tag ${channelClass(label)}">${escapeHtml(label)}</span>`).join("");
-    return `<article class="card ${game.portugal ? "portugal" : ""}" data-num="${game.num}">
+    const progression = progressionText(game);
+    const notes = [progression, game.notes].filter(Boolean).join(" ");
+    const portugalClass = game.portugal || norm(displayMatch(game)).includes("portugal") ? "portugal" : "";
+
+    return `<article class="card ${portugalClass}" data-num="${game.num}">
       <div class="topline"><div class="game-no">Jogo ${game.num}</div><div class="datetime"><div class="date">${escapeHtml(formatDate(game.date))}</div><div class="time">${escapeHtml(game.time)}</div></div></div>
-      <div class="match">${escapeHtml(game.match)}</div>
+      <div class="match">${escapeHtml(displayMatch(game))}</div>
       ${renderResult(game)}
-      <div class="meta"><span class="tag">${escapeHtml(game.stage)}</span>${game.round ? `<span class="tag">${escapeHtml(game.round)}</span>` : ""}${game.group ? `<span class="tag group">Grupo ${escapeHtml(game.group)}</span>` : ""}${game.portugal ? `<span class="tag pt">Portugal</span>` : ""}${game.open ? `<span class="tag open">Sinal aberto</span>` : ""}${isFree(game) ? `<span class="tag live">Grátis</span>` : ""}</div>
+      <div class="meta"><span class="tag">${escapeHtml(game.stage)}</span>${game.round ? `<span class="tag">${escapeHtml(game.round)}</span>` : ""}${game.group ? `<span class="tag group">Grupo ${escapeHtml(game.group)}</span>` : ""}${portugalClass ? `<span class="tag pt">Portugal</span>` : ""}${game.open ? `<span class="tag open">Sinal aberto</span>` : ""}${isFree(game) ? `<span class="tag live">Grátis</span>` : ""}</div>
       <div class="venue"><div class="label">Estádio / Cidade</div>${escapeHtml(game.venue || "A confirmar")}</div>
       <div class="channels"><div class="label">Onde ver em Portugal</div><div class="channel-list">${channels}</div></div>
-      ${game.notes ? `<div class="notes"><div class="label">Nota</div>${escapeHtml(game.notes)}</div>` : ""}
+      ${notes ? `<div class="notes"><div class="label">Caminho</div>${escapeHtml(notes)}</div>` : ""}
     </article>`;
   }).join("");
 }
@@ -244,8 +361,8 @@ function clearFilters() {
 }
 
 function downloadCSV() {
-  const rows = filteredGames().map(g => [g.num, g.date, g.time, g.stage, g.group, g.match, scoreText(getGameResult(g)), statusText(inferredStatus(g)), g.venue, g.channels, g.notes]);
-  const header = ["N.º", "Data", "Hora PT", "Fase", "Grupo", "Jogo", "Resultado", "Estado", "Estádio/Cidade", "Canais em Portugal", "Notas"];
+  const rows = filteredGames().map(g => [g.num, g.date, g.time, g.stage, g.group, displayMatch(g), scoreText(getGameResult(g)), statusText(inferredStatus(g)), progressionText(g), g.venue, g.channels, g.notes]);
+  const header = ["N.º", "Data", "Hora PT", "Fase", "Grupo", "Jogo", "Resultado", "Estado", "Caminho", "Estádio/Cidade", "Canais em Portugal", "Notas"];
   const csv = [header].concat(rows).map(row => row.map(cell => `"${String(cell == null ? "" : cell).replace(/"/g, '""')}"`).join(",")).join("\n");
   const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
   const url = URL.createObjectURL(blob);

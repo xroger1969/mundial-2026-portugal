@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-03T21:36:00.925Z",
+  "updatedAt": "2026-07-03T22:41:04.828Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -995,14 +995,14 @@
     },
     "86": {
       "apiId": 537427,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Argentina",
       "awayTeam": "Cape Verde Islands",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 1,
+      "awayScore": 0,
+      "winner": "HOME_TEAM",
       "utcDate": "2026-07-03T22:00:00Z",
-      "lastUpdated": "2026-07-02T15:20:12Z",
+      "lastUpdated": "2026-07-03T22:40:31Z",
       "provider": "football-data.org"
     },
     "87": {

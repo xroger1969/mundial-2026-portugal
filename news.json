@@ -2,11 +2,41 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-03T16:04:16.099Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-03T22:41:10.456Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 135,
+  "totalArticles": 138,
   "articles": [
+    {
+      "title": "A tecnologia que \"salvou\" Portugal no Mundial 2026",
+      "description": "Portugal segue em frente no Mundial 2026, mas um dos momentos mais comentados do jogo contra a Croácia não teve que ver com futebol.",
+      "content": "A seleção nacional segue em frente no Mundial 2026, mas um dos momentos mais comentados do jogo contra a Croácia não teve que ver com futebol, mas antes com sensores, câmaras e Inteligência Artificial (IA). Entenda a tecnologia por detrás do golo cro... [2839 chars]",
+      "url": "https://pplware.sapo.pt/high-tech/a-tecnologia-que-salvou-portugal-no-mundial-2026/",
+      "image": "https://pplware.sapo.pt/wp-content/uploads/2026/07/fora-de-jogo-croacia-1.jpg",
+      "publishedAt": "2026-07-03T10:20:22Z",
+      "sourceName": "Pplware",
+      "sourceUrl": "https://pplware.sapo.pt"
+    },
+    {
+      "title": "LiveModeTV vai transmitir 25 jogos do Mundial Feminino FIFA 2027",
+      "description": "A LiveModeTV estreou-se em Portugal com a transmissão de 34 jogos do Mundial de Futebol 2026, estando em curso o registo enquanto serviço audiovisual a pedido na ERC.",
+      "content": "A LiveModeTV anunciou esta sexta-feira que adquiriu os direitos de transmissão do Mundial Feminino de futebol de 2027 em Portugal. Escolha o ECO como fonte preferida no Google Escolher › “A LiveModeTV vai transmitir o Mundial Feminino FIFA 2027 em Po... [4006 chars]",
+      "url": "https://eco.sapo.pt/2026/07/03/livemodetv-vai-transmitir-25-jogos-do-mundial-feminino-fifa-2027/",
+      "image": "https://eco.imgix.net/uploads/2026/06/cropped-livemodetv-mundial2026.jpeg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
+      "publishedAt": "2026-07-03T09:47:06Z",
+      "sourceName": "ECO Economia Online",
+      "sourceUrl": "https://eco.sapo.pt"
+    },
+    {
+      "title": "Portugal Card Show espera a visita de 2 mil colecionadores de cromos e cartas de futebol",
+      "description": "Arena de Ovar recebe a 2.ª edição do evento no próximo dia 18 para trocas de cromos do Mundial 2026",
+      "content": "Queres trocar ou comprar cromos e cartas de futebol? Então prepara-te para o maior evento realizado em Portugal destinado ao colecionismo dessas temáticas. O Portugal Card Show volta a dar cartas no mundo do colecionismo e prevê reunir mas de 2000 vi... [466 chars]",
+      "url": "https://www.record.pt/fora-de-campo/detalhe/portugal-card-show-espera-a-visita-de-2-mil-colecionadores-de-cromos-e-cartas-de-futebol",
+      "image": "https://cdn.record.pt/images/2026-07/img_1200x721uu2026-07-03-18-39-03-2448838.jpg",
+      "publishedAt": "2026-07-03T00:00:00Z",
+      "sourceName": "Record",
+      "sourceUrl": "https://www.record.pt"
+    },
     {
       "title": "Espanha vence Áustria e pode encontrar Portugal nos 'oita",
       "description": "A Espanha qualificou-se hoje para os oitavos de final do Mundial de futebol de 2026, ao vencer a Áustria por 3-0, no 11.º jogo dos ’16 avos&rs...",
@@ -76,36 +106,6 @@
       "publishedAt": "2026-06-29T22:14:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Portugal arranca treino com nove jogadores no ginásio",
-      "description": "Nove jogadores da seleção portuguesa de futebol iniciaram esta segunda-feira o treino no ginásio, numa altura em que a equipa se encontra a preparar o jogo com a Croácia, dos 16 avos de final do Mundial 2026.",
-      "content": "No Gardens North County District Park, em Palm Beach, o guarda-redes Diogo Costa, os defesas Nuno Mendes, Renato Veiga e Rúben Dias, os médios Vitinha e Bruno Fernandes e os avançados Pedro Neto, João Félix e Cristiano Ronaldo começaram a sessão de t... [1475 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/portugal-arranca-treino-com-nove-jogadores-no-ginasio/18100640",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/afc595f0-efb3-42d7-a15f-42dbdb6af696_1200x675.jpg",
-      "publishedAt": "2026-06-29T18:53:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Mundial 2026. Portugal contra Colômbia visto em média por quase 2,6 milhões de portugueses",
-      "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
-      "content": "O empate da Seleção Nacional contra a Colômbia por 0-0 — reuniu em média mais de dois milhões e meio de portugueses à frente da televisão, revela a análise elaborada pela Dentsu para o +M. O encontro foi acompanhado na televisão portuguesa, em média,... [2704 chars]",
-      "url": "https://eco.sapo.pt/2026/06/29/mundial-2026-portugal-contra-colombia-visto-em-media-por-quase-26-milhoes-de-portugueses/",
-      "image": "https://eco.imgix.net/uploads/2026/06/audiencias-mundial-2000x1125-1.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
-      "publishedAt": "2026-06-29T18:24:17Z",
-      "sourceName": "ECO Economia Online",
-      "sourceUrl": "https://eco.sapo.pt"
-    },
-    {
-      "title": "Venezuela, Colômbia, desastres e revelações",
-      "description": "Portugal jogou com a Colômbia para o Mundial 2026, mas o futebol é o menor problema da América Latina.",
-      "content": "Tudo se move, nesta área onde amizades, alianças, princípios e interesses se confundem com rivalidades, incertezas e receios. Só o perigo de Leste mantém os conjuntos unidos. Não é uma invenção, nem uma fantasia, nem um exagero. O ciber-ataque sistem... [1322 chars]",
-      "url": "https://sicnoticias.pt/programas/leste-oeste/2026-06-28-video-venezuela-colombia-desastres-e-revelacoes-f39ce160",
-      "image": "https://images.impresa.pt/sicnot/2024-07-07-leste-oeste-nuno-rogeiro-16x9-7f4bf67f/1.91x1?wm=true&outputFormat=jpeg",
-      "publishedAt": "2026-06-28T15:19:54Z",
-      "sourceName": "SIC Notícias",
-      "sourceUrl": "https://sicnoticias.pt"
     }
   ]
 }

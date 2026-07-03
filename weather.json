@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-03T16:04:14.332Z",
+  "generatedAt": "2026-07-03T17:44:51.858Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,12 +12,12 @@
       "venue": "Hard Rock Stadium, Miami",
       "kickoffUtc": "2026-07-03T22:00:00.000Z",
       "forecastHourUtc": "2026-07-03T22:00:00Z",
-      "temperatureC": 25.1,
-      "precipitationProbability": 21,
-      "windKmh": 4.1,
-      "weatherCode": 80,
-      "icon": "🌦️",
-      "description": "Aguaceiros fracos"
+      "temperatureC": 25.4,
+      "precipitationProbability": 30,
+      "windKmh": 7.6,
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "87": {
       "available": true,
@@ -26,9 +26,9 @@
       "venue": "Arrowhead Stadium, Kansas City",
       "kickoffUtc": "2026-07-04T01:30:00.000Z",
       "forecastHourUtc": "2026-07-04T01:00:00Z",
-      "temperatureC": 32.6,
+      "temperatureC": 32.7,
       "precipitationProbability": 1,
-      "windKmh": 20.2,
+      "windKmh": 19.1,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -40,9 +40,9 @@
       "venue": "AT&T Stadium, Arlington",
       "kickoffUtc": "2026-07-03T18:00:00.000Z",
       "forecastHourUtc": "2026-07-03T18:00:00Z",
-      "temperatureC": 35.1,
+      "temperatureC": 35.2,
       "precipitationProbability": 1,
-      "windKmh": 10.2,
+      "windKmh": 11.5,
       "weatherCode": 1,
       "icon": "🌤️",
       "description": "Pouco nublado"
@@ -55,7 +55,7 @@
       "kickoffUtc": "2026-07-04T21:00:00.000Z",
       "forecastHourUtc": "2026-07-04T21:00:00Z",
       "temperatureC": 35.5,
-      "precipitationProbability": 11,
+      "precipitationProbability": 12,
       "windKmh": 30.6,
       "weatherCode": 0,
       "icon": "☀️",
@@ -85,9 +85,9 @@
       "temperatureC": 32.3,
       "precipitationProbability": 40,
       "windKmh": 14.5,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 51,
+      "icon": "🌦️",
+      "description": "Chuvisco fraco"
     },
     "92": {
       "available": true,
@@ -113,9 +113,9 @@
       "temperatureC": 37.9,
       "precipitationProbability": 13,
       "windKmh": 14.8,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "94": {
       "available": true,
@@ -141,9 +141,9 @@
       "temperatureC": 31.1,
       "precipitationProbability": 22,
       "windKmh": 13.7,
-      "weatherCode": 95,
-      "icon": "⛈️",
-      "description": "Trovoada"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "96": {
       "available": true,
@@ -169,9 +169,9 @@
       "temperatureC": 31.6,
       "precipitationProbability": 9,
       "windKmh": 21.1,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "98": {
       "available": true,
@@ -211,9 +211,9 @@
       "temperatureC": 31.5,
       "precipitationProbability": 12,
       "windKmh": 16,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "101": {
       "available": true,
@@ -239,9 +239,9 @@
       "temperatureC": 40.6,
       "precipitationProbability": 40,
       "windKmh": 10.5,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "103": {
       "available": true,

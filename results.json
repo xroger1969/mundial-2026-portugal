@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-03T20:16:49.835Z",
+  "updatedAt": "2026-07-03T21:36:00.925Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -1019,14 +1019,14 @@
     },
     "88": {
       "apiId": 537428,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeTeam": "Australia",
       "awayTeam": "Egypt",
-      "homeScore": 1,
-      "awayScore": 1,
-      "winner": "DRAW",
+      "homeScore": 3,
+      "awayScore": 5,
+      "winner": null,
       "utcDate": "2026-07-03T18:00:00Z",
-      "lastUpdated": "2026-07-03T20:16:20Z",
+      "lastUpdated": "2026-07-03T20:58:23Z",
       "provider": "football-data.org"
     },
     "89": {

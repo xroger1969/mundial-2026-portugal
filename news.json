@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-03T09:35:35.077Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-03T16:04:16.099Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 134,
+  "totalArticles": 135,
   "articles": [
+    {
+      "title": "Espanha vence Áustria e pode encontrar Portugal nos 'oita",
+      "description": "A Espanha qualificou-se hoje para os oitavos de final do Mundial de futebol de 2026, ao vencer a Áustria por 3-0, no 11.º jogo dos ’16 avos&rs...",
+      "content": "A Espanha qualificou-se hoje para os oitavos de final do Mundial de futebol de 2026, ao vencer a Áustria por 3-0, no 11.º jogo dos ’16 avos’, disputado em Inglewood, nos Estados Unidos. Mikel Oyarzabal, aos 36 e 89 minutos, após duas assistências de ... [313 chars]",
+      "url": "https://www.jm-madeira.pt/not%C3%ADcias/desporto/30000888/espanha-vence-austria-e-pode-encontrar-portugal-nos-oita.html",
+      "image": "https://www.jm-madeira.pt/resizer/600/315/true/2026_07_02/DOC.20260702.47396012.13081627-1783028561422_1783028585.jpg--espanha_vence__ustria_e_pode_encontrar_portugal_nos__oitavos_.jpg?1783028585407",
+      "publishedAt": "2026-07-02T21:44:18Z",
+      "sourceName": "jm-madeira.pt",
+      "sourceUrl": "https://www.jm-madeira.pt"
+    },
     {
       "title": "Ronaldo ou Modric: o Mundial despede-se hoje de uma lenda",
       "description": "O Campeonato do Mundo prepara-se para uma despedida emocionante. Independentemente do resultado do eletrizante confronto desta quinta-feira entre Portugal e a Croácia, em Toronto, o maior palco do futebol verá uma lenda dizer adeus. O duelo a eliminar entre Cristiano Ronaldo, o avançado implacável, e Luka Modric, o médio cerebral, que conquistaram juntos quatro Ligas dos Campeões ao longo de seis temporadas no Real Madrid, vale um lugar nos oitavos de final do Mundial de 2026. Ao mesmo tempo, o jogo servirá de prova viva de uma longevidade atlética excecional, ao colocar frente a frente, pela primeira vez num Mundial,",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-06-28T15:19:54Z",
       "sourceName": "SIC Notícias",
       "sourceUrl": "https://sicnoticias.pt"
-    },
-    {
-      "title": "Portugal pode encontrar Espanha nos \"oitavos\" e França nas \"meias\"",
-      "description": "Portugal ficou a conhecer no sábado o seu possível caminho até à final do Mundial de futebol de 2026, que pode contemplar um confronto com a Espanha, nos \"oitavos\", e um duelo com a França, nas meias-finais.",
-      "content": "Com o segundo lugar do Grupo K, depois do segundo empate em três jogos, com a líder Colômbia (0-0), a formação comandada pelo espanhol Roberto Martínez marcou, para já, encontro com a Croácia nos inéditos 16 avos de final. O encontro está marcado par... [1301 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/portugal-pode-encontrar-espanha-nos-oitavos-e-franca-nas-meias/18100166",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/cc63676e-e5aa-4c5c-9749-008c05756edf_1200x675.jpg",
-      "publishedAt": "2026-06-28T08:30:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
     }
   ]
 }

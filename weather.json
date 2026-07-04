@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-04T15:50:09.442Z",
+  "generatedAt": "2026-07-04T16:55:06.667Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,7 +12,7 @@
       "venue": "Lincoln Financial Field, Philadelphia",
       "kickoffUtc": "2026-07-04T21:00:00.000Z",
       "forecastHourUtc": "2026-07-04T21:00:00Z",
-      "temperatureC": 38.7,
+      "temperatureC": 38.5,
       "precipitationProbability": 8,
       "windKmh": 14,
       "weatherCode": 0,
@@ -26,7 +26,7 @@
       "venue": "NRG Stadium, Houston",
       "kickoffUtc": "2026-07-04T17:00:00.000Z",
       "forecastHourUtc": "2026-07-04T17:00:00Z",
-      "temperatureC": 34.4,
+      "temperatureC": 34.2,
       "precipitationProbability": 1,
       "windKmh": 8.9,
       "weatherCode": 1,

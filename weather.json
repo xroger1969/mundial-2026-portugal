@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-04T19:35:07.245Z",
+  "generatedAt": "2026-07-04T20:34:34.082Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,9 +12,9 @@
       "venue": "Lincoln Financial Field, Philadelphia",
       "kickoffUtc": "2026-07-04T21:00:00.000Z",
       "forecastHourUtc": "2026-07-04T21:00:00Z",
-      "temperatureC": 38.1,
+      "temperatureC": 37.9,
       "precipitationProbability": 2,
-      "windKmh": 14.6,
+      "windKmh": 12.8,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -40,9 +40,9 @@
       "venue": "MetLife Stadium, East Rutherford",
       "kickoffUtc": "2026-07-05T20:00:00.000Z",
       "forecastHourUtc": "2026-07-05T20:00:00Z",
-      "temperatureC": 31.4,
+      "temperatureC": 29.4,
       "precipitationProbability": 23,
-      "windKmh": 15.6,
+      "windKmh": 13.5,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -57,9 +57,9 @@
       "temperatureC": 16.6,
       "precipitationProbability": 100,
       "windKmh": 7.9,
-      "weatherCode": 81,
+      "weatherCode": 80,
       "icon": "🌦️",
-      "description": "Aguaceiros"
+      "description": "Aguaceiros fracos"
     },
     "93": {
       "available": true,

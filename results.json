@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-04T01:21:53.915Z",
+  "updatedAt": "2026-07-04T05:06:51.126Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -1007,14 +1007,14 @@
     },
     "87": {
       "apiId": 537430,
-      "status": "TIMED",
+      "status": "FINISHED",
       "homeTeam": "Colombia",
       "awayTeam": "Ghana",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 1,
+      "awayScore": 0,
+      "winner": "HOME_TEAM",
       "utcDate": "2026-07-04T01:30:00Z",
-      "lastUpdated": "2026-07-02T15:20:12Z",
+      "lastUpdated": "2026-07-04T03:45:56Z",
       "provider": "football-data.org"
     },
     "88": {

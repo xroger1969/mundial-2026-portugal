@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-04T20:34:31.562Z",
+  "updatedAt": "2026-07-04T21:37:19.732Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -1031,14 +1031,14 @@
     },
     "89": {
       "apiId": 537375,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Paraguay",
       "awayTeam": "France",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "winner": "DRAW",
       "utcDate": "2026-07-04T21:00:00Z",
-      "lastUpdated": "2026-07-03T15:20:13Z",
+      "lastUpdated": "2026-07-04T21:36:48Z",
       "provider": "football-data.org"
     },
     "90": {

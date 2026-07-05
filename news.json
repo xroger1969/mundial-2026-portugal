@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-05T01:27:38.378Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-05T08:33:15.436Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 139,
+  "totalArticles": 140,
   "articles": [
+    {
+      "title": "Nuno Mendes diz que Portugal tem condições e capacidade para melhorar",
+      "description": "O lateral Nuno Mendes afirmou este sábado que Portugal tem condições e capacidade para melhorar no Mundial 2026 de futebol e mostrou-se confiante em novo triunfo sobre a Espanha, depois da final da Liga das Nações.",
+      "content": "\"Se pudéssemos repetir o resultado dessa final era bom. Mas, agora é um jogo diferente, uma competição diferente. Temos de encarar a Espanha da mesma forma que temos encarado todos os jogos no torneio. Sabemos que podemos fazer um bocado melhor do qu... [1415 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/nuno-mendes-diz-que-portugal-tem-condicoes-e-capacidade-para-melhorar/18102553",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/5056edbe-cad2-4e30-9b05-74979bb853a9_1200x675.jpg",
+      "publishedAt": "2026-07-04T15:50:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Mundial 2026: Vitória de Portugal contra a Croácia vista, em média, por quase 2,7 milhões de telespectadores",
       "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-07-01T03:45:18Z",
       "sourceName": "Futebol365",
       "sourceUrl": "https://futebol365.pt"
-    },
-    {
-      "title": "Quem é o misterioso escocês de cabelo comprido que ensina Portugal a marcar golos? Austin MacPhee é o guru de quem se fala",
-      "description": "É um dos melhores taticistas do Mundial de 2026. Os jogadores portugueses param para escutar as suas técnicas inovadoras. O escocês Austin MacPhee trouxe frescura à Federação Portuguesa de Futebol. E até CR7 aprende com as suas ideias certeiras. No lado mais pessoal, a sua vida permanece um mistério.",
-      "content": "Todos vimos na televisão, durante o jogo entre Portugal e o Uzbequistão, Cristiano Ronaldo a preparar-se para marcar um livre à entrada da área. Era o minuto 17, todas as câmaras de televisão apontavam para CR7, dando um plano fechado do rosto do jog... [7995 chars]",
-      "url": "https://www.flash.pt/the-mag/detalhe/quem-e-o-misterioso-escoces-de-cabelo-comprido-que-ensina-portugal-a-marcar-golos-austin-macphee-e-o-guru-de-quem-se-fala",
-      "image": "https://cdn.flash.pt/images/2026-07/img_1200x676uu2026-07-01-22-42-16-407664.jpg",
-      "publishedAt": "2026-07-01T00:00:00Z",
-      "sourceName": "Flash",
-      "sourceUrl": "https://www.flash.pt"
     }
   ]
 }

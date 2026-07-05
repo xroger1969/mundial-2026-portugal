@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-05T01:27:33.261Z",
+  "updatedAt": "2026-07-05T05:45:07.724Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -1031,14 +1031,14 @@
     },
     "89": {
       "apiId": 537375,
-      "status": "FINISHED",
+      "status": "2026-07-04 21:00:00Z",
       "homeTeam": "Paraguay",
       "awayTeam": "France",
       "homeScore": 0,
       "awayScore": 1,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-07-04T21:00:00Z",
-      "lastUpdated": "2026-07-04T23:10:57Z",
+      "lastUpdated": "2026-07-05T05:41:17Z",
       "provider": "football-data.org"
     },
     "90": {
@@ -1050,19 +1050,19 @@
       "awayScore": 3,
       "winner": "AWAY_TEAM",
       "utcDate": "2026-07-04T17:00:00Z",
-      "lastUpdated": "2026-07-04T19:09:21Z",
+      "lastUpdated": "2026-07-05T03:25:01Z",
       "provider": "football-data.org"
     },
     "91": {
       "apiId": 537377,
-      "status": "TIMED",
+      "status": "2026-07-06 20:00:00Z",
       "homeTeam": "Brazil",
       "awayTeam": "Norway",
       "homeScore": null,
       "awayScore": null,
       "winner": null,
       "utcDate": "2026-07-05T20:00:00Z",
-      "lastUpdated": "2026-07-03T15:20:13Z",
+      "lastUpdated": "2026-07-05T05:44:18Z",
       "provider": "football-data.org"
     },
     "92": {

@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-05T21:33:30.352Z",
+  "generatedAt": "2026-07-05T22:36:51.333Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,9 +12,9 @@
       "venue": "MetLife Stadium, East Rutherford",
       "kickoffUtc": "2026-07-05T20:00:00.000Z",
       "forecastHourUtc": "2026-07-05T20:00:00Z",
-      "temperatureC": 29,
+      "temperatureC": 27.7,
       "precipitationProbability": 10,
-      "windKmh": 6.1,
+      "windKmh": 10.1,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"

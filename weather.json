@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-05T16:44:51.792Z",
+  "generatedAt": "2026-07-05T17:50:47.247Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,9 +12,9 @@
       "venue": "MetLife Stadium, East Rutherford",
       "kickoffUtc": "2026-07-05T20:00:00.000Z",
       "forecastHourUtc": "2026-07-05T20:00:00Z",
-      "temperatureC": 29.4,
-      "precipitationProbability": 15,
-      "windKmh": 10,
+      "temperatureC": 28.3,
+      "precipitationProbability": 14,
+      "windKmh": 10.2,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -41,7 +41,7 @@
       "kickoffUtc": "2026-07-06T19:00:00.000Z",
       "forecastHourUtc": "2026-07-06T19:00:00Z",
       "temperatureC": 35.4,
-      "precipitationProbability": 6,
+      "precipitationProbability": 7,
       "windKmh": 0.7,
       "weatherCode": 0,
       "icon": "☀️",
@@ -85,9 +85,9 @@
       "temperatureC": 20.8,
       "precipitationProbability": 2,
       "windKmh": 16.2,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "97": {
       "available": true,
@@ -99,9 +99,9 @@
       "temperatureC": 31.6,
       "precipitationProbability": 5,
       "windKmh": 16.5,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "98": {
       "available": true,
@@ -127,9 +127,9 @@
       "temperatureC": 34.6,
       "precipitationProbability": 28,
       "windKmh": 27,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "100": {
       "available": true,
@@ -141,9 +141,9 @@
       "temperatureC": 28.1,
       "precipitationProbability": 12,
       "windKmh": 6.9,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "101": {
       "available": true,
@@ -169,9 +169,9 @@
       "temperatureC": 38.1,
       "precipitationProbability": 10,
       "windKmh": 21.4,
-      "weatherCode": 2,
-      "icon": "⛅",
-      "description": "Parcialmente nublado"
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "103": {
       "available": true,
@@ -197,9 +197,9 @@
       "temperatureC": 21,
       "precipitationProbability": 18,
       "windKmh": 4.7,
-      "weatherCode": 51,
-      "icon": "🌦️",
-      "description": "Chuvisco fraco"
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     }
   }
 }

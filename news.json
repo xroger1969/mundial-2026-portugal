@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-06T06:07:37.227Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-06T14:34:28.179Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 141,
+  "totalArticles": 142,
   "articles": [
+    {
+      "title": "Capitão da Espanha diz que Portugal tem a \"melhor geração de sempre\"",
+      "description": "O capitão da seleção espanhola, o médio Rodri, afirmou este domingo que Portugal tem a \"melhor geração de sempre\" no Mundial 2026 de futebol e que vai causar muitas dificuldades aos atuais campeões europeus, no duelo dos oitavos de final.",
+      "content": "\"Portugal é sempre um adversário muito difícil. Está neste Campeonato do Mundo com a sua melhor geração e por isso sabemos que só estando no nosso melhor é que podemos vencer e avançar na competição\", afirmou Rodri aos jornalistas numa zona mista mon... [2310 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/capitao-da-espanha-diz-que-portugal-tem-a-melhor-geracao-de-sempre/18102933",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/57d5ad33-8e10-4e1a-b01b-488dd56f4606_1200x675.jpg",
+      "publishedAt": "2026-07-05T21:06:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Portugal na máxima força na véspera do duelo com Espanha",
       "description": "O selecionador Roberto Martínez contou este domingo em Dallas, nos Estados Unidos, com os 27 convocados, no último treino antes do embate com a Espanha, dos 16 avos de final do Mundial 2026 de futebol.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-07-01T13:59:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "ERC suspende instauração de contraordenação à LiveModeTV até reapreciação do processo",
-      "description": "Na segunda-feira, a plataforma LiveModeTV, que transmite jogos de futebol do Mundial 2026 em Portugal, anunciou que tinha pedido o registo na ERC enquanto serviço audiovisual a pedido ('streaming'), conforme exigido, apesar de continuar a opor-se à classificação atribuída pelo regulador.",
-      "content": "A ERC suspendeu a instauração do procedimento de contraordenação à LiveModeTV até reapreciação do processo pelo Conselho Regulador, depois da plataforma ter efetuado o registo na terça-feira, disse à Lusa fonte oficial do regulador. Fonte oficial da ... [1636 chars]",
-      "url": "https://jornaleconomico.sapo.pt/noticias/erc-suspende-instauracao-de-contraordenacao-a-livemodetv-ate-reapreciacao-do-processo/",
-      "image": "https://jornaleconomico.sapo.pt/wp-content/uploads/2026/06/Cristiano-Ronaldo-Portugal-Mundial-2026.jpg",
-      "publishedAt": "2026-07-01T09:33:53Z",
-      "sourceName": "Jornal Económico",
-      "sourceUrl": "https://jornaleconomico.sapo.pt"
     }
   ]
 }

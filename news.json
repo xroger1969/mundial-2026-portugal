@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-05T22:36:53.222Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-06T06:07:37.227Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 140,
+  "totalArticles": 141,
   "articles": [
+    {
+      "title": "Portugal na máxima força na véspera do duelo com Espanha",
+      "description": "O selecionador Roberto Martínez contou este domingo em Dallas, nos Estados Unidos, com os 27 convocados, no último treino antes do embate com a Espanha, dos 16 avos de final do Mundial 2026 de futebol.",
+      "content": "No Washburne Soccer and Track Stadium, no estado do Texas, todos os jogadores mostraram-se disponíveis para o embate ibérico, pelo menos nos primeiros 15 minutos da sessão, que foram abertos à comunicação social. Durante esse período, com os termómet... [854 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/portugal-na-maxima-forca-na-vespera-do-duelo-com-espanha/18102873",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/7cbf96ff-32b3-48a1-aa13-40aaec1c8f80_1200x675.jpg",
+      "publishedAt": "2026-07-05T17:35:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Nuno Mendes diz que Portugal tem condições e capacidade para melhorar",
       "description": "O lateral Nuno Mendes afirmou este sábado que Portugal tem condições e capacidade para melhorar no Mundial 2026 de futebol e mostrou-se confiante em novo triunfo sobre a Espanha, depois da final da Liga das Nações.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-07-01T09:33:53Z",
       "sourceName": "Jornal Económico",
       "sourceUrl": "https://jornaleconomico.sapo.pt"
-    },
-    {
-      "title": "Horário e Onde Assistir",
-      "description": "Portugal defronta Croácia no Mundial 2026: Guia do jogo, horários e transmissão em direto - Acompanhe a atualidade desportiva no Futebol 365.",
-      "content": "O Mundial de 2026 entra na sua fase mais emocionante com o arranque dos dezasseis-avos de final. A seleção de Portugal defronta a Croácia num duelo decisivo que promete paralisar os adeptos do futebol internacional. O encontro está marcado para quint... [2044 chars]",
-      "url": "https://futebol365.pt/artigo/portugal-defronta-croacia-no-mundial-2026-guia-do-jogo-horarios-e-transmissao-em-direto/",
-      "image": "https://futebol365.pt/wp-content/uploads/2026/07/1024_optimized.webp",
-      "publishedAt": "2026-07-01T03:45:18Z",
-      "sourceName": "Futebol365",
-      "sourceUrl": "https://futebol365.pt"
     }
   ]
 }

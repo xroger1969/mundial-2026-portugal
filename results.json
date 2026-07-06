@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-05T23:44:04.650Z",
+  "updatedAt": "2026-07-06T01:27:30.581Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -1067,14 +1067,14 @@
     },
     "92": {
       "apiId": 537378,
-      "status": "2026-07-06 01:00:00Z",
+      "status": "IN_PLAY",
       "homeTeam": "Mexico",
       "awayTeam": "England",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "winner": "DRAW",
       "utcDate": "2026-07-06T01:00:00Z",
-      "lastUpdated": "2026-07-05T23:31:12Z",
+      "lastUpdated": "2026-07-06T01:27:12Z",
       "provider": "football-data.org"
     },
     "93": {

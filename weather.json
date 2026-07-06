@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-06T21:07:13.704Z",
+  "generatedAt": "2026-07-06T22:37:18.775Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -26,9 +26,9 @@
       "venue": "Lumen Field, Seattle",
       "kickoffUtc": "2026-07-07T00:00:00.000Z",
       "forecastHourUtc": "2026-07-07T00:00:00Z",
-      "temperatureC": 26.9,
+      "temperatureC": 27,
       "precipitationProbability": 0,
-      "windKmh": 11.8,
+      "windKmh": 11.4,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -41,7 +41,7 @@
       "kickoffUtc": "2026-07-07T16:00:00.000Z",
       "forecastHourUtc": "2026-07-07T16:00:00Z",
       "temperatureC": 30.5,
-      "precipitationProbability": 4,
+      "precipitationProbability": 3,
       "windKmh": 11.9,
       "weatherCode": 1,
       "icon": "🌤️",

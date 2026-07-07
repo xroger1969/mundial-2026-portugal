@@ -1,24 +1,10 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-06T23:44:39.920Z",
+  "generatedAt": "2026-07-07T01:28:03.009Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
-    "93": {
-      "available": true,
-      "source": "Open-Meteo",
-      "city": "Arlington",
-      "venue": "AT&T Stadium, Arlington",
-      "kickoffUtc": "2026-07-06T19:00:00.000Z",
-      "forecastHourUtc": "2026-07-06T19:00:00Z",
-      "temperatureC": 35.5,
-      "precipitationProbability": 0,
-      "windKmh": 3.4,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
-    },
     "94": {
       "available": true,
       "source": "Open-Meteo",
@@ -26,9 +12,9 @@
       "venue": "Lumen Field, Seattle",
       "kickoffUtc": "2026-07-07T00:00:00.000Z",
       "forecastHourUtc": "2026-07-07T00:00:00Z",
-      "temperatureC": 27,
+      "temperatureC": 27.6,
       "precipitationProbability": 0,
-      "windKmh": 10.3,
+      "windKmh": 8.7,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -40,9 +26,9 @@
       "venue": "Mercedes-Benz Stadium, Atlanta",
       "kickoffUtc": "2026-07-07T16:00:00.000Z",
       "forecastHourUtc": "2026-07-07T16:00:00Z",
-      "temperatureC": 29.5,
+      "temperatureC": 29.4,
       "precipitationProbability": 2,
-      "windKmh": 11.9,
+      "windKmh": 9.7,
       "weatherCode": 1,
       "icon": "🌤️",
       "description": "Pouco nublado"
@@ -70,7 +56,7 @@
       "forecastHourUtc": "2026-07-09T20:00:00Z",
       "temperatureC": 29.8,
       "precipitationProbability": 3,
-      "windKmh": 16.7,
+      "windKmh": 21.5,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -84,7 +70,7 @@
       "forecastHourUtc": "2026-07-10T19:00:00Z",
       "temperatureC": 25.7,
       "precipitationProbability": 0,
-      "windKmh": 16.9,
+      "windKmh": 18.3,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -98,10 +84,10 @@
       "forecastHourUtc": "2026-07-11T21:00:00Z",
       "temperatureC": 34.1,
       "precipitationProbability": 15,
-      "windKmh": 20.3,
-      "weatherCode": 51,
-      "icon": "🌦️",
-      "description": "Chuvisco fraco"
+      "windKmh": 21.4,
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "100": {
       "available": true,
@@ -112,10 +98,10 @@
       "forecastHourUtc": "2026-07-12T01:00:00Z",
       "temperatureC": 30.9,
       "precipitationProbability": 13,
-      "windKmh": 12.8,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "windKmh": 1.3,
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "101": {
       "available": true,
@@ -126,7 +112,7 @@
       "forecastHourUtc": "2026-07-14T19:00:00Z",
       "temperatureC": 40.7,
       "precipitationProbability": 5,
-      "windKmh": 7.1,
+      "windKmh": 9,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -140,7 +126,7 @@
       "forecastHourUtc": "2026-07-15T19:00:00Z",
       "temperatureC": 33.5,
       "precipitationProbability": 8,
-      "windKmh": 11.8,
+      "windKmh": 17.1,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -153,11 +139,11 @@
       "kickoffUtc": "2026-07-18T21:00:00.000Z",
       "forecastHourUtc": "2026-07-18T21:00:00Z",
       "temperatureC": 35.2,
-      "precipitationProbability": 29,
-      "windKmh": 18.9,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "precipitationProbability": 32,
+      "windKmh": 23.7,
+      "weatherCode": 0,
+      "icon": "☀️",
+      "description": "Céu limpo"
     },
     "104": {
       "available": true,
@@ -167,11 +153,11 @@
       "kickoffUtc": "2026-07-19T19:00:00.000Z",
       "forecastHourUtc": "2026-07-19T19:00:00Z",
       "temperatureC": 30.6,
-      "precipitationProbability": 12,
-      "windKmh": 10.7,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "precipitationProbability": 11,
+      "windKmh": 19,
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     }
   }
 }

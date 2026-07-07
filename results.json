@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-06T23:44:37.217Z",
+  "updatedAt": "2026-07-07T01:28:00.963Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -1091,14 +1091,14 @@
     },
     "94": {
       "apiId": 537380,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "United States",
       "awayTeam": "Belgium",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 1,
+      "awayScore": 3,
+      "winner": "AWAY_TEAM",
       "utcDate": "2026-07-07T00:00:00Z",
-      "lastUpdated": "2026-07-06T05:20:12Z",
+      "lastUpdated": "2026-07-07T01:27:42Z",
       "provider": "football-data.org"
     },
     "95": {

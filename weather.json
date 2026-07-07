@@ -1,24 +1,10 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-07T21:05:38.738Z",
+  "generatedAt": "2026-07-07T22:21:40.471Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
-    "95": {
-      "available": true,
-      "source": "Open-Meteo",
-      "city": "Atlanta",
-      "venue": "Mercedes-Benz Stadium, Atlanta",
-      "kickoffUtc": "2026-07-07T16:00:00.000Z",
-      "forecastHourUtc": "2026-07-07T16:00:00Z",
-      "temperatureC": 29.5,
-      "precipitationProbability": 0,
-      "windKmh": 10.8,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
-    },
     "96": {
       "available": true,
       "source": "Open-Meteo",
@@ -26,9 +12,9 @@
       "venue": "BC Place, Vancouver",
       "kickoffUtc": "2026-07-07T20:00:00.000Z",
       "forecastHourUtc": "2026-07-07T20:00:00Z",
-      "temperatureC": 22.4,
+      "temperatureC": 23.1,
       "precipitationProbability": 0,
-      "windKmh": 6.6,
+      "windKmh": 6.8,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"

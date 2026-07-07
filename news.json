@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-07T12:07:16.364Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-07T19:22:49.719Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 142,
+  "totalArticles": 143,
   "articles": [
+    {
+      "title": "Pedro Proença admite que resultado no Mundial \"fica aquém do esperado\"",
+      "description": "O presidente da Federação Portuguesa de Futebol (FPF), Pedro Proença, considerou que o resultado de Portugal no Mundial de 2026, eliminado nos oitavos de final pela Espanha (1-0), \"fica aquém do esperado\".",
+      "content": "\"Quando nos propusemos a sermos candidatos a vencer o Mundial, fizemo-lo por acreditar na qualidade dos nossos jogadores, e num talento com pouco paralelo na nossa história\", refere Pedro Proença na sua rede social Facebook. Pedro Proença, que aponta... [922 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/pedro-proenca-admite-que-resultado-no-mundial-fica-aquem-do-esperado/18103415",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/96865842-b2fb-45a2-a49b-6cf69ddd2f71_1200x675.jpg",
+      "publishedAt": "2026-07-07T06:48:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Capitão da Espanha diz que Portugal tem a \"melhor geração de sempre\"",
       "description": "O capitão da seleção espanhola, o médio Rodri, afirmou este domingo que Portugal tem a \"melhor geração de sempre\" no Mundial 2026 de futebol e que vai causar muitas dificuldades aos atuais campeões europeus, no duelo dos oitavos de final.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-07-02T09:45:00Z",
       "sourceName": "ZAP",
       "sourceUrl": "https://zap.aeiou.pt"
-    },
-    {
-      "title": "Luís Montenegro vai a Toronto ver jogo Portugal-Croácia",
-      "description": "O primeiro-ministro, Luís Montenegro, vai assistir ao jogo da seleção nacional de futebol contra a Croácia, que se disputa na quinta-feira em Toronto, Canadá, uma partida dos 16 avos de final do Mundial de 2026.",
-      "content": "O anúncio foi feito pelo gabinete do chefe do Governo, em comunicado. Na fase de grupos, Portugal terminou o Grupo K na segunda posição, atrás da Colômbia, e vai agora enfrentar a Croácia nos 16 avos de final, num jogo agendado para quinta-feira, pel... [894 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/luis-montenegro-vai-a-toronto-ver-jogo-portugal-croacia/18101384",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/7d96c3bf-af51-44bf-b335-c95a08c41f69_1200x675.jpg",
-      "publishedAt": "2026-07-01T13:59:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
     }
   ]
 }

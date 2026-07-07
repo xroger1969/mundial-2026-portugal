@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-07T17:28:02.297Z",
+  "updatedAt": "2026-07-07T19:22:44.849Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -1103,14 +1103,14 @@
     },
     "95": {
       "apiId": 537381,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeTeam": "Argentina",
       "awayTeam": "Egypt",
-      "homeScore": 0,
+      "homeScore": 3,
       "awayScore": 2,
-      "winner": "AWAY_TEAM",
+      "winner": "HOME_TEAM",
       "utcDate": "2026-07-07T16:00:00Z",
-      "lastUpdated": "2026-07-07T17:27:59Z",
+      "lastUpdated": "2026-07-07T18:15:15Z",
       "provider": "football-data.org"
     },
     "96": {

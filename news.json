@@ -2,11 +2,31 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-08T11:31:17.826Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-08T18:44:32.692Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 144,
+  "totalArticles": 146,
   "articles": [
+    {
+      "title": "Imprensa mundial destaca vitória de Espanha sobre Portugal",
+      "description": "A imprensa internacional reage à grande vitória de Espanha frente a Portugal no Mundial 2026 - Acompanhe a atualidade desportiva no Futebol 365.",
+      "content": "A emocionante vitória da seleção espanhola diante de Portugal ecoou com força nos principais jornais desportivos do mundo. Os analistas internacionais elogiaram a maturidade e o equilíbrio do conjunto espanhol, que soube sofrer e vencer um rival de a... [1398 chars]",
+      "url": "https://futebol365.pt/artigo/a-imprensa-internacional-reage-a-grande-vitoria-de-espanha-frente-a-portugal-no-mundial-2026/",
+      "image": "https://futebol365.pt/wp-content/uploads/2026/07/espana-portugal.webp",
+      "publishedAt": "2026-07-08T01:47:38Z",
+      "sourceName": "Futebol365",
+      "sourceUrl": "https://futebol365.pt"
+    },
+    {
+      "title": "Seleção Nacional já chegou a Portugal após participação no Mundial 2026",
+      "description": "Jogadores seguem rumo à Cidade do Futebol.",
+      "content": "O Correio da Manhã incentiva todos os Leitores a interagirem através de comentários às notícias publicadas no seu site, de uma maneira respeitadora com o cumprimento dos princípios legais e constitucionais. Assim são totalmente ilegítimos comentários... [7369 chars]",
+      "url": "https://www.cmjornal.pt/mais-cm/especiais/mundial-2026/detalhe/selecao-nacional-ja-chegou-a-portugal-apos-participacao-no-mundial-2026",
+      "image": "https://cdn.cmjornal.pt/images/2026-07/img_1280x721uu2026-07-08-07-20-05-2295646.png",
+      "publishedAt": "2026-07-08T00:00:00Z",
+      "sourceName": "Correio da Manhã",
+      "sourceUrl": "https://www.cmjornal.pt"
+    },
     {
       "title": "Portugal regressa a Lisboa já sem nove dos convocados",
       "description": "A seleção portuguesa de futebol regressa esta terça-feira a Lisboa, depois da eliminação no Mundial 2026 frente à Espanha, nos oitavos de final, mas sem nove jogadores que já abandonaram o estágio.",
@@ -86,26 +106,6 @@
       "publishedAt": "2026-07-03T09:47:06Z",
       "sourceName": "ECO Economia Online",
       "sourceUrl": "https://eco.sapo.pt"
-    },
-    {
-      "title": "Portugal Card Show espera a visita de 2 mil colecionadores de cromos e cartas de futebol",
-      "description": "Arena de Ovar recebe a 2.ª edição do evento no próximo dia 18 para trocas de cromos do Mundial 2026",
-      "content": "Queres trocar ou comprar cromos e cartas de futebol? Então prepara-te para o maior evento realizado em Portugal destinado ao colecionismo dessas temáticas. O Portugal Card Show volta a dar cartas no mundo do colecionismo e prevê reunir mas de 2000 vi... [466 chars]",
-      "url": "https://www.record.pt/fora-de-campo/detalhe/portugal-card-show-espera-a-visita-de-2-mil-colecionadores-de-cromos-e-cartas-de-futebol",
-      "image": "https://cdn.record.pt/images/2026-07/img_1200x721uu2026-07-03-18-39-03-2448838.jpg",
-      "publishedAt": "2026-07-03T00:00:00Z",
-      "sourceName": "Record",
-      "sourceUrl": "https://www.record.pt"
-    },
-    {
-      "title": "Espanha vence Áustria e pode encontrar Portugal nos 'oita",
-      "description": "A Espanha qualificou-se hoje para os oitavos de final do Mundial de futebol de 2026, ao vencer a Áustria por 3-0, no 11.º jogo dos ’16 avos&rs...",
-      "content": "A Espanha qualificou-se hoje para os oitavos de final do Mundial de futebol de 2026, ao vencer a Áustria por 3-0, no 11.º jogo dos ’16 avos’, disputado em Inglewood, nos Estados Unidos. Mikel Oyarzabal, aos 36 e 89 minutos, após duas assistências de ... [313 chars]",
-      "url": "https://www.jm-madeira.pt/not%C3%ADcias/desporto/30000888/espanha-vence-austria-e-pode-encontrar-portugal-nos-oita.html",
-      "image": "https://www.jm-madeira.pt/resizer/600/315/true/2026_07_02/DOC.20260702.47396012.13081627-1783028561422_1783028585.jpg--espanha_vence__ustria_e_pode_encontrar_portugal_nos__oitavos_.jpg?1783028585407",
-      "publishedAt": "2026-07-02T21:44:18Z",
-      "sourceName": "jm-madeira.pt",
-      "sourceUrl": "https://www.jm-madeira.pt"
     }
   ]
 }

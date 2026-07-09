@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-09T15:30:44.199Z",
+  "generatedAt": "2026-07-09T17:30:42.954Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,9 +12,9 @@
       "venue": "Gillette Stadium, Foxborough",
       "kickoffUtc": "2026-07-09T20:00:00.000Z",
       "forecastHourUtc": "2026-07-09T20:00:00Z",
-      "temperatureC": 30.5,
-      "precipitationProbability": 3,
-      "windKmh": 17.3,
+      "temperatureC": 30.6,
+      "precipitationProbability": 4,
+      "windKmh": 16.3,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"

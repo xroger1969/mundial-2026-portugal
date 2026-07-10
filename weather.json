@@ -1,24 +1,10 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-09T23:50:39.031Z",
+  "generatedAt": "2026-07-10T02:14:32.492Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
-    "97": {
-      "available": true,
-      "source": "Open-Meteo",
-      "city": "Foxborough",
-      "venue": "Gillette Stadium, Foxborough",
-      "kickoffUtc": "2026-07-09T20:00:00.000Z",
-      "forecastHourUtc": "2026-07-09T20:00:00Z",
-      "temperatureC": 30.7,
-      "precipitationProbability": 4,
-      "windKmh": 18.2,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
-    },
     "98": {
       "available": true,
       "source": "Open-Meteo",
@@ -26,7 +12,7 @@
       "venue": "SoFi Stadium, Los Angeles",
       "kickoffUtc": "2026-07-10T19:00:00.000Z",
       "forecastHourUtc": "2026-07-10T19:00:00Z",
-      "temperatureC": 24.6,
+      "temperatureC": 26.9,
       "precipitationProbability": 0,
       "windKmh": 10.6,
       "weatherCode": 0,
@@ -40,12 +26,12 @@
       "venue": "Hard Rock Stadium, Miami",
       "kickoffUtc": "2026-07-11T21:00:00.000Z",
       "forecastHourUtc": "2026-07-11T21:00:00Z",
-      "temperatureC": 34,
+      "temperatureC": 29.8,
       "precipitationProbability": 12,
-      "windKmh": 21.1,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "windKmh": 8.2,
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "100": {
       "available": true,

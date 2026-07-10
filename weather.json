@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-10T15:16:55.167Z",
+  "generatedAt": "2026-07-10T17:13:45.173Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,9 +12,9 @@
       "venue": "SoFi Stadium, Los Angeles",
       "kickoffUtc": "2026-07-10T19:00:00.000Z",
       "forecastHourUtc": "2026-07-10T19:00:00Z",
-      "temperatureC": 25.4,
+      "temperatureC": 26.2,
       "precipitationProbability": 0,
-      "windKmh": 10.4,
+      "windKmh": 10.2,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -27,7 +27,7 @@
       "kickoffUtc": "2026-07-11T21:00:00.000Z",
       "forecastHourUtc": "2026-07-11T21:00:00Z",
       "temperatureC": 32.8,
-      "precipitationProbability": 18,
+      "precipitationProbability": 10,
       "windKmh": 15.9,
       "weatherCode": 3,
       "icon": "☁️",
@@ -41,7 +41,7 @@
       "kickoffUtc": "2026-07-12T01:00:00.000Z",
       "forecastHourUtc": "2026-07-12T01:00:00Z",
       "temperatureC": 29.1,
-      "precipitationProbability": 7,
+      "precipitationProbability": 6,
       "windKmh": 9,
       "weatherCode": 0,
       "icon": "☀️",

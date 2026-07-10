@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-10T20:16:25.763Z",
+  "updatedAt": "2026-07-10T21:30:57.300Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -1139,14 +1139,14 @@
     },
     "98": {
       "apiId": 537384,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "homeTeam": "Spain",
       "awayTeam": "Belgium",
-      "homeScore": 1,
+      "homeScore": 2,
       "awayScore": 1,
-      "winner": "DRAW",
+      "winner": "HOME_TEAM",
       "utcDate": "2026-07-10T19:00:00Z",
-      "lastUpdated": "2026-07-10T20:15:55Z",
+      "lastUpdated": "2026-07-10T21:05:15Z",
       "provider": "football-data.org"
     },
     "99": {

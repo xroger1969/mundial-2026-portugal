@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-10T17:13:45.173Z",
+  "generatedAt": "2026-07-10T18:50:28.246Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,9 +12,9 @@
       "venue": "SoFi Stadium, Los Angeles",
       "kickoffUtc": "2026-07-10T19:00:00.000Z",
       "forecastHourUtc": "2026-07-10T19:00:00Z",
-      "temperatureC": 26.2,
+      "temperatureC": 25.3,
       "precipitationProbability": 0,
-      "windKmh": 10.2,
+      "windKmh": 13.7,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"
@@ -54,9 +54,9 @@
       "venue": "AT&T Stadium, Arlington",
       "kickoffUtc": "2026-07-14T19:00:00.000Z",
       "forecastHourUtc": "2026-07-14T19:00:00Z",
-      "temperatureC": 32.2,
+      "temperatureC": 28.8,
       "precipitationProbability": 19,
-      "windKmh": 15.2,
+      "windKmh": 8.7,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -68,12 +68,12 @@
       "venue": "Mercedes-Benz Stadium, Atlanta",
       "kickoffUtc": "2026-07-15T19:00:00.000Z",
       "forecastHourUtc": "2026-07-15T19:00:00Z",
-      "temperatureC": 33.7,
+      "temperatureC": 34.4,
       "precipitationProbability": 11,
-      "windKmh": 13.9,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "windKmh": 0.5,
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "103": {
       "available": true,
@@ -82,12 +82,12 @@
       "venue": "Hard Rock Stadium, Miami",
       "kickoffUtc": "2026-07-18T21:00:00.000Z",
       "forecastHourUtc": "2026-07-18T21:00:00Z",
-      "temperatureC": 34.3,
+      "temperatureC": 33.4,
       "precipitationProbability": 20,
-      "windKmh": 22.4,
-      "weatherCode": 0,
-      "icon": "☀️",
-      "description": "Céu limpo"
+      "windKmh": 21.3,
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "104": {
       "available": true,
@@ -96,12 +96,12 @@
       "venue": "MetLife Stadium, East Rutherford",
       "kickoffUtc": "2026-07-19T19:00:00.000Z",
       "forecastHourUtc": "2026-07-19T19:00:00Z",
-      "temperatureC": 25.2,
+      "temperatureC": 18.7,
       "precipitationProbability": 26,
-      "windKmh": 14.7,
-      "weatherCode": 51,
+      "windKmh": 16.3,
+      "weatherCode": 53,
       "icon": "🌦️",
-      "description": "Chuvisco fraco"
+      "description": "Chuvisco"
     }
   }
 }

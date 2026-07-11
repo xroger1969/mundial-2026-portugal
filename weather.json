@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-11T18:10:59.353Z",
+  "generatedAt": "2026-07-11T19:33:52.239Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,9 +12,9 @@
       "venue": "Hard Rock Stadium, Miami",
       "kickoffUtc": "2026-07-11T21:00:00.000Z",
       "forecastHourUtc": "2026-07-11T21:00:00Z",
-      "temperatureC": 30.9,
-      "precipitationProbability": 14,
-      "windKmh": 5.6,
+      "temperatureC": 31.7,
+      "precipitationProbability": 13,
+      "windKmh": 5.3,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -28,7 +28,7 @@
       "forecastHourUtc": "2026-07-12T01:00:00Z",
       "temperatureC": 30,
       "precipitationProbability": 0,
-      "windKmh": 8.1,
+      "windKmh": 7.9,
       "weatherCode": 0,
       "icon": "☀️",
       "description": "Céu limpo"

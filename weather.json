@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-12T16:38:53.453Z",
+  "generatedAt": "2026-07-12T17:43:02.700Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,9 +12,9 @@
       "venue": "AT&T Stadium, Arlington",
       "kickoffUtc": "2026-07-14T19:00:00.000Z",
       "forecastHourUtc": "2026-07-14T19:00:00Z",
-      "temperatureC": 35,
+      "temperatureC": 33.6,
       "precipitationProbability": 35,
-      "windKmh": 12.1,
+      "windKmh": 14.7,
       "weatherCode": 2,
       "icon": "⛅",
       "description": "Parcialmente nublado"
@@ -26,12 +26,12 @@
       "venue": "Mercedes-Benz Stadium, Atlanta",
       "kickoffUtc": "2026-07-15T19:00:00.000Z",
       "forecastHourUtc": "2026-07-15T19:00:00Z",
-      "temperatureC": 29.7,
+      "temperatureC": 33.7,
       "precipitationProbability": 43,
-      "windKmh": 12,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "windKmh": 7.8,
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "103": {
       "available": true,
@@ -42,7 +42,7 @@
       "forecastHourUtc": "2026-07-18T21:00:00Z",
       "temperatureC": 34.1,
       "precipitationProbability": 16,
-      "windKmh": 22,
+      "windKmh": 24.7,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"
@@ -54,9 +54,9 @@
       "venue": "MetLife Stadium, East Rutherford",
       "kickoffUtc": "2026-07-19T19:00:00.000Z",
       "forecastHourUtc": "2026-07-19T19:00:00Z",
-      "temperatureC": 17.4,
+      "temperatureC": 29.4,
       "precipitationProbability": 13,
-      "windKmh": 6.2,
+      "windKmh": 18,
       "weatherCode": 3,
       "icon": "☁️",
       "description": "Nublado"

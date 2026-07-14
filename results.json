@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-14T18:48:34.564Z",
+  "updatedAt": "2026-07-14T20:02:33.537Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -1175,14 +1175,14 @@
     },
     "101": {
       "apiId": 537387,
-      "status": "TIMED",
+      "status": "PAUSED",
       "homeTeam": "France",
       "awayTeam": "Spain",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 0,
+      "awayScore": 1,
+      "winner": "AWAY_TEAM",
       "utcDate": "2026-07-14T19:00:00Z",
-      "lastUpdated": "2026-07-14T05:20:10Z",
+      "lastUpdated": "2026-07-14T19:57:16Z",
       "provider": "football-data.org"
     },
     "102": {

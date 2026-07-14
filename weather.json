@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-14T11:48:00.449Z",
+  "generatedAt": "2026-07-14T12:56:47.591Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,12 +12,12 @@
       "venue": "AT&T Stadium, Arlington",
       "kickoffUtc": "2026-07-14T19:00:00.000Z",
       "forecastHourUtc": "2026-07-14T19:00:00Z",
-      "temperatureC": 30.9,
-      "precipitationProbability": 12,
-      "windKmh": 12.5,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "temperatureC": 31.3,
+      "precipitationProbability": 14,
+      "windKmh": 16.9,
+      "weatherCode": 2,
+      "icon": "⛅",
+      "description": "Parcialmente nublado"
     },
     "102": {
       "available": true,
@@ -27,7 +27,7 @@
       "kickoffUtc": "2026-07-15T19:00:00.000Z",
       "forecastHourUtc": "2026-07-15T19:00:00Z",
       "temperatureC": 30.5,
-      "precipitationProbability": 27,
+      "precipitationProbability": 25,
       "windKmh": 4.6,
       "weatherCode": 3,
       "icon": "☁️",

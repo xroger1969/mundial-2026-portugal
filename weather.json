@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-14T10:13:01.682Z",
+  "generatedAt": "2026-07-14T11:48:00.449Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,12 +12,12 @@
       "venue": "AT&T Stadium, Arlington",
       "kickoffUtc": "2026-07-14T19:00:00.000Z",
       "forecastHourUtc": "2026-07-14T19:00:00Z",
-      "temperatureC": 30.7,
-      "precipitationProbability": 9,
-      "windKmh": 13.2,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "temperatureC": 30.9,
+      "precipitationProbability": 12,
+      "windKmh": 12.5,
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     },
     "102": {
       "available": true,
@@ -27,7 +27,7 @@
       "kickoffUtc": "2026-07-15T19:00:00.000Z",
       "forecastHourUtc": "2026-07-15T19:00:00Z",
       "temperatureC": 30.5,
-      "precipitationProbability": 23,
+      "precipitationProbability": 27,
       "windKmh": 4.6,
       "weatherCode": 3,
       "icon": "☁️",
@@ -40,12 +40,12 @@
       "venue": "Hard Rock Stadium, Miami",
       "kickoffUtc": "2026-07-18T21:00:00.000Z",
       "forecastHourUtc": "2026-07-18T21:00:00Z",
-      "temperatureC": 34.2,
+      "temperatureC": 33,
       "precipitationProbability": 34,
-      "windKmh": 21.4,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "windKmh": 19.5,
+      "weatherCode": 51,
+      "icon": "🌦️",
+      "description": "Chuvisco fraco"
     },
     "104": {
       "available": true,
@@ -54,12 +54,12 @@
       "venue": "MetLife Stadium, East Rutherford",
       "kickoffUtc": "2026-07-19T19:00:00.000Z",
       "forecastHourUtc": "2026-07-19T19:00:00Z",
-      "temperatureC": 32.5,
+      "temperatureC": 34.6,
       "precipitationProbability": 42,
-      "windKmh": 19.6,
-      "weatherCode": 3,
-      "icon": "☁️",
-      "description": "Nublado"
+      "windKmh": 20.9,
+      "weatherCode": 1,
+      "icon": "🌤️",
+      "description": "Pouco nublado"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-15T14:05:20.663Z",
+  "generatedAt": "2026-07-15T15:47:39.284Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -12,12 +12,12 @@
       "venue": "Mercedes-Benz Stadium, Atlanta",
       "kickoffUtc": "2026-07-15T19:00:00.000Z",
       "forecastHourUtc": "2026-07-15T19:00:00Z",
-      "temperatureC": 28.4,
-      "precipitationProbability": 25,
-      "windKmh": 5,
-      "weatherCode": 1,
-      "icon": "🌤️",
-      "description": "Pouco nublado"
+      "temperatureC": 29.8,
+      "precipitationProbability": 23,
+      "windKmh": 4.5,
+      "weatherCode": 3,
+      "icon": "☁️",
+      "description": "Nublado"
     },
     "103": {
       "available": true,
@@ -27,7 +27,7 @@
       "kickoffUtc": "2026-07-18T21:00:00.000Z",
       "forecastHourUtc": "2026-07-18T21:00:00Z",
       "temperatureC": 33.2,
-      "precipitationProbability": 43,
+      "precipitationProbability": 30,
       "windKmh": 22.9,
       "weatherCode": 3,
       "icon": "☁️",
@@ -41,7 +41,7 @@
       "kickoffUtc": "2026-07-19T19:00:00.000Z",
       "forecastHourUtc": "2026-07-19T19:00:00Z",
       "temperatureC": 28.2,
-      "precipitationProbability": 15,
+      "precipitationProbability": 9,
       "windKmh": 22.9,
       "weatherCode": 0,
       "icon": "☀️",

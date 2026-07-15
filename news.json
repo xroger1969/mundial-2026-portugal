@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-15T03:36:29.454Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-15T10:25:40.647Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 146,
+  "totalArticles": 147,
   "articles": [
+    {
+      "title": "Ainda o polémico Croácia-Portugal: \"A FIFA deixou de proteger o futebol\"",
+      "description": "Federação Croata não esquece lances que, considera, resultaram na saída do Mundial 2026 Continue a ler.",
+      "content": "Stipe Pletikosa, diretor técnico da Federação Croata de Futebol (HNS), revelou que a FIFA ainda não respondeu a uma carta de protesto realcionada com decisões de arbitragem controversas na derrota (1-2) da Croácia com Portugal nos 16 avos do Mundial ... [1612 chars]",
+      "url": "https://www.abola.pt/noticias/ainda-o-polemico-croacia-portugal-a-fifa-deixou-de-proteger-o-futebol-2026071416350640167",
+      "image": "https://sportal365images.com/process/smp-images-production/abola.pt/14072026/26f82657-d567-4ed6-91cf-8f491c02ccd7.jpg?operations=crop(266:64:2165:1132),autocrop(1200:630)",
+      "publishedAt": "2026-07-14T16:35:06Z",
+      "sourceName": "A Bola",
+      "sourceUrl": "https://www.abola.pt"
+    },
     {
       "title": "Imprensa mundial destaca vitória de Espanha sobre Portugal",
       "description": "A imprensa internacional reage à grande vitória de Espanha frente a Portugal no Mundial 2026 - Acompanhe a atualidade desportiva no Futebol 365.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-07-03T10:20:22Z",
       "sourceName": "Pplware",
       "sourceUrl": "https://pplware.sapo.pt"
-    },
-    {
-      "title": "LiveModeTV vai transmitir 25 jogos do Mundial Feminino FIFA 2027",
-      "description": "A LiveModeTV estreou-se em Portugal com a transmissão de 34 jogos do Mundial de Futebol 2026, estando em curso o registo enquanto serviço audiovisual a pedido na ERC.",
-      "content": "A LiveModeTV anunciou esta sexta-feira que adquiriu os direitos de transmissão do Mundial Feminino de futebol de 2027 em Portugal. Escolha o ECO como fonte preferida no Google Escolher › “A LiveModeTV vai transmitir o Mundial Feminino FIFA 2027 em Po... [4006 chars]",
-      "url": "https://eco.sapo.pt/2026/07/03/livemodetv-vai-transmitir-25-jogos-do-mundial-feminino-fifa-2027/",
-      "image": "https://eco.imgix.net/uploads/2026/06/cropped-livemodetv-mundial2026.jpeg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
-      "publishedAt": "2026-07-03T09:47:06Z",
-      "sourceName": "ECO Economia Online",
-      "sourceUrl": "https://eco.sapo.pt"
     }
   ]
 }

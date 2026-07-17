@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-17T17:54:02.220Z",
+  "generatedAt": "2026-07-17T19:13:54.194Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {

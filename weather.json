@@ -1,7 +1,7 @@
 {
   "provider": "Open-Meteo",
   "status": "ok",
-  "generatedAt": "2026-07-17T08:59:31.900Z",
+  "generatedAt": "2026-07-17T10:56:28.617Z",
   "forecastDays": 16,
   "message": "Previsão meteorológica disponível apenas para jogos dentro da janela de previsão Open-Meteo.",
   "matches": {
@@ -13,7 +13,7 @@
       "kickoffUtc": "2026-07-18T21:00:00.000Z",
       "forecastHourUtc": "2026-07-18T21:00:00Z",
       "temperatureC": 29.4,
-      "precipitationProbability": 16,
+      "precipitationProbability": 7,
       "windKmh": 12.9,
       "weatherCode": 2,
       "icon": "⛅",

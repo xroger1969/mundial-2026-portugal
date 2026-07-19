@@ -3,7 +3,7 @@
   "competition": "WC",
   "season": "2026",
   "status": "ok",
-  "updatedAt": "2026-07-19T18:37:47.381Z",
+  "updatedAt": "2026-07-19T19:53:42.300Z",
   "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
   "apiCount": 104,
   "linkedCount": 101,
@@ -1211,14 +1211,14 @@
     },
     "104": {
       "apiId": 537390,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "homeTeam": "Spain",
       "awayTeam": "Argentina",
-      "homeScore": null,
-      "awayScore": null,
-      "winner": null,
+      "homeScore": 0,
+      "awayScore": 0,
+      "winner": "DRAW",
       "utcDate": "2026-07-19T19:00:00Z",
-      "lastUpdated": "2026-07-19T05:20:05Z",
+      "lastUpdated": "2026-07-19T19:53:00Z",
       "provider": "football-data.org"
     }
   }

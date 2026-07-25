@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-25T15:38:52.985Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-25T22:07:06.833Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 147,
+  "totalArticles": 148,
   "articles": [
+    {
+      "title": "2026 já era: começou a batalha pelo Mundial de 2030",
+      "description": "O planeta do futebol ainda está a curar a ressaca do Mundial das Américas e, nos bastidores, já se vai desenhando uma complexa refrega pelo torneio que, daqui a quatro anos, passará por Portugal, Espanha e Marrocos. Mas que também terá jogos na Argentina, Paraguai e Uruguai, fazendo deste o primeiro torneio a ser disputado em seis países e três continentes. As novidades não ficam por aqui: as 48 equipas que integraram a prova neste verão podem ser esticadas para 64, num formato verdadeiramente global e inédito que fará multiplicar ainda mais os lucros da FIFA. Dez perguntas essenciais para compreendermos o que nos espera.",
+      "content": "O planeta do futebol ainda está a curar a ressaca do Mundial das Américas e, nos bastidores, já se vai desenhando uma complexa refrega pelo torneio que, daqui a quatro anos, passará por Portugal, Espanha e Marrocos. Mas que também terá jogos na Argen... [379 chars]",
+      "url": "https://www.jn.pt/desporto/artigo/2026-ja-era-comecou-a-batalha-pelo-mundial-de-2030/18109472",
+      "image": "https://staticx.noticiasilimitadas.pt/jn/6372fe6a-0713-4499-bca6-f63fe162723b_1200x675.jpg",
+      "publishedAt": "2026-07-25T07:51:00Z",
+      "sourceName": "Jornal de Notícias",
+      "sourceUrl": "https://www.jn.pt"
+    },
     {
       "title": "Ainda o polémico Croácia-Portugal: \"A FIFA deixou de proteger o futebol\"",
       "description": "Federação Croata não esquece lances que, considera, resultaram na saída do Mundial 2026 Continue a ler.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-07-03T14:20:53Z",
       "sourceName": "ECO Economia Online",
       "sourceUrl": "https://eco.sapo.pt"
-    },
-    {
-      "title": "A tecnologia que \"salvou\" Portugal no Mundial 2026",
-      "description": "Portugal segue em frente no Mundial 2026, mas um dos momentos mais comentados do jogo contra a Croácia não teve que ver com futebol.",
-      "content": "A seleção nacional segue em frente no Mundial 2026, mas um dos momentos mais comentados do jogo contra a Croácia não teve que ver com futebol, mas antes com sensores, câmaras e Inteligência Artificial (IA). Entenda a tecnologia por detrás do golo cro... [2839 chars]",
-      "url": "https://pplware.sapo.pt/high-tech/a-tecnologia-que-salvou-portugal-no-mundial-2026/",
-      "image": "https://pplware.sapo.pt/wp-content/uploads/2026/07/fora-de-jogo-croacia-1.jpg",
-      "publishedAt": "2026-07-03T10:20:22Z",
-      "sourceName": "Pplware",
-      "sourceUrl": "https://pplware.sapo.pt"
     }
   ]
 }

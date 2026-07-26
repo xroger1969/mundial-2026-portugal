@@ -2,12 +2,9 @@
   "provider": "football-data.org",
   "competition": "WC",
   "season": "2026",
-  "status": "ok",
+  "status": "standby",
   "updatedAt": "2026-07-25T23:11:28.951Z",
-  "message": "Atualização automática concluída. Jogos recebidos da API: 104. Jogos ligados ao calendário com validação por equipas/horário: 101. Ignorados sem correspondência segura: 3. API prioritária; fallback manual usado apenas quando a API não devolve golos.",
-  "apiCount": 104,
-  "linkedCount": 101,
-  "skippedWithoutSafeMatch": 3,
+  "message": "Automação preparada. Fora da janela principal do Mundial 2026, a rotina fica em espera para evitar chamadas desnecessárias à API.",
   "matches": {
     "1": {
       "apiId": 537327,

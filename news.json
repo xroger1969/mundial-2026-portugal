@@ -2,11 +2,21 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-07-30T01:03:58.315Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-07-30T09:23:01.357Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 10.",
   "query": "Mundial 2026 futebol Portugal",
-  "totalArticles": 148,
+  "totalArticles": 149,
   "articles": [
+    {
+      "title": "Nani já vê Portugal sem Ronaldo: \"É normal, sabíamos que esse dia ia chegar\"",
+      "description": "Antigo internacional português comentou a possível retirada do compatriota do futebol de seleções, o seu próprio futuro e também a prestação de Cabo Verde no Mundial 2026 Continue a ler.",
+      "content": "Aos 39 anos, Nani, campeão europeu por Portugal em 2016, continua a jogar profissionalmente no Aqtobe, do Cazaquistão, mas já prepara o futuro fora das quatro linhas. O antigo internacional português ambiciona tornar-se treinador e já deu os primeiro... [2370 chars]",
+      "url": "https://www.abola.pt/noticias/nani-ja-ve-portugal-sem-ronaldo-e-normal-sabiamos-que-esse-dia-ia-chegar-2026072918110871209",
+      "image": "https://sportal365images.com/process/smp-images-production/abola.pt/01072026/74b3a7a3-3809-487d-828b-8d39607f4698.jpg?operations=crop(0:95:2334:1407),autocrop(1200:630)",
+      "publishedAt": "2026-07-29T18:18:25Z",
+      "sourceName": "A Bola",
+      "sourceUrl": "https://www.abola.pt"
+    },
     {
       "title": "2026 já era: começou a batalha pelo Mundial de 2030",
       "description": "O planeta do futebol ainda está a curar a ressaca do Mundial das Américas e, nos bastidores, já se vai desenhando uma complexa refrega pelo torneio que, daqui a quatro anos, passará por Portugal, Espanha e Marrocos. Mas que também terá jogos na Argentina, Paraguai e Uruguai, fazendo deste o primeiro torneio a ser disputado em seis países e três continentes. As novidades não ficam por aqui: as 48 equipas que integraram a prova neste verão podem ser esticadas para 64, num formato verdadeiramente global e inédito que fará multiplicar ainda mais os lucros da FIFA. Dez perguntas essenciais para compreendermos o que nos espera.",
@@ -96,16 +106,6 @@
       "publishedAt": "2026-07-04T15:50:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Mundial 2026: Vitória de Portugal contra a Croácia vista, em média, por quase 2,7 milhões de telespectadores",
-      "description": "Acompanhe as audiências de todos os jogos do Mundial de Futebol nos EUA, Canadá e México, numa análise da Dentsu para o ECO/+M.",
-      "content": "A Seleção das Quinas garantiu a qualificação para os oitavos de final, depois de vencer a Croácia por 2-1. Estiveram 43.036 espectadores no estádio em Toronto a assistir à vitória da seleção portuguesa. Em Portugal, quase 2,7 milhões de indivíduos vi... [2607 chars]",
-      "url": "https://eco.sapo.pt/2026/07/03/mundial-2026-vitoria-de-portugal-contra-a-croacia-vista-em-media-por-quase-27-milhoes-de-telespectadores/",
-      "image": "https://eco.imgix.net/uploads/2026/06/audiencias-mundial-2000x1125-1.jpg?mark64=aHR0cHM6Ly9lY28uaW1naXgubmV0L0VDT193YXRlcm1hcmsucG5nP2ZtPXBuZw%3D%3D&markscale=33&markalign=center,left&w=1200",
-      "publishedAt": "2026-07-03T14:20:53Z",
-      "sourceName": "ECO Economia Online",
-      "sourceUrl": "https://eco.sapo.pt"
     }
   ]
 }

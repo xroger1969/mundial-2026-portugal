@@ -2,8 +2,8 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-08-06T12:18:07.912Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-08-07T00:17:57.815Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 5.",
   "query": "Mundial 2026 futebol Portugal",
   "totalArticles": 149,
   "articles": [
@@ -56,26 +56,6 @@
       "publishedAt": "2026-07-08T00:00:00Z",
       "sourceName": "Correio da Manhã",
       "sourceUrl": "https://www.cmjornal.pt"
-    },
-    {
-      "title": "Portugal regressa a Lisboa já sem nove dos convocados",
-      "description": "A seleção portuguesa de futebol regressa esta terça-feira a Lisboa, depois da eliminação no Mundial 2026 frente à Espanha, nos oitavos de final, mas sem nove jogadores que já abandonaram o estágio.",
-      "content": "José Sá, Diogo Dalot, Gonçalo Inácio, Rúben Dias, Matheus Nunes, João Neves, Bernardo Silva, João Félix e Gonçalo Ramos são os jogadores que já não estão com a equipa e seguiram destinos diferentes. Portugal tem voo marcado do Aeroporto Internacional... [550 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/portugal-regressa-a-lisboa-ja-sem-nove-dos-convocados/18103694",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/f0b42300-bfe7-48ac-b0f1-22dfec6048ff_1200x675.jpg",
-      "publishedAt": "2026-07-07T20:12:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Pedro Proença admite que resultado no Mundial \"fica aquém do esperado\"",
-      "description": "O presidente da Federação Portuguesa de Futebol (FPF), Pedro Proença, considerou que o resultado de Portugal no Mundial de 2026, eliminado nos oitavos de final pela Espanha (1-0), \"fica aquém do esperado\".",
-      "content": "\"Quando nos propusemos a sermos candidatos a vencer o Mundial, fizemo-lo por acreditar na qualidade dos nossos jogadores, e num talento com pouco paralelo na nossa história\", refere Pedro Proença na sua rede social Facebook. Pedro Proença, que aponta... [922 chars]",
-      "url": "https://www.jn.pt/desporto/artigo/pedro-proenca-admite-que-resultado-no-mundial-fica-aquem-do-esperado/18103415",
-      "image": "https://staticx.noticiasilimitadas.pt/jn/96865842-b2fb-45a2-a49b-6cf69ddd2f71_1200x675.jpg",
-      "publishedAt": "2026-07-07T06:48:00Z",
-      "sourceName": "Jornal de Notícias",
-      "sourceUrl": "https://www.jn.pt"
     }
   ]
 }

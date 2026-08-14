@@ -2,8 +2,8 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-08-13T22:09:31.181Z",
-  "message": "Notícias mantidas em cache para poupar a quota da GNews.",
+  "updatedAt": "2026-08-14T04:18:57.416Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 2.",
   "query": "Mundial 2026 futebol Portugal",
   "totalArticles": 149,
   "articles": [
@@ -26,16 +26,6 @@
       "publishedAt": "2026-07-25T07:51:00Z",
       "sourceName": "Jornal de Notícias",
       "sourceUrl": "https://www.jn.pt"
-    },
-    {
-      "title": "Ainda o polémico Croácia-Portugal: \"A FIFA deixou de proteger o futebol\"",
-      "description": "Federação Croata não esquece lances que, considera, resultaram na saída do Mundial 2026 Continue a ler.",
-      "content": "Stipe Pletikosa, diretor técnico da Federação Croata de Futebol (HNS), revelou que a FIFA ainda não respondeu a uma carta de protesto realcionada com decisões de arbitragem controversas na derrota (1-2) da Croácia com Portugal nos 16 avos do Mundial ... [1612 chars]",
-      "url": "https://www.abola.pt/noticias/ainda-o-polemico-croacia-portugal-a-fifa-deixou-de-proteger-o-futebol-2026071416350640167",
-      "image": "https://sportal365images.com/process/smp-images-production/abola.pt/14072026/26f82657-d567-4ed6-91cf-8f491c02ccd7.jpg?operations=crop(266:64:2165:1132),autocrop(1200:630)",
-      "publishedAt": "2026-07-14T16:35:06Z",
-      "sourceName": "A Bola",
-      "sourceUrl": "https://www.abola.pt"
     }
   ]
 }

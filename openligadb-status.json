@@ -1,7 +1,7 @@
 {
   "source": "OpenLigaDB",
   "url": "https://api.openligadb.de/getmatchdata/wm26/2026",
-  "checkedAt": "2026-08-19T13:54:25.189Z",
+  "checkedAt": "2026-08-19T14:36:41.199Z",
   "totalMatches": 104,
   "finishedMatches": 104,
   "matchesWithAnyResult": 104,
@@ -99,7 +99,7 @@
     {
       "id": 80107,
       "date": "2026-06-14T17:00:00Z",
-      "team1": "Deutschland U21",
+      "team1": "Deutschland",
       "team2": "Curaçao",
       "finished": true,
       "finalScore": "7–1",

@@ -2,20 +2,9 @@
   "provider": "gnews.io",
   "topic": "Mundial 2026",
   "status": "ok",
-  "updatedAt": "2026-08-28T17:18:17.803Z",
-  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 1.",
+  "updatedAt": "2026-08-29T01:01:25.418Z",
+  "message": "Notícias atualizadas automaticamente. Artigos recebidos: 0.",
   "query": "Mundial 2026 futebol Portugal",
   "totalArticles": 149,
-  "articles": [
-    {
-      "title": "Nani já vê Portugal sem Ronaldo: \"É normal, sabíamos que esse dia ia chegar\"",
-      "description": "Antigo internacional português comentou a possível retirada do compatriota do futebol de seleções, o seu próprio futuro e também a prestação de Cabo Verde no Mundial 2026 Continue a ler.",
-      "content": "Aos 39 anos, Nani, campeão europeu por Portugal em 2016, continua a jogar profissionalmente no Aqtobe, do Cazaquistão, mas já prepara o futuro fora das quatro linhas. O antigo internacional português ambiciona tornar-se treinador e já deu os primeiro... [2370 chars]",
-      "url": "https://www.abola.pt/noticias/nani-ja-ve-portugal-sem-ronaldo-e-normal-sabiamos-que-esse-dia-ia-chegar-2026072918110871209",
-      "image": "https://sportal365images.com/process/smp-images-production/abola.pt/01072026/74b3a7a3-3809-487d-828b-8d39607f4698.jpg?operations=crop(0:95:2334:1407),autocrop(1200:630)",
-      "publishedAt": "2026-07-29T18:18:25Z",
-      "sourceName": "A Bola",
-      "sourceUrl": "https://www.abola.pt"
-    }
-  ]
+  "articles": []
 }

@@ -1,7 +1,7 @@
 "use strict";
 
-const XAI_API_URL = "https://api.x.ai/v1/chat/completions";
-const DEFAULT_MODEL = "grok-4";
+const OPENAI_API_URL = "https://api.openai.com/v1/responses";
+const DEFAULT_MODEL = "gpt-6-astra";
 const MAX_CONTEXT_CHARS = 9000;
 const MAX_MESSAGES = 10;
 
@@ -54,9 +54,10 @@ function systemPrompt(context) {
 }
 
 function extractReply(data) {
-  const content = data?.choices?.[0]?.message?.content;
-  if (typeof content === "string" && content.trim()) return content.trim();
-  return "";
+  if (data?.status !== "completed") return "";
+  return (data.output || []).filter(item => item.type === "message")
+    .flatMap(item => item.content || []).filter(part => part.type === "output_text")
+    .map(part => part.text || "").join(" ").trim();
 }
 
 function parseUpstreamPayload(text) {
@@ -67,26 +68,11 @@ function parseUpstreamPayload(text) {
   }
 }
 
-function upstreamErrorMessage(status, data) {
-  const detail = data?.error?.message || data?.message || data?.raw || "Sem detalhe devolvido pela xAI.";
-
-  if (status === 401) {
-    return `Erro xAI 401: chave inválida ou mal colocada na Vercel. ${detail}`;
-  }
-
-  if (status === 403) {
-    return `Erro xAI 403: a chave foi reconhecida, mas a xAI recusou o acesso. Verifica no painel da xAI se a API está ativa, se há créditos/billing e se o modelo tem acesso. Detalhe: ${detail}`;
-  }
-
-  if (status === 404) {
-    return `Erro xAI 404: endpoint ou modelo não encontrado. Experimenta definir XAI_MODEL=grok-4 na Vercel. Detalhe: ${detail}`;
-  }
-
-  if (status === 429) {
-    return `Erro xAI 429: limite de pedidos ou créditos atingido. Detalhe: ${detail}`;
-  }
-
-  return `Erro xAI ${status}: ${detail}`;
+function upstreamErrorMessage(status) {
+  if (status === 401 || status === 403) return "Não foi possível autenticar o serviço de IA.";
+  if (status === 404) return "O modelo de IA configurado não está disponível nesta conta.";
+  if (status === 429) return "O serviço de IA atingiu temporariamente o limite de utilização.";
+  return "Não foi possível obter uma resposta da IA. Tenta novamente.";
 }
 
 module.exports = async function handler(req, res) {
@@ -98,10 +84,10 @@ module.exports = async function handler(req, res) {
     return sendJson(res, 405, { error: "Método não permitido. Usa POST." });
   }
 
-  const apiKey = process.env.XAI_API_KEY;
+  const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
     return sendJson(res, 500, {
-      error: "Falta configurar XAI_API_KEY nas variáveis de ambiente da Vercel."
+      error: "A ligação OpenAI ainda não está configurada no servidor."
     });
   }
 
@@ -116,20 +102,21 @@ module.exports = async function handler(req, res) {
       return sendJson(res, 400, { error: "Pergunta em falta." });
     }
 
-    const upstream = await fetch(XAI_API_URL, {
+    const upstream = await fetch(OPENAI_API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${apiKey}`
       },
       body: JSON.stringify({
-        model: process.env.XAI_MODEL || DEFAULT_MODEL,
-        messages: [
+        model: process.env.OPENAI_MODEL || DEFAULT_MODEL,
+        input: [
           { role: "system", content: systemPrompt(context) },
           ...userMessages
         ],
-        temperature: 0.5,
-        max_tokens: 1000
+        reasoning: { effort: "low" },
+        store: false,
+        max_output_tokens: 3072
       })
     });
 
@@ -142,8 +129,9 @@ module.exports = async function handler(req, res) {
       });
     }
 
-    const reply = extractReply(data) || "Não recebi resposta do Grok.";
-    return sendJson(res, 200, { reply });
+    const reply = extractReply(data);
+    if (!reply) return sendJson(res, 502, { error: "A IA não devolveu uma resposta completa." });
+    return sendJson(res, 200, { reply, model: data.model || null });
   } catch (error) {
     return sendJson(res, 500, { error: error.message || "Erro inesperado no chatbot." });
   }
